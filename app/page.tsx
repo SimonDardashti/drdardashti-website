@@ -38,7 +38,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white min-h-[90vh] flex flex-col justify-center px-6 py-24 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Text */}
           <div>
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
@@ -82,11 +82,11 @@ export default function Home() {
           </div>
 
           {/* Photo */}
-          <div className="hidden md:flex justify-end items-center">
+          <div className="hidden md:block">
             <img
               src="/headshot.webp"
               alt="Dr. Simon Dardashti, MD — Pain Medicine Physician"
-              className="w-full max-w-sm object-cover"
+              className="w-full object-cover"
               style={{ filter: "grayscale(20%)" }}
             />
           </div>
