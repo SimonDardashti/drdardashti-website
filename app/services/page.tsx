@@ -97,7 +97,7 @@ export default function ServicesPage() {
             <p className="text-[#777] text-sm mb-8 max-w-xl">
               Dr. Dardashti evaluates a range of pain conditions, including:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
               {conditions.map((item) => (
                 <div
                   key={item}
@@ -137,7 +137,7 @@ export default function ServicesPage() {
               examination, imaging findings, prior treatment response, medical history,
               and overall clinical context. When appropriate, treatment options may include:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
               {procedures.map((item) => (
                 <div
                   key={item}
