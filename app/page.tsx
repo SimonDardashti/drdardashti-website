@@ -42,7 +42,7 @@ export default function Home() {
           {/* Text */}
           <div>
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
-              Pain Medicine Physician · Mission Hills, CA
+              Pain Medicine Physician · <span className="whitespace-nowrap">Mission Hills, CA</span>
             </p>
             <h1
               className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6"
