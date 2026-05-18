@@ -7,36 +7,37 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
-const SITE_URL = "https://www.painmanagementmedicalexpert.com";
+const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Simon Dardashti MD | Pain Management Expert Witness | Los Angeles",
-    template: "%s | Simon Dardashti MD — Expert Witness",
+    default: "Simon Dardashti, MD | Pain Medicine Physician | Mission Hills, CA",
+    template: "%s | Simon Dardashti, MD",
   },
   description:
-    "Board-certified pain medicine physician and anesthesiologist available for expert witness testimony, IME, and medical record review. Retained in 60+ medicolegal matters. Balanced plaintiff and defense. UCLA fellowship-trained. Los Angeles, CA.",
+    "Dr. Simon Dardashti is a board-certified pain medicine physician and anesthesiologist in Mission Hills, CA. Evidence-informed evaluation and treatment for spine pain, nerve pain, joint pain, and complex chronic pain.",
   keywords: [
-    "pain management expert witness Los Angeles",
-    "pain medicine expert witness California",
-    "independent medical examination pain specialist",
-    "IME pain management Los Angeles",
-    "medical record review pain medicine",
-    "board certified pain expert witness",
-    "anesthesiology expert witness",
-    "spine expert witness California",
-    "Simon Dardashti MD expert witness",
-    "pain management AME California",
+    "pain management doctor Mission Hills",
+    "pain medicine physician Los Angeles",
+    "spine pain specialist California",
+    "epidural steroid injection",
+    "radiofrequency ablation",
+    "spinal cord stimulation",
+    "nerve pain treatment",
+    "board certified pain management",
+    "Simon Dardashti MD",
+    "Facey Medical pain management",
+    "Providence pain management",
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Simon Dardashti MD — Expert Witness",
-    title: "Simon Dardashti MD | Pain Management Expert Witness | Los Angeles",
+    siteName: "Simon Dardashti, MD",
+    title: "Simon Dardashti, MD | Pain Medicine Physician | Mission Hills, CA",
     description:
-      "Dual board-certified pain medicine physician available for expert witness, IME, and medical record review. Retained in 60+ medicolegal matters. Plaintiff and defense. Los Angeles.",
+      "Board-certified pain medicine physician and anesthesiologist. Spine, nerve, joint, and complex chronic pain. Affiliated with Providence/Facey Medical Network, Mission Hills, CA.",
   },
   alternates: { canonical: SITE_URL },
   robots: {
@@ -46,48 +47,31 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
+const physicianSchema = {
   "@context": "https://schema.org",
   "@type": "Physician",
-  name: "Simon Dardashti, MD, MS",
-  jobTitle: "Pain Medicine Expert Witness & Physician",
+  name: "Simon Dardashti, MD",
   description:
-    "Board-certified pain medicine physician and anesthesiologist available for expert witness testimony, independent medical examinations, and medical record review in medicolegal matters.",
+    "Board-certified pain medicine physician and anesthesiologist specializing in spine, nerve, joint, and complex chronic pain conditions.",
   medicalSpecialty: ["Pain Medicine", "Anesthesiology"],
   url: SITE_URL,
-  telephone: "+18187307579",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "14320 Ventura Blvd, Suite 827",
-    addressLocality: "Los Angeles",
+    addressLocality: "Mission Hills",
     addressRegion: "CA",
-    postalCode: "91423",
     addressCountry: "US",
   },
-  alumniOf: [
-    { "@type": "EducationalOrganization", name: "UCLA" },
-    { "@type": "EducationalOrganization", name: "UC Irvine" },
-  ],
-};
-
-const legalServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  name: "Simon Dardashti MD — Medical Expert Witness Services",
-  description:
-    "Expert witness testimony, independent medical examinations (IME/AME), and medical record review for attorneys handling pain management and spine-related cases in California.",
-  provider: { "@type": "Physician", name: "Simon Dardashti, MD, MS" },
-  areaServed: { "@type": "State", name: "California" },
-  url: SITE_URL,
-  telephone: "+18187307579",
+  memberOf: {
+    "@type": "MedicalOrganization",
+    name: "Providence/Facey Medical Network",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} h-full`}>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }} />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <Header />

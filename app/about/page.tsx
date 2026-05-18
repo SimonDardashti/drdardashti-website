@@ -1,28 +1,37 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Simon Dardashti MD | Credentials & Medicolegal Background",
+  title: "About Dr. Simon Dardashti | Pain Medicine Physician",
   description:
-    "Simon Dardashti, MD, MS — double board-certified in Pain Medicine and Anesthesiology. UCLA fellowship-trained. UC Irvine residency. Retained in 60+ medicolegal matters. Balanced plaintiff and defense practice in Los Angeles.",
-  alternates: { canonical: "https://www.painmanagementmedicalexpert.com/about" },
+    "Dr. Simon Dardashti is a board-certified pain medicine physician and anesthesiologist in Mission Hills, CA. UCLA fellowship-trained. Affiliated with Providence/Facey Medical Network.",
+  alternates: { canonical: "https://www.drdardashti.com/about" },
 };
 
 const credentials = [
-  { label: "Board Certification", value: "ABMS — Pain Medicine" },
-  { label: "Board Certification", value: "ABMS — Anesthesiology" },
+  { label: "Board Certification", value: "Pain Medicine" },
+  { label: "Board Certification", value: "Anesthesiology" },
   { label: "Fellowship", value: "UCLA — Pain Medicine" },
-  { label: "Residency", value: "UC Irvine — Anesthesiology" },
-  { label: "Degree", value: "MD, MS" },
-  { label: "Practice", value: "Expert Medical Services LLC" },
-  { label: "Location", value: "14320 Ventura Blvd, Suite 827\nLos Angeles, CA 91423" },
+  { label: "Affiliation", value: "Providence / Facey Medical Network" },
+  { label: "Location", value: "Mission Hills, California" },
 ];
 
-const medicolegalProfile = [
-  { label: "Cases Retained", value: "60+" },
-  { label: "Plaintiff / Defense", value: "50 / 50" },
-  { label: "Practice States", value: "California" },
-  { label: "Testimony", value: "Deposition & Trial" },
+const approachPoints = [
+  {
+    title: "Careful Diagnostic Evaluation",
+    body: "Understanding the likely pain generator — not just treating symptoms — is the starting point for every patient encounter.",
+  },
+  {
+    title: "Evidence-Informed Decisions",
+    body: "Treatment recommendations are grounded in current medical evidence and adapted to each patient's history, imaging, and prior treatment response.",
+  },
+  {
+    title: "Clear Communication",
+    body: "Patients deserve to understand their diagnosis, the rationale behind any proposed treatment, and what to realistically expect.",
+  },
+  {
+    title: "Individualized Treatment Plans",
+    body: "No two patients are the same. Conservative, medication-based, image-guided, and interventional options are considered based on each individual's clinical presentation.",
+  },
 ];
 
 export default function AboutPage() {
@@ -32,7 +41,7 @@ export default function AboutPage() {
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto">
           <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            About the Expert
+            About the Physician
           </p>
           <h1
             className="text-4xl md:text-6xl font-bold leading-tight"
@@ -40,16 +49,15 @@ export default function AboutPage() {
           >
             Simon Dardashti,
             <br />
-            <em className="not-italic text-[#888]">MD, MS</em>
+            <em className="not-italic text-[#888]">MD</em>
           </h1>
           <p className="mt-5 text-[#666] text-lg max-w-xl leading-relaxed">
-            Double board-certified pain medicine physician. Expert witness. Active clinician.
-            UCLA fellowship-trained.
+            Board-Certified Pain Medicine &amp; Anesthesiology · Mission Hills, CA
           </p>
         </div>
       </section>
 
-      {/* SECTION 01 — PROFILE */}
+      {/* SECTION 01 — BIO */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -68,37 +76,34 @@ export default function AboutPage() {
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a]"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Why Dual Certification Matters in Court.
+              Pain Medicine Specialist.
             </h2>
             <p>
-              Dr. Dardashti holds ABMS board certification in both <strong className="text-[#0a0a0a]">Pain Medicine</strong> and{" "}
-              <strong className="text-[#0a0a0a]">Anesthesiology</strong> — a combination held by
-              fewer than 5% of practicing physicians. In the medicolegal context, this means his
-              testimony spans both the diagnosis and interventional management of pain, the
-              pharmacology and risks of pain treatment, and the nerve anatomy underpinning
-              injury causation.
+              Dr. Simon Dardashti is a board-certified pain medicine physician and
+              anesthesiologist who evaluates and treats patients with acute and chronic
+              pain conditions. His clinical work focuses on careful diagnostic evaluation,
+              identification of likely pain generators, review of relevant imaging and
+              treatment history, and development of individualized treatment plans.
             </p>
             <p>
-              His fellowship training at UCLA and anesthesiology residency at UC Irvine ground
-              him in the academic standards that hold up under Daubert scrutiny. His active
-              clinical practice — seeing patients weekly — ensures his opinions reflect current
-              standard-of-care, not outdated protocols.
+              His clinical focus includes spine-related pain, neck pain, low back pain,
+              radicular pain, neuropathic pain, joint pain, sacroiliac joint pain,
+              post-surgical pain, and complex chronic pain conditions. He also evaluates
+              selected patients for advanced pain management options, including spinal
+              cord stimulation when clinically appropriate.
             </p>
             <p>
-              Dr. Dardashti has been retained in 60+ medicolegal matters encompassing personal
-              injury, workers' compensation, medical malpractice, and disability determinations.
-              His retention is evenly split between plaintiff and defense counsel — a profile
-              that demonstrates genuine independence and survives aggressive cross-examination.
+              Dr. Dardashti's approach emphasizes clear communication, evidence-informed
+              decision-making, and appropriate use of conservative, medication-based,
+              image-guided, and interventional treatment options based on each patient's
+              clinical presentation.
             </p>
           </div>
 
           <div className="md:col-span-5">
-            {/* Credentials card */}
-            <div className="border border-[#e5e5e0] p-7 mb-6">
-              <h3
-                className="text-xs font-semibold text-[#999] uppercase tracking-widest mb-5"
-              >
-                Credentials
+            <div className="border border-[#e5e5e0] p-7">
+              <h3 className="text-xs font-semibold text-[#999] uppercase tracking-widest mb-5">
+                Credentials &amp; Affiliations
               </h3>
               <ul className="space-y-4">
                 {credentials.map((c, i) => (
@@ -106,36 +111,26 @@ export default function AboutPage() {
                     <p className="text-[10px] text-[#c8a020] font-semibold uppercase tracking-widest mb-0.5">
                       {c.label}
                     </p>
-                    <p className="text-sm text-[#333] whitespace-pre-line">{c.value}</p>
+                    <p className="text-sm text-[#333]">{c.value}</p>
                   </li>
                 ))}
               </ul>
-            </div>
-
-            {/* Medicolegal profile */}
-            <div className="border border-[#e5e5e0] p-7">
-              <h3 className="text-xs font-semibold text-[#999] uppercase tracking-widest mb-5">
-                Medicolegal Profile
-              </h3>
-              <div className="grid grid-cols-2 gap-5">
-                {medicolegalProfile.map((m) => (
-                  <div key={m.label}>
-                    <p
-                      className="text-2xl font-bold text-[#0a0a0a] mb-1"
-                      style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                    >
-                      {m.value}
-                    </p>
-                    <p className="text-[10px] text-[#999] uppercase tracking-widest">{m.label}</p>
-                  </div>
-                ))}
+              <div className="mt-7 pt-6 border-t border-[#e5e5e0]">
+                <a
+                  href="https://www.providence.org/find-a-doctor/simon-dardashti"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-[#c8a020] hover:bg-[#e0b830] text-black text-xs font-bold px-5 py-3 tracking-widest uppercase text-center transition-colors duration-200"
+                >
+                  Schedule an Appointment
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 02 — CLINICAL GROUNDING */}
+      {/* SECTION 02 — APPROACH */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -146,39 +141,26 @@ export default function AboutPage() {
             >
               02
             </span>
-            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Clinical Basis</p>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Approach</p>
           </div>
           <div className="md:col-span-10">
             <h2
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              An Opinion Built on Practice,<br />Not Paperwork.
+              How Dr. Dardashti Approaches Care.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Active Clinical Practice",
-                  body: "Dr. Dardashti sees pain patients regularly in his Los Angeles practice. His standard-of-care opinions are current — not reconstructed from memory or textbooks.",
-                },
-                {
-                  title: "Image-Guided Proceduralist",
-                  body: "Trained in fluoroscopy and ultrasound-guided interventional procedures. He can speak with precision about what procedures were indicated, performed correctly, or deviated from standard care.",
-                },
-                {
-                  title: "Diagnostic Depth",
-                  body: "His dual anesthesiology background means he understands pain at the level of nerve physiology and pharmacology — providing testimony that goes deeper than a general practitioner's review.",
-                },
-              ].map((item) => (
-                <div key={item.title} className="bg-white border border-[#e5e5e0] p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {approachPoints.map((pt) => (
+                <div key={pt.title} className="bg-white border border-[#e5e5e0] p-6">
                   <div className="w-6 h-px bg-[#c8a020] mb-4" />
                   <h3
                     className="font-bold text-[#0a0a0a] text-base mb-2"
                     style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                   >
-                    {item.title}
+                    {pt.title}
                   </h3>
-                  <p className="text-sm text-[#666] leading-relaxed">{item.body}</p>
+                  <p className="text-sm text-[#666] leading-relaxed">{pt.body}</p>
                 </div>
               ))}
             </div>
@@ -186,79 +168,33 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 03 — CASE TYPES */}
-      <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2">
-            <span
-              className="text-7xl font-bold text-[#f0f0f0] leading-none block"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              aria-hidden
-            >
-              03
-            </span>
-            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Case Types</p>
-          </div>
-          <div className="md:col-span-10">
-            <h2
-              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-            >
-              Conditions He Addresses in Medicolegal Matters.
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {[
-                "Cervical and lumbar disc injuries",
-                "Radiculopathy and nerve compression",
-                "Complex Regional Pain Syndrome (CRPS)",
-                "Failed back surgery syndrome",
-                "Sacroiliac joint dysfunction",
-                "Facet joint arthropathy",
-                "Neuropathic pain syndromes",
-                "Post-surgical pain complaints",
-                "Medication appropriateness",
-                "Opioid prescribing standards",
-                "Causation disputes",
-                "Future medical cost projections",
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 py-2 border-b border-[#f0f0f0]">
-                  <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2 shrink-0" />
-                  <span className="text-sm text-[#555]">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
+      {/* SECTION 03 — LOCATION */}
       <section className="bg-[#0a0a0a] py-16 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-3">
+              Clinical Location
+            </p>
             <h2
               className="text-2xl font-bold text-white mb-2"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Need Dr. Dardashti's CV and case history?
+              Mission Hills, California
             </h2>
-            <p className="text-[#666] text-sm">
-              Request the credential packet or schedule a 15-minute case review.
+            <p className="text-[#666] text-sm max-w-md leading-relaxed">
+              Dr. Dardashti sees patients through his Providence / Facey affiliated clinical
+              practice. For appointments, please schedule through the appropriate
+              Providence / Facey office.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-            <Link
-              href="/contact"
-              className="bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200 text-center"
-            >
-              Request Case Review
-            </Link>
-            <a
-              href="tel:+18187307579"
-              className="border border-[#333] hover:border-[#555] text-[#777] hover:text-white font-semibold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200 text-center"
-            >
-              (818) 730-7579
-            </a>
-          </div>
+          <a
+            href="https://www.providence.org/find-a-doctor/simon-dardashti"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
+          >
+            Schedule Through Providence / Facey
+          </a>
         </div>
       </section>
     </>
