@@ -10,31 +10,43 @@ export const metadata: Metadata = {
 const conditions = [
   "Neck pain",
   "Low back pain",
-  "Cervical and lumbar radiculopathy",
-  "Sciatica",
-  "Spinal stenosis",
-  "Degenerative disc disease",
-  "Facet-mediated spine pain",
+  "Sciatica and radicular pain",
+  "Cervical radiculopathy",
+  "Lumbar radiculopathy",
+  "Spine-related pain",
+  "Facet-mediated pain",
   "Sacroiliac joint pain",
-  "Joint and musculoskeletal pain",
+  "Neuropathic pain",
   "Peripheral nerve pain",
-  "Post-surgical spine pain",
-  "Complex regional pain syndrome",
-  "Chronic pain after injury or surgery",
+  "Joint pain",
+  "Persistent pain after injury or surgery",
+  "Persistent pain after spine surgery",
+  "Complex regional pain syndrome evaluation",
+  "Headache and occipital neuralgia evaluation",
+  "Chronic pain syndrome evaluation",
+  "Complex pain conditions",
 ];
 
 const procedures = [
-  { name: "Epidural Steroid Injections", detail: "Transforaminal, interlaminar, and caudal approaches as clinically indicated." },
-  { name: "Selective Nerve Root Blocks", detail: "Diagnostic and therapeutic blocks for radicular pain." },
-  { name: "Medial Branch Blocks", detail: "Diagnostic blocks used to evaluate facet-mediated pain." },
-  { name: "Radiofrequency Ablation", detail: "For appropriate patients with confirmed facet or sacroiliac joint pain after diagnostic evaluation." },
-  { name: "Sacroiliac Joint Injections", detail: "Diagnostic and therapeutic injections for SI joint-mediated pain." },
-  { name: "Peripheral Nerve Blocks", detail: "Including occipital nerve blocks for selected patients." },
-  { name: "Trigger Point Injections", detail: "For myofascial pain when clinically appropriate." },
-  { name: "Joint and Bursa Injections", detail: "When indicated based on clinical evaluation." },
-  { name: "Medication Management", detail: "When clinically appropriate as part of a broader treatment plan." },
-  { name: "Physical Therapy Coordination", detail: "Referral and co-management with physical therapy." },
-  { name: "Spinal Cord Stimulation Evaluation", detail: "Evaluation and trial consideration for carefully selected patients." },
+  "Epidural steroid injections",
+  "Transforaminal epidural steroid injections",
+  "Interlaminar epidural steroid injections",
+  "Caudal epidural steroid injections",
+  "Selective nerve root blocks",
+  "Facet joint injections",
+  "Medial branch blocks",
+  "Radiofrequency ablation",
+  "Sacroiliac joint injections",
+  "Peripheral nerve blocks",
+  "Occipital nerve blocks",
+  "Trigger point injections",
+  "Joint injections",
+  "Bursa injections",
+  "Tendon sheath injections",
+  "Spinal cord stimulation evaluation",
+  "Spinal cord stimulation trial consideration",
+  "Medication management when appropriate",
+  "Physical therapy coordination",
 ];
 
 export default function ServicesPage() {
@@ -55,7 +67,7 @@ export default function ServicesPage() {
             <em className="not-italic text-[#888]">&amp; Treatment Options.</em>
           </h1>
           <p className="mt-5 text-[#666] text-lg max-w-xl leading-relaxed">
-            Dr. Dardashti evaluates a range of painful conditions and develops treatment
+            Dr. Dardashti evaluates a range of pain conditions, and develops treatment
             plans based on the patient's symptoms, physical examination, imaging findings,
             prior treatment history, and overall clinical picture.
           </p>
@@ -77,11 +89,14 @@ export default function ServicesPage() {
           </div>
           <div className="md:col-span-10">
             <h2
-              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8"
+              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-3"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               Conditions Evaluated.
             </h2>
+            <p className="text-[#777] text-sm mb-8 max-w-xl">
+              Dr. Dardashti evaluates a range of pain conditions, including:
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
               {conditions.map((item) => (
                 <div
@@ -97,7 +112,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 02 — TREATMENT OPTIONS */}
+      {/* SECTION 02 — PROCEDURES */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -115,23 +130,21 @@ export default function ServicesPage() {
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-3"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Treatment Options.
+              Procedures &amp; Treatment Options.
             </h2>
             <p className="text-[#777] text-sm mb-8 max-w-xl">
-              Treatment recommendations are based on individual patient evaluation. Not
-              every patient requires procedures — care plans are developed based on
-              diagnosis, history, and clinical context.
+              Treatment recommendations depend on the patient's diagnosis, physical
+              examination, imaging findings, prior treatment response, medical history,
+              and overall clinical context. When appropriate, treatment options may include:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {procedures.map((proc) => (
-                <div key={proc.name} className="bg-white border border-[#e5e5e0] p-5">
-                  <h3
-                    className="font-bold text-[#0a0a0a] text-sm mb-1"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                  >
-                    {proc.name}
-                  </h3>
-                  <p className="text-xs text-[#777] leading-relaxed">{proc.detail}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
+              {procedures.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-start gap-3 p-4 border-b border-r border-[#e5e5e0]"
+                >
+                  <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2 shrink-0" />
+                  <span className="text-sm text-[#555]">{item}</span>
                 </div>
               ))}
             </div>
@@ -162,21 +175,21 @@ export default function ServicesPage() {
             >
               Spinal Cord Stimulation Evaluation.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#555] text-sm leading-relaxed">
+            <div className="space-y-4 text-[#555] text-sm leading-relaxed max-w-2xl">
               <p>
-                For selected patients with chronic nerve-related pain, persistent pain after
-                spine surgery, or certain complex pain conditions, spinal cord stimulation
-                may be considered after appropriate evaluation. Dr. Dardashti evaluates
-                whether spinal cord stimulation is clinically appropriate based on the
-                patient's diagnosis, prior treatment history, imaging, functional
-                limitations, psychological screening when required, and overall treatment
-                goals.
+                For selected patients with chronic neuropathic pain, persistent pain after
+                spine surgery, or certain complex pain conditions, Dr. Dardashti may evaluate
+                whether spinal cord stimulation is an appropriate treatment consideration.
               </p>
               <p>
-                Spinal cord stimulation is not appropriate for every patient. When
-                considered, the process typically includes education, careful patient
-                selection, and a temporary trial before permanent implantation is discussed.
-                This evaluation is conducted in a thorough and individualized manner.
+                Spinal cord stimulation is not appropriate for every patient. Evaluation
+                may include review of the patient's diagnosis, imaging and treatment history,
+                medication history, prior procedural response, functional limitations, and
+                overall medical and psychological suitability.
+              </p>
+              <p>
+                When clinically appropriate, patients may be considered for a spinal cord
+                stimulation trial before any permanent implantation decision is made.
               </p>
             </div>
           </div>
@@ -185,20 +198,18 @@ export default function ServicesPage() {
 
       {/* CTA */}
       <section className="bg-[#0a0a0a] py-16 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <h2
-              className="text-2xl font-bold text-white mb-2"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-            >
-              Questions About Care
-            </h2>
-            <p className="text-[#666] text-sm max-w-md">
-              Dr. Dardashti sees patients in Mission Hills, California. For appointment
-              scheduling and clinical communication, please reach out through the
-              appropriate patient care channels.
-            </p>
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <h2
+            className="text-2xl font-bold text-white mb-3"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Questions About Care
+          </h2>
+          <p className="text-[#666] text-sm max-w-xl">
+            Dr. Dardashti sees patients in Mission Hills, California. For appointment
+            scheduling and clinical communication, please reach out through the
+            appropriate patient care channels.
+          </p>
         </div>
       </section>
     </>

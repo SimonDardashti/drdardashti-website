@@ -75,26 +75,30 @@ export default function AboutPage() {
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a]"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Interventional Pain Medicine Specialist.
+              Pain Medicine Physician.
             </h2>
             <p>
               Dr. Simon Dardashti is a board-certified pain medicine physician and
-              anesthesiologist with fellowship training in Pain Medicine at UCLA. He
-              provides evaluation and treatment for patients with spine-related pain,
-              nerve pain, joint pain, post-surgical pain, and complex chronic pain
-              conditions.
+              anesthesiologist who evaluates and treats patients with acute and chronic
+              pain conditions. His clinical work focuses on careful diagnostic evaluation,
+              identification of likely pain generators, review of relevant imaging and
+              treatment history, and development of individualized treatment plans.
             </p>
             <p>
-              His clinical approach focuses on identifying the likely source of pain,
-              explaining treatment options clearly, and developing practical care plans
-              based on each patient's history, examination findings, imaging, prior
-              treatment response, and functional goals.
+              His clinical focus includes spine-related pain, neck pain, low back pain,
+              radicular pain, neuropathic pain, joint pain, sacroiliac joint pain,
+              persistent pain after injury or surgery, and complex chronic pain conditions.
+              He also evaluates selected patients for advanced pain management options,
+              including spinal cord stimulation when clinically appropriate.
             </p>
             <p>
-              Dr. Dardashti's practice includes interventional pain management
-              procedures, medication management when appropriate, coordination with
-              physical therapy, and consideration of advanced treatment options such as
-              spinal cord stimulation for carefully selected patients.
+              Dr. Dardashti's approach emphasizes clear communication, evidence-informed
+              decision-making, and appropriate use of conservative, medication-based,
+              image-guided, and interventional treatment options based on each patient's
+              clinical presentation.
+            </p>
+            <p>
+              He is board certified in both Anesthesiology and Pain Medicine.
             </p>
           </div>
 
@@ -158,21 +162,19 @@ export default function AboutPage() {
 
       {/* SECTION 03 — LOCATION */}
       <section className="bg-[#0a0a0a] py-16 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-3">
-              Clinical Location
-            </p>
-            <h2
-              className="text-2xl font-bold text-white mb-2"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-            >
-              Mission Hills, California
-            </h2>
-            <p className="text-[#666] text-sm max-w-md leading-relaxed">
-              Dr. Dardashti sees patients in Mission Hills, California.
-            </p>
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-3">
+            Clinical Location
+          </p>
+          <h2
+            className="text-2xl font-bold text-white mb-2"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Mission Hills, California
+          </h2>
+          <p className="text-[#666] text-sm max-w-md leading-relaxed">
+            Dr. Dardashti sees patients in Mission Hills, California.
+          </p>
         </div>
       </section>
     </>

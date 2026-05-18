@@ -17,19 +17,19 @@ const stats = [
 const conditionHighlights = [
   {
     title: "Spine Pain",
-    items: ["Neck pain", "Low back pain", "Spinal stenosis", "Degenerative disc disease"],
+    items: ["Neck pain", "Low back pain", "Spine-related pain", "Facet-mediated pain", "Sciatica and radicular pain"],
   },
   {
     title: "Nerve & Radicular",
-    items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Sciatica", "Peripheral nerve pain"],
+    items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain"],
   },
   {
     title: "Joint & Post-Surgical",
-    items: ["Sacroiliac joint pain", "Joint & musculoskeletal pain", "Post-surgical spine pain", "Facet-mediated pain"],
+    items: ["Sacroiliac joint pain", "Joint pain", "Persistent pain after injury or surgery", "Persistent pain after spine surgery"],
   },
   {
     title: "Complex Pain",
-    items: ["Complex regional pain syndrome", "Chronic pain after injury", "Chronic pain after surgery", "Neuropathic pain conditions"],
+    items: ["Complex regional pain syndrome", "Headache and occipital neuralgia", "Chronic pain syndrome", "Complex pain conditions"],
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Home() {
           {/* Text */}
           <div>
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
-              Pain Medicine · Anesthesiology · Mission Hills, CA
+              Pain Medicine Physician · Mission Hills, CA
             </p>
             <h1
               className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6"
@@ -56,20 +56,15 @@ export default function Home() {
               Board-Certified Interventional Pain Medicine &amp; Anesthesiology
             </p>
             <p className="text-[#666] text-base leading-relaxed mb-10">
-              Dr. Simon Dardashti is a board-certified pain medicine physician and
-              anesthesiologist who evaluates and treats patients with spine-related pain,
-              nerve pain, joint pain, post-surgical pain, and complex chronic pain conditions.
-              His approach emphasizes careful diagnosis, realistic treatment planning, and
-              clear communication about treatment options.
+              Evidence-informed evaluation and treatment for patients with spine pain,
+              nerve pain, joint pain, and complex pain conditions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/services"
-                className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
-              >
-                Learn About Treatment Options
-              </Link>
-            </div>
+            <Link
+              href="/services"
+              className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
+            >
+              Learn About Treatment Options
+            </Link>
 
             <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6">
               {stats.map((s) => (
@@ -90,7 +85,7 @@ export default function Home() {
           <div className="hidden md:flex justify-end items-center">
             <img
               src="/headshot.webp"
-              alt="Dr. Simon Dardashti, MD — Interventional Pain Medicine Physician"
+              alt="Dr. Simon Dardashti, MD — Pain Medicine Physician"
               className="w-full max-w-sm object-cover"
               style={{ filter: "grayscale(20%)" }}
             />
@@ -116,21 +111,22 @@ export default function Home() {
               className="text-3xl md:text-4xl font-bold text-[#0a0a0a] mb-6 leading-tight"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Individualized Care.<br />Evidence-Informed Decisions.
+              About Dr. Dardashti.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#555] text-base leading-relaxed">
               <p>
                 Dr. Simon Dardashti is a board-certified pain medicine physician and
-                anesthesiologist with fellowship training in Pain Medicine at UCLA. He
-                provides evaluation and treatment for patients with spine-related pain,
-                nerve pain, joint pain, post-surgical pain, and complex chronic pain
-                conditions.
+                anesthesiologist who evaluates and treats patients with acute and chronic
+                pain conditions. His clinical work focuses on careful diagnostic evaluation,
+                identification of likely pain generators, review of relevant imaging and
+                treatment history, and development of individualized treatment plans.
               </p>
               <p>
-                His clinical approach focuses on identifying the likely source of pain,
-                explaining treatment options clearly, and developing practical care plans
-                based on each patient's history, examination findings, imaging, prior
-                treatment response, and functional goals.
+                His clinical focus includes spine-related pain, neck pain, low back pain,
+                radicular pain, neuropathic pain, joint pain, sacroiliac joint pain,
+                persistent pain after injury or surgery, and complex chronic pain conditions.
+                He also evaluates selected patients for advanced pain management options,
+                including spinal cord stimulation when clinically appropriate.
               </p>
             </div>
             <div className="mt-8">
@@ -167,7 +163,7 @@ export default function Home() {
                 Conditions Evaluated.
               </h2>
               <p className="text-[#777] mt-3 text-base max-w-xl">
-                Dr. Dardashti evaluates a range of painful conditions affecting the spine,
+                Dr. Dardashti evaluates a range of pain conditions affecting the spine,
                 nervous system, and musculoskeletal system.
               </p>
             </div>
@@ -224,21 +220,21 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-[#888] text-sm leading-relaxed">
             <p>
-              Treatment recommendations are based on each patient's history, physical
-              examination, imaging when available, prior treatment response, and overall
-              clinical context.
+              Dr. Dardashti's treatment recommendations are based on the patient's history,
+              physical examination, imaging when available, prior treatment response, and
+              overall clinical context.
             </p>
             <p>
-              This may include conservative care coordination, medication management when
-              appropriate, image-guided interventional procedures, and advanced options
-              such as spinal cord stimulation when clinically indicated for carefully
-              selected patients.
+              His approach may include conservative care coordination, medication management
+              when appropriate, review of imaging and diagnostic studies, image-guided
+              interventional pain procedures, and advanced pain management options when
+              clinically indicated.
             </p>
           </div>
         </div>
       </section>
 
-      {/* SECTION 04 — LOCATION & CTA */}
+      {/* SECTION 04 — LOCATION */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -261,11 +257,9 @@ export default function Home() {
             <p className="text-[#555] text-base leading-relaxed mb-6 max-w-xl">
               Dr. Dardashti sees patients in Mission Hills, California.
             </p>
-            <div className="flex flex-wrap gap-3 items-center">
-              <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
-                Mission Hills, CA
-              </span>
-            </div>
+            <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
+              Mission Hills, CA
+            </span>
           </div>
         </div>
       </section>
