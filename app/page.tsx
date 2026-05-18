@@ -210,7 +210,7 @@ export default function Home() {
               Treatment Approach
             </p>
             <h2
-              className="text-3xl md:text-4xl font-bold text-white leading-tight"
+              className="text-4xl md:text-6xl font-bold text-white leading-tight"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               The Right Treatment
