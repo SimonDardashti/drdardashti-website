@@ -257,16 +257,11 @@ export default function Home() {
               Clinical Location.
             </h2>
             <p className="text-[#555] text-base leading-relaxed mb-6 max-w-xl">
-              Dr. Dardashti sees patients through his Providence / Facey affiliated clinical
-              practice in Mission Hills, California. For appointments, please schedule through
-              the appropriate Providence / Facey office.
+              Dr. Dardashti sees patients in Mission Hills, California.
             </p>
             <div className="flex flex-wrap gap-3 items-center">
               <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
                 Mission Hills, CA
-              </span>
-              <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
-                Providence / Facey Affiliated
               </span>
             </div>
             <a
@@ -275,7 +270,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="mt-6 inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
             >
-              Schedule Through Providence / Facey
+              Schedule an Appointment
             </a>
           </div>
         </div>

@@ -44,21 +44,9 @@ export default function Footer() {
         {/* Location + CTA */}
         <div>
           <h4 className="text-[#888] text-xs font-semibold mb-5 uppercase tracking-widest">Clinical Location</h4>
-          <ul className="space-y-2 text-sm text-[#666] mb-7">
+          <ul className="space-y-2 text-sm text-[#666]">
             <li>Mission Hills, California</li>
-            <li>Providence / Facey Medical Network</li>
-            <li className="text-[#555] text-xs pt-1">
-              Appointments through Providence / Facey offices
-            </li>
           </ul>
-          <a
-            href="https://www.providence.org/find-a-doctor/simon-dardashti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black text-xs font-bold px-6 py-3 tracking-widest uppercase transition-colors duration-200"
-          >
-            Schedule an Appointment
-          </a>
         </div>
       </div>
 
