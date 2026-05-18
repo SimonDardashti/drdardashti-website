@@ -12,7 +12,6 @@ const stats = [
   { value: "2×", label: "Board Certified" },
   { value: "MD", label: "Pain Medicine" },
   { value: "UCLA", label: "Fellowship Trained" },
-  { value: "Providence", label: "Facey Affiliated" },
 ];
 
 const conditionHighlights = [
@@ -27,63 +26,57 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white min-h-[90vh] flex flex-col justify-center px-6 py-24 relative overflow-hidden">
-        <span
-          className="absolute right-0 top-1/2 -translate-y-1/2 text-[20rem] font-bold leading-none text-[#111] select-none pointer-events-none hidden lg:block"
-          style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          aria-hidden
-        >
-          MD
-        </span>
-
-        <div className="max-w-5xl mx-auto w-full relative z-10">
-          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
-            Pain Medicine · Anesthesiology · Mission Hills, CA
-          </p>
-          <h1
-            className="text-5xl md:text-7xl font-bold leading-[1.05] mb-8 max-w-3xl"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Simon Dardashti,
-            <br />
-            <em className="not-italic text-[#c8a020]">MD</em>
-          </h1>
-          <p className="text-[#888] text-lg md:text-xl max-w-xl leading-relaxed mb-4">
-            Board-Certified Pain Medicine &amp; Anesthesiology
-          </p>
-          <p className="text-[#666] text-base max-w-2xl leading-relaxed mb-10">
-            Evidence-informed evaluation and treatment for patients with spine pain, nerve pain,
-            joint pain, post-surgical pain, and complex chronic pain conditions.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://www.providence.org/find-a-doctor/simon-dardashti"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-8 py-4 text-sm tracking-widest uppercase transition-colors duration-200"
+        <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text */}
+          <div>
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
+              Pain Medicine · Anesthesiology · Mission Hills, CA
+            </p>
+            <h1
+              className="text-5xl md:text-7xl font-bold leading-[1.05] mb-8"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Schedule an Appointment
-            </a>
+              Simon Dardashti,
+              <br />
+              <em className="not-italic text-[#c8a020]">MD</em>
+            </h1>
+            <p className="text-[#888] text-lg md:text-xl leading-relaxed mb-4">
+              Board-Certified Pain Medicine &amp; Anesthesiology
+            </p>
+            <p className="text-[#666] text-base leading-relaxed mb-10">
+              Evidence-informed evaluation and treatment for patients with spine pain, nerve pain,
+              joint pain, post-surgical pain, and complex chronic pain conditions.
+            </p>
             <Link
               href="/services"
               className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-sm tracking-widest uppercase transition-colors duration-200"
             >
               View Services
             </Link>
+
+            <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <p
+                    className="text-3xl font-bold text-white mb-1"
+                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  >
+                    {s.value}
+                  </p>
+                  <p className="text-xs text-[#555] uppercase tracking-widest">{s.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x md:divide-[#1a1a1a]">
-            {stats.map((s) => (
-              <div key={s.label} className="md:px-8 first:pl-0">
-                <p
-                  className="text-3xl font-bold text-white mb-1"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                >
-                  {s.value}
-                </p>
-                <p className="text-xs text-[#555] uppercase tracking-widest">{s.label}</p>
-              </div>
-            ))}
+          {/* Photo */}
+          <div className="hidden md:flex justify-end items-center">
+            <img
+              src="/headshot.webp"
+              alt="Dr. Simon Dardashti"
+              className="w-full max-w-sm object-cover grayscale"
+              style={{ filter: "grayscale(20%)" }}
+            />
           </div>
         </div>
       </section>
@@ -224,14 +217,6 @@ export default function Home() {
               appropriate, image-guided interventional procedures, and advanced options
               such as spinal cord stimulation when clinically indicated.
             </p>
-            <a
-              href="https://www.providence.org/find-a-doctor/simon-dardashti"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-2 bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
-            >
-              Schedule an Appointment
-            </a>
           </div>
         </div>
       </section>
