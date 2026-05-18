@@ -102,7 +102,13 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="md:col-span-5">
+          <div className="md:col-span-5 space-y-6">
+            <img
+              src="/headshot.webp"
+              alt="Dr. Simon Dardashti, MD"
+              className="w-full object-cover"
+              style={{ filter: "grayscale(20%)" }}
+            />
             <div className="border border-[#e5e5e0] p-7">
               <h3 className="text-xs font-semibold text-[#999] uppercase tracking-widest mb-5">
                 Credentials &amp; Training
