@@ -42,14 +42,6 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://www.providence.org/find-a-doctor/simon-dardashti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#c8a020] hover:bg-[#e0b830] text-black text-xs font-bold px-5 py-2.5 tracking-widest uppercase transition-colors duration-200"
-          >
-            Request Appointment
-          </a>
         </nav>
 
         {/* Mobile */}
@@ -78,14 +70,6 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://www.providence.org/find-a-doctor/simon-dardashti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#c8a020] text-black text-xs font-bold px-5 py-3 tracking-widest uppercase text-center"
-          >
-            Request Appointment
-          </a>
         </div>
       )}
     </header>

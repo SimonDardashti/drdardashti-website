@@ -52,7 +52,7 @@ export default function Footer() {
 
       <div className="border-t border-[#1a1a1a] px-6 py-5 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#444]">
         <p>&copy; {year} Simon Dardashti, MD · Mission Hills, CA</p>
-        <p className="text-center md:text-right max-w-xl">This website is for general informational purposes only and does not provide medical advice, diagnosis, or treatment. Clinical questions, appointment requests, and patient-specific concerns should be handled through the appropriate Providence / Facey communication channels. If you are experiencing a medical emergency, call 911 or seek emergency medical care.</p>
+        <p>This website is for general informational purposes only and does not constitute medical advice.</p>
       </div>
     </footer>
   );

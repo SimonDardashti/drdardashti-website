@@ -191,25 +191,14 @@ export default function ServicesPage() {
               className="text-2xl font-bold text-white mb-2"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Request an Appointment
+              Questions About Care
             </h2>
             <p className="text-[#666] text-sm max-w-md">
-              To request an appointment or communicate about clinical care, please use the
-              appropriate Providence / Facey scheduling and patient communication channels.
-            </p>
-            <p className="text-[#444] text-xs mt-3 max-w-md">
-              For urgent medical concerns, patients should contact their treating medical
-              office directly or seek emergency care when appropriate.
+              Dr. Dardashti sees patients in Mission Hills, California. For appointment
+              scheduling and clinical communication, please reach out through the
+              appropriate patient care channels.
             </p>
           </div>
-          <a
-            href="https://www.providence.org/find-a-doctor/simon-dardashti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
-          >
-            Request an Appointment Through Providence
-          </a>
         </div>
       </section>
     </>

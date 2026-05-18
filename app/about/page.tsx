@@ -113,16 +113,6 @@ export default function AboutPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 pt-6 border-t border-[#e5e5e0]">
-                <a
-                  href="https://www.providence.org/find-a-doctor/simon-dardashti"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-[#c8a020] hover:bg-[#e0b830] text-black text-xs font-bold px-5 py-3 tracking-widest uppercase text-center transition-colors duration-200"
-                >
-                  Request an Appointment
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -180,19 +170,9 @@ export default function AboutPage() {
               Mission Hills, California
             </h2>
             <p className="text-[#666] text-sm max-w-md leading-relaxed">
-              To request an appointment or communicate about clinical care, please use
-              the appropriate Providence / Facey scheduling and patient communication
-              channels.
+              Dr. Dardashti sees patients in Mission Hills, California.
             </p>
           </div>
-          <a
-            href="https://www.providence.org/find-a-doctor/simon-dardashti"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
-          >
-            Request an Appointment Through Providence
-          </a>
         </div>
       </section>
     </>

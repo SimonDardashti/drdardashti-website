@@ -63,14 +63,6 @@ export default function Home() {
               clear communication about treatment options.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://www.providence.org/find-a-doctor/simon-dardashti"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
-              >
-                Request an Appointment Through Providence
-              </a>
               <Link
                 href="/services"
                 className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
@@ -267,27 +259,13 @@ export default function Home() {
               Clinical Location.
             </h2>
             <p className="text-[#555] text-base leading-relaxed mb-6 max-w-xl">
-              Dr. Dardashti sees patients in Mission Hills, California. To request an
-              appointment or communicate about clinical care, please use the appropriate
-              Providence / Facey scheduling and patient communication channels.
+              Dr. Dardashti sees patients in Mission Hills, California.
             </p>
-            <p className="text-[#999] text-xs mb-6 max-w-xl">
-              For urgent medical concerns, patients should contact their treating medical
-              office directly or seek emergency care when appropriate.
-            </p>
-            <div className="flex flex-wrap gap-3 items-center mb-6">
+            <div className="flex flex-wrap gap-3 items-center">
               <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
                 Mission Hills, CA
               </span>
             </div>
-            <a
-              href="https://www.providence.org/find-a-doctor/simon-dardashti"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
-            >
-              Request an Appointment Through Providence
-            </a>
           </div>
         </div>
       </section>
