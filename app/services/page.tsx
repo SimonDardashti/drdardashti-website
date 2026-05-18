@@ -3,43 +3,38 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Conditions & Services | Simon Dardashti, MD",
   description:
-    "Dr. Dardashti evaluates and treats spine pain, nerve pain, joint pain, post-surgical pain, and complex chronic pain. Services include epidural injections, facet blocks, radiofrequency ablation, and spinal cord stimulation evaluation.",
+    "Dr. Simon Dardashti evaluates and treats spine pain, nerve pain, joint pain, post-surgical pain, and complex chronic pain. Treatment options include epidural injections, medial branch blocks, radiofrequency ablation, and spinal cord stimulation evaluation.",
   alternates: { canonical: "https://www.drdardashti.com/services" },
 };
 
 const conditions = [
   "Neck pain",
   "Low back pain",
-  "Sciatica and radicular pain",
-  "Cervical radiculopathy",
-  "Lumbar radiculopathy",
-  "Spine-related pain",
-  "Facet-mediated pain",
+  "Cervical and lumbar radiculopathy",
+  "Sciatica",
+  "Spinal stenosis",
+  "Degenerative disc disease",
+  "Facet-mediated spine pain",
   "Sacroiliac joint pain",
-  "Neuropathic pain",
+  "Joint and musculoskeletal pain",
   "Peripheral nerve pain",
-  "Joint pain",
-  "Post-surgical pain",
-  "Persistent pain after spine surgery",
-  "Failed back surgery syndrome evaluation",
-  "Complex regional pain syndrome evaluation",
-  "Headache and occipital neuralgia evaluation",
-  "Chronic pain syndrome evaluation",
-  "Complex pain conditions",
+  "Post-surgical spine pain",
+  "Complex regional pain syndrome",
+  "Chronic pain after injury or surgery",
 ];
 
 const procedures = [
-  { name: "Epidural Steroid Injections", detail: "Including transforaminal, interlaminar, and caudal approaches." },
-  { name: "Facet Joint Injections", detail: "Cervical, thoracic, and lumbar." },
-  { name: "Medial Branch Blocks", detail: "Diagnostic blocks for facet-mediated pain." },
-  { name: "Radiofrequency Ablation", detail: "Thermal treatment for longer-lasting facet and SI joint pain relief." },
+  { name: "Epidural Steroid Injections", detail: "Transforaminal, interlaminar, and caudal approaches as clinically indicated." },
+  { name: "Selective Nerve Root Blocks", detail: "Diagnostic and therapeutic blocks for radicular pain." },
+  { name: "Medial Branch Blocks", detail: "Diagnostic blocks used to evaluate facet-mediated pain." },
+  { name: "Radiofrequency Ablation", detail: "For appropriate patients with confirmed facet or sacroiliac joint pain after diagnostic evaluation." },
   { name: "Sacroiliac Joint Injections", detail: "Diagnostic and therapeutic injections for SI joint-mediated pain." },
-  { name: "Peripheral Nerve Blocks", detail: "Including occipital nerve blocks for occipital neuralgia." },
-  { name: "Trigger Point Injections", detail: "Targeted injections for myofascial pain." },
-  { name: "Joint & Bursa Injections", detail: "For joint-related pain when clinically appropriate." },
-  { name: "Spinal Cord Stimulation Evaluation", detail: "Evaluation and trial consideration for selected patients." },
-  { name: "Medication Management", detail: "When appropriate as part of a comprehensive treatment plan." },
-  { name: "Physical Therapy Coordination", detail: "Coordinated referral and co-management with physical therapy." },
+  { name: "Peripheral Nerve Blocks", detail: "Including occipital nerve blocks for selected patients." },
+  { name: "Trigger Point Injections", detail: "For myofascial pain when clinically appropriate." },
+  { name: "Joint and Bursa Injections", detail: "When indicated based on clinical evaluation." },
+  { name: "Medication Management", detail: "When clinically appropriate as part of a broader treatment plan." },
+  { name: "Physical Therapy Coordination", detail: "Referral and co-management with physical therapy." },
+  { name: "Spinal Cord Stimulation Evaluation", detail: "Evaluation and trial consideration for carefully selected patients." },
 ];
 
 export default function ServicesPage() {
@@ -55,14 +50,14 @@ export default function ServicesPage() {
             className="text-4xl md:text-6xl font-bold leading-tight"
             style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
           >
-            What We
+            Pain Conditions
             <br />
-            <em className="not-italic text-[#888]">Evaluate &amp; Treat.</em>
+            <em className="not-italic text-[#888]">&amp; Treatment Options.</em>
           </h1>
           <p className="mt-5 text-[#666] text-lg max-w-xl leading-relaxed">
-            Treatment recommendations depend on the patient's diagnosis, physical
-            examination, imaging findings, prior treatment response, and overall
-            clinical context.
+            Dr. Dardashti evaluates a range of painful conditions and develops treatment
+            plans based on the patient's symptoms, physical examination, imaging findings,
+            prior treatment history, and overall clinical picture.
           </p>
         </div>
       </section>
@@ -88,10 +83,10 @@ export default function ServicesPage() {
               Conditions Evaluated.
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
-              {conditions.map((item, i) => (
+              {conditions.map((item) => (
                 <div
                   key={item}
-                  className="flex items-start gap-3 p-4 border-b border-r border-[#e5e5e0] last:border-b-0"
+                  className="flex items-start gap-3 p-4 border-b border-r border-[#e5e5e0]"
                 >
                   <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2 shrink-0" />
                   <span className="text-sm text-[#555]">{item}</span>
@@ -102,7 +97,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 02 — PROCEDURES */}
+      {/* SECTION 02 — TREATMENT OPTIONS */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -113,18 +108,19 @@ export default function ServicesPage() {
             >
               02
             </span>
-            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Procedures</p>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Treatment</p>
           </div>
           <div className="md:col-span-10">
             <h2
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-3"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Procedures &amp; Treatment Options.
+              Treatment Options.
             </h2>
             <p className="text-[#777] text-sm mb-8 max-w-xl">
-              When appropriate, treatment options may include the following. All
-              recommendations are based on individual patient evaluation.
+              Treatment recommendations are based on individual patient evaluation. Not
+              every patient requires procedures — care plans are developed based on
+              diagnosis, history, and clinical context.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {procedures.map((proc) => (
@@ -164,21 +160,23 @@ export default function ServicesPage() {
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Spinal Cord Stimulation.
+              Spinal Cord Stimulation Evaluation.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#555] text-sm leading-relaxed">
               <p>
-                For selected patients with chronic neuropathic pain, persistent pain after
-                spine surgery, or certain complex pain conditions, Dr. Dardashti may evaluate
-                whether spinal cord stimulation is an appropriate treatment consideration.
+                For selected patients with chronic nerve-related pain, persistent pain after
+                spine surgery, or certain complex pain conditions, spinal cord stimulation
+                may be considered after appropriate evaluation. Dr. Dardashti evaluates
+                whether spinal cord stimulation is clinically appropriate based on the
+                patient's diagnosis, prior treatment history, imaging, functional
+                limitations, psychological screening when required, and overall treatment
+                goals.
               </p>
               <p>
-                Spinal cord stimulation is not appropriate for every patient. Evaluation
-                includes review of the patient's diagnosis, imaging and treatment history,
-                medication history, prior procedural response, functional limitations, and
-                overall medical and psychological suitability. When clinically appropriate,
-                patients may be considered for a spinal cord stimulation trial before any
-                permanent implantation decision is made.
+                Spinal cord stimulation is not appropriate for every patient. When
+                considered, the process typically includes education, careful patient
+                selection, and a temporary trial before permanent implantation is discussed.
+                This evaluation is conducted in a thorough and individualized manner.
               </p>
             </div>
           </div>
@@ -187,17 +185,21 @@ export default function ServicesPage() {
 
       {/* CTA */}
       <section className="bg-[#0a0a0a] py-16 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h2
               className="text-2xl font-bold text-white mb-2"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Schedule an Appointment
+              Request an Appointment
             </h2>
             <p className="text-[#666] text-sm max-w-md">
-              Dr. Dardashti sees patients through his Providence / Facey affiliated
-              practice in Mission Hills, California.
+              To request an appointment or communicate about clinical care, please use the
+              appropriate Providence / Facey scheduling and patient communication channels.
+            </p>
+            <p className="text-[#444] text-xs mt-3 max-w-md">
+              For urgent medical concerns, patients should contact their treating medical
+              office directly or seek emergency care when appropriate.
             </p>
           </div>
           <a
@@ -206,7 +208,7 @@ export default function ServicesPage() {
             rel="noopener noreferrer"
             className="shrink-0 bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
           >
-            Schedule Through Providence / Facey
+            Request an Appointment Through Providence
           </a>
         </div>
       </section>

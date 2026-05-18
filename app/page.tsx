@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Simon Dardashti, MD | Pain Medicine Physician | Mission Hills, CA",
+  title: "Simon Dardashti, MD | Interventional Pain Management Physician",
   description:
-    "Dr. Simon Dardashti is a board-certified pain medicine physician and anesthesiologist in Mission Hills, CA. Evidence-informed evaluation and treatment for spine pain, nerve pain, joint pain, and complex chronic pain conditions.",
+    "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist evaluating spine pain, nerve pain, joint pain, post-surgical pain, and chronic pain conditions.",
   alternates: { canonical: "https://www.drdardashti.com" },
 };
 
@@ -15,10 +15,22 @@ const stats = [
 ];
 
 const conditionHighlights = [
-  { title: "Spine Pain", items: ["Neck pain", "Low back pain", "Facet-mediated pain", "Spine-related pain"] },
-  { title: "Nerve & Radicular", items: ["Sciatica", "Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain"] },
-  { title: "Joint & Post-Surgical", items: ["Sacroiliac joint pain", "Joint pain", "Post-surgical pain", "Failed back surgery syndrome"] },
-  { title: "Complex Pain", items: ["CRPS evaluation", "Occipital neuralgia", "Peripheral nerve pain", "Chronic pain syndromes"] },
+  {
+    title: "Spine Pain",
+    items: ["Neck pain", "Low back pain", "Spinal stenosis", "Degenerative disc disease"],
+  },
+  {
+    title: "Nerve & Radicular",
+    items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Sciatica", "Peripheral nerve pain"],
+  },
+  {
+    title: "Joint & Post-Surgical",
+    items: ["Sacroiliac joint pain", "Joint & musculoskeletal pain", "Post-surgical spine pain", "Facet-mediated pain"],
+  },
+  {
+    title: "Complex Pain",
+    items: ["Complex regional pain syndrome", "Chronic pain after injury", "Chronic pain after surgery", "Neuropathic pain conditions"],
+  },
 ];
 
 export default function Home() {
@@ -33,7 +45,7 @@ export default function Home() {
               Pain Medicine · Anesthesiology · Mission Hills, CA
             </p>
             <h1
-              className="text-5xl md:text-7xl font-bold leading-[1.05] mb-8"
+              className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               Simon Dardashti,
@@ -41,18 +53,31 @@ export default function Home() {
               <em className="not-italic text-[#c8a020]">MD</em>
             </h1>
             <p className="text-[#888] text-lg md:text-xl leading-relaxed mb-4">
-              Board-Certified Pain Medicine &amp; Anesthesiology
+              Board-Certified Interventional Pain Medicine &amp; Anesthesiology
             </p>
             <p className="text-[#666] text-base leading-relaxed mb-10">
-              Evidence-informed evaluation and treatment for patients with spine pain, nerve pain,
-              joint pain, post-surgical pain, and complex chronic pain conditions.
+              Dr. Simon Dardashti is a board-certified pain medicine physician and
+              anesthesiologist who evaluates and treats patients with spine-related pain,
+              nerve pain, joint pain, post-surgical pain, and complex chronic pain conditions.
+              His approach emphasizes careful diagnosis, realistic treatment planning, and
+              clear communication about treatment options.
             </p>
-            <Link
-              href="/services"
-              className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-sm tracking-widest uppercase transition-colors duration-200"
-            >
-              View Services
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://www.providence.org/find-a-doctor/simon-dardashti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
+              >
+                Request an Appointment Through Providence
+              </a>
+              <Link
+                href="/services"
+                className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
+              >
+                Learn About Treatment Options
+              </Link>
+            </div>
 
             <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6">
               {stats.map((s) => (
@@ -73,8 +98,8 @@ export default function Home() {
           <div className="hidden md:flex justify-end items-center">
             <img
               src="/headshot.webp"
-              alt="Dr. Simon Dardashti"
-              className="w-full max-w-sm object-cover grayscale"
+              alt="Dr. Simon Dardashti, MD — Interventional Pain Medicine Physician"
+              className="w-full max-w-sm object-cover"
               style={{ filter: "grayscale(20%)" }}
             />
           </div>
@@ -104,17 +129,16 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#555] text-base leading-relaxed">
               <p>
                 Dr. Simon Dardashti is a board-certified pain medicine physician and
-                anesthesiologist who evaluates and treats patients with acute and chronic
-                pain conditions. His clinical work focuses on careful diagnostic evaluation,
-                identification of likely pain generators, review of relevant imaging and
-                treatment history, and development of individualized treatment plans.
+                anesthesiologist with fellowship training in Pain Medicine at UCLA. He
+                provides evaluation and treatment for patients with spine-related pain,
+                nerve pain, joint pain, post-surgical pain, and complex chronic pain
+                conditions.
               </p>
               <p>
-                His approach emphasizes clear communication, evidence-informed
-                decision-making, and appropriate use of conservative, medication-based,
-                image-guided, and interventional treatment options based on each patient's
-                clinical presentation. He is board certified in both Anesthesiology and
-                Pain Medicine.
+                His clinical approach focuses on identifying the likely source of pain,
+                explaining treatment options clearly, and developing practical care plans
+                based on each patient's history, examination findings, imaging, prior
+                treatment response, and functional goals.
               </p>
             </div>
             <div className="mt-8">
@@ -151,8 +175,8 @@ export default function Home() {
                 Conditions Evaluated.
               </h2>
               <p className="text-[#777] mt-3 text-base max-w-xl">
-                Dr. Dardashti evaluates a wide range of acute and chronic pain conditions
-                across the spine, nervous system, and musculoskeletal system.
+                Dr. Dardashti evaluates a range of painful conditions affecting the spine,
+                nervous system, and musculoskeletal system.
               </p>
             </div>
           </div>
@@ -184,7 +208,7 @@ export default function Home() {
               href="/services"
               className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
             >
-              View all conditions &amp; procedures →
+              View all conditions &amp; treatment options →
             </Link>
           </div>
         </div>
@@ -208,20 +232,21 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-[#888] text-sm leading-relaxed">
             <p>
-              Treatment recommendations are based on the patient's history, physical
+              Treatment recommendations are based on each patient's history, physical
               examination, imaging when available, prior treatment response, and overall
               clinical context.
             </p>
             <p>
               This may include conservative care coordination, medication management when
               appropriate, image-guided interventional procedures, and advanced options
-              such as spinal cord stimulation when clinically indicated.
+              such as spinal cord stimulation when clinically indicated for carefully
+              selected patients.
             </p>
           </div>
         </div>
       </section>
 
-      {/* SECTION 04 — LOCATION */}
+      {/* SECTION 04 — LOCATION & CTA */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -242,9 +267,15 @@ export default function Home() {
               Clinical Location.
             </h2>
             <p className="text-[#555] text-base leading-relaxed mb-6 max-w-xl">
-              Dr. Dardashti sees patients in Mission Hills, California.
+              Dr. Dardashti sees patients in Mission Hills, California. To request an
+              appointment or communicate about clinical care, please use the appropriate
+              Providence / Facey scheduling and patient communication channels.
             </p>
-            <div className="flex flex-wrap gap-3 items-center">
+            <p className="text-[#999] text-xs mb-6 max-w-xl">
+              For urgent medical concerns, patients should contact their treating medical
+              office directly or seek emergency care when appropriate.
+            </p>
+            <div className="flex flex-wrap gap-3 items-center mb-6">
               <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
                 Mission Hills, CA
               </span>
@@ -253,9 +284,9 @@ export default function Home() {
               href="https://www.providence.org/find-a-doctor/simon-dardashti"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
+              className="inline-block bg-[#c8a020] hover:bg-[#e0b830] text-black font-bold px-7 py-3.5 text-xs tracking-widest uppercase transition-colors duration-200"
             >
-              Schedule an Appointment
+              Request an Appointment Through Providence
             </a>
           </div>
         </div>

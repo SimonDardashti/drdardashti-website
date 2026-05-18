@@ -48,7 +48,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="bg-[#c8a020] hover:bg-[#e0b830] text-black text-xs font-bold px-5 py-2.5 tracking-widest uppercase transition-colors duration-200"
           >
-            Schedule Appointment
+            Request Appointment
           </a>
         </nav>
 
@@ -84,7 +84,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="bg-[#c8a020] text-black text-xs font-bold px-5 py-3 tracking-widest uppercase text-center"
           >
-            Schedule Appointment
+            Request Appointment
           </a>
         </div>
       )}
