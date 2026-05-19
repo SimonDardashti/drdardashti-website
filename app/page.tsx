@@ -139,6 +139,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BANNER — SERVICE AREA */}
+      <section className="bg-[#0a0a0a] py-5 px-6 border-y border-[#1a1a1a]">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-center">
+          <span className="text-[#c8a020] text-xs font-semibold tracking-[0.25em] uppercase whitespace-nowrap">
+            Serving the San Fernando &amp; Santa Clarita Valleys
+          </span>
+          <span className="hidden sm:block text-[#333] text-xs">·</span>
+          <span className="text-[#666] text-xs tracking-widest uppercase">
+            Telehealth Consultations Available
+          </span>
+        </div>
+      </section>
+
       {/* SECTION 02 — CONDITIONS */}
       <section className="bg-[#f9f7f4] py-24 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
