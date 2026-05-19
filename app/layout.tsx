@@ -61,10 +61,6 @@ const physicianSchema = {
     addressRegion: "CA",
     addressCountry: "US",
   },
-  memberOf: {
-    "@type": "MedicalOrganization",
-    name: "Providence/Facey Medical Network",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

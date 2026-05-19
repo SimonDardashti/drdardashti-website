@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: "2×", label: "Board Certified" },
-  { value: "MD", label: "Pain Medicine" },
+  { value: "Pain Medicine & Anesthesiology", label: "Board Certified" },
   { value: "UCLA", label: "Fellowship Trained" },
 ];
 
@@ -24,7 +24,7 @@ const conditionHighlights = [
     items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain"],
   },
   {
-    title: "Joint & Post-Surgical",
+    title: "Joint & Musculoskeletal Pain",
     items: ["Sacroiliac joint pain", "Joint pain", "Persistent pain after injury or surgery", "Persistent pain after spine surgery"],
   },
   {
@@ -54,8 +54,9 @@ export default function Home() {
               Board-Certified Interventional Pain Medicine &amp; Anesthesiology
             </p>
             <p className="text-[#666] text-base leading-relaxed mb-10">
-              Evidence-informed evaluation and treatment for patients with spine pain,
-              nerve pain, joint pain, and complex pain conditions.
+              Dr. Simon Dardashti evaluates and treats patients with spine, nerve, and joint
+              pain using a careful, evidence-informed approach focused on diagnosis, function,
+              and practical treatment options.
             </p>
             <Link
               href="/services"
@@ -68,8 +69,11 @@ export default function Home() {
               {stats.map((s) => (
                 <div key={s.label}>
                   <p
-                    className="text-3xl font-bold text-white mb-1"
-                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    className="font-bold text-white mb-1 leading-tight"
+                    style={{
+                      fontFamily: "var(--font-playfair), Georgia, serif",
+                      fontSize: s.value.length > 4 ? "0.85rem" : "1.875rem",
+                    }}
                   >
                     {s.value}
                   </p>
@@ -141,13 +145,9 @@ export default function Home() {
 
       {/* BANNER — SERVICE AREA */}
       <section className="bg-[#0a0a0a] py-5 px-6 border-y border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-center">
-          <span className="text-[#c8a020] text-xs font-semibold tracking-[0.25em] uppercase whitespace-nowrap">
-            Serving the San Fernando &amp; Santa Clarita Valleys
-          </span>
-          <span className="hidden sm:block text-[#333] text-xs">·</span>
-          <span className="text-[#666] text-xs tracking-widest uppercase">
-            Telehealth Consultations Available
+        <div className="max-w-5xl mx-auto flex items-center justify-center text-center">
+          <span className="text-[#888] text-xs tracking-[0.2em] uppercase">
+            Serving Mission Hills, the San Fernando Valley, and surrounding Los Angeles communities.
           </span>
         </div>
       </section>
@@ -212,9 +212,9 @@ export default function Home() {
               className="text-4xl md:text-6xl font-bold text-white leading-tight"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              The Right Treatment
+              Individualized
               <br />
-              <em className="not-italic text-[#c8a020]">for the Right Patient.</em>
+              <em className="not-italic text-[#c8a020]">Treatment Planning.</em>
             </h2>
           </div>
           <div className="space-y-4 text-[#888] text-sm leading-relaxed">
