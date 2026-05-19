@@ -55,41 +55,41 @@ const conditionGroups = [
   {
     title: "Spine Pain",
     items: [
-      "Neck pain",
-      "Low back pain",
-      "Spine-related pain",
-      "Facet-mediated pain",
-      "Sacroiliac joint pain",
+      { label: "Neck pain" },
+      { label: "Low back pain", href: "/conditions/low-back-pain" },
+      { label: "Spine-related pain" },
+      { label: "Facet-mediated pain" },
+      { label: "Sacroiliac joint pain" },
     ],
   },
   {
     title: "Nerve & Radicular Pain",
     items: [
-      "Sciatica",
-      "Cervical radiculopathy",
-      "Lumbar radiculopathy",
-      "Radicular pain",
-      "Neuropathic pain",
-      "Peripheral nerve pain",
+      { label: "Sciatica", href: "/conditions/sciatica-radicular-pain" },
+      { label: "Cervical radiculopathy" },
+      { label: "Lumbar radiculopathy" },
+      { label: "Radicular pain", href: "/conditions/sciatica-radicular-pain" },
+      { label: "Neuropathic pain" },
+      { label: "Peripheral nerve pain" },
     ],
   },
   {
     title: "Joint & Musculoskeletal Pain",
     items: [
-      "Joint pain",
-      "Bursa-related pain",
-      "Myofascial pain",
-      "Occipital neuralgia",
-      "Persistent pain after injury or surgery",
-      "Persistent pain after spine surgery",
+      { label: "Joint pain" },
+      { label: "Bursa-related pain" },
+      { label: "Myofascial pain" },
+      { label: "Occipital neuralgia" },
+      { label: "Persistent pain after injury or surgery" },
+      { label: "Persistent pain after spine surgery" },
     ],
   },
   {
     title: "Complex Pain Conditions",
     items: [
-      "Complex regional pain syndrome evaluation",
-      "Chronic pain syndrome evaluation",
-      "Complex pain conditions",
+      { label: "Complex regional pain syndrome evaluation" },
+      { label: "Chronic pain syndrome evaluation" },
+      { label: "Complex pain conditions" },
     ],
   },
 ];
@@ -98,46 +98,46 @@ const procedureGroups = [
   {
     title: "Spine Procedures",
     items: [
-      "Cervical epidural steroid injections",
-      "Thoracic epidural steroid injections",
-      "Lumbar epidural steroid injections",
-      "Transforaminal epidural steroid injections",
-      "Interlaminar epidural steroid injections",
-      "Caudal epidural steroid injections",
-      "Selective nerve root blocks",
-      "Facet joint injections",
-      "Medial branch blocks",
-      "Radiofrequency ablation",
-      "Sacroiliac joint injections",
+      { label: "Cervical epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Thoracic epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Lumbar epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Transforaminal epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Interlaminar epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Caudal epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Selective nerve root blocks" },
+      { label: "Facet joint injections" },
+      { label: "Medial branch blocks" },
+      { label: "Radiofrequency ablation", href: "/procedures/radiofrequency-ablation" },
+      { label: "Sacroiliac joint injections" },
     ],
   },
   {
     title: "Peripheral Nerve & Musculoskeletal",
     items: [
-      "Peripheral nerve blocks",
-      "Occipital nerve blocks",
-      "Trigger point injections",
-      "Joint injections",
-      "Bursa injections",
-      "Tendon sheath injections",
+      { label: "Peripheral nerve blocks" },
+      { label: "Occipital nerve blocks" },
+      { label: "Trigger point injections" },
+      { label: "Joint injections" },
+      { label: "Bursa injections" },
+      { label: "Tendon sheath injections" },
     ],
   },
   {
     title: "Advanced Pain Procedures",
     items: [
-      "Spinal cord stimulation evaluation",
-      "Spinal cord stimulation trial consideration",
-      "Peripheral nerve stimulation evaluation",
-      "Peripheral nerve stimulation trial consideration",
+      { label: "Spinal cord stimulation evaluation" },
+      { label: "Spinal cord stimulation trial consideration" },
+      { label: "Peripheral nerve stimulation evaluation" },
+      { label: "Peripheral nerve stimulation trial consideration" },
     ],
   },
   {
     title: "Medication & Conservative Care",
     items: [
-      "Medication management when clinically appropriate",
-      "Physical therapy coordination",
-      "Review of imaging and prior treatment history",
-      "Multimodal pain management planning",
+      { label: "Medication management when clinically appropriate" },
+      { label: "Physical therapy coordination" },
+      { label: "Review of imaging and prior treatment history" },
+      { label: "Multimodal pain management planning" },
     ],
   },
 ];
@@ -212,8 +212,14 @@ export default function ServicesPage() {
                 </h3>
                 <ul className="space-y-2">
                   {group.items.map((item) => (
-                    <li key={item} className="text-sm text-[#666] leading-relaxed">
-                      {item}
+                    <li key={item.label} className="text-sm text-[#666] leading-relaxed">
+                      {item.href ? (
+                        <Link href={item.href} className="hover:text-[#c8a020] transition-colors">
+                          {item.label}
+                        </Link>
+                      ) : (
+                        item.label
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -267,13 +273,17 @@ export default function ServicesPage() {
                 </h3>
                 <ul className="space-y-2">
                   {group.items.map((item) => (
-                    <li key={item} className="text-sm text-[#666] leading-relaxed">
-                      {item === "Spinal cord stimulation evaluation" ? (
+                    <li key={item.label} className="text-sm text-[#666] leading-relaxed">
+                      {item.href ? (
+                        <Link href={item.href} className="hover:text-[#c8a020] transition-colors">
+                          {item.label}
+                        </Link>
+                      ) : item.label === "Spinal cord stimulation evaluation" ? (
                         <a href="#scs" className="hover:text-[#c8a020] transition-colors">
-                          {item}
+                          {item.label}
                         </a>
                       ) : (
-                        item
+                        item.label
                       )}
                     </li>
                   ))}
