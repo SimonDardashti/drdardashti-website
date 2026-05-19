@@ -6,7 +6,7 @@ const SITE_URL = "https://www.drdardashti.com";
 
 
 export const metadata: Metadata = {
-  title: "Neck Pain Evaluation | Simon Dardashti, MD",
+  title: { absolute: "Neck Pain Evaluation | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates neck pain in the context of symptoms, physical examination, imaging when available, prior treatment response, and functional goals.",
   alternates: { canonical: PAGE_URL },

@@ -4,7 +4,7 @@ const PAGE_URL = "https://www.drdardashti.com/about";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "About Simon Dardashti, MD | Pain Medicine & Anesthesiology",
+  title: { absolute: "About Simon Dardashti, MD | Pain Medicine & Anesthesiology" },
   description:
     "Learn about Dr. Simon Dardashti, a board-certified pain medicine physician and anesthesiologist with UCLA fellowship training in Pain Medicine.",
   alternates: { canonical: PAGE_URL },

@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/procedures/epidural-steroid-inject
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Epidural Steroid Injections | Simon Dardashti, MD",
+  title: { absolute: "Epidural Steroid Injections | Simon Dardashti, MD" },
   description:
     "Learn how epidural steroid injections may be considered for selected patients with radicular pain or suspected nerve root irritation after appropriate evaluation.",
   alternates: { canonical: PAGE_URL },

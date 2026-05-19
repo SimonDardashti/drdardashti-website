@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/conditions/low-back-pain";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Low Back Pain Evaluation | Simon Dardashti, MD",
+  title: { absolute: "Low Back Pain Evaluation | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates low back pain in the context of symptoms, physical examination, imaging when available, prior treatment response, and functional goals.",
   alternates: { canonical: PAGE_URL },

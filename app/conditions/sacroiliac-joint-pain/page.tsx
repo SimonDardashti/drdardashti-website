@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/conditions/sacroiliac-joint-pain";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Sacroiliac Joint Pain Evaluation | Simon Dardashti, MD",
+  title: { absolute: "Sacroiliac Joint Pain Evaluation | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates suspected sacroiliac joint pain using history, physical examination, imaging when available, and prior treatment response.",
   alternates: { canonical: PAGE_URL },

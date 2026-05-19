@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/conditions/crps-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Complex Regional Pain Syndrome Evaluation | Simon Dardashti, MD",
+  title: { absolute: "Complex Regional Pain Syndrome Evaluation | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates complex regional pain syndrome using symptom history, physical examination, accepted diagnostic criteria, and review of relevant records.",
   alternates: { canonical: PAGE_URL },

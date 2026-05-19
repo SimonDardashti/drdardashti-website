@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/services";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Conditions & Services | Interventional Pain Management | Simon Dardashti, MD",
+  title: { absolute: "Conditions & Services | Interventional Pain Management | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates spine pain, nerve pain, joint pain, radicular pain, sacroiliac joint pain, CRPS, and selected interventional pain treatment options.",
   alternates: { canonical: PAGE_URL },

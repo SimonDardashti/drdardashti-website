@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/procedures/radiofrequency-ablation
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Radiofrequency Ablation | Simon Dardashti, MD",
+  title: { absolute: "Radiofrequency Ablation | Simon Dardashti, MD" },
   description:
     "Learn how radiofrequency ablation may be considered for selected patients with suspected facet-mediated spine pain who respond appropriately to diagnostic blocks.",
   alternates: { canonical: PAGE_URL },

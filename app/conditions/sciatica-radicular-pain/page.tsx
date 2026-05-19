@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/conditions/sciatica-radicular-pain
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Sciatica and Radicular Pain Evaluation | Simon Dardashti, MD",
+  title: { absolute: "Sciatica and Radicular Pain Evaluation | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates sciatica and radicular pain, including symptoms that may relate to nerve root irritation in the cervical or lumbar spine.",
   alternates: { canonical: PAGE_URL },

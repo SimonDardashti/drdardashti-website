@@ -5,7 +5,7 @@ const PAGE_URL = "https://www.drdardashti.com/procedures/spinal-cord-stimulation
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: "Spinal Cord Stimulation Evaluation | Simon Dardashti, MD",
+  title: { absolute: "Spinal Cord Stimulation Evaluation | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates selected patients for spinal cord stimulation, including diagnosis, treatment history, functional limitations, and medical and psychological suitability.",
   alternates: { canonical: PAGE_URL },
