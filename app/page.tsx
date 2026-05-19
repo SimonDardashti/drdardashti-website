@@ -62,24 +62,22 @@ export default function Home() {
               href="/services"
               className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
             >
-              Learn About Treatment Options
+              View Conditions &amp; Services
             </Link>
 
             <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6">
-              {stats.map((s) => (
-                <div key={s.label}>
-                  <p
-                    className="font-bold text-white mb-1 leading-tight"
-                    style={{
-                      fontFamily: "var(--font-playfair), Georgia, serif",
-                      fontSize: s.value.length > 4 ? "0.85rem" : "1.875rem",
-                    }}
-                  >
-                    {s.value}
-                  </p>
-                  <p className="text-xs text-[#555] uppercase tracking-widest">{s.label}</p>
-                </div>
-              ))}
+              <div>
+                <p className="text-3xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>2×</p>
+                <p className="text-xs text-[#555] uppercase tracking-widest">Board Certified</p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-white mb-1 leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Pain Medicine &amp;<br />Anesthesiology</p>
+                <p className="text-xs text-[#555] uppercase tracking-widest">Board Certified</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>UCLA</p>
+                <p className="text-xs text-[#555] uppercase tracking-widest">Fellowship Trained</p>
+              </div>
             </div>
           </div>
 
