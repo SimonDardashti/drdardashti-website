@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="md:col-span-5 space-y-6">
             <img
               src="/headshot.webp"
-              alt="Dr. Simon Dardashti, MD"
+              alt="Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist"
               className="w-full object-cover"
               style={{ filter: "grayscale(20%)" }}
             />

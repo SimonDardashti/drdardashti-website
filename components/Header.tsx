@@ -26,7 +26,7 @@ export default function Header() {
           >
             <img
               src="/logo.svg"
-              alt=""
+              alt="Simon Dardashti, MD logo"
               style={{ width: 69, height: 46, marginLeft: -18, marginTop: 0 }}
             />
           </div>

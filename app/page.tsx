@@ -85,7 +85,7 @@ export default function Home() {
           <div className="hidden md:block">
             <img
               src="/headshot.webp"
-              alt="Dr. Simon Dardashti, MD — Pain Medicine Physician"
+              alt="Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist"
               className="w-full object-cover"
               style={{ filter: "grayscale(20%)" }}
             />
