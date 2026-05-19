@@ -1,10 +1,53 @@
 import type { Metadata } from "next";
 
+const PAGE_URL = "https://www.drdardashti.com/about";
+const SITE_URL = "https://www.drdardashti.com";
+
 export const metadata: Metadata = {
-  title: "About Dr. Simon Dardashti | Interventional Pain Medicine Physician",
+  title: "About Simon Dardashti, MD | Pain Medicine & Anesthesiology",
   description:
-    "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist in Mission Hills, CA. UCLA fellowship-trained. Evaluates and treats spine pain, nerve pain, joint pain, and complex chronic pain.",
-  alternates: { canonical: "https://www.drdardashti.com/about" },
+    "Learn about Dr. Simon Dardashti, a board-certified pain medicine physician and anesthesiologist with UCLA fellowship training in Pain Medicine.",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    type: "website",
+    url: PAGE_URL,
+    title: "About Simon Dardashti, MD | Pain Medicine & Anesthesiology",
+    description:
+      "Learn about Dr. Simon Dardashti, a board-certified pain medicine physician and anesthesiologist with UCLA fellowship training in Pain Medicine.",
+    images: [
+      {
+        url: "/headshot.webp",
+        width: 1200,
+        height: 630,
+        alt: "Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Simon Dardashti, MD | Pain Medicine & Anesthesiology",
+    description:
+      "Learn about Dr. Simon Dardashti, a board-certified pain medicine physician and anesthesiologist with UCLA fellowship training in Pain Medicine.",
+    images: ["/headshot.webp"],
+  },
+};
+
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Simon Dardashti, MD",
+  url: PAGE_URL,
+  description:
+    "Dr. Simon Dardashti is a board-certified pain medicine physician and anesthesiologist with UCLA fellowship training, evaluating spine, nerve, joint, and complex chronic pain conditions.",
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", url: SITE_URL },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "About", item: PAGE_URL },
+    ],
+  },
 };
 
 const credentials = [
@@ -36,6 +79,7 @@ const approachPoints = [
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }} />
       {/* Hero */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto">

@@ -1,10 +1,53 @@
 import type { Metadata } from "next";
 
+const PAGE_URL = "https://www.drdardashti.com/services";
+const SITE_URL = "https://www.drdardashti.com";
+
 export const metadata: Metadata = {
-  title: "Conditions & Services | Simon Dardashti, MD",
+  title: "Conditions & Services | Interventional Pain Management | Simon Dardashti, MD",
   description:
-    "Dr. Simon Dardashti evaluates and treats spine pain, nerve pain, joint pain, post-surgical pain, and complex chronic pain. Treatment options include epidural injections, medial branch blocks, radiofrequency ablation, and spinal cord stimulation evaluation.",
-  alternates: { canonical: "https://www.drdardashti.com/services" },
+    "Dr. Simon Dardashti evaluates spine pain, nerve pain, joint pain, radicular pain, sacroiliac joint pain, CRPS, and selected interventional pain treatment options.",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    type: "website",
+    url: PAGE_URL,
+    title: "Conditions & Services | Interventional Pain Management | Simon Dardashti, MD",
+    description:
+      "Dr. Simon Dardashti evaluates spine pain, nerve pain, joint pain, radicular pain, sacroiliac joint pain, CRPS, and selected interventional pain treatment options.",
+    images: [
+      {
+        url: "/headshot.webp",
+        width: 1200,
+        height: 630,
+        alt: "Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conditions & Services | Interventional Pain Management | Simon Dardashti, MD",
+    description:
+      "Dr. Simon Dardashti evaluates spine pain, nerve pain, joint pain, radicular pain, sacroiliac joint pain, CRPS, and selected interventional pain treatment options.",
+    images: ["/headshot.webp"],
+  },
+};
+
+const servicesPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Conditions & Services | Interventional Pain Management",
+  url: PAGE_URL,
+  description:
+    "Dr. Simon Dardashti evaluates spine pain, nerve pain, joint pain, radicular pain, sacroiliac joint pain, CRPS, and selected interventional pain treatment options.",
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", url: SITE_URL },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Conditions & Services", item: PAGE_URL },
+    ],
+  },
 };
 
 const conditions = [
@@ -53,6 +96,7 @@ const procedures = [
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesPageSchema) }} />
       {/* Hero */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto">

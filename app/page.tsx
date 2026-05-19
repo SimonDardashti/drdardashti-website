@@ -1,11 +1,46 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const PAGE_URL = "https://www.drdardashti.com";
+
 export const metadata: Metadata = {
-  title: "Simon Dardashti, MD | Interventional Pain Management Physician",
+  title: "Simon Dardashti, MD | Interventional Pain Medicine Physician",
   description:
-    "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist evaluating spine pain, nerve pain, joint pain, post-surgical pain, and chronic pain conditions.",
-  alternates: { canonical: "https://www.drdardashti.com" },
+    "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist evaluating spine pain, nerve pain, joint pain, and complex pain conditions in Mission Hills, California.",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    type: "website",
+    url: PAGE_URL,
+    title: "Simon Dardashti, MD | Interventional Pain Medicine Physician",
+    description:
+      "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist evaluating spine pain, nerve pain, joint pain, and complex pain conditions in Mission Hills, California.",
+    images: [
+      {
+        url: "/headshot.webp",
+        width: 1200,
+        height: 630,
+        alt: "Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Simon Dardashti, MD | Interventional Pain Medicine Physician",
+    description:
+      "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist evaluating spine pain, nerve pain, joint pain, and complex pain conditions in Mission Hills, California.",
+    images: ["/headshot.webp"],
+  },
+};
+
+const homePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Simon Dardashti, MD | Interventional Pain Medicine Physician",
+  url: PAGE_URL,
+  description:
+    "Dr. Simon Dardashti is a board-certified interventional pain medicine physician and anesthesiologist evaluating spine pain, nerve pain, joint pain, and complex pain conditions in Mission Hills, California.",
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", url: PAGE_URL },
 };
 
 const stats = [
@@ -36,6 +71,7 @@ const conditionHighlights = [
 export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }} />
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white min-h-[90vh] flex flex-col justify-center px-6 py-24 relative overflow-hidden">
         <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
