@@ -17,30 +17,16 @@ export default function Header() {
   return (
     <header className="bg-[#0a0a0a] text-white sticky top-0 z-50 border-b border-[#1a1a1a]">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 leading-tight">
-          {/* Logo mark — circular emblem cropped from full logo */}
-          <div
-            className="shrink-0 overflow-hidden"
-            style={{ width: 32, height: 32 }}
-            aria-hidden="true"
+        <Link href="/" className="flex flex-col leading-tight">
+          <span
+            className="text-base font-bold tracking-wide text-white"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
           >
-            <img
-              src="/logo.svg"
-              alt="Simon Dardashti, MD logo"
-              style={{ width: 69, height: 46, marginLeft: -18, marginTop: 0 }}
-            />
-          </div>
-          <div className="flex flex-col">
-            <span
-              className="text-base font-bold tracking-wide text-white"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-            >
-              Simon Dardashti, MD
-            </span>
-            <span className="text-[10px] text-[#888] tracking-[0.2em] uppercase mt-0.5">
-              Pain Medicine · Anesthesiology
-            </span>
-          </div>
+            Simon Dardashti, MD
+          </span>
+          <span className="text-[10px] text-[#888] tracking-[0.2em] uppercase mt-0.5">
+            Pain Medicine · Anesthesiology
+          </span>
         </Link>
 
         {/* Desktop nav */}

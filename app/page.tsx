@@ -257,6 +257,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMMON CONDITIONS & PROCEDURES */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Explore</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2
+              className="text-xl md:text-2xl font-bold text-[#0a0a0a] mb-3 leading-snug"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Common Conditions &amp; Procedures.
+            </h2>
+            <p className="text-[#777] text-sm mb-8 max-w-xl">
+              Explore selected conditions and treatment options commonly evaluated in
+              interventional pain medicine.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-[#e5e5e0] max-w-2xl">
+              {[
+                { label: "Low Back Pain", href: "/conditions/low-back-pain", sub: "Condition" },
+                { label: "Sciatica & Radicular Pain", href: "/conditions/sciatica-radicular-pain", sub: "Condition" },
+                { label: "Epidural Steroid Injections", href: "/procedures/epidural-steroid-injections", sub: "Procedure" },
+                { label: "Radiofrequency Ablation", href: "/procedures/radiofrequency-ablation", sub: "Procedure" },
+              ].map((item, i) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`group flex items-center justify-between p-5 hover:bg-[#fafaf8] transition-colors ${
+                    i % 2 === 0 ? "border-r border-[#e5e5e0]" : ""
+                  } ${i < 2 ? "border-b border-[#e5e5e0]" : ""}`}
+                >
+                  <div>
+                    <p className="text-[10px] text-[#c8a020] uppercase tracking-widest mb-1">{item.sub}</p>
+                    <p className="text-sm font-semibold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                      {item.label}
+                    </p>
+                  </div>
+                  <span className="text-[#ccc] group-hover:text-[#c8a020] transition-colors text-sm">→</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* INTERVENTIONAL PAIN MANAGEMENT */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
