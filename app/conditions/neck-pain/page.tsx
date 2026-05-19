@@ -4,6 +4,7 @@ import Link from "next/link";
 const PAGE_URL = "https://www.drdardashti.com/conditions/neck-pain";
 const SITE_URL = "https://www.drdardashti.com";
 
+
 export const metadata: Metadata = {
   title: "Neck Pain Evaluation | Simon Dardashti, MD",
   description:
