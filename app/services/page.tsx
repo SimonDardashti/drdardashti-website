@@ -25,6 +25,7 @@ const conditions = [
   "Headache and occipital neuralgia evaluation",
   "Chronic pain syndrome evaluation",
   "Complex pain conditions",
+  "Cauda equina syndrome",
 ];
 
 const procedures = [
@@ -104,7 +105,7 @@ export default function ServicesPage() {
                   className="flex items-start gap-3 p-4 border-b border-r border-[#e5e5e0]"
                 >
                   <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2 shrink-0" />
-                  <span className="text-sm text-[#555]">{item}</span>
+                  <span className="text-base text-[#555]">{item}</span>
                 </div>
               ))}
             </div>
@@ -144,7 +145,7 @@ export default function ServicesPage() {
                   className="flex items-start gap-3 p-4 border-b border-r border-[#e5e5e0]"
                 >
                   <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2 shrink-0" />
-                  <span className="text-sm text-[#555]">{item}</span>
+                  <span className="text-base text-[#555]">{item}</span>
                 </div>
               ))}
             </div>

@@ -45,14 +45,12 @@ export default function Home() {
               Pain Medicine Physician · <span className="whitespace-nowrap">Mission Hills, CA</span>
             </p>
             <h1
-              className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6"
+              className="text-2xl md:text-3xl font-bold leading-[1.2] mb-4"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Simon Dardashti,
-              <br />
-              <em className="not-italic text-[#c8a020]">MD</em>
+              Simon Dardashti, <em className="not-italic text-[#c8a020]">MD</em>
             </h1>
-            <p className="text-[#888] text-lg md:text-xl leading-relaxed mb-4">
+            <p className="text-[#888] text-xl md:text-2xl leading-relaxed mb-4">
               Board-Certified Interventional Pain Medicine &amp; Anesthesiology
             </p>
             <p className="text-[#666] text-base leading-relaxed mb-10">
@@ -144,32 +142,20 @@ export default function Home() {
       {/* SECTION 02 — CONDITIONS */}
       <section className="bg-[#f9f7f4] py-24 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16 items-start">
-            <div className="md:col-span-2">
-              <span
-                className="text-7xl font-bold text-[#e8e6e3] leading-none block"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                aria-hidden
-              >
-                02
-              </span>
-              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Conditions</p>
-            </div>
-            <div className="md:col-span-10">
-              <h2
-                className="text-3xl md:text-4xl font-bold text-[#0a0a0a] leading-tight"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              >
-                Conditions Evaluated.
-              </h2>
-              <p className="text-[#777] mt-3 text-base max-w-xl">
-                Dr. Dardashti evaluates a range of pain conditions affecting the spine,
-                nervous system, and musculoskeletal system.
-              </p>
-            </div>
+          <div className="mb-16">
+            <h2
+              className="text-3xl md:text-4xl font-bold text-[#0a0a0a] leading-tight"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Conditions Evaluated.
+            </h2>
+            <p className="text-[#777] mt-3 text-base max-w-xl">
+              Dr. Dardashti evaluates a range of pain conditions affecting the spine,
+              nervous system, and musculoskeletal system.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-[#e0e0d8] md:ml-[calc(2/12*100%+2.5rem)]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-[#e0e0d8]">
             {conditionHighlights.map((group, i) => (
               <div
                 key={group.title}
@@ -191,7 +177,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-8 md:ml-[calc(2/12*100%+2.5rem)]">
+          <div className="mt-8">
             <Link
               href="/services"
               className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
