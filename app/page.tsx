@@ -52,19 +52,19 @@ const stats = [
 const conditionHighlights = [
   {
     title: "Spine Pain",
-    items: ["Neck pain", "Low back pain", "Spine-related pain", "Facet-mediated pain", "Sciatica and radicular pain"],
+    items: ["Neck pain", "Low back pain", "Spine-related pain", "Facet-mediated pain", "Sacroiliac joint pain"],
   },
   {
-    title: "Nerve & Radicular",
-    items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain", "Post-laminectomy syndrome"],
+    title: "Nerve & Radicular Pain",
+    items: ["Sciatica", "Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain", "Post-laminectomy syndrome"],
   },
   {
     title: "Joint & Musculoskeletal Pain",
-    items: ["Sacroiliac joint pain", "Joint pain", "Persistent pain after injury or surgery", "Persistent pain after spine surgery"],
+    items: ["Joint pain", "Bursa-related pain", "Myofascial pain", "Occipital neuralgia", "Persistent pain after injury or surgery"],
   },
   {
-    title: "Complex Pain",
-    items: ["Complex regional pain syndrome", "Headache and occipital neuralgia", "Chronic pain syndrome", "Complex pain conditions"],
+    title: "Complex Pain Conditions",
+    items: ["Complex regional pain syndrome evaluation", "Chronic pain syndrome evaluation", "Complex pain conditions"],
   },
 ];
 
@@ -177,6 +177,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CLINICAL FOCUS */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Clinical Focus</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2
+              className="text-xl md:text-2xl font-bold text-[#0a0a0a] mb-4 leading-snug"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Clinical Focus.
+            </h2>
+            <p className="text-[#555] text-base leading-relaxed max-w-2xl">
+              Dr. Dardashti's clinical focus includes evaluation and treatment of spine-related
+              pain, nerve pain, joint and musculoskeletal pain, radicular pain, sacroiliac joint
+              pain, neuropathic pain, and selected complex pain conditions.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* BANNER — SERVICE AREA */}
       <section className="bg-[#0a0a0a] py-5 px-6 border-y border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto flex items-center justify-center text-center">
@@ -235,6 +257,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INTERVENTIONAL PAIN MANAGEMENT */}
+      <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Procedures</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2
+              className="text-xl md:text-2xl font-bold text-[#0a0a0a] mb-4 leading-snug"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Interventional Pain Management.
+            </h2>
+            <p className="text-[#555] text-base leading-relaxed max-w-2xl mb-6">
+              When clinically appropriate, treatment may include image-guided procedures such as
+              epidural steroid injections, selective nerve root blocks, medial branch blocks,
+              radiofrequency ablation, sacroiliac joint injections, peripheral nerve blocks,
+              trigger point injections, joint injections, and spinal cord stimulation evaluation.
+            </p>
+            <Link
+              href="/services"
+              className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
+            >
+              View conditions &amp; services →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 03 — APPROACH */}
       <section className="bg-[#0a0a0a] py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -253,15 +304,14 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-[#888] text-sm leading-relaxed">
             <p>
-              Dr. Dardashti's treatment recommendations are based on the patient's history,
-              physical examination, imaging when available, prior treatment response, and
-              overall clinical context.
+              Treatment recommendations are based on the patient's history, physical examination,
+              imaging when available, prior treatment response, medical history, and overall
+              clinical context.
             </p>
             <p>
-              His approach may include conservative care coordination, medication management
-              when appropriate, review of imaging and diagnostic studies, image-guided
-              interventional pain procedures, and advanced pain management options when
-              clinically indicated.
+              Dr. Dardashti's approach emphasizes careful diagnostic evaluation, clear
+              communication, evidence-informed decision-making, and treatment options tailored
+              to the patient's clinical presentation and functional goals.
             </p>
           </div>
         </div>
@@ -288,11 +338,16 @@ export default function Home() {
               Clinical Location.
             </h2>
             <p className="text-[#555] text-base leading-relaxed mb-6 max-w-xl">
-              Dr. Dardashti sees patients in Mission Hills, California.
+              Dr. Dardashti sees patients in Mission Hills, California, serving patients from
+              the San Fernando Valley, Santa Clarita Valley, and surrounding Los Angeles
+              communities.
             </p>
-            <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">
-              Mission Hills, CA
-            </span>
+            <div className="flex flex-wrap gap-2">
+              <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">Mission Hills, CA</span>
+              <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">San Fernando Valley</span>
+              <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">Santa Clarita Valley</span>
+              <span className="border border-[#e0e0e0] text-[#555] text-xs px-3 py-1.5 tracking-wide">Los Angeles, CA</span>
+            </div>
           </div>
         </div>
       </section>
