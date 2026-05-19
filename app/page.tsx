@@ -21,7 +21,7 @@ const conditionHighlights = [
   },
   {
     title: "Nerve & Radicular",
-    items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain"],
+    items: ["Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain", "Post-laminectomy syndrome"],
   },
   {
     title: "Joint & Musculoskeletal Pain",
