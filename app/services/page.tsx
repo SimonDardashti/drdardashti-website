@@ -55,11 +55,11 @@ const conditionGroups = [
   {
     title: "Spine Pain",
     items: [
-      { label: "Neck pain" },
+      { label: "Neck pain", href: "/conditions/neck-pain" },
       { label: "Low back pain", href: "/conditions/low-back-pain" },
       { label: "Spine-related pain" },
       { label: "Facet-mediated pain" },
-      { label: "Sacroiliac joint pain" },
+      { label: "Sacroiliac joint pain", href: "/conditions/sacroiliac-joint-pain" },
     ],
   },
   {
@@ -87,7 +87,7 @@ const conditionGroups = [
   {
     title: "Complex Pain Conditions",
     items: [
-      { label: "Complex regional pain syndrome evaluation" },
+      { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
       { label: "Chronic pain syndrome evaluation" },
       { label: "Complex pain conditions" },
     ],
@@ -125,8 +125,8 @@ const procedureGroups = [
   {
     title: "Advanced Pain Procedures",
     items: [
-      { label: "Spinal cord stimulation evaluation" },
-      { label: "Spinal cord stimulation trial consideration" },
+      { label: "Spinal cord stimulation evaluation", href: "/procedures/spinal-cord-stimulation-evaluation" },
+      { label: "Spinal cord stimulation trial consideration", href: "/procedures/spinal-cord-stimulation-evaluation" },
       { label: "Peripheral nerve stimulation evaluation" },
       { label: "Peripheral nerve stimulation trial consideration" },
     ],
@@ -278,10 +278,6 @@ export default function ServicesPage() {
                         <Link href={item.href} className="hover:text-[#c8a020] transition-colors">
                           {item.label}
                         </Link>
-                      ) : item.label === "Spinal cord stimulation evaluation" ? (
-                        <a href="#scs" className="hover:text-[#c8a020] transition-colors">
-                          {item.label}
-                        </a>
                       ) : (
                         item.label
                       )}
