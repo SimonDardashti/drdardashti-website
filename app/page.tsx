@@ -73,8 +73,8 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }} />
       {/* HERO */}
-      <section className="bg-[#0a0a0a] text-white min-h-[90vh] flex flex-col justify-center px-6 py-24 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <section className="bg-[#0a0a0a] text-white md:min-h-[90vh] flex flex-col justify-center px-6 py-14 md:py-24 relative overflow-hidden">
+        <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Text */}
           <div>
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
@@ -118,11 +118,11 @@ export default function Home() {
           </div>
 
           {/* Photo */}
-          <div className="hidden md:block">
+          <div className="flex justify-center md:block mt-4 md:mt-0">
             <img
               src="/headshot.webp"
               alt="Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist"
-              className="w-full object-cover"
+              className="w-[85%] md:w-full object-cover rounded-md md:rounded-none"
               style={{ filter: "grayscale(20%)" }}
             />
           </div>
