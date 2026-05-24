@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import FadeUp from "@/components/FadeUp";
 
 const PAGE_URL = "https://www.drdardashti.com";
 
@@ -112,7 +113,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>UCLA</p>
-                <p className="text-xs text-[#555] uppercase tracking-widest">Fellowship Trained</p>
+                <p className="text-xs text-[#555] uppercase tracking-widest">Pain Medicine Fellowship</p>
               </div>
             </div>
           </div>
@@ -130,6 +131,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 01 — ABOUT */}
+      <FadeUp>
       <section className="bg-white py-24 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-2">
@@ -176,8 +178,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
 
       {/* CLINICAL FOCUS */}
+      <FadeUp>
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-2">
@@ -198,6 +202,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
 
       {/* BANNER — SERVICE AREA */}
       <section className="bg-[#0a0a0a] py-5 px-6 border-y border-[#1a1a1a]">
@@ -209,6 +214,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 02 — CONDITIONS */}
+      <FadeUp>
       <section className="bg-[#f9f7f4] py-24 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
           <div className="mb-16">
@@ -256,8 +262,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
 
       {/* COMMON CONDITIONS & PROCEDURES */}
+      <FadeUp>
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-2">
@@ -301,8 +309,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
 
       {/* INTERVENTIONAL PAIN MANAGEMENT */}
+      <FadeUp>
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-2">
@@ -330,8 +340,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
 
       {/* SECTION 03 — APPROACH */}
+      <FadeUp>
       <section className="bg-[#0a0a0a] py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -361,8 +373,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
 
       {/* SECTION 04 — LOCATION */}
+      <FadeUp>
       <section className="bg-white py-20 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
@@ -396,6 +410,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeUp>
     </>
   );
 }
