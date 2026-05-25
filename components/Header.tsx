@@ -17,12 +17,16 @@ export default function Header() {
   return (
     <header className="bg-[#0a0a0a] text-white sticky top-0 z-50 border-b border-[#1a1a1a]">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <img
-            src="/images/drdardashti-logo.png"
-            alt="Simon Dardashti MD"
-            className="h-11 md:h-16 w-auto"
-          />
+        <Link href="/" className="flex flex-col leading-tight">
+          <span
+            className="text-base font-bold tracking-wide text-white"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Simon Dardashti, MD
+          </span>
+          <span className="text-[10px] text-[#888] tracking-[0.2em] uppercase mt-0.5">
+            Pain Medicine Physician
+          </span>
         </Link>
 
         {/* Desktop nav */}
