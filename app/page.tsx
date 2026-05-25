@@ -135,14 +135,7 @@ export default function Home() {
       <section className="bg-white py-24 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-2">
-            <span
-              className="text-7xl font-bold text-[#f0f0f0] leading-none block"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              aria-hidden
-            >
-              01
-            </span>
-            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">About</p>
+            <p className="text-xs text-[#999] uppercase tracking-widest">About</p>
           </div>
           <div className="md:col-span-10">
             <h2
