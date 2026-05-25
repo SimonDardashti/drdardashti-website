@@ -7,21 +7,21 @@ const SITE_URL = "https://www.drdardashti.com";
 export const metadata: Metadata = {
   title: { absolute: "Radiofrequency Ablation | Simon Dardashti, MD" },
   description:
-    "Learn how radiofrequency ablation may be considered for selected patients with suspected facet-mediated spine pain who respond appropriately to diagnostic blocks.",
+    "Dr. Simon Dardashti evaluates selected patients for radiofrequency ablation when facet-mediated spine pain is suspected and diagnostic medial branch blocks support the diagnosis.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     type: "website",
     url: PAGE_URL,
     title: "Radiofrequency Ablation | Simon Dardashti, MD",
     description:
-      "Learn how radiofrequency ablation may be considered for selected patients with suspected facet-mediated spine pain who respond appropriately to diagnostic blocks.",
+      "Dr. Simon Dardashti evaluates selected patients for radiofrequency ablation when facet-mediated spine pain is suspected and diagnostic medial branch blocks support the diagnosis.",
     images: [{ url: "/headshot.webp", width: 1200, height: 630, alt: "Simon Dardashti, MD" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Radiofrequency Ablation | Simon Dardashti, MD",
     description:
-      "Learn how radiofrequency ablation may be considered for selected patients with suspected facet-mediated spine pain who respond appropriately to diagnostic blocks.",
+      "Dr. Simon Dardashti evaluates selected patients for radiofrequency ablation when facet-mediated spine pain is suspected and diagnostic medial branch blocks support the diagnosis.",
     images: ["/headshot.webp"],
   },
 };
@@ -32,7 +32,7 @@ const pageSchema = {
   name: "Radiofrequency Ablation | Simon Dardashti, MD",
   url: PAGE_URL,
   description:
-    "Learn how radiofrequency ablation may be considered for selected patients with suspected facet-mediated spine pain who respond appropriately to diagnostic blocks.",
+    "Dr. Simon Dardashti evaluates selected patients for radiofrequency ablation when facet-mediated spine pain is suspected and diagnostic medial branch blocks support the diagnosis.",
   inLanguage: "en-US",
   isPartOf: { "@type": "WebSite", url: SITE_URL },
   about: { "@type": "MedicalProcedure", name: "Radiofrequency Ablation" },

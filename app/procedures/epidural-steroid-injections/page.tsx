@@ -7,21 +7,21 @@ const SITE_URL = "https://www.drdardashti.com";
 export const metadata: Metadata = {
   title: { absolute: "Epidural Steroid Injections | Simon Dardashti, MD" },
   description:
-    "Learn how epidural steroid injections may be considered for selected patients with radicular pain or suspected nerve root irritation after appropriate evaluation.",
+    "Dr. Simon Dardashti evaluates selected patients for epidural steroid injections when radicular pain or suspected nerve root irritation is present following clinical evaluation.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     type: "website",
     url: PAGE_URL,
     title: "Epidural Steroid Injections | Simon Dardashti, MD",
     description:
-      "Learn how epidural steroid injections may be considered for selected patients with radicular pain or suspected nerve root irritation after appropriate evaluation.",
+      "Dr. Simon Dardashti evaluates selected patients for epidural steroid injections when radicular pain or suspected nerve root irritation is present following clinical evaluation.",
     images: [{ url: "/headshot.webp", width: 1200, height: 630, alt: "Simon Dardashti, MD" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Epidural Steroid Injections | Simon Dardashti, MD",
     description:
-      "Learn how epidural steroid injections may be considered for selected patients with radicular pain or suspected nerve root irritation after appropriate evaluation.",
+      "Dr. Simon Dardashti evaluates selected patients for epidural steroid injections when radicular pain or suspected nerve root irritation is present following clinical evaluation.",
     images: ["/headshot.webp"],
   },
 };
@@ -32,7 +32,7 @@ const pageSchema = {
   name: "Epidural Steroid Injections | Simon Dardashti, MD",
   url: PAGE_URL,
   description:
-    "Learn how epidural steroid injections may be considered for selected patients with radicular pain or suspected nerve root irritation after appropriate evaluation.",
+    "Dr. Simon Dardashti evaluates selected patients for epidural steroid injections when radicular pain or suspected nerve root irritation is present following clinical evaluation.",
   inLanguage: "en-US",
   isPartOf: { "@type": "WebSite", url: SITE_URL },
   about: { "@type": "MedicalProcedure", name: "Epidural Steroid Injection" },
