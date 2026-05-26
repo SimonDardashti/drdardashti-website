@@ -459,14 +459,7 @@ export default function Home() {
       <section className="bg-white py-20 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
-            <span
-              className="text-7xl font-bold text-[#f0f0f0] leading-none block"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              aria-hidden
-            >
-              04
-            </span>
-            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Location</p>
+            <p className="text-xs text-[#999] uppercase tracking-widest">Location</p>
           </div>
           <div className="md:col-span-10">
             <h2
