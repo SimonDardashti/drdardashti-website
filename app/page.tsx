@@ -368,6 +368,88 @@ export default function Home() {
       </section>
       </FadeUp>
 
+      {/* CLINICAL REPUTATION */}
+      <FadeUp>
+      <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+            <div className="md:col-span-2">
+              <p className="text-xs text-[#999] uppercase tracking-widest">Reputation</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2
+                className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              >
+                Clinical Reputation.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed max-w-2xl">
+                Public physician profiles reflect high patient ratings and recurring comments
+                regarding communication, professionalism, compassion, and clear explanation
+                of treatment options.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e5e5e0] mb-10">
+            {[
+              {
+                heading: "Patient Communication",
+                body: "Patients commonly describe Dr. Dardashti as respectful, attentive, patient, and clear in explaining medical issues.",
+              },
+              {
+                heading: "Active Clinical Practice",
+                body: "Dr. Dardashti continues to practice pain management clinically, evaluating and treating patients with spine, nerve, and chronic pain conditions.",
+              },
+              {
+                heading: "Independent Public Profiles",
+                body: "Public profiles are available through Providence, Healthgrades, WebMD, Vitals, Doximity, Henry Mayo, and SEAK.",
+              },
+            ].map((item, i) => (
+              <div
+                key={item.heading}
+                className={`bg-white p-6 ${i < 2 ? "border-b md:border-b-0 md:border-r border-[#e5e5e0]" : ""}`}
+              >
+                <div className="w-5 h-px bg-[#c8a020] mb-4" />
+                <h3
+                  className="font-bold text-[#0a0a0a] text-sm mb-3"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {item.heading}
+                </h3>
+                <p className="text-sm text-[#666] leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2" />
+            <div className="md:col-span-10 flex flex-wrap gap-x-6 gap-y-2">
+              {[
+                { label: "Providence", href: "https://www.providence.org/doctors/pain-medicine/ca/mission-hills/simon-dardashti-1023335957" },
+                { label: "Healthgrades", href: "https://www.healthgrades.com/physician/dr-simon-dardashti-gfjqs" },
+                { label: "WebMD", href: "https://doctor.webmd.com/doctor/simon-dardashti-af601989-d7f1-407a-b022-41572a80c061-overview" },
+                { label: "Vitals", href: "https://www.vitals.com/doctors/Dr_Simon_Dardashti.html" },
+                { label: "Doximity", href: "https://www.doximity.com/pub/simon-dardashti-md" },
+                { label: "Henry Mayo", href: "https://www.henrymayo.com/doctors/profile/simon-dardashti/" },
+                { label: "SEAK", href: "https://www.seakexperts.com/members/18571-simon-dardashti" },
+              ].map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#c8a020] text-xs font-semibold uppercase tracking-widest hover:underline"
+                >
+                  {link.label} →
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      </FadeUp>
+
       {/* SECTION 04 — LOCATION */}
       <FadeUp>
       <section className="bg-white py-20 px-6">
