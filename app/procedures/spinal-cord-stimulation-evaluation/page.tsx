@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/spinal-cord-stimulation-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -70,7 +70,7 @@ export default function SpinalCordStimulationEvaluationPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
           <div className="flex-1">
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
               Procedures
@@ -90,8 +90,14 @@ export default function SpinalCordStimulationEvaluationPage() {
               candidate based on their overall clinical picture.
             </p>
           </div>
-          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
-            <ProcedureIllustration variant="spinal-cord-stimulation" />
+          <div className="hidden md:block w-[460px] shrink-0 relative self-stretch">
+            <Image
+              src="/images/procedures/spinal-cord-stimulation-hero.jpg"
+              alt="Spinal cord stimulation lead placement medical illustration."
+              fill
+              className="object-contain object-center"
+              priority
+            />
           </div>
         </div>
       </section>

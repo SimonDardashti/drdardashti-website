@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/epidural-steroid-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -70,7 +70,7 @@ export default function EpiduralSteroidInjectionsPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
           <div className="flex-1">
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
               Procedures &amp; Treatment Options
@@ -90,8 +90,15 @@ export default function EpiduralSteroidInjectionsPage() {
               for an individual patient.
             </p>
           </div>
-          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
-            <ProcedureIllustration variant="epidural-steroid-injections" />
+          <div className="hidden md:block w-[440px] shrink-0">
+            <Image
+              src="/images/procedures/epidural-steroid-injection-hero.png"
+              alt="Lumbar epidural steroid injection medical illustration."
+              width={1536}
+              height={1024}
+              className="w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </section>

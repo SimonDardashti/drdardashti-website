@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/radiofrequency-ablation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -70,7 +70,7 @@ export default function RadiofrequencyAblationPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
           <div className="flex-1">
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
               Procedures &amp; Treatment Options
@@ -90,8 +90,14 @@ export default function RadiofrequencyAblationPage() {
               to the patient's pain.
             </p>
           </div>
-          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
-            <ProcedureIllustration variant="radiofrequency-ablation" />
+          <div className="hidden md:block w-[400px] aspect-[3/2] shrink-0 relative overflow-hidden">
+            <Image
+              src="/images/procedures/radiofrequency-ablation-hero.jpg"
+              alt="Radiofrequency ablation of lumbar medial branch nerves medical illustration."
+              fill
+              className="object-cover object-center"
+              priority
+            />
           </div>
         </div>
       </section>
