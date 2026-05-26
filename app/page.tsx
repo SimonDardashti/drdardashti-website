@@ -386,7 +386,8 @@ export default function Home() {
               <p className="text-[#666] text-base leading-relaxed max-w-2xl">
                 Dr. Dardashti maintains an active clinical pain management practice with
                 consistently strong patient feedback across major physician and healthcare
-                review platforms. Public profiles commonly reflect patient comments regarding
+                review platforms, including a 4.9/5 rating on Healthgrades and a 5/5 rating
+                on WebMD Care. Public profiles commonly reflect patient comments regarding
                 communication, professionalism, compassion, and clear explanation of treatment
                 options.
               </p>
@@ -396,16 +397,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e5e5e0] mb-10">
             {[
               {
+                heading: "Healthgrades",
+                body: "4.9/5 patient rating based on approximately 579 public reviews.",
+              },
+              {
+                heading: "WebMD Care",
+                body: "5/5 patient rating based on approximately 504 public ratings.",
+              },
+              {
                 heading: "Patient Communication",
-                body: "Patients commonly describe Dr. Dardashti as respectful, attentive, patient, and clear in explaining medical issues.",
-              },
-              {
-                heading: "Active Clinical Practice",
-                body: "Dr. Dardashti continues to practice pain management clinically, evaluating and treating patients with spine, nerve, and chronic pain conditions.",
-              },
-              {
-                heading: "Independent Public Profiles",
-                body: "Public profiles are available through Providence, Healthgrades, WebMD, Vitals, Yelp, Doximity, Henry Mayo, and SEAK.",
+                body: "Public reviews commonly describe Dr. Dardashti as respectful, attentive, patient, and clear in explaining medical issues.",
               },
             ].map((item, i) => (
               <div
