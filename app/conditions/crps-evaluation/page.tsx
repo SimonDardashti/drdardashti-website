@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/crps-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -69,23 +70,28 @@ export default function CrpsEvaluationPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            Conditions Evaluated
-          </p>
-          <h1
-            className="text-4xl md:text-6xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Complex Regional Pain
-            <br />
-            <em className="not-italic text-[#888]">Syndrome Evaluation.</em>
-          </h1>
-          <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
-            Complex regional pain syndrome (CRPS) is a chronic pain condition that requires
-            careful clinical evaluation. Diagnosis is based on accepted criteria interpreted
-            in the context of the patient's history, symptoms, and physical examination.
-          </p>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+          <div className="flex-1">
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
+              Conditions Evaluated
+            </p>
+            <h1
+              className="text-4xl md:text-6xl font-bold leading-tight"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Complex Regional Pain
+              <br />
+              <em className="not-italic text-[#888]">Syndrome Evaluation.</em>
+            </h1>
+            <p className="mt-5 text-[#666] text-lg leading-relaxed">
+              Complex regional pain syndrome (CRPS) is a chronic pain condition that requires
+              careful clinical evaluation. Diagnosis is based on accepted criteria interpreted
+              in the context of the patient's history, symptoms, and physical examination.
+            </p>
+          </div>
+          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
+            <ProcedureIllustration variant="crps" />
+          </div>
         </div>
       </section>
 

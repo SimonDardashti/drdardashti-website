@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/epidural-steroid-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -69,24 +70,29 @@ export default function EpiduralSteroidInjectionsPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            Procedures &amp; Treatment Options
-          </p>
-          <h1
-            className="text-4xl md:text-6xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Epidural Steroid
-            <br />
-            <em className="not-italic text-[#888]">Injections.</em>
-          </h1>
-          <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
-            Epidural steroid injections are image-guided procedures that may be considered for
-            selected patients with radicular pain or suspected nerve root irritation. A formal
-            clinical evaluation is required to determine whether this procedure is appropriate
-            for an individual patient.
-          </p>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+          <div className="flex-1">
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
+              Procedures &amp; Treatment Options
+            </p>
+            <h1
+              className="text-4xl md:text-6xl font-bold leading-tight"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Epidural Steroid
+              <br />
+              <em className="not-italic text-[#888]">Injections.</em>
+            </h1>
+            <p className="mt-5 text-[#666] text-lg leading-relaxed">
+              Epidural steroid injections are image-guided procedures that may be considered for
+              selected patients with radicular pain or suspected nerve root irritation. A formal
+              clinical evaluation is required to determine whether this procedure is appropriate
+              for an individual patient.
+            </p>
+          </div>
+          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
+            <ProcedureIllustration variant="epidural-steroid-injections" />
+          </div>
         </div>
       </section>
 

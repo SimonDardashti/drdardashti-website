@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/spinal-cord-stimulation-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -69,24 +70,29 @@ export default function SpinalCordStimulationEvaluationPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            Procedures
-          </p>
-          <h1
-            className="text-4xl md:text-6xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Spinal Cord Stimulation
-            <br />
-            <em className="not-italic text-[#888]">Evaluation.</em>
-          </h1>
-          <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
-            Spinal cord stimulation may be considered for selected patients with chronic
-            nerve-related pain, persistent pain after spine surgery, or certain complex pain
-            conditions. Evaluation determines whether a patient may be an appropriate
-            candidate based on their overall clinical picture.
-          </p>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+          <div className="flex-1">
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
+              Procedures
+            </p>
+            <h1
+              className="text-4xl md:text-6xl font-bold leading-tight"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Spinal Cord Stimulation
+              <br />
+              <em className="not-italic text-[#888]">Evaluation.</em>
+            </h1>
+            <p className="mt-5 text-[#666] text-lg leading-relaxed">
+              Spinal cord stimulation may be considered for selected patients with chronic
+              nerve-related pain, persistent pain after spine surgery, or certain complex pain
+              conditions. Evaluation determines whether a patient may be an appropriate
+              candidate based on their overall clinical picture.
+            </p>
+          </div>
+          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
+            <ProcedureIllustration variant="spinal-cord-stimulation" />
+          </div>
         </div>
       </section>
 

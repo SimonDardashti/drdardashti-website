@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/radiofrequency-ablation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -69,24 +70,29 @@ export default function RadiofrequencyAblationPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            Procedures &amp; Treatment Options
-          </p>
-          <h1
-            className="text-4xl md:text-6xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Radiofrequency
-            <br />
-            <em className="not-italic text-[#888]">Ablation.</em>
-          </h1>
-          <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
-            Radiofrequency ablation may be considered for selected patients with suspected
-            facet-mediated spine pain. The procedure is performed after appropriate clinical
-            evaluation and diagnostic nerve blocks confirm a likely facet joint contribution
-            to the patient's pain.
-          </p>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+          <div className="flex-1">
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
+              Procedures &amp; Treatment Options
+            </p>
+            <h1
+              className="text-4xl md:text-6xl font-bold leading-tight"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Radiofrequency
+              <br />
+              <em className="not-italic text-[#888]">Ablation.</em>
+            </h1>
+            <p className="mt-5 text-[#666] text-lg leading-relaxed">
+              Radiofrequency ablation may be considered for selected patients with suspected
+              facet-mediated spine pain. The procedure is performed after appropriate clinical
+              evaluation and diagnostic nerve blocks confirm a likely facet joint contribution
+              to the patient's pain.
+            </p>
+          </div>
+          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
+            <ProcedureIllustration variant="radiofrequency-ablation" />
+          </div>
         </div>
       </section>
 
