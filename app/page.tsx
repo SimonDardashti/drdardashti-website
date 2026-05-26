@@ -384,9 +384,11 @@ export default function Home() {
                 Clinical Reputation.
               </h2>
               <p className="text-[#666] text-base leading-relaxed max-w-2xl">
-                Public physician profiles reflect high patient ratings and recurring comments
-                regarding communication, professionalism, compassion, and clear explanation
-                of treatment options.
+                Dr. Dardashti maintains an active clinical pain management practice with
+                consistently strong patient feedback across major physician and healthcare
+                review platforms. Public profiles commonly reflect patient comments regarding
+                communication, professionalism, compassion, and clear explanation of treatment
+                options.
               </p>
             </div>
           </div>
@@ -403,7 +405,7 @@ export default function Home() {
               },
               {
                 heading: "Independent Public Profiles",
-                body: "Public profiles are available through Providence, Healthgrades, WebMD, Vitals, Doximity, Henry Mayo, and SEAK.",
+                body: "Public profiles are available through Providence, Healthgrades, WebMD, Vitals, Yelp, Doximity, Henry Mayo, and SEAK.",
               },
             ].map((item, i) => (
               <div
@@ -430,6 +432,7 @@ export default function Home() {
                 { label: "Healthgrades", href: "https://www.healthgrades.com/physician/dr-simon-dardashti-gfjqs" },
                 { label: "WebMD", href: "https://doctor.webmd.com/doctor/simon-dardashti-af601989-d7f1-407a-b022-41572a80c061-overview" },
                 { label: "Vitals", href: "https://www.vitals.com/doctors/Dr_Simon_Dardashti.html" },
+                { label: "Yelp", href: "https://www.yelp.com/biz/simon-dardashti-md-mission-hills" },
                 { label: "Doximity", href: "https://www.doximity.com/pub/simon-dardashti-md" },
                 { label: "Henry Mayo", href: "https://www.henrymayo.com/doctors/profile/simon-dardashti/" },
                 { label: "SEAK", href: "https://www.seakexperts.com/members/18571-simon-dardashti" },
