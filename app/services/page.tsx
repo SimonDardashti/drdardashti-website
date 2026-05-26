@@ -226,6 +226,11 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+          <div className="md:ml-[calc(2/12*100%+2.5rem)] mt-6">
+            <Link href="/conditions" className="text-sm text-[#c8a020] hover:underline tracking-wide">
+              View all Conditions Evaluated →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -286,6 +291,11 @@ export default function ServicesPage() {
                 </ul>
               </div>
             ))}
+          </div>
+          <div className="md:ml-[calc(2/12*100%+2.5rem)] mt-6">
+            <Link href="/procedures" className="text-sm text-[#c8a020] hover:underline tracking-wide">
+              View all Procedures &amp; Treatment Options →
+            </Link>
           </div>
         </div>
       </section>

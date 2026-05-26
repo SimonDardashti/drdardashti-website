@@ -96,10 +96,10 @@ export default function Home() {
               and practical treatment options.
             </p>
             <Link
-              href="/services"
+              href="/conditions"
               className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
             >
-              View Conditions &amp; Services
+              Explore Conditions &amp; Procedures
             </Link>
 
             <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6">
@@ -247,10 +247,10 @@ export default function Home() {
 
           <div className="mt-8">
             <Link
-              href="/services"
+              href="/conditions"
               className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
             >
-              View all conditions &amp; treatment options →
+              View Conditions Evaluated →
             </Link>
           </div>
         </div>
@@ -269,7 +269,7 @@ export default function Home() {
               className="text-xl md:text-2xl font-bold text-[#0a0a0a] mb-3 leading-snug"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Common Conditions &amp; Procedures.
+              Featured Clinical Topics.
             </h2>
             <p className="text-[#777] text-sm mb-8 max-w-xl">
               Explore selected conditions and treatment options commonly evaluated in
@@ -325,10 +325,10 @@ export default function Home() {
               trigger point injections, joint injections, and spinal cord stimulation evaluation.
             </p>
             <Link
-              href="/services"
+              href="/procedures"
               className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
             >
-              View conditions &amp; services →
+              View Procedures &amp; Treatment Options →
             </Link>
           </div>
         </div>
