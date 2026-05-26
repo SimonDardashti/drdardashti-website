@@ -92,9 +92,10 @@ export default function RadiofrequencyAblationPage() {
           </div>
           <div className="hidden md:block w-[400px] aspect-[3/2] shrink-0 relative overflow-hidden">
             <Image
-              src="/images/procedures/radiofrequency-ablation-hero.jpg"
+              src="/images/procedures/radiofrequency-ablation-hero.webp"
               alt="Radiofrequency ablation of lumbar medial branch nerves medical illustration."
               fill
+              sizes="400px"
               className="object-cover object-center"
               priority
             />

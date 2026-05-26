@@ -92,9 +92,10 @@ export default function SpinalCordStimulationEvaluationPage() {
           </div>
           <div className="hidden md:block w-[460px] shrink-0 relative self-stretch">
             <Image
-              src="/images/procedures/spinal-cord-stimulation-hero.jpg"
+              src="/images/procedures/spinal-cord-stimulation-hero.webp"
               alt="Spinal cord stimulation lead placement medical illustration."
               fill
+              sizes="460px"
               className="object-contain object-center"
               priority
             />

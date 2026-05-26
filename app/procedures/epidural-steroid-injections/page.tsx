@@ -92,10 +92,11 @@ export default function EpiduralSteroidInjectionsPage() {
           </div>
           <div className="hidden md:block w-[440px] shrink-0">
             <Image
-              src="/images/procedures/epidural-steroid-injection-hero.png"
+              src="/images/procedures/epidural-steroid-injection-hero.webp"
               alt="Lumbar epidural steroid injection medical illustration."
-              width={1536}
-              height={1024}
+              width={880}
+              height={587}
+              sizes="440px"
               className="w-full h-auto"
               priority
             />

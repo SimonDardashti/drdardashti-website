@@ -91,9 +91,10 @@ export default function CrpsEvaluationPage() {
           </div>
           <div className="hidden md:block w-[300px] aspect-[3/4] shrink-0 relative overflow-hidden rounded-xl">
             <Image
-              src="/images/conditions/crps-lower-leg-hero.png"
+              src="/images/conditions/crps-lower-leg-hero.webp"
               alt="Lower leg swelling and color change associated with complex regional pain syndrome."
               fill
+              sizes="300px"
               className="object-cover object-center"
               priority
             />
