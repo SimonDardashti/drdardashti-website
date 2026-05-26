@@ -372,6 +372,8 @@ export default function Home() {
       <FadeUp>
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
+
+          {/* Header */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
             <div className="md:col-span-2">
               <p className="text-xs text-[#999] uppercase tracking-widest">Reputation</p>
@@ -394,40 +396,77 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e5e5e0] mb-10">
-            {[
-              {
-                heading: "Healthgrades",
-                body: "4.9/5 patient rating based on approximately 579 public reviews.",
-              },
-              {
-                heading: "WebMD Care",
-                body: "5/5 patient rating based on approximately 504 public ratings.",
-              },
-              {
-                heading: "Patient Communication",
-                body: "Public reviews commonly describe Dr. Dardashti as respectful, attentive, patient, and clear in explaining medical issues.",
-              },
-            ].map((item, i) => (
-              <div
-                key={item.heading}
-                className={`bg-white p-6 ${i < 2 ? "border-b md:border-b-0 md:border-r border-[#e5e5e0]" : ""}`}
-              >
-                <div className="w-5 h-px bg-[#c8a020] mb-4" />
-                <h3
-                  className="font-bold text-[#0a0a0a] text-sm mb-3"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                >
-                  {item.heading}
-                </h3>
-                <p className="text-sm text-[#666] leading-relaxed">{item.body}</p>
+
+            {/* Healthgrades */}
+            <div className="bg-white p-7 border-b md:border-b-0 md:border-r border-[#e5e5e0]">
+              <div className="w-5 h-px bg-[#c8a020] mb-4" />
+              <p className="text-[10px] font-semibold text-[#999] uppercase tracking-widest mb-4">
+                Healthgrades
+              </p>
+              <p className="leading-none mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                <span className="text-5xl font-bold text-[#0a0a0a]">4.9</span>
+                <span className="text-xl font-bold text-[#999]">/5</span>
+              </p>
+              <p className="text-[10px] text-[#999] uppercase tracking-widest mb-3">Patient rating</p>
+              <div className="flex gap-0.5 mb-4" aria-hidden="true">
+                {[0,1,2,3,4].map((i) => <span key={i} className="text-[#c8a020]">★</span>)}
               </div>
-            ))}
+              <p className="text-sm text-[#666] leading-relaxed">
+                Based on approximately 579 public reviews.
+              </p>
+            </div>
+
+            {/* WebMD Care */}
+            <div className="bg-white p-7 border-b md:border-b-0 md:border-r border-[#e5e5e0]">
+              <div className="w-5 h-px bg-[#c8a020] mb-4" />
+              <p className="text-[10px] font-semibold text-[#999] uppercase tracking-widest mb-4">
+                WebMD Care
+              </p>
+              <p className="leading-none mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                <span className="text-5xl font-bold text-[#0a0a0a]">5</span>
+                <span className="text-xl font-bold text-[#999]">/5</span>
+              </p>
+              <p className="text-[10px] text-[#999] uppercase tracking-widest mb-3">Patient rating</p>
+              <div className="flex gap-0.5 mb-4" aria-hidden="true">
+                {[0,1,2,3,4].map((i) => <span key={i} className="text-[#c8a020]">★</span>)}
+              </div>
+              <p className="text-sm text-[#666] leading-relaxed">
+                Based on approximately 504 public ratings.
+              </p>
+            </div>
+
+            {/* Patient Communication */}
+            <div className="bg-white p-7">
+              <div className="w-5 h-px bg-[#c8a020] mb-4" />
+              <p className="text-[10px] font-semibold text-[#999] uppercase tracking-widest mb-4">
+                Patient Communication
+              </p>
+              <p
+                className="text-5xl font-bold text-[#e8e3d8] leading-none mb-4 select-none"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                aria-hidden="true"
+              >
+                &ldquo;
+              </p>
+              <p className="text-[10px] text-[#999] uppercase tracking-widest mb-2">Common patient themes</p>
+              <p className="text-sm text-[#555] leading-relaxed">
+                Public reviews commonly describe Dr. Dardashti as respectful, attentive,
+                patient, and clear in explaining medical issues.
+              </p>
+            </div>
+
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-            <div className="md:col-span-2" />
-            <div className="md:col-span-10 flex flex-wrap gap-x-6 gap-y-2">
+          {/* External links */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div className="md:col-span-2">
+              <p className="text-[10px] text-[#999] uppercase tracking-widest leading-relaxed">
+                View public<br className="hidden md:block" /> profiles
+              </p>
+            </div>
+            <div className="md:col-span-10 flex flex-wrap gap-2">
               {[
                 { label: "Providence", href: "https://www.providence.org/doctors/pain-medicine/ca/mission-hills/simon-dardashti-1023335957" },
                 { label: "Healthgrades", href: "https://www.healthgrades.com/physician/dr-simon-dardashti-gfjqs" },
@@ -443,13 +482,14 @@ export default function Home() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#c8a020] text-xs font-semibold uppercase tracking-widest hover:underline"
+                  className="border border-[#c8a020]/40 text-[#c8a020] text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 hover:border-[#c8a020] hover:bg-[#c8a020]/5 transition-colors duration-150"
                 >
-                  {link.label} →
+                  {link.label}
                 </a>
               ))}
             </div>
           </div>
+
         </div>
       </section>
       </FadeUp>
