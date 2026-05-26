@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import ProcedureIllustration from "@/components/ProcedureIllustration";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/crps-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -70,7 +70,7 @@ export default function CrpsEvaluationPage() {
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
           <div className="flex-1">
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
               Conditions Evaluated
@@ -89,8 +89,14 @@ export default function CrpsEvaluationPage() {
               in the context of the patient's history, symptoms, and physical examination.
             </p>
           </div>
-          <div className="hidden md:block w-[200px] shrink-0 pt-2 opacity-70">
-            <ProcedureIllustration variant="crps" />
+          <div className="hidden md:block w-[300px] aspect-[3/4] shrink-0 relative overflow-hidden rounded-xl">
+            <Image
+              src="/images/conditions/crps-lower-leg-hero.png"
+              alt="Lower leg swelling and color change associated with complex regional pain syndrome."
+              fill
+              className="object-cover object-center"
+              priority
+            />
           </div>
         </div>
       </section>
