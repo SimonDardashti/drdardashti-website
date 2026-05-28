@@ -136,6 +136,8 @@ export default function SciaticaPage() {
               root. It can occur in the lumbar spine — causing symptoms into the leg — or in the
               cervical spine, causing symptoms into the arm. Radiculopathy refers to nerve root
               dysfunction that may also involve numbness, tingling, or weakness in addition to pain.
+              When symptoms primarily involve the neck with radiation into the arm, that presentation
+              is more specifically addressed under cervical radiculopathy.
             </p>
             <p>
               Common underlying causes may include herniated intervertebral discs, spinal stenosis,
@@ -258,6 +260,8 @@ export default function SciaticaPage() {
               Radicular pain can have multiple contributing causes, and not all cases resolve with
               any single treatment. Response to treatment varies among patients. An accurate
               diagnosis based on clinical evaluation is essential before treatment is initiated.
+              This page is for general informational purposes only and does not constitute
+              medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from the
@@ -279,6 +283,8 @@ export default function SciaticaPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/lumbar-radiculopathy" className="text-[#c8a020] hover:underline tracking-wide">Lumbar Radiculopathy Evaluation →</Link></li>
+              <li><Link href="/conditions/radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Radicular Pain Evaluation →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>

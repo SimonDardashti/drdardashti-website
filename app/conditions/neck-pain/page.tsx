@@ -254,6 +254,8 @@ export default function NeckPainPage() {
               identifiable structural source, and response to treatment varies among patients.
               A formal clinical evaluation is required to determine appropriate treatment
               for any individual patient.
+              This page is for general informational purposes only and does not constitute
+              medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from
@@ -275,7 +277,7 @@ export default function NeckPainPage() {
               Related Conditions &amp; Procedures.
             </h2>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Sciatica and Radicular Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/cervical-radiculopathy" className="text-[#c8a020] hover:underline tracking-wide">Cervical Radiculopathy Evaluation →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>

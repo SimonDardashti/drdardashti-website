@@ -263,6 +263,8 @@ export default function LowBackPainPage() {
             <p>
               No treatment can be guaranteed to provide relief. A formal clinical evaluation is
               required to determine appropriate treatment for any individual patient.
+              This page is for general informational purposes only and does not constitute
+              medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from the
@@ -284,7 +286,11 @@ export default function LowBackPainPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Sciatica and Radicular Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/lumbar-radiculopathy" className="text-[#c8a020] hover:underline tracking-wide">Lumbar Radiculopathy Evaluation →</Link></li>
+              <li><Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">Facet-Mediated Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/sacroiliac-joint-pain" className="text-[#c8a020] hover:underline tracking-wide">Sacroiliac Joint Pain Evaluation →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
+              <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Facet Joint Injections &amp; Medial Branch Blocks →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>

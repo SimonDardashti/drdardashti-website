@@ -272,6 +272,8 @@ export default function CrpsEvaluationPage() {
               be made from symptoms or imaging alone. Other conditions may produce similar
               findings. Treatment response varies and is not predictable in advance. A formal
               clinical evaluation is required for any individual patient.
+              This page is for general informational purposes only and does not constitute
+              medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from
@@ -294,7 +296,8 @@ export default function CrpsEvaluationPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/procedures/spinal-cord-stimulation-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Spinal Cord Stimulation Evaluation →</Link></li>
-              <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
+              <li><Link href="/conditions/neuropathic-pain" className="text-[#c8a020] hover:underline tracking-wide">Neuropathic Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/complex-pain-conditions" className="text-[#c8a020] hover:underline tracking-wide">Complex Pain Conditions →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>

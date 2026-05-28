@@ -46,7 +46,7 @@ const pageSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Conditions", item: `${SITE_URL}/conditions` },
+      { "@type": "ListItem", position: 2, name: "Conditions & Services", item: `${SITE_URL}/services` },
       { "@type": "ListItem", position: 3, name: "Post-Mastectomy Pain Syndrome", item: PAGE_URL },
     ],
   },
@@ -128,11 +128,11 @@ export default function PMPSPage() {
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs text-[#999] uppercase tracking-widest mb-8">In Brief</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
+            <div className="p-6 border-b md:border-b-0 md:border-r border-[#e5e5e0]">
               <div className="w-5 h-px bg-[#c8a020] mb-4" />
               <h2
-                className="font-bold text-[#0a0a0a] text-sm mb-2"
+                className="font-bold text-[#0a0a0a] text-sm mb-3"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 What it is
@@ -143,10 +143,10 @@ export default function PMPSPage() {
                 surgery. Often neuropathic in character.
               </p>
             </div>
-            <div>
+            <div className="p-6 border-b md:border-b-0 md:border-r border-[#e5e5e0]">
               <div className="w-5 h-px bg-[#c8a020] mb-4" />
               <h2
-                className="font-bold text-[#0a0a0a] text-sm mb-2"
+                className="font-bold text-[#0a0a0a] text-sm mb-3"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 Who may benefit from evaluation
@@ -157,10 +157,10 @@ export default function PMPSPage() {
                 standard measures.
               </p>
             </div>
-            <div>
+            <div className="p-6">
               <div className="w-5 h-px bg-[#c8a020] mb-4" />
               <h2
-                className="font-bold text-[#0a0a0a] text-sm mb-2"
+                className="font-bold text-[#0a0a0a] text-sm mb-3"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 Focus of evaluation
@@ -178,8 +178,9 @@ export default function PMPSPage() {
       {/* SECTION 1 — Overview */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">1</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>01</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Overview</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -216,8 +217,9 @@ export default function PMPSPage() {
       {/* SECTION 2 — Why Pain Persists */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">2</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>02</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Mechanisms</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -254,8 +256,9 @@ export default function PMPSPage() {
       {/* SECTION 3 — Common Symptoms */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">3</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>03</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Symptoms</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -278,7 +281,7 @@ export default function PMPSPage() {
                 "Pain that may be present on the same side as surgery or bilaterally in some cases",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#c8a020] shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -295,8 +298,9 @@ export default function PMPSPage() {
       {/* SECTION 4 — Evaluation */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">4</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>04</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Evaluation</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -331,8 +335,9 @@ export default function PMPSPage() {
       {/* SECTION 5 — Treatment Options */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">5</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>05</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Treatment</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -379,8 +384,9 @@ export default function PMPSPage() {
       {/* SECTION 6 — Targeted Nerve Blocks */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">6</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>06</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Procedures</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -411,7 +417,7 @@ export default function PMPSPage() {
                 "Stellate ganglion block — considered in carefully selected patients when sympathetically maintained pain is a possible component",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#c8a020] shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
                   <span className="text-sm">{item}</span>
                 </li>
               ))}
@@ -430,8 +436,9 @@ export default function PMPSPage() {
       {/* SECTION 7 — Advanced Options */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">7</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>07</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Advanced</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -481,8 +488,9 @@ export default function PMPSPage() {
       {/* SECTION 8 — Multidisciplinary Care */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">8</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>08</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Care</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -596,8 +604,8 @@ export default function PMPSPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/conditions" className="text-[#c8a020] hover:underline tracking-wide">
-                  View all Conditions Evaluated →
+                <Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">
+                  View all Conditions &amp; Services →
                 </Link>
               </li>
             </ul>

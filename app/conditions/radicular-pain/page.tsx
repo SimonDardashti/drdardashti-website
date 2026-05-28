@@ -85,7 +85,9 @@ export default function RadicularPainPage() {
             Radicular pain describes pain that travels along the course of a spinal nerve
             root from the spine into the arm or leg. It is a distinct type of pain from
             localized neck or back pain and requires specific evaluation to identify the
-            nerve level involved and the most appropriate treatment approach.
+            nerve level involved and the most appropriate treatment approach. Sciatica is a
+            commonly used term for lumbar radicular pain that radiates into the leg; radicular
+            pain can also arise from the cervical spine, producing symptoms into the arm and hand.
           </p>
         </div>
       </section>

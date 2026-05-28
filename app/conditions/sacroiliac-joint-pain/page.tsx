@@ -247,6 +247,8 @@ export default function SacroiliacJointPainPage() {
               conditions can produce similar symptoms. Response to treatment varies among patients.
               A formal clinical evaluation is required to determine whether SI joint involvement
               is a likely contributor to an individual patient's pain.
+              This page is for general informational purposes only and does not constitute
+              medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from
@@ -269,6 +271,7 @@ export default function SacroiliacJointPainPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+              <li><Link href="/procedures/sacroiliac-joint-injections" className="text-[#c8a020] hover:underline tracking-wide">Sacroiliac Joint Injections →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
