@@ -51,11 +51,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-[#1a1a1a] px-6 py-6 max-w-6xl mx-auto flex flex-col gap-4 text-xs text-[#444]">
-        <p className="leading-relaxed text-[#383838] max-w-4xl">
-          This website is for general informational purposes only and does not provide medical advice, diagnosis, or treatment. Clinical questions, appointment requests, prescriptions, and patient-specific medical concerns should be handled through the appropriate medical office or patient communication channel. If you are experiencing a medical emergency, call 911 or seek emergency medical care.
+      <div className="border-t border-[#1a1a1a] px-6 py-6 max-w-6xl mx-auto flex flex-col gap-3 text-xs text-[#555]">
+        <p className="leading-relaxed max-w-4xl">
+          Information on this website is for general educational purposes only and does not constitute medical advice, diagnosis, treatment, or a physician-patient relationship. Please consult a qualified healthcare professional regarding any personal medical concerns.
         </p>
-        <p>&copy; {year} Simon Dardashti, MD · Mission Hills, CA</p>
+        <p className="text-[#444]">&copy; {year} Simon Dardashti, MD · Mission Hills, CA</p>
       </div>
     </footer>
   );
