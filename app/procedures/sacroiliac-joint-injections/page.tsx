@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import SIJointIllustration from "@/components/illustrations/SIJointIllustration";
+import Image from "next/image";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/sacroiliac-joint-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -111,8 +111,15 @@ export default function SIJointInjectionsPage() {
               appropriate.
             </p>
           </div>
-          <div className="hidden md:block w-[300px] shrink-0 opacity-90">
-            <SIJointIllustration className="w-full h-auto" />
+          <div className="hidden md:block w-[360px] shrink-0 rounded-xl overflow-hidden bg-white">
+            <Image
+              src="/images/procedures/sacroiliac-joint-injection.png"
+              alt="Medical illustration of the sacroiliac joint and needle approach for sacroiliac joint injection."
+              width={1536}
+              height={1024}
+              className="w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </section>

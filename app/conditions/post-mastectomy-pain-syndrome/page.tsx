@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PMPSIllustration from "@/components/illustrations/PMPSIllustration";
+import Image from "next/image";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/post-mastectomy-pain-syndrome";
 const SITE_URL = "https://www.drdardashti.com";
@@ -111,8 +111,15 @@ export default function PMPSPage() {
               medicine evaluation.
             </p>
           </div>
-          <div className="hidden md:block w-[300px] shrink-0 opacity-90">
-            <PMPSIllustration className="w-full h-auto" />
+          <div className="hidden md:block w-[360px] shrink-0 rounded-xl overflow-hidden bg-white">
+            <Image
+              src="/images/conditions/post-mastectomy-pain-syndrome.png"
+              alt="Medical illustration showing nerve-related pain patterns in the chest wall and upper arm after breast surgery."
+              width={1536}
+              height={1024}
+              className="w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import FacetJointIllustration from "@/components/illustrations/FacetJointIllustration";
+import Image from "next/image";
 
 const PAGE_URL =
   "https://www.drdardashti.com/procedures/facet-joint-injections-medial-branch-blocks";
@@ -146,8 +146,15 @@ export default function FacetJointInjectionsPage() {
               procedure is appropriate for an individual patient.
             </p>
           </div>
-          <div className="hidden md:block w-[320px] shrink-0 opacity-90">
-            <FacetJointIllustration className="w-full h-auto" />
+          <div className="hidden md:block w-[300px] shrink-0 rounded-xl overflow-hidden bg-white">
+            <Image
+              src="/images/procedures/facet-medial-branch-blocks.png"
+              alt="Simplified medical illustration of lumbar facet joints, medial branch nerves, and needle approach for facet joint injection or medial branch block."
+              width={1254}
+              height={1254}
+              className="w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </section>
