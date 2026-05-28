@@ -102,7 +102,7 @@ export default function Home() {
               Explore Conditions &amp; Procedures
             </Link>
 
-            <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6">
+            <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6 items-end">
               <div>
                 <p className="text-xs font-semibold text-white mb-1 leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Dual Board-Certified</p>
                 <p className="text-xs text-[#555] uppercase tracking-widest">Pain Medicine &amp; Anesthesiology</p>
@@ -112,7 +112,7 @@ export default function Home() {
                 <p className="text-xs text-[#555] uppercase tracking-widest">Years Active Clinical Practice</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>UCLA</p>
+                <p className="text-3xl font-bold text-[#8BB8E8] mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>UCLA</p>
                 <p className="text-xs text-[#555] uppercase tracking-widest">Pain Medicine Fellowship</p>
               </div>
             </div>
