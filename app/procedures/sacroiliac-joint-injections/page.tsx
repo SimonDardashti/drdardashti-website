@@ -105,7 +105,7 @@ export default function SIJointInjectionsPage() {
             </h1>
             <p className="mt-5 text-[#666] text-lg leading-relaxed">
               Sacroiliac joint injections are image-guided procedures that can
-              help determine whether the SI joint is contributing to a patient's
+              help determine whether the SI joint is contributing to a patient&apos;s
               pain — and may also provide temporary relief. A formal clinical
               evaluation is needed to determine whether this procedure is
               appropriate.
@@ -237,9 +237,10 @@ export default function SIJointInjectionsPage() {
             </ul>
             <p className="text-sm text-[#888]">
               These features alone are not diagnostic. A thorough clinical
-              evaluation — including physical examination and review of imaging
-              when available — is needed to assess whether the SI joint may be
-              a source.
+              evaluation — including physical examination with specific
+              provocation maneuvers, review of imaging when available, and
+              consideration of the patient&apos;s response to treatment — is needed
+              to assess whether the SI joint may be a meaningful source of pain.
             </p>
           </div>
         </div>
@@ -267,7 +268,7 @@ export default function SIJointInjectionsPage() {
               <div className="border border-[#e5e5e0] rounded p-5">
                 <p className="text-xs text-[#c8a020] uppercase tracking-widest font-semibold mb-2">Diagnostic</p>
                 <p className="text-sm text-[#555] leading-relaxed">
-                  If the patient's typical pain is significantly reduced after
+                  If the patient&apos;s typical pain is significantly reduced after
                   local anesthetic is injected into the joint, this suggests
                   the SI joint is contributing to the pain. This response can
                   help guide further treatment decisions.

@@ -85,10 +85,15 @@ const conditionGroups = [
     ],
   },
   {
+    title: "Nerve & Post-Surgical Pain",
+    items: [
+      { label: "Post-mastectomy pain syndrome", href: "/conditions/post-mastectomy-pain-syndrome" },
+    ],
+  },
+  {
     title: "Complex Pain Conditions",
     items: [
       { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
-      { label: "Post-mastectomy pain syndrome", href: "/conditions/post-mastectomy-pain-syndrome" },
       { label: "Chronic pain syndrome evaluation" },
       { label: "Complex pain conditions" },
     ],
@@ -197,7 +202,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="md:ml-[calc(2/12*100%+2.5rem)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
+          <div className="md:ml-[calc(2/12*100%+2.5rem)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border border-[#e5e5e0]">
             {conditionGroups.map((group, i) => (
               <div
                 key={group.title}

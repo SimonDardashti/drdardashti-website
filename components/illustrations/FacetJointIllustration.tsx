@@ -94,20 +94,9 @@ export default function FacetJointIllustration({ className }: { className?: stri
       {/* Needle hub */}
       <rect x="252" y="144" width="10" height="6" rx="2" fill="#777" stroke="#999" strokeWidth="0.8" />
 
-      {/* ── Labels ── */}
-      <text x="140" y="274" textAnchor="middle" fill="#777" fontSize="9" fontFamily="Georgia, serif" letterSpacing="0.05em">
-        POSTERIOR LUMBAR SPINE
-      </text>
-      <text x="140" y="287" textAnchor="middle" fill="#555" fontSize="8" fontFamily="Georgia, serif">
-        Facet joints · Medial branch pathway
-      </text>
-
-      {/* Gold dot label — highlighted joint */}
+      {/* Gold callout dot — highlighted joint */}
       <line x1="206" y1="182" x2="232" y2="200" stroke="#c8a020" strokeWidth="0.8" opacity="0.6" />
-      <text x="234" y="204" fill="#c8a020" fontSize="7.5" fontFamily="Georgia, serif">L4–L5</text>
-
-      {/* Needle label */}
-      <text x="258" y="142" fill="#888" fontSize="7.5" fontFamily="Georgia, serif">needle</text>
+      <circle cx="234" cy="202" r="2" fill="#c8a020" opacity="0.7" />
     </svg>
   );
 }

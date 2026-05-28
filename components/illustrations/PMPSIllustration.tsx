@@ -111,18 +111,9 @@ export default function PMPSIllustration({ className }: { className?: string }) 
         opacity="0.4"
       />
 
-      {/* ── Labels ── */}
-      <text x="140" y="222" textAnchor="middle" fill="#777" fontSize="9" fontFamily="Georgia, serif" letterSpacing="0.05em">
-        UPPER TORSO · ANTERIOR VIEW
-      </text>
-      <text x="140" y="235" textAnchor="middle" fill="#555" fontSize="8" fontFamily="Georgia, serif">
-        Chest wall · Shoulder · Axilla · Nerve territory
-      </text>
-
-      {/* Callout — nerve territory */}
+      {/* Callout dot — nerve territory */}
       <line x1="54" y1="126" x2="30" y2="148" stroke="#c8a020" strokeWidth="0.8" opacity="0.6" />
-      <text x="8" y="152" fill="#c8a020" fontSize="7.5" fontFamily="Georgia, serif">nerve</text>
-      <text x="4" y="162" fill="#c8a020" fontSize="7.5" fontFamily="Georgia, serif">territory</text>
+      <circle cx="28" cy="150" r="2.5" fill="#c8a020" opacity="0.7" />
     </svg>
   );
 }

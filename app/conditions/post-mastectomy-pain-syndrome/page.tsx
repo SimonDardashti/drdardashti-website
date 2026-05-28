@@ -300,7 +300,7 @@ export default function PMPSPage() {
             </h2>
             <p>
               A pain medicine evaluation for PMPS focuses on understanding the
-              nature and distribution of the patient's pain, identifying which
+              nature and distribution of the patient&apos;s pain, identifying which
               structures may be contributing, and reviewing what has been tried
               previously.
             </p>
@@ -336,7 +336,7 @@ export default function PMPSPage() {
             </h2>
             <p>
               Treatment for PMPS is individualized and often multimodal. The
-              approach depends on the patient's specific pain pattern, overall
+              approach depends on the patient&apos;s specific pain pattern, overall
               health, prior treatment history, and goals. Not every option is
               appropriate for every patient.
             </p>
@@ -344,19 +344,19 @@ export default function PMPSPage() {
               {[
                 {
                   title: "Medications",
-                  body: "Certain medications may help reduce neuropathic pain. Options are selected based on the patient's clinical profile, other medical conditions, and tolerability.",
+                  body: "Neuropathic pain medications or topical agents may help reduce discomfort in selected patients. Options are individualized based on clinical profile, other medical conditions, and tolerability.",
                 },
                 {
                   title: "Physical therapy",
-                  body: "Coordination with physical therapy can address movement limitations, shoulder mechanics, and soft tissue contributors to ongoing discomfort.",
+                  body: "Coordination with physical therapy may address shoulder or chest wall mobility limitations and soft tissue contributors to ongoing pain.",
                 },
                 {
                   title: "Targeted nerve blocks",
-                  body: "In appropriate patients, nerve blocks targeting specific nerves in the axilla or chest wall may help reduce pain or clarify the pain source. Published cancer pain literature describes stepwise approaches that may include targeted nerve blocks in selected patients.",
+                  body: "In appropriate patients, image-guided or ultrasound-guided nerve blocks targeting specific nerves in the axilla, chest wall, or intercostal region may help reduce pain or clarify the pain source.",
                 },
                 {
                   title: "Neuromodulation",
-                  body: "In selected patients with refractory pain, published cancer pain literature describes approaches that may include neuromodulation. Published cancer pain literature describes stepwise approaches that may include neuromodulation in appropriate refractory cases.",
+                  body: "Published cancer pain literature describes stepwise approaches that may include neuromodulation in carefully selected patients with refractory pain. This is not a routine recommendation.",
                 },
               ].map((item) => (
                 <div key={item.title} className="border border-[#e5e5e0] rounded p-5">
@@ -389,17 +389,32 @@ export default function PMPSPage() {
               specific nerves believed to be contributing to the pain.
             </p>
             <p>
-              The intercostobrachial nerve is one nerve that may be targeted in
-              patients with pain in the axilla or inner arm following breast
-              surgery. Other peripheral nerve blocks may be considered depending
-              on the pain distribution.
+              The approach depends on the patient&apos;s specific pain distribution
+              and the nerves most likely involved. Blocks may be performed
+              under ultrasound or image guidance. Options that may be evaluated
+              in selected patients include:
             </p>
+            <ul className="list-none space-y-2 pl-0">
+              {[
+                "Intercostobrachial nerve block — for axillary or inner arm pain following breast surgery",
+                "Intercostal nerve blocks — for chest wall pain in the distribution of affected intercostal nerves",
+                "Serratus anterior plane block — a regional approach that may address lateral chest wall pain",
+                "Pectoral nerve block (PECS) — a regional approach sometimes considered for anterior chest wall pain in appropriate patients",
+                "Paravertebral block — when pain has a thoracic dermatomal distribution, in selected patients",
+                "Stellate ganglion block — considered in carefully selected patients when sympathetically maintained pain is a possible component",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#c8a020] shrink-0" />
+                  <span className="text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
             <p>
               Nerve blocks are not a cure for PMPS. In some patients, they
               can reduce pain temporarily and help identify which nerves are
               involved. This information can inform decisions about further
-              treatment. Results vary between individuals and cannot be
-              guaranteed.
+              treatment. Not every patient is a candidate for every block, and
+              results vary between individuals.
             </p>
           </div>
         </div>
@@ -433,9 +448,16 @@ export default function PMPSPage() {
               coordination with the oncology team.
             </p>
             <p>
-              Evaluation for neuromodulation does not imply that the procedure
-              will be recommended. A full clinical assessment determines whether
-              a patient is an appropriate candidate.
+              In limited circumstances — particularly in the context of
+              refractory cancer-related pain — intrathecal therapy may be
+              considered as an advanced option. This is not a typical first- or
+              second-line approach for PMPS and would require careful
+              multidisciplinary evaluation.
+            </p>
+            <p>
+              Evaluation for any advanced option does not imply that a
+              procedure will be recommended. A full clinical assessment
+              determines whether a patient is an appropriate candidate.
             </p>
             <div className="mt-4">
               <Link
@@ -471,13 +493,13 @@ export default function PMPSPage() {
             <p>
               Patients seeking pain medicine evaluation for PMPS should
               continue their oncology follow-up as scheduled. Any new or
-              concerning symptoms should be brought to the oncologist's
+              concerning symptoms should be brought to the oncologist&apos;s
               attention promptly, separate from the pain management evaluation.
             </p>
             <p>
               Physical therapy, psychology support, and other disciplines may
               also play a role in the overall management of PMPS depending on
-              the patient's needs and goals.
+              the patient&apos;s needs and goals.
             </p>
           </div>
         </div>

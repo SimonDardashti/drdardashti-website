@@ -84,20 +84,9 @@ export default function SIJointIllustration({ className }: { className?: string 
       {/* Needle hub */}
       <rect x="244" y="89" width="10" height="6" rx="2" fill="#777" stroke="#999" strokeWidth="0.8" />
 
-      {/* ── Labels ── */}
-      <text x="140" y="244" textAnchor="middle" fill="#777" fontSize="9" fontFamily="Georgia, serif" letterSpacing="0.05em">
-        POSTERIOR PELVIS
-      </text>
-      <text x="140" y="257" textAnchor="middle" fill="#555" fontSize="8" fontFamily="Georgia, serif">
-        Sacrum · Iliac wings · SI joints
-      </text>
-
-      {/* Gold callout — right SI joint */}
+      {/* Gold callout dot — right SI joint */}
       <line x1="174" y1="107" x2="200" y2="90" stroke="#c8a020" strokeWidth="0.8" opacity="0.6" />
-      <text x="202" y="88" fill="#c8a020" fontSize="7.5" fontFamily="Georgia, serif">SI joint</text>
-
-      {/* Needle label */}
-      <text x="248" y="86" fill="#888" fontSize="7.5" fontFamily="Georgia, serif">needle</text>
+      <circle cx="201" cy="88" r="2" fill="#c8a020" opacity="0.7" />
     </svg>
   );
 }
