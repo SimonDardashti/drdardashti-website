@@ -82,6 +82,7 @@ const conditionGroups = [
     title: "Complex Pain Conditions",
     items: [
       { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
+      { label: "Post-mastectomy pain syndrome", href: "/conditions/post-mastectomy-pain-syndrome" },
       { label: "Chronic pain syndrome evaluation" },
       { label: "Complex pain conditions" },
     ],

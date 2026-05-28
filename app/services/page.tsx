@@ -88,6 +88,7 @@ const conditionGroups = [
     title: "Complex Pain Conditions",
     items: [
       { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
+      { label: "Post-mastectomy pain syndrome", href: "/conditions/post-mastectomy-pain-syndrome" },
       { label: "Chronic pain syndrome evaluation" },
       { label: "Complex pain conditions" },
     ],
@@ -107,7 +108,7 @@ const procedureGroups = [
       { label: "Selective nerve root blocks" },
       { label: "Facet joint injections / medial branch blocks", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
       { label: "Radiofrequency ablation", href: "/procedures/radiofrequency-ablation" },
-      { label: "Sacroiliac joint injections" },
+      { label: "Sacroiliac joint injections", href: "/procedures/sacroiliac-joint-injections" },
     ],
   },
   {

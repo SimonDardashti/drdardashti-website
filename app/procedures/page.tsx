@@ -57,7 +57,7 @@ const procedureGroups = [
       { label: "Selective nerve root blocks" },
       { label: "Facet joint injections / medial branch blocks", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
       { label: "Radiofrequency ablation", href: "/procedures/radiofrequency-ablation" },
-      { label: "Sacroiliac joint injections" },
+      { label: "Sacroiliac joint injections", href: "/procedures/sacroiliac-joint-injections" },
     ],
   },
   {
