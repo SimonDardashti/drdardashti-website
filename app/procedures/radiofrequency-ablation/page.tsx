@@ -42,7 +42,7 @@ const pageSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Conditions & Services", item: `${SITE_URL}/services` },
+      { "@type": "ListItem", position: 2, name: "Procedures & Treatment Options", item: `${SITE_URL}/procedures` },
       { "@type": "ListItem", position: 3, name: "Radiofrequency Ablation", item: PAGE_URL },
     ],
   },
@@ -245,7 +245,7 @@ export default function RadiofrequencyAblationPage() {
             <p>
               The procedure carries potential risks, which should be discussed with the treating
               physician before any procedure is performed. This page is for general informational
-              purposes only and does not constitute medical advice.
+              purposes only and does not constitute medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from the
@@ -266,10 +266,12 @@ export default function RadiofrequencyAblationPage() {
               Related Conditions &amp; Procedures.
             </h2>
             <ul className="space-y-3 text-sm">
+              <li><Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">Facet-Mediated Pain Evaluation →</Link></li>
+              <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Facet Joint Injections &amp; Medial Branch Blocks →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/neck-pain" className="text-[#c8a020] hover:underline tracking-wide">Neck Pain Evaluation →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
-              <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Sciatica and Radicular Pain Evaluation →</Link></li>
-              <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
+              <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">View all Procedures &amp; Treatment Options →</Link></li>
             </ul>
           </div>
         </div>

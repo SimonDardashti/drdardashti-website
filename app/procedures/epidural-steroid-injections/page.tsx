@@ -42,7 +42,7 @@ const pageSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Conditions & Services", item: `${SITE_URL}/services` },
+      { "@type": "ListItem", position: 2, name: "Procedures & Treatment Options", item: `${SITE_URL}/procedures` },
       { "@type": "ListItem", position: 3, name: "Epidural Steroid Injections", item: PAGE_URL },
     ],
   },
@@ -253,7 +253,11 @@ export default function EpiduralSteroidInjectionsPage() {
               As with any medical procedure, epidural steroid injections carry potential risks.
               Risks and benefits should be discussed in detail with the treating physician before
               any procedure is performed. This page is for general informational purposes only and
-              does not constitute medical advice.
+              does not constitute medical advice or create a physician-patient relationship.
+            </p>
+            <p>
+              Dr. Dardashti sees patients in Mission Hills, California, serving patients from the
+              San Fernando Valley, Santa Clarita Valley, and surrounding Los Angeles communities.
             </p>
           </div>
         </div>
@@ -273,7 +277,7 @@ export default function EpiduralSteroidInjectionsPage() {
               <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Sciatica and Radicular Pain Evaluation →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
-              <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
+              <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">View all Procedures &amp; Treatment Options →</Link></li>
             </ul>
           </div>
         </div>

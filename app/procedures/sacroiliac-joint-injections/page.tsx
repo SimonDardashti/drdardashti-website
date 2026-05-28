@@ -46,11 +46,26 @@ const pageSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Procedures", item: `${SITE_URL}/procedures` },
+      { "@type": "ListItem", position: 2, name: "Procedures & Treatment Options", item: `${SITE_URL}/procedures` },
       { "@type": "ListItem", position: 3, name: "Sacroiliac Joint Injections", item: PAGE_URL },
     ],
   },
 };
+
+const inBrief = [
+  {
+    heading: "What it is",
+    body: "An image-guided injection into or around the sacroiliac joint to evaluate or treat lower back and buttock pain that may originate from this joint.",
+  },
+  {
+    heading: "When it may help",
+    body: "In selected patients with lower back, buttock, or hip area pain where evaluation suggests the SI joint may be a source. Not appropriate for every patient.",
+  },
+  {
+    heading: "What to expect",
+    body: "Performed with fluoroscopic image guidance. Local anesthetic numbs the skin beforehand. Patients are typically observed briefly and go home the same day.",
+  },
+];
 
 const faqs = [
   {
@@ -128,49 +143,22 @@ export default function SIJointInjectionsPage() {
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs text-[#999] uppercase tracking-widest mb-8">In Brief</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="w-5 h-px bg-[#c8a020] mb-4" />
-              <h2
-                className="font-bold text-[#0a0a0a] text-sm mb-2"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e5e5e0]">
+            {inBrief.map((item, i) => (
+              <div
+                key={item.heading}
+                className={`p-6 ${i < inBrief.length - 1 ? "border-b md:border-b-0 md:border-r border-[#e5e5e0]" : ""}`}
               >
-                What it is
-              </h2>
-              <p className="text-sm text-[#666] leading-relaxed">
-                An image-guided injection into or around the sacroiliac joint
-                to evaluate or treat lower back and buttock pain that may
-                originate from this joint.
-              </p>
-            </div>
-            <div>
-              <div className="w-5 h-px bg-[#c8a020] mb-4" />
-              <h2
-                className="font-bold text-[#0a0a0a] text-sm mb-2"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              >
-                When it may help
-              </h2>
-              <p className="text-sm text-[#666] leading-relaxed">
-                In selected patients with lower back, buttock, or hip area
-                pain where evaluation suggests the SI joint may be a source.
-                Not appropriate for every patient.
-              </p>
-            </div>
-            <div>
-              <div className="w-5 h-px bg-[#c8a020] mb-4" />
-              <h2
-                className="font-bold text-[#0a0a0a] text-sm mb-2"
-                style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              >
-                What to expect
-              </h2>
-              <p className="text-sm text-[#666] leading-relaxed">
-                Performed with fluoroscopic image guidance. Local anesthetic
-                numbs the skin beforehand. Patients are typically observed
-                briefly and go home the same day.
-              </p>
-            </div>
+                <div className="w-5 h-px bg-[#c8a020] mb-4" />
+                <h2
+                  className="font-bold text-[#0a0a0a] text-sm mb-3"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {item.heading}
+                </h2>
+                <p className="text-sm text-[#666] leading-relaxed">{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -178,8 +166,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 1 — What Is the SI Joint */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">1</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>01</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Overview</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -213,8 +202,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 2 — Symptoms */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">2</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>02</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Symptoms</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -237,7 +227,7 @@ export default function SIJointInjectionsPage() {
                 "Tenderness over the sacroiliac region on one or both sides",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#c8a020] shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -256,8 +246,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 3 — Why an SI Joint Injection May Be Considered */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">3</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>03</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Evaluation</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -303,8 +294,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 4 — What the Procedure Involves */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">4</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>04</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">The Procedure</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -342,8 +334,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 5 — Aftercare */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">5</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>05</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Aftercare</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -376,8 +369,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 6 — Risks */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#f0f0f0] leading-none select-none">6</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>06</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Risks</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -401,7 +395,7 @@ export default function SIJointInjectionsPage() {
                 "Incomplete or absent response to the injection",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#c8a020] shrink-0" />
+                  <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -418,8 +412,9 @@ export default function SIJointInjectionsPage() {
       {/* SECTION 7 — Part of a Treatment Plan */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2 flex md:justify-end">
-            <span className="text-[6rem] font-bold text-[#e8e6e3] leading-none select-none">7</span>
+          <div className="md:col-span-2">
+            <span className="text-7xl font-bold text-[#e8e6e3] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>07</span>
+            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Treatment Plan</p>
           </div>
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2
@@ -519,6 +514,11 @@ export default function SIJointInjectionsPage() {
               <li>
                 <Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">
                   Low Back Pain Evaluation →
+                </Link>
+              </li>
+              <li>
+                <Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">
+                  Facet-Mediated Pain Evaluation →
                 </Link>
               </li>
               <li>

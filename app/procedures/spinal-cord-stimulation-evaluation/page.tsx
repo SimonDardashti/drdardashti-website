@@ -42,7 +42,7 @@ const pageSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Conditions & Services", item: `${SITE_URL}/services` },
+      { "@type": "ListItem", position: 2, name: "Procedures & Treatment Options", item: `${SITE_URL}/procedures` },
       { "@type": "ListItem", position: 3, name: "Spinal Cord Stimulation Evaluation", item: PAGE_URL },
     ],
   },
@@ -73,7 +73,7 @@ export default function SpinalCordStimulationEvaluationPage() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
           <div className="flex-1">
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-              Procedures
+              Procedures &amp; Treatment Options
             </p>
             <h1
               className="text-4xl md:text-6xl font-bold leading-tight"
@@ -253,7 +253,8 @@ export default function SpinalCordStimulationEvaluationPage() {
               Response to treatment varies and cannot be predicted in advance. SCS is typically
               considered after other treatments have been tried. A formal clinical evaluation is
               required to determine whether SCS is an appropriate consideration for any individual
-              patient.
+              patient. This page is for general informational purposes only and does not constitute
+              medical advice or create a physician-patient relationship.
             </p>
             <p>
               Dr. Dardashti sees patients in Mission Hills, California, serving patients from
@@ -276,9 +277,11 @@ export default function SpinalCordStimulationEvaluationPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/conditions/crps-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Complex Regional Pain Syndrome Evaluation →</Link></li>
-              <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
+              <li><Link href="/conditions/persistent-pain-after-spine-surgery" className="text-[#c8a020] hover:underline tracking-wide">Persistent Pain After Spine Surgery Evaluation →</Link></li>
+              <li><Link href="/conditions/neuropathic-pain" className="text-[#c8a020] hover:underline tracking-wide">Neuropathic Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/chronic-pain-syndrome-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Chronic Pain Syndrome Evaluation →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
-              <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
+              <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">View all Procedures &amp; Treatment Options →</Link></li>
             </ul>
           </div>
         </div>

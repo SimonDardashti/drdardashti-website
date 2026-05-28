@@ -613,6 +613,14 @@ export default function FacetJointInjectionsPage() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
+                  href="/conditions/facet-mediated-pain"
+                  className="text-[#c8a020] hover:underline tracking-wide"
+                >
+                  Facet-Mediated Pain Evaluation →
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/procedures/radiofrequency-ablation"
                   className="text-[#c8a020] hover:underline tracking-wide"
                 >
