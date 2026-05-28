@@ -44,12 +44,6 @@ const homePageSchema = {
   isPartOf: { "@type": "WebSite", url: PAGE_URL },
 };
 
-const stats = [
-  { value: "2×", label: "Board Certified" },
-  { value: "Pain Medicine & Anesthesiology", label: "Board Certified" },
-  { value: "UCLA", label: "Fellowship Trained" },
-];
-
 const conditionHighlights = [
   {
     title: "Spine Pain",
@@ -475,7 +469,6 @@ export default function Home() {
                 { label: "Yelp", href: "https://www.yelp.com/biz/simon-dardashti-md-mission-hills" },
                 { label: "Doximity", href: "https://www.doximity.com/pub/simon-dardashti-md" },
                 { label: "Henry Mayo", href: "https://www.henrymayo.com/doctors/profile/simon-dardashti/" },
-                { label: "SEAK", href: "https://www.seakexperts.com/members/18571-simon-dardashti" },
               ].map((link) => (
                 <a
                   key={link.label}

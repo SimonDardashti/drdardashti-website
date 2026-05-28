@@ -68,7 +68,7 @@ const conditionGroups = [
       { label: "Sciatica", href: "/conditions/sciatica-radicular-pain" },
       { label: "Cervical radiculopathy" },
       { label: "Lumbar radiculopathy" },
-      { label: "Radicular pain", href: "/conditions/sciatica-radicular-pain" },
+      { label: "Radicular pain", href: "/conditions/radicular-pain" },
       { label: "Neuropathic pain" },
       { label: "Peripheral nerve pain" },
     ],
@@ -354,7 +354,7 @@ export default function ServicesPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-3">
-              Section 04
+              Treatment Approach
             </p>
             <h2
               className="text-3xl md:text-5xl font-bold text-white leading-tight"
