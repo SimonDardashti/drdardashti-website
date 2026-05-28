@@ -25,5 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/conditions/cervical-radiculopathy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/lumbar-radiculopathy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/neuropathic-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/peripheral-nerve-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/joint-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/bursa-related-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/myofascial-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/occipital-neuralgia`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
