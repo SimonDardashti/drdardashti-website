@@ -30,5 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/conditions/bursa-related-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/myofascial-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/occipital-neuralgia`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/radicular-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/persistent-pain-after-injury-or-surgery`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/persistent-pain-after-spine-surgery`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/complex-pain-conditions`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/chronic-pain-syndrome-evaluation`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }

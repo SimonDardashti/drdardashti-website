@@ -62,7 +62,7 @@ const conditionGroups = [
       { label: "Sciatica", href: "/conditions/sciatica-radicular-pain" },
       { label: "Cervical radiculopathy", href: "/conditions/cervical-radiculopathy" },
       { label: "Lumbar radiculopathy", href: "/conditions/lumbar-radiculopathy" },
-      { label: "Radicular pain", href: "/conditions/sciatica-radicular-pain" },
+      { label: "Radicular pain", href: "/conditions/radicular-pain" },
       { label: "Neuropathic pain", href: "/conditions/neuropathic-pain" },
       { label: "Peripheral nerve pain", href: "/conditions/peripheral-nerve-pain" },
     ],
@@ -74,8 +74,8 @@ const conditionGroups = [
       { label: "Bursa-related pain", href: "/conditions/bursa-related-pain" },
       { label: "Myofascial pain", href: "/conditions/myofascial-pain" },
       { label: "Occipital neuralgia", href: "/conditions/occipital-neuralgia" },
-      { label: "Persistent pain after injury or surgery" },
-      { label: "Persistent pain after spine surgery" },
+      { label: "Persistent pain after injury or surgery", href: "/conditions/persistent-pain-after-injury-or-surgery" },
+      { label: "Persistent pain after spine surgery", href: "/conditions/persistent-pain-after-spine-surgery" },
     ],
   },
   {
@@ -88,8 +88,8 @@ const conditionGroups = [
     title: "Complex Pain Conditions",
     items: [
       { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
-      { label: "Chronic pain syndrome evaluation" },
-      { label: "Complex pain conditions" },
+      { label: "Chronic pain syndrome evaluation", href: "/conditions/chronic-pain-syndrome-evaluation" },
+      { label: "Complex pain conditions", href: "/conditions/complex-pain-conditions" },
     ],
   },
 ];
