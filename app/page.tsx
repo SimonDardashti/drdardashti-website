@@ -603,8 +603,6 @@ export default function Home() {
                 { label: "WebMD", href: "https://doctor.webmd.com/doctor/simon-dardashti-af601989-d7f1-407a-b022-41572a80c061-overview" },
                 { label: "Vitals", href: "https://www.vitals.com/doctors/Dr_Simon_Dardashti.html" },
                 { label: "Yelp", href: "https://www.yelp.com/biz/simon-dardashti-md-mission-hills" },
-                { label: "Doximity", href: "https://www.doximity.com/pub/simon-dardashti-md" },
-                { label: "Henry Mayo", href: "https://www.henrymayo.com/doctors/profile/simon-dardashti/" },
               ].map((link) => (
                 <a
                   key={link.label}
