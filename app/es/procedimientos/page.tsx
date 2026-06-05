@@ -49,22 +49,22 @@ const featuredProcedures = [
   {
     title: "Inyecciones epidurales de esteroides",
     body: "Las inyecciones epidurales de esteroides pueden considerarse para pacientes seleccionados con dolor de cuello, dolor de espalda o dolor que se irradia hacia los brazos o las piernas. El medicamento se aplica en el espacio epidural, cerca de las raíces nerviosas afectadas. La respuesta al tratamiento varía y depende del cuadro clínico individual.",
-    link: { label: "Página en inglés", href: "/procedures/epidural-steroid-injections" },
+    link: { label: "Leer más", href: "/es/procedimientos/inyecciones-epidurales-de-esteroides" },
   },
   {
     title: "Bloqueos de rama medial y bloqueos facetarios",
     body: "Los bloqueos de rama medial y las inyecciones en las articulaciones facetarias pueden estar indicados en pacientes con dolor de cuello o espalda que puede estar relacionado con las articulaciones facetarias de la columna. Estos procedimientos también pueden utilizarse con fines diagnósticos. La evaluación clínica ayuda a determinar si este tipo de procedimiento puede ser apropiado.",
-    link: { label: "Página en inglés", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
+    link: { label: "Leer más", href: "/es/procedimientos/bloqueos-de-rama-medial" },
   },
   {
     title: "Ablación por radiofrecuencia",
     body: "La ablación por radiofrecuencia puede considerarse en pacientes seleccionados cuyos síntomas han respondido a bloqueos diagnósticos de rama medial. El objetivo es interrumpir temporalmente las señales de dolor provenientes de las articulaciones facetarias de la columna. La respuesta varía según el paciente y no puede predecirse con anticipación.",
-    link: { label: "Página en inglés", href: "/procedures/radiofrequency-ablation" },
+    link: { label: "Leer más", href: "/es/procedimientos/ablacion-por-radiofrecuencia" },
   },
   {
     title: "Plasma rico en plaquetas (PRP)",
     body: "El plasma rico en plaquetas es una opción terapéutica que puede considerarse en pacientes seleccionados con ciertas condiciones musculoesqueléticas. El procedimiento utiliza componentes derivados de la propia sangre del paciente. La evaluación clínica determina si puede ser apropiado para cada caso. La evidencia sobre su efectividad varía según la indicación.",
-    link: { label: "Página en inglés", href: "/procedures/platelet-rich-plasma-prp" },
+    link: { label: "Leer más", href: "/es/procedimientos/plasma-rico-en-plaquetas-prp" },
   },
 ];
 

@@ -44,5 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/es/condiciones`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/es/procedimientos`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/es/procedimientos/inyecciones-epidurales-de-esteroides`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/es/procedimientos/bloqueos-de-rama-medial`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/es/procedimientos/ablacion-por-radiofrecuencia`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/es/procedimientos/plasma-rico-en-plaquetas-prp`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
