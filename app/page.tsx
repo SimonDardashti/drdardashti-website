@@ -47,19 +47,42 @@ const homePageSchema = {
 const conditionHighlights = [
   {
     title: "Spine Pain",
-    items: ["Neck pain", "Low back pain", "Spine-related pain", "Facet-mediated pain", "Sacroiliac joint pain"],
+    items: [
+      { label: "Neck pain", href: "/conditions/neck-pain" },
+      { label: "Low back pain", href: "/conditions/low-back-pain" },
+      { label: "Spine-related pain", href: "/conditions/spine-related-pain" },
+      { label: "Facet-mediated pain", href: "/conditions/facet-mediated-pain" },
+      { label: "Sacroiliac joint pain", href: "/conditions/sacroiliac-joint-pain" },
+    ],
   },
   {
     title: "Nerve & Radicular Pain",
-    items: ["Sciatica", "Cervical radiculopathy", "Lumbar radiculopathy", "Neuropathic pain", "Peripheral nerve pain", "Post-laminectomy syndrome"],
+    items: [
+      { label: "Sciatica", href: "/conditions/sciatica-radicular-pain" },
+      { label: "Cervical radiculopathy", href: "/conditions/cervical-radiculopathy" },
+      { label: "Lumbar radiculopathy", href: "/conditions/lumbar-radiculopathy" },
+      { label: "Neuropathic pain", href: "/conditions/neuropathic-pain" },
+      { label: "Peripheral nerve pain", href: "/conditions/peripheral-nerve-pain" },
+      { label: "Post-laminectomy syndrome" },
+    ],
   },
   {
     title: "Joint & Musculoskeletal Pain",
-    items: ["Joint pain", "Bursa-related pain", "Myofascial pain", "Occipital neuralgia", "Persistent pain after injury or surgery"],
+    items: [
+      { label: "Joint pain", href: "/conditions/joint-pain" },
+      { label: "Bursa-related pain", href: "/conditions/bursa-related-pain" },
+      { label: "Myofascial pain", href: "/conditions/myofascial-pain" },
+      { label: "Occipital neuralgia", href: "/conditions/occipital-neuralgia" },
+      { label: "Persistent pain after injury or surgery", href: "/conditions/persistent-pain-after-injury-or-surgery" },
+    ],
   },
   {
     title: "Complex Pain Conditions",
-    items: ["Complex regional pain syndrome evaluation", "Chronic pain syndrome evaluation", "Complex pain conditions"],
+    items: [
+      { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
+      { label: "Chronic pain syndrome evaluation", href: "/conditions/chronic-pain-syndrome-evaluation" },
+      { label: "Complex pain conditions", href: "/conditions/complex-pain-conditions" },
+    ],
   },
 ];
 
@@ -232,7 +255,15 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-2">
                   {group.items.map((item) => (
-                    <li key={item} className="text-xs text-[#666] leading-relaxed">{item}</li>
+                    <li key={item.label} className="text-xs text-[#666] leading-relaxed">
+                      {item.href ? (
+                        <Link href={item.href} className="hover:text-[#c8a020] transition-colors">
+                          {item.label}
+                        </Link>
+                      ) : (
+                        item.label
+                      )}
+                    </li>
                   ))}
                 </ul>
               </div>
