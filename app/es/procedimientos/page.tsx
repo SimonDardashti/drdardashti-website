@@ -47,6 +47,11 @@ const pageSchema = {
 
 const featuredProcedures = [
   {
+    title: "Inyecciones de cortisona y esteroides",
+    body: "Información educativa sobre las inyecciones de cortisona y esteroides, cómo funcionan, preocupaciones sobre la salud de los huesos, efectos sobre el azúcar en la sangre para pacientes con diabetes y cómo encajan en un plan de tratamiento. Esta información es importante para entender los tratamientos inyectables locales.",
+    link: { label: "Leer más", href: "/es/procedimientos/inyecciones-cortisona-esteroides" },
+  },
+  {
     title: "Inyecciones epidurales de esteroides",
     body: "Las inyecciones epidurales de esteroides pueden considerarse para pacientes seleccionados con dolor de cuello, dolor de espalda o dolor que se irradia hacia los brazos o las piernas. El medicamento se aplica en el espacio epidural, cerca de las raíces nerviosas afectadas. La respuesta al tratamiento varía y depende del cuadro clínico individual.",
     link: { label: "Leer más", href: "/es/procedimientos/inyecciones-epidurales-de-esteroides" },

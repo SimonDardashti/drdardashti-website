@@ -47,6 +47,12 @@ const pageSchema = {
 
 const procedureGroups = [
   {
+    title: "Understanding Injections",
+    items: [
+      { label: "Cortisone & steroid injections: Overview & safety", href: "/procedures/cortisone-steroid-injections" },
+    ],
+  },
+  {
     title: "Spine Procedures",
     items: [
       { label: "Cervical epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
