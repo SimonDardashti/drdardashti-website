@@ -51,28 +51,31 @@ const aboutPageSchema = {
 };
 
 const credentials = [
-  { label: "Board Certification", value: "Pain Medicine" },
-  { label: "Board Certification", value: "Anesthesiology" },
-  { label: "Fellowship Training", value: "UCLA — Pain Medicine" },
-  { label: "Clinical Location", value: "Mission Hills, California" },
+  { label: "Board-Certified", value: "Pain Medicine" },
+  { label: "Board-Certified", value: "Anesthesiology" },
+  { label: "Fellowship", value: "UCLA Interventional Pain Medicine" },
+  { label: "Residency", value: "UC Irvine Anesthesiology" },
+  { label: "Medical Degree", value: "Chicago Medical School, MD" },
+  { label: "Masters Degree", value: "Georgetown University, MS Physiology & Biophysics" },
+  { label: "Undergraduate", value: "UC Berkeley" },
 ];
 
 const approachPoints = [
   {
-    title: "Careful Diagnostic Evaluation",
-    body: "Identifying the likely source of pain — not just treating symptoms — is the foundation of every patient encounter.",
+    title: "Diagnostic Foundation",
+    body: "Understanding the patient's history, symptoms, examination findings, imaging, and prior treatment response helps identify the most likely source of pain.",
   },
   {
-    title: "Evidence-Informed Decisions",
-    body: "Treatment recommendations are grounded in current medical evidence and adapted to each patient's history, imaging, and prior treatment response.",
+    title: "Shared Decision-Making",
+    body: "When more than one reasonable treatment option exists, patients should understand the potential role, limitations, and uncertainty of each approach.",
   },
   {
     title: "Clear Communication",
-    body: "Patients deserve a clear explanation of their diagnosis, the reasoning behind any proposed treatment, and what to realistically expect.",
+    body: "Pain treatment decisions are individualized. The goal is to discuss options in a clear, practical way and support informed decision-making.",
   },
   {
-    title: "Individualized Treatment Plans",
-    body: "Conservative, medication-based, image-guided, and interventional options are considered based on each patient's clinical presentation and goals.",
+    title: "Individualized Planning",
+    body: "Conservative, medication-based, image-guided, and interventional options are considered based on each patient's symptoms, goals, preferences, and clinical situation.",
   },
 ];
 
@@ -122,27 +125,33 @@ export default function AboutPage() {
               Pain Medicine Physician.
             </h2>
             <p>
-              Dr. Simon Dardashti is a board-certified pain medicine physician and
+              Dr. Simon Dardashti is a double board-certified pain medicine physician and
               anesthesiologist who evaluates and treats patients with acute and chronic
-              pain conditions. His clinical work focuses on careful diagnostic evaluation,
-              identification of likely pain generators, review of relevant imaging and
-              treatment history, and development of individualized treatment plans.
+              pain conditions. Raised in Encino in the San Fernando Valley, he now serves
+              patients in Mission Hills, the San Fernando Valley, and surrounding Los
+              Angeles communities.
             </p>
             <p>
-              His clinical focus includes spine-related pain, neck pain, low back pain,
-              radicular pain, neuropathic pain, joint pain, sacroiliac joint pain,
-              persistent pain after injury or surgery, and complex chronic pain conditions.
-              He also evaluates selected patients for advanced pain management options,
-              including spinal cord stimulation when clinically appropriate.
+              His clinical work focuses on careful diagnostic evaluation—identifying the
+              most likely source of pain—and reviewing relevant history, symptoms, examination
+              findings, imaging, prior treatment response, and patient goals. He evaluates
+              spine-related pain, neck pain, low back pain, radicular pain, neuropathic pain,
+              joint pain, sacroiliac joint pain, persistent pain after injury or surgery, and
+              complex chronic pain conditions.
             </p>
             <p>
-              Dr. Dardashti's approach emphasizes clear communication, evidence-informed
-              decision-making, and appropriate use of conservative, medication-based,
-              image-guided, and interventional treatment options based on each patient's
-              clinical presentation.
+              Dr. Dardashti's approach emphasizes clear communication and shared
+              decision-making. He discusses reasonable treatment options with patients so they
+              can make informed decisions that fit their symptoms, goals, preferences, and
+              overall clinical situation. Treatment options may include conservative care,
+              medication-based strategies, image-guided injections, epidural steroid injections,
+              medial branch blocks, radiofrequency ablation, platelet-rich plasma (PRP),
+              peripheral nerve blocks, trigger point injections, joint, bursa, and tendon
+              injections, and spinal cord stimulation evaluation when clinically appropriate.
             </p>
             <p>
-              He is board certified in both Anesthesiology and Pain Medicine.
+              This website was created to provide clear educational information about pain
+              conditions and treatment options.
             </p>
           </div>
 
@@ -172,25 +181,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 02 — APPROACH */}
+      {/* SECTION — APPROACH */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
-            <span
-              className="text-7xl font-bold text-[#e8e6e3] leading-none block"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-              aria-hidden
-            >
-              02
-            </span>
-            <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Approach</p>
+            <p className="text-xs text-[#999] uppercase tracking-widest">Patient-Centered Approach</p>
           </div>
           <div className="md:col-span-10">
             <h2
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              How Dr. Dardashti Approaches Care.
+              A Foundation in Shared Decision-Making.
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {approachPoints.map((pt) => (
