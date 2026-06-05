@@ -69,6 +69,7 @@ const procedureGroups = [
       { label: "Joint injections" },
       { label: "Bursa injections" },
       { label: "Tendon sheath injections" },
+      { label: "Platelet-rich plasma (PRP) injections", href: "/procedures/platelet-rich-plasma-prp" },
     ],
   },
   {

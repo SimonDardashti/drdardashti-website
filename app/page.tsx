@@ -117,7 +117,7 @@ export default function Home() {
             <img
               src="/headshot.webp"
               alt="Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist"
-              className="w-[85%] md:w-full object-cover rounded-md md:rounded-none"
+              className="w-[85%] md:w-[88%] object-cover rounded-md md:rounded-none"
               style={{ filter: "grayscale(20%)" }}
             />
           </div>
