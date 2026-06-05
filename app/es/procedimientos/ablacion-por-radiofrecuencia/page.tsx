@@ -127,7 +127,7 @@ export default function AblacionRadiofrecuenciaPage() {
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>¿Qué es la ablación por radiofrecuencia?</h2>
             <p>
-              La ablación por radiofrecuencia es un procedimiento que utiliza energía de radiofrecuencia para crear un lesión térmica en los nervios que suministran una articulación facetaria, interrumpiendo temporalmente las señales de dolor desde esa articulación. Es más duradero que un bloqueo anestésico simple, pero el alivio no es permanente.
+              La ablación por radiofrecuencia es un procedimiento que utiliza energía de radiofrecuencia para crear una lesión térmica en los nervios que suministran una articulación facetaria, interrumpiendo temporalmente las señales de dolor desde esa articulación. Es más duradero que un bloqueo anestésico simple, pero el alivio no es permanente.
             </p>
             <p>
               El procedimiento se realiza típicamente bajo guía de fluoroscopia. Se coloca un electrodo especial junto al nervio de rama medial, y se aplica energía de radiofrecuencia para calentar el nervio y crear una lesión térmica. Esto interrumpe la transmisión de señales de dolor desde la articulación facetaria.

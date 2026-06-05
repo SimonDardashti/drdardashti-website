@@ -249,8 +249,8 @@ export default function InyeccionesEpidualesPage() {
             </ul>
             <p className="text-[#777] text-sm max-w-2xl">
               Las inyecciones epidurales de esteroides no son apropiadas para todo paciente con dolor de
-              espalda, cuello o pierna. Se requiere una evaluación clínica para determinar la
-              apropiaddd.
+              espalda, cuello o pierna. Se requiere una evaluación clínica para determinar si el procedimiento
+              es apropiado.
             </p>
           </div>
         </div>
