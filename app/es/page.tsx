@@ -158,8 +158,8 @@ export default function EspanolPage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-[#e5e5e0] max-w-2xl">
               {[
-                { label: "Ciática y dolor radicular", href: "/es/condiciones", fullWidth: false },
-                { label: "Dolor facetario", href: "/es/condiciones", fullWidth: false },
+                { label: "Ciática y dolor radicular", href: "/es/condiciones/radiculopatia-ciatica", fullWidth: false },
+                { label: "Dolor facetario", href: "/es/condiciones/dolor-facetario", fullWidth: false },
                 { label: "Inyecciones epidurales de esteroides", href: "/es/procedimientos/inyecciones-epidurales-de-esteroides", fullWidth: false },
                 { label: "Ablación por radiofrecuencia", href: "/es/procedimientos/ablacion-por-radiofrecuencia", fullWidth: false },
                 { label: "Bloqueos de rama medial", href: "/es/procedimientos/bloqueos-de-rama-medial", fullWidth: false },

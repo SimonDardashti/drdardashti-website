@@ -50,6 +50,7 @@ const featuredConditions = [
     title: "Radiculopatía y dolor radicular (ciática)",
     body: "La radiculopatía ocurre cuando una raíz nerviosa de la columna se irrita o comprime, lo que puede causar dolor, entumecimiento u hormigueo que se extiende hacia el brazo o la pierna. Cuando afecta la región lumbar, puede manifestarse como ciática. La evaluación clínica puede incluir revisión del historial, examen físico y estudios de imagen cuando corresponda.",
     links: [
+      { label: "Leer más — Información en español", href: "/es/condiciones/radiculopatia-ciatica" },
       { label: "Ciática y dolor radicular — Página en inglés", href: "/conditions/sciatica-radicular-pain" },
       { label: "Dolor radicular — Página en inglés", href: "/conditions/radicular-pain" },
       { label: "Radiculopatía lumbar — Página en inglés", href: "/conditions/lumbar-radiculopathy" },
@@ -60,6 +61,7 @@ const featuredConditions = [
     title: "Artritis facetaria y dolor de las articulaciones facetarias",
     body: "Las articulaciones facetarias conectan las vértebras de la columna y pueden ser una fuente de dolor de cuello o espalda. El dolor mediado por estas articulaciones puede estar relacionado con cambios degenerativos o irritación articular. La evaluación clínica ayuda a determinar si el dolor puede tener relación con las articulaciones facetarias.",
     links: [
+      { label: "Leer más — Información en español", href: "/es/condiciones/dolor-facetario" },
       { label: "Dolor mediado por las facetas — Página en inglés", href: "/conditions/facet-mediated-pain" },
     ],
   },
