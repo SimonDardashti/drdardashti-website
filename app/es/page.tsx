@@ -51,49 +51,64 @@ export default function EspanolPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
 
       {/* HERO */}
-      <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            Información en Español
-          </p>
-          <h1
-            className="text-4xl md:text-6xl font-bold leading-tight"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Información educativa
-            <br />
-            <em className="not-italic text-[#888]">sobre dolor y tratamiento.</em>
-          </h1>
-          <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
-            Esta sección ofrece información general en español sobre condiciones de dolor y opciones
-            de tratamiento relacionadas con la columna vertebral, los nervios, las articulaciones y el
-            sistema musculoesquelético. La información es educativa y no reemplaza una evaluación
-            clínica formal.
-          </p>
+      <section className="bg-[#0a0a0a] text-white md:min-h-[70vh] flex flex-col justify-center px-6 py-14 md:py-24 relative overflow-hidden border-b border-[#1a1a1a]">
+        <div className="max-w-5xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+          {/* Text */}
+          <div>
+            <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
+              Información en Español
+            </p>
+            <h1
+              className="text-3xl md:text-4xl font-bold leading-[1.2] mb-4"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Información educativa
+              <br />
+              <em className="not-italic text-[#c8a020]">sobre dolor y tratamiento.</em>
+            </h1>
+            <p className="text-[#888] text-lg leading-relaxed mb-4">
+              Dolor de columna, nervios y articulaciones
+            </p>
+            <p className="text-[#666] text-base leading-relaxed mb-8">
+              Esta sección ofrece información general en español sobre condiciones de dolor y opciones de tratamiento relacionadas con la columna vertebral, los nervios, las articulaciones y el sistema musculoesquelético.
+            </p>
+            <p className="text-[#666] text-base leading-relaxed mb-10">
+              El objetivo es ayudar a los pacientes a entender términos comunes, posibles fuentes de dolor y opciones que pueden considerarse después de una evaluación clínica formal.
+            </p>
+          </div>
+
+          {/* Photo */}
+          <div className="flex justify-center md:block mt-4 md:mt-0">
+            <img
+              src="/headshot.webp"
+              alt="Simon Dardashti, MD"
+              className="w-[85%] md:w-[88%] object-cover rounded-md md:rounded-none"
+              style={{ filter: "grayscale(20%)" }}
+            />
+          </div>
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
+      {/* MAIN CARDS */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-[#e0e0d8]">
             {/* CONDICIONES CARD */}
-            <div className="border border-[#e5e5e0] p-10 flex flex-col gap-6 bg-[#fafaf8]">
+            <div className="bg-[#f9f7f4] p-8 flex flex-col gap-6 border-b md:border-b-0 md:border-r border-[#e0e0d8]">
               <div className="w-5 h-px bg-[#c8a020]" />
               <h2
-                className="text-2xl font-bold text-[#0a0a0a]"
+                className="text-xl md:text-2xl font-bold text-[#0a0a0a]"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 Condiciones evaluadas
               </h2>
               <p className="text-[#666] text-base leading-relaxed flex-1">
-                Información sobre condiciones como dolor de espalda baja, dolor de cuello, ciática,
-                radiculopatía, dolor facetario, dolor de articulaciones y dolor neuropático.
+                Información sobre dolor de espalda baja, dolor de cuello, ciática, radiculopatía, dolor facetario, dolor de articulaciones, dolor neuropático y otras condiciones musculoesqueléticas.
               </p>
               <div>
                 <Link
                   href="/es/condiciones"
-                  className="inline-block text-[#c8a020] font-medium text-sm tracking-widest uppercase hover:underline transition-colors"
+                  className="inline-block text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline transition-colors"
                 >
                   Ver condiciones →
                 </Link>
@@ -101,22 +116,21 @@ export default function EspanolPage() {
             </div>
 
             {/* PROCEDIMIENTOS CARD */}
-            <div className="border border-[#e5e5e0] p-10 flex flex-col gap-6 bg-[#fafaf8]">
+            <div className="bg-white p-8 flex flex-col gap-6">
               <div className="w-5 h-px bg-[#c8a020]" />
               <h2
-                className="text-2xl font-bold text-[#0a0a0a]"
+                className="text-xl md:text-2xl font-bold text-[#0a0a0a]"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 Procedimientos y opciones de tratamiento
               </h2>
               <p className="text-[#666] text-base leading-relaxed flex-1">
-                Información sobre opciones como inyecciones epidurales de esteroides, bloqueos de rama
-                medial, ablación por radiofrecuencia, PRP y otros procedimientos de manejo del dolor.
+                Información sobre opciones como inyecciones epidurales de esteroides, bloqueos de rama medial, ablación por radiofrecuencia, plasma rico en plaquetas (PRP), inyecciones articulares y otros procedimientos.
               </p>
               <div>
                 <Link
                   href="/es/procedimientos"
-                  className="inline-block text-[#c8a020] font-medium text-sm tracking-widest uppercase hover:underline transition-colors"
+                  className="inline-block text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline transition-colors"
                 >
                   Ver procedimientos →
                 </Link>
@@ -126,22 +140,60 @@ export default function EspanolPage() {
         </div>
       </section>
 
+      {/* TEMAS FRECUENTES */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Temas frecuentes</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2
+              className="text-xl md:text-2xl font-bold text-[#0a0a0a] mb-3 leading-snug"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Temas frecuentes.
+            </h2>
+            <p className="text-[#777] text-sm mb-8 max-w-xl">
+              Acceda a información sobre los temas más consultados en la sección en español.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-[#e5e5e0] max-w-2xl">
+              {[
+                { label: "Ciática y dolor radicular", href: "/es/condiciones" },
+                { label: "Dolor facetario", href: "/es/condiciones" },
+                { label: "Inyecciones epidurales de esteroides", href: "/es/procedimientos/inyecciones-epidurales-de-esteroides" },
+                { label: "Ablación por radiofrecuencia", href: "/es/procedimientos/ablacion-por-radiofrecuencia" },
+                { label: "Plasma rico en plaquetas (PRP)", href: "/es/procedimientos/plasma-rico-en-plaquetas-prp", fullWidth: true },
+              ].map((item, i) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={`group flex items-center justify-between p-5 hover:bg-[#fafaf8] transition-colors ${
+                    !item.fullWidth && i % 2 === 0 ? "border-r border-[#e5e5e0]" : ""
+                  } ${i < 4 && !item.fullWidth ? "border-b border-[#e5e5e0]" : item.fullWidth ? "border-t border-[#e5e5e0] md:col-span-2" : ""}`}
+                >
+                  <p className="text-sm font-semibold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                    {item.label}
+                  </p>
+                  <span className="text-[#ccc] group-hover:text-[#c8a020] transition-colors text-sm">→</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* DISCLAIMER */}
-      <section className="bg-[#0a0a0a] py-16 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-[#0a0a0a] py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-2">
             <p className="text-xs text-[#666] uppercase tracking-widest">Información importante</p>
           </div>
           <div className="md:col-span-10 space-y-3 text-[#888] text-sm leading-relaxed">
             <p>
-              Esta página es solo para fines informativos generales. No constituye consejo médico ni
-              crea una relación médico-paciente. La evaluación y el tratamiento adecuados dependen de
-              una valoración clínica formal.
+              Esta página es solo para fines informativos generales. No constituye consejo médico ni crea una relación médico-paciente. La evaluación y el tratamiento adecuados dependen de una valoración clínica formal.
             </p>
             <p>
-              El Dr. Dardashti ve pacientes en Mission Hills, California, sirviendo a pacientes de los
-              valles de San Fernando y Santa Clarita y las comunidades circundantes del área de Los
-              Ángeles.
+              El Dr. Dardashti ve pacientes en Mission Hills, California, sirviendo a pacientes de los valles de San Fernando y Santa Clarita y las comunidades circundantes del área de Los Ángeles.
             </p>
           </div>
         </div>
