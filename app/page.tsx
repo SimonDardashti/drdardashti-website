@@ -493,7 +493,6 @@ export default function Home() {
             </div>
             <div className="md:col-span-10 flex flex-wrap gap-2">
               {[
-                { label: "Providence", href: "https://www.providence.org/doctors/pain-medicine/ca/mission-hills/simon-dardashti-1023335957" },
                 { label: "Healthgrades", href: "https://www.healthgrades.com/physician/dr-simon-dardashti-gfjqs" },
                 { label: "WebMD", href: "https://doctor.webmd.com/doctor/simon-dardashti-af601989-d7f1-407a-b022-41572a80c061-overview" },
                 { label: "Vitals", href: "https://www.vitals.com/doctors/Dr_Simon_Dardashti.html" },
