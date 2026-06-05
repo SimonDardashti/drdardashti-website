@@ -86,6 +86,34 @@ const conditionHighlights = [
   },
 ];
 
+const procedureHighlights = [
+  {
+    title: "Spine Procedures",
+    items: [
+      { label: "Epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Facet joint injections / medial branch blocks", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
+      { label: "Radiofrequency ablation", href: "/procedures/radiofrequency-ablation" },
+      { label: "Sacroiliac joint injections", href: "/procedures/sacroiliac-joint-injections" },
+    ],
+  },
+  {
+    title: "Peripheral Nerve & Musculoskeletal",
+    items: [
+      { label: "Platelet-rich plasma (PRP) injections", href: "/procedures/platelet-rich-plasma-prp" },
+      { label: "Trigger point injections" },
+      { label: "Joint and bursa injections" },
+      { label: "Peripheral nerve blocks" },
+    ],
+  },
+  {
+    title: "Advanced Pain Procedures",
+    items: [
+      { label: "Spinal cord stimulation evaluation", href: "/procedures/spinal-cord-stimulation-evaluation" },
+      { label: "Peripheral nerve stimulation evaluation" },
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -276,6 +304,65 @@ export default function Home() {
               className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
             >
               View Conditions Evaluated →
+            </Link>
+          </div>
+        </div>
+      </section>
+      </FadeUp>
+
+      {/* SECTION 03 — PROCEDURES */}
+      <FadeUp>
+      <section className="bg-white py-24 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-16">
+            <h2
+              className="text-3xl md:text-4xl font-bold text-[#0a0a0a] leading-tight"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Procedures &amp; Treatment Options.
+            </h2>
+            <p className="text-[#777] mt-3 text-base max-w-xl">
+              Dr. Dardashti evaluates treatment options for spine, nerve, and musculoskeletal pain
+              based on diagnosis, imaging, prior treatment, function, and clinical goals.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e0e0d8]">
+            {procedureHighlights.map((group, i) => (
+              <div
+                key={group.title}
+                className={`bg-[#f9f7f4] p-7 ${i < procedureHighlights.length - 1 ? "border-b md:border-b-0 md:border-r border-[#e0e0d8]" : ""}`}
+              >
+                <div className="w-5 h-px bg-[#c8a020] mb-4" />
+                <h3
+                  className="font-bold text-[#0a0a0a] text-sm mb-4"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {group.title}
+                </h3>
+                <ul className="space-y-2">
+                  {group.items.map((item) => (
+                    <li key={item.label} className="text-xs text-[#666] leading-relaxed">
+                      {item.href ? (
+                        <Link href={item.href} className="hover:text-[#c8a020] transition-colors">
+                          {item.label}
+                        </Link>
+                      ) : (
+                        item.label
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8">
+            <Link
+              href="/procedures"
+              className="text-[#c8a020] text-sm font-semibold uppercase tracking-widest hover:underline"
+            >
+              View Procedures &amp; Treatment Options →
             </Link>
           </div>
         </div>
