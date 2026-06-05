@@ -63,12 +63,12 @@ const procedureGroups = [
   {
     title: "Peripheral Nerve & Musculoskeletal",
     items: [
-      { label: "Peripheral nerve blocks" },
-      { label: "Occipital nerve blocks" },
-      { label: "Trigger point injections" },
-      { label: "Joint injections" },
-      { label: "Bursa injections" },
-      { label: "Tendon sheath injections" },
+      { label: "Peripheral nerve blocks", href: "/procedures/peripheral-nerve-blocks" },
+      { label: "Occipital nerve blocks", href: "/procedures/occipital-nerve-blocks" },
+      { label: "Trigger point injections", href: "/procedures/trigger-point-injections" },
+      { label: "Joint injections", href: "/procedures/joint-bursa-tendon-injections" },
+      { label: "Bursa injections", href: "/procedures/joint-bursa-tendon-injections" },
+      { label: "Tendon sheath injections", href: "/procedures/joint-bursa-tendon-injections" },
       { label: "Platelet-rich plasma (PRP) injections", href: "/procedures/platelet-rich-plasma-prp" },
     ],
   },
@@ -77,8 +77,8 @@ const procedureGroups = [
     items: [
       { label: "Spinal cord stimulation evaluation", href: "/procedures/spinal-cord-stimulation-evaluation" },
       { label: "Spinal cord stimulation trial consideration", href: "/procedures/spinal-cord-stimulation-evaluation" },
-      { label: "Peripheral nerve stimulation evaluation" },
-      { label: "Peripheral nerve stimulation trial consideration" },
+      { label: "Peripheral nerve stimulation evaluation", href: "/procedures/peripheral-nerve-stimulation-evaluation" },
+      { label: "Peripheral nerve stimulation trial consideration", href: "/procedures/peripheral-nerve-stimulation-evaluation" },
     ],
   },
   {
