@@ -43,6 +43,16 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <div className="pl-4 border-l border-[#333]">
+            <Link
+              href="/es/condiciones"
+              className={`text-xs font-medium tracking-widest uppercase transition-colors duration-200 hover:text-[#c8a020] ${
+                pathname?.startsWith("/es") ? "text-[#c8a020]" : "text-[#888]"
+              }`}
+            >
+              En Español
+            </Link>
+          </div>
         </nav>
 
         {/* Mobile */}
@@ -71,6 +81,17 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <div className="border-t border-[#1a1a1a] pt-4 mt-2">
+            <Link
+              href="/es/condiciones"
+              onClick={() => setMenuOpen(false)}
+              className={`text-xs font-medium tracking-widest uppercase py-1 transition-colors hover:text-[#c8a020] block ${
+                pathname?.startsWith("/es") ? "text-[#c8a020]" : "text-[#888]"
+              }`}
+            >
+              En Español
+            </Link>
+          </div>
         </div>
       )}
     </header>
