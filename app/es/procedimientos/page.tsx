@@ -142,6 +142,30 @@ export default function ProcedimientosPage() {
         </div>
       </section>
 
+      {/* SPANISH SECTION NAV */}
+      <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
+        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+          <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
+          <nav className="flex items-center gap-6">
+            <Link
+              href="/es/condiciones"
+              className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors"
+            >
+              Condiciones
+            </Link>
+            <span className="w-px h-4 bg-[#333]" />
+            <Link
+              href="/es/procedimientos"
+              className={`text-xs font-medium tracking-widest uppercase transition-colors ${
+                true ? "text-white" : "text-[#888] hover:text-white"
+              }`}
+            >
+              Procedimientos
+            </Link>
+          </nav>
+        </div>
+      </section>
+
       {/* PROCEDIMIENTOS FRECUENTES */}
       <section className="bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
