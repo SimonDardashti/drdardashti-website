@@ -64,7 +64,7 @@ const featuredProcedures = [
   {
     title: "Plasma rico en plaquetas (PRP)",
     body: "El plasma rico en plaquetas es una opción terapéutica que puede considerarse en pacientes seleccionados con ciertas condiciones musculoesqueléticas. El procedimiento utiliza componentes derivados de la propia sangre del paciente. La evaluación clínica determina si puede ser apropiado para cada caso. La evidencia sobre su efectividad varía según la indicación.",
-    link: null,
+    link: { label: "Página en inglés", href: "/procedures/platelet-rich-plasma-prp" },
   },
 ];
 
