@@ -45,6 +45,26 @@ const pageSchema = {
   },
 };
 
+const featuredConditions = [
+  {
+    title: "Radiculopatía y dolor radicular (ciática)",
+    body: "La radiculopatía ocurre cuando una raíz nerviosa de la columna se irrita o comprime, lo que puede causar dolor, entumecimiento u hormigueo que se extiende hacia el brazo o la pierna. Cuando afecta la región lumbar, puede manifestarse como ciática. La evaluación clínica puede incluir revisión del historial, examen físico y estudios de imagen cuando corresponda.",
+    links: [
+      { label: "Ciática y dolor radicular — Página en inglés", href: "/conditions/sciatica-radicular-pain" },
+      { label: "Dolor radicular — Página en inglés", href: "/conditions/radicular-pain" },
+      { label: "Radiculopatía lumbar — Página en inglés", href: "/conditions/lumbar-radiculopathy" },
+      { label: "Radiculopatía cervical — Página en inglés", href: "/conditions/cervical-radiculopathy" },
+    ],
+  },
+  {
+    title: "Artritis facetaria y dolor de las articulaciones facetarias",
+    body: "Las articulaciones facetarias conectan las vértebras de la columna y pueden ser una fuente de dolor de cuello o espalda. El dolor mediado por estas articulaciones puede estar relacionado con cambios degenerativos o irritación articular. La evaluación clínica ayuda a determinar si el dolor puede tener relación con las articulaciones facetarias.",
+    links: [
+      { label: "Dolor mediado por las facetas — Página en inglés", href: "/conditions/facet-mediated-pain" },
+    ],
+  },
+];
+
 const conditionGroups = [
   {
     title: "Dolor de columna",
@@ -122,10 +142,56 @@ export default function CondicionesPage() {
         </div>
       </section>
 
-      {/* CONDITIONS GRID */}
+      {/* CONDICIONES FRECUENTES */}
+      <section className="bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Condiciones frecuentes</p>
+          <h2
+            className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-10"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Condiciones evaluadas con frecuencia.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {featuredConditions.map((item) => (
+              <div key={item.title} className="bg-white border border-[#e5e5e0] p-8 flex flex-col gap-4">
+                <div className="w-5 h-px bg-[#c8a020]" />
+                <h3
+                  className="font-bold text-[#0a0a0a] text-base leading-snug"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-sm text-[#555] leading-relaxed flex-1">{item.body}</p>
+                <ul className="space-y-1.5">
+                  {item.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-xs text-[#c8a020] hover:underline tracking-wide"
+                      >
+                        {link.label} →
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TODAS LAS CONDICIONES */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs text-[#999] mb-6">
+          <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Todas las condiciones</p>
+          <h2
+            className="text-xl font-bold text-[#0a0a0a] mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Todas las condiciones evaluadas.
+          </h2>
+          <p className="text-xs text-[#999] mb-8">
             Las páginas detalladas de cada condición están actualmente disponibles en inglés.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border border-[#e5e5e0]">
@@ -135,12 +201,12 @@ export default function CondicionesPage() {
                 className={`p-7 ${i < conditionGroups.length - 1 ? "border-b lg:border-b-0 lg:border-r border-[#e5e5e0]" : ""}`}
               >
                 <div className="w-5 h-px bg-[#c8a020] mb-4" />
-                <h2
+                <h3
                   className="font-bold text-[#0a0a0a] text-sm mb-5"
                   style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                 >
                   {group.title}
-                </h2>
+                </h3>
                 <ul className="space-y-2.5">
                   {group.items.map((item) => (
                     <li key={item.label} className="text-sm text-[#666] leading-relaxed">
@@ -239,8 +305,8 @@ export default function CondicionesPage() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/es/procedimientos" className="text-[#c8a020] hover:underline tracking-wide">Ver procedimientos y opciones de tratamiento (en español) →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones epidurales de esteroides →</Link></li>
+              <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Bloqueos de rama medial y bloqueos facetarios →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Ablación por radiofrecuencia →</Link></li>
-              <li><Link href="/procedures/spinal-cord-stimulation-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Evaluación para estimulación de la médula espinal →</Link></li>
               <li><Link href="/conditions" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las condiciones evaluadas (en inglés) →</Link></li>
             </ul>
           </div>

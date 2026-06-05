@@ -45,6 +45,29 @@ const pageSchema = {
   },
 };
 
+const featuredProcedures = [
+  {
+    title: "Inyecciones epidurales de esteroides",
+    body: "Las inyecciones epidurales de esteroides pueden considerarse para pacientes seleccionados con dolor de cuello, dolor de espalda o dolor que se irradia hacia los brazos o las piernas. El medicamento se aplica en el espacio epidural, cerca de las raíces nerviosas afectadas. La respuesta al tratamiento varía y depende del cuadro clínico individual.",
+    link: { label: "Página en inglés", href: "/procedures/epidural-steroid-injections" },
+  },
+  {
+    title: "Bloqueos de rama medial y bloqueos facetarios",
+    body: "Los bloqueos de rama medial y las inyecciones en las articulaciones facetarias pueden estar indicados en pacientes con dolor de cuello o espalda que puede estar relacionado con las articulaciones facetarias de la columna. Estos procedimientos también pueden utilizarse con fines diagnósticos. La evaluación clínica ayuda a determinar si este tipo de procedimiento puede ser apropiado.",
+    link: { label: "Página en inglés", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
+  },
+  {
+    title: "Ablación por radiofrecuencia",
+    body: "La ablación por radiofrecuencia puede considerarse en pacientes seleccionados cuyos síntomas han respondido a bloqueos diagnósticos de rama medial. El objetivo es interrumpir temporalmente las señales de dolor provenientes de las articulaciones facetarias de la columna. La respuesta varía según el paciente y no puede predecirse con anticipación.",
+    link: { label: "Página en inglés", href: "/procedures/radiofrequency-ablation" },
+  },
+  {
+    title: "Plasma rico en plaquetas (PRP)",
+    body: "El plasma rico en plaquetas es una opción terapéutica que puede considerarse en pacientes seleccionados con ciertas condiciones musculoesqueléticas. El procedimiento utiliza componentes derivados de la propia sangre del paciente. La evaluación clínica determina si puede ser apropiado para cada caso. La evidencia sobre su efectividad varía según la indicación.",
+    link: null,
+  },
+];
+
 const procedureGroups = [
   {
     title: "Procedimientos de columna",
@@ -119,10 +142,52 @@ export default function ProcedimientosPage() {
         </div>
       </section>
 
-      {/* PROCEDURES GRID */}
+      {/* PROCEDIMIENTOS FRECUENTES */}
+      <section className="bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Procedimientos frecuentes</p>
+          <h2
+            className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-10"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Opciones de tratamiento evaluadas con frecuencia.
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {featuredProcedures.map((item) => (
+              <div key={item.title} className="bg-white border border-[#e5e5e0] p-8 flex flex-col gap-4">
+                <div className="w-5 h-px bg-[#c8a020]" />
+                <h3
+                  className="font-bold text-[#0a0a0a] text-base leading-snug"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-sm text-[#555] leading-relaxed flex-1">{item.body}</p>
+                {item.link && (
+                  <Link
+                    href={item.link.href}
+                    className="text-xs text-[#c8a020] hover:underline tracking-wide"
+                  >
+                    {item.link.label} →
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TODOS LOS PROCEDIMIENTOS */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs text-[#999] mb-6">
+          <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Todas las opciones</p>
+          <h2
+            className="text-xl font-bold text-[#0a0a0a] mb-6"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Todas las opciones de tratamiento.
+          </h2>
+          <p className="text-xs text-[#999] mb-8">
             Las páginas detalladas de cada procedimiento están actualmente disponibles en inglés.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
@@ -132,12 +197,12 @@ export default function ProcedimientosPage() {
                 className={`p-7 ${i < procedureGroups.length - 1 ? "border-b lg:border-b-0 lg:border-r border-[#e5e5e0]" : ""}`}
               >
                 <div className="w-5 h-px bg-[#c8a020] mb-4" />
-                <h2
+                <h3
                   className="font-bold text-[#0a0a0a] text-sm mb-5"
                   style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                 >
                   {group.title}
-                </h2>
+                </h3>
                 <ul className="space-y-2.5">
                   {group.items.map((item) => (
                     <li key={item.label} className="text-sm text-[#666] leading-relaxed">
@@ -234,9 +299,9 @@ export default function ProcedimientosPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/es/condiciones" className="text-[#c8a020] hover:underline tracking-wide">Ver condiciones evaluadas (en español) →</Link></li>
-              <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor de espalda baja →</Link></li>
               <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de ciática y dolor radicular →</Link></li>
-              <li><Link href="/conditions/crps-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de síndrome de dolor regional complejo →</Link></li>
+              <li><Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor mediado por las facetas →</Link></li>
+              <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor de espalda baja →</Link></li>
               <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">Ver todos los procedimientos y opciones de tratamiento (en inglés) →</Link></li>
             </ul>
           </div>
