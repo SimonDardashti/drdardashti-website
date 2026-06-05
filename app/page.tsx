@@ -90,7 +90,12 @@ const procedureHighlights = [
   {
     title: "Spine Procedures",
     items: [
-      { label: "Epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Cervical epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Lumbar epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Transforaminal epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Interlaminar epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Caudal epidural steroid injections", href: "/procedures/epidural-steroid-injections" },
+      { label: "Selective nerve root blocks" },
       { label: "Facet joint injections / medial branch blocks", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
       { label: "Radiofrequency ablation", href: "/procedures/radiofrequency-ablation" },
       { label: "Sacroiliac joint injections", href: "/procedures/sacroiliac-joint-injections" },
@@ -99,17 +104,31 @@ const procedureHighlights = [
   {
     title: "Peripheral Nerve & Musculoskeletal",
     items: [
-      { label: "Platelet-rich plasma (PRP) injections", href: "/procedures/platelet-rich-plasma-prp" },
-      { label: "Trigger point injections" },
-      { label: "Joint and bursa injections" },
       { label: "Peripheral nerve blocks" },
+      { label: "Occipital nerve blocks" },
+      { label: "Trigger point injections" },
+      { label: "Joint injections" },
+      { label: "Bursa injections" },
+      { label: "Tendon sheath injections" },
+      { label: "Platelet-rich plasma (PRP) injections", href: "/procedures/platelet-rich-plasma-prp" },
     ],
   },
   {
     title: "Advanced Pain Procedures",
     items: [
       { label: "Spinal cord stimulation evaluation", href: "/procedures/spinal-cord-stimulation-evaluation" },
+      { label: "Spinal cord stimulation trial consideration", href: "/procedures/spinal-cord-stimulation-evaluation" },
       { label: "Peripheral nerve stimulation evaluation" },
+      { label: "Peripheral nerve stimulation trial consideration" },
+    ],
+  },
+  {
+    title: "Medication & Conservative Care",
+    items: [
+      { label: "Medication management when clinically appropriate" },
+      { label: "Physical therapy coordination" },
+      { label: "Review of imaging and prior treatment history" },
+      { label: "Multimodal pain management planning" },
     ],
   },
 ];
