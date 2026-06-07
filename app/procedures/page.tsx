@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import VirtualConsultationCard from "@/components/VirtualConsultationCard";
+import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures";
 const SITE_URL = "https://www.drdardashti.com";
@@ -47,12 +47,6 @@ const pageSchema = {
 };
 
 const procedureGroups = [
-  {
-    title: "Understanding Injections",
-    items: [
-      { label: "Cortisone & steroid injections: Overview & safety", href: "/procedures/cortisone-steroid-injections" },
-    ],
-  },
   {
     title: "Spine Procedures",
     items: [
@@ -129,11 +123,11 @@ export default function ProceduresPage() {
       {/* PROCEDURES GRID */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-[#e5e5e0]">
             {procedureGroups.map((group, i) => (
               <div
                 key={group.title}
-                className={`p-7 ${i < procedureGroups.length - 1 ? "border-b lg:border-b-0 lg:border-r border-[#e5e5e0]" : ""}`}
+                className={`p-7 ${(i % 2 !== 1) ? "border-r border-[#e5e5e0]" : ""} ${(i < 2) ? "border-b border-[#e5e5e0]" : ""}`}
               >
                 <div className="w-5 h-px bg-[#c8a020] mb-4" />
                 <h2
@@ -165,13 +159,7 @@ export default function ProceduresPage() {
       </section>
 
       {/* VIRTUAL CONSULTATIONS */}
-      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
-            <VirtualConsultationCard />
-          </div>
-        </div>
-      </section>
+      <VirtualConsultationBanner />
 
       {/* TREATMENT APPROACH */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
