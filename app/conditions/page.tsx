@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VirtualConsultationCard from "@/components/VirtualConsultationCard";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions";
 const SITE_URL = "https://www.drdardashti.com";
@@ -155,6 +156,15 @@ export default function ConditionsPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VIRTUAL CONSULTATIONS */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+            <VirtualConsultationCard />
           </div>
         </div>
       </section>
