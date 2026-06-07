@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
+import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
 
 const PAGE_URL = "https://www.drdardashti.com";
 
@@ -346,11 +347,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#e0e0d8]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-[#e0e0d8]">
             {procedureHighlights.map((group, i) => (
               <div
                 key={group.title}
-                className={`bg-[#f9f7f4] p-7 ${i < procedureHighlights.length - 1 ? "border-b md:border-b-0 md:border-r border-[#e0e0d8]" : ""}`}
+                className={`bg-[#f9f7f4] p-7 ${(i % 2 !== 1) ? "border-r border-[#e0e0d8]" : ""} ${(i < 2) ? "border-b border-[#e0e0d8]" : ""}`}
               >
                 <div className="w-5 h-px bg-[#c8a020] mb-4" />
                 <h3
@@ -387,6 +388,9 @@ export default function Home() {
         </div>
       </section>
       </FadeUp>
+
+      {/* VIRTUAL CONSULTATIONS BANNER */}
+      <VirtualConsultationBanner />
 
       {/* COMMON CONDITIONS & PROCEDURES */}
       <FadeUp>
