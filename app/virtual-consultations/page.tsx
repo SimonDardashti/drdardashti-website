@@ -5,23 +5,23 @@ const PAGE_URL = "https://www.drdardashti.com/virtual-consultations";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: { absolute: "Virtual Consultations for Pain Medicine | Simon Dardashti, MD" },
+  title: { absolute: "Virtual Pain Management Consultations | Simon Dardashti, MD" },
   description:
-    "Virtual consultations for selected patients with spine, nerve, and joint pain. Earlier evaluation, imaging direction, and treatment planning for patients with mobility, transportation, or scheduling barriers.",
+    "Schedule a virtual pain management consultation with Simon Dardashti, MD for back pain, neck pain, sciatica, spine conditions, imaging review, and treatment planning in California.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     type: "website",
     url: PAGE_URL,
-    title: "Virtual Consultations for Pain Medicine | Simon Dardashti, MD",
+    title: "Virtual Pain Management Consultations | Simon Dardashti, MD",
     description:
-      "Virtual consultations for selected patients with spine, nerve, and joint pain. Earlier evaluation, imaging direction, and treatment planning for patients with mobility, transportation, or scheduling barriers.",
+      "Schedule a virtual pain management consultation with Simon Dardashti, MD for back pain, neck pain, sciatica, spine conditions, imaging review, and treatment planning in California.",
     images: [{ url: "/headshot.webp", width: 1200, height: 630, alt: "Simon Dardashti, MD" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Virtual Consultations for Pain Medicine | Simon Dardashti, MD",
+    title: "Virtual Pain Management Consultations | Simon Dardashti, MD",
     description:
-      "Virtual consultations for selected patients with spine, nerve, and joint pain. Earlier evaluation, imaging direction, and treatment planning for patients with mobility, transportation, or scheduling barriers.",
+      "Schedule a virtual pain management consultation with Simon Dardashti, MD for back pain, neck pain, sciatica, spine conditions, imaging review, and treatment planning in California.",
     images: ["/headshot.webp"],
   },
 };
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
 const pageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Virtual Consultations for Pain Medicine | Simon Dardashti, MD",
+  name: "Virtual Pain Management Consultations | Simon Dardashti, MD",
   url: PAGE_URL,
   description:
-    "Virtual consultations for selected patients with spine, nerve, and joint pain. Earlier evaluation, imaging direction, and treatment planning for patients with mobility, transportation, or scheduling barriers.",
+    "Schedule a virtual pain management consultation with Simon Dardashti, MD for back pain, neck pain, sciatica, spine conditions, imaging review, and treatment planning in California.",
   inLanguage: "en-US",
   isPartOf: { "@type": "WebSite", url: SITE_URL },
   author: { "@type": "Physician", name: "Simon Dardashti, MD", url: SITE_URL },
@@ -42,6 +42,73 @@ const pageSchema = {
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
       { "@type": "ListItem", position: 2, name: "Virtual Consultations", item: PAGE_URL },
     ],
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Does Dr. Dardashti offer virtual visits?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Dr. Simon Dardashti offers virtual pain management consultations for selected patients with spine, nerve, and joint pain. Virtual consultations allow eligible patients to receive early evaluation, imaging review, and treatment planning from home.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What pain conditions can be reviewed by telehealth?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Virtual consultations may be appropriate for patients with back pain, neck pain, sciatica, spine pain, nerve pain, and joint pain. Dr. Dardashti can review symptoms, medical history, prior imaging, and records to assess whether additional testing or in-person evaluation may be needed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can imaging be reviewed during a virtual consultation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, virtual consultations are especially helpful for patients who have MRI, CT, X-ray, or other imaging studies available for review. Dr. Dardashti can review imaging reports and scans to help direct next steps in care and determine whether additional diagnostic workup or an in-person examination may be appropriate.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are virtual consultations available for new patients?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Virtual consultations may be appropriate for selected new patients. Eligibility depends on the nature of the pain condition, availability of medical records or imaging, and whether the patient's clinical situation is suitable for initial evaluation by telemedicine.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "When is an in-person visit required?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some patients may still require an in-person visit for a comprehensive physical examination, neurologic assessment, imaging review, or procedure. Patients with severe symptoms, progressive weakness, bowel or bladder dysfunction, or rapidly worsening condition should seek urgent medical care.",
+      },
+    },
+  ],
+};
+
+const physicianSchema = {
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  name: "Simon Dardashti, MD",
+  url: SITE_URL,
+  image: "https://www.drdardashti.com/headshot.webp",
+  description: "Board-certified pain medicine physician and anesthesiologist specializing in interventional pain management for spine, nerve, joint, and complex chronic pain conditions.",
+  medicalSpecialty: ["Pain Medicine", "Anesthesiology", "Interventional Pain Management"],
+  areaServed: [
+    { "@type": "Place", name: "Mission Hills, California" },
+    { "@type": "Place", name: "San Fernando Valley" },
+    { "@type": "Place", name: "Los Angeles, California" },
+  ],
+  availableService: {
+    "@type": "MedicalProcedure",
+    name: "Virtual Pain Management Consultation",
+    description: "Telehealth consultation for pain medicine evaluation, imaging review, and treatment planning",
   },
 };
 
@@ -76,6 +143,8 @@ export default function VirtualConsultationsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }} />
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
@@ -88,16 +157,12 @@ export default function VirtualConsultationsPage() {
               className="text-4xl md:text-6xl font-bold leading-tight"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Virtual Consultations
+              Virtual Pain Management
               <br />
-              <em className="not-italic text-[#888]">for Pain Medicine.</em>
+              <em className="not-italic text-[#888]">Consultations with Simon Dardashti, MD.</em>
             </h1>
             <p className="mt-5 text-[#666] text-lg leading-relaxed max-w-2xl">
-              Accessible pain medicine evaluation from home. Dr. Simon Dardashti offers virtual
-              consultations for selected patients with spine, nerve, and joint pain. Virtual visits
-              can make it easier to begin the evaluation process, review symptoms and prior imaging,
-              discuss treatment options, and determine whether an in-person examination or procedure
-              may be appropriate.
+              Dr. Simon Dardashti offers virtual pain management consultations for patients with back pain, neck pain, sciatica, and spine pain. A telehealth virtual visit allows you to begin your evaluation from home and receive an online pain management consultation that can help direct next steps in care, review prior imaging, and create a treatment plan. This option may be especially helpful for patients with mobility or transportation barriers, or those who need earlier access to specialty pain medicine evaluation in California.
             </p>
             <p className="mt-4 text-[#666] text-lg leading-relaxed max-w-2xl">
               Virtual consultations may be especially helpful for patients with limited mobility,
@@ -308,6 +373,62 @@ export default function VirtualConsultationsPage() {
               after a car accident, workplace accident, fall, acute injury, or for patients who
               already have imaging or medical records available for review.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">FAQ</p>
+          </div>
+          <div className="md:col-span-10 space-y-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-bold text-[#0a0a0a] text-base mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  Does Dr. Dardashti offer virtual visits?
+                </h3>
+                <p className="text-[#555] text-base leading-relaxed">
+                  Yes, Dr. Simon Dardashti offers virtual pain management consultations for selected patients with spine, nerve, and joint pain. Virtual consultations allow eligible patients to receive early evaluation, imaging review, and treatment planning from home.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-[#0a0a0a] text-base mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  What pain conditions can be reviewed by telehealth?
+                </h3>
+                <p className="text-[#555] text-base leading-relaxed">
+                  Virtual consultations may be appropriate for patients with back pain, neck pain, sciatica, spine pain, nerve pain, and joint pain. Dr. Dardashti can review symptoms, medical history, prior imaging, and records to assess whether additional testing or in-person evaluation may be needed.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-[#0a0a0a] text-base mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  Can imaging be reviewed during a virtual consultation?
+                </h3>
+                <p className="text-[#555] text-base leading-relaxed">
+                  Yes, virtual consultations are especially helpful for patients who have MRI, CT, X-ray, or other imaging studies available for review. Dr. Dardashti can review imaging reports and scans to help direct next steps in care and determine whether additional diagnostic workup or an in-person examination may be appropriate.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-[#0a0a0a] text-base mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  Are virtual consultations available for new patients?
+                </h3>
+                <p className="text-[#555] text-base leading-relaxed">
+                  Virtual consultations may be appropriate for selected new patients. Eligibility depends on the nature of the pain condition, availability of medical records or imaging, and whether the patient&rsquo;s clinical situation is suitable for initial evaluation by telehealth.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-[#0a0a0a] text-base mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  When is an in-person visit required?
+                </h3>
+                <p className="text-[#555] text-base leading-relaxed">
+                  Some patients may still require an in-person visit for a comprehensive physical examination, neurologic assessment, imaging review, or procedure. Patients with severe symptoms, progressive weakness, bowel or bladder dysfunction, or rapidly worsening condition should seek urgent medical care.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
