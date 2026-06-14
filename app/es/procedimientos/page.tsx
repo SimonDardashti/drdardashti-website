@@ -85,16 +85,16 @@ const procedureGroups = [
       { label: "Bloqueos selectivos de raíces nerviosas" },
       { label: "Inyecciones de facetas / bloqueos de rama medial", href: "/procedures/facet-joint-injections-medial-branch-blocks", englishOnly: true },
       { label: "Ablación por radiofrecuencia", href: "/procedures/radiofrequency-ablation", englishOnly: true },
-      { label: "Inyecciones de la articulación sacroilíaca", href: "/procedures/sacroiliac-joint-injections", englishOnly: true },
+      { label: "Inyecciones de la articulación sacroilíaca", href: "/es/procedimientos/inyecciones-articulacion-sacroiliaca" },
     ],
   },
   {
     title: "Nervios periféricos y musculoesquelético",
     items: [
-      { label: "Bloqueos de nervios periféricos" },
-      { label: "Bloqueos de nervio occipital" },
-      { label: "Inyecciones en puntos gatillo" },
-      { label: "Inyecciones articulares" },
+      { label: "Bloqueos de nervios periféricos", href: "/es/procedimientos/bloqueos-nervios-perifericos" },
+      { label: "Bloqueos de nervio occipital", href: "/es/procedimientos/bloqueos-nervio-occipital" },
+      { label: "Inyecciones en puntos gatillo", href: "/es/procedimientos/inyecciones-puntos-gatillo" },
+      { label: "Inyecciones articulares, de bursa y tendón", href: "/es/procedimientos/inyecciones-articulares-bursa-tendon" },
       { label: "Inyecciones de bursa" },
       { label: "Inyecciones en vainas tendinosas" },
     ],
@@ -224,7 +224,7 @@ export default function ProcedimientosPage() {
             Todas las opciones de tratamiento.
           </h2>
           <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
-            Cinco opciones de tratamiento están disponibles en español: inyecciones epidurales, bloqueos de rama medial, ablación por radiofrecuencia, plasma rico en plaquetas (PRP), e inyecciones de cortisona/esteroides. Las demás páginas están actualmente disponibles en inglés. La sección en español se está expandiendo.
+            Diez opciones de tratamiento están disponibles en español: inyecciones epidurales de esteroides, bloqueos de rama medial, ablación por radiofrecuencia, plasma rico en plaquetas (PRP), inyecciones de cortisona/esteroides, inyecciones de la articulación sacroilíaca, inyecciones en puntos gatillo, inyecciones articulares/de bursa y tendón, bloqueos de nervios periféricos, y bloqueos del nervio occipital. Las demás páginas están actualmente disponibles en inglés. La sección en español se está expandiendo.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
             {procedureGroups.map((group, i) => (
