@@ -77,15 +77,15 @@ const procedureGroups = [
   {
     title: "Procedimientos de columna",
     items: [
-      { label: "Inyecciones epidurales cervicales de esteroides", href: "/procedures/epidural-steroid-injections" },
-      { label: "Inyecciones epidurales lumbares de esteroides", href: "/procedures/epidural-steroid-injections" },
-      { label: "Inyecciones epidurales transforaminales de esteroides", href: "/procedures/epidural-steroid-injections" },
-      { label: "Inyecciones epidurales interlaminares de esteroides", href: "/procedures/epidural-steroid-injections" },
-      { label: "Inyecciones epidurales caudales de esteroides", href: "/procedures/epidural-steroid-injections" },
+      { label: "Inyecciones epidurales cervicales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
+      { label: "Inyecciones epidurales lumbares de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
+      { label: "Inyecciones epidurales transforaminales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
+      { label: "Inyecciones epidurales interlaminares de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
+      { label: "Inyecciones epidurales caudales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
       { label: "Bloqueos selectivos de raíces nerviosas" },
-      { label: "Inyecciones de facetas / bloqueos de rama medial", href: "/procedures/facet-joint-injections-medial-branch-blocks" },
-      { label: "Ablación por radiofrecuencia", href: "/procedures/radiofrequency-ablation" },
-      { label: "Inyecciones de la articulación sacroilíaca", href: "/procedures/sacroiliac-joint-injections" },
+      { label: "Inyecciones de facetas / bloqueos de rama medial", href: "/procedures/facet-joint-injections-medial-branch-blocks", englishOnly: true },
+      { label: "Ablación por radiofrecuencia", href: "/procedures/radiofrequency-ablation", englishOnly: true },
+      { label: "Inyecciones de la articulación sacroilíaca", href: "/procedures/sacroiliac-joint-injections", englishOnly: true },
     ],
   },
   {
@@ -102,8 +102,8 @@ const procedureGroups = [
   {
     title: "Procedimientos avanzados",
     items: [
-      { label: "Evaluación para estimulación de la médula espinal", href: "/procedures/spinal-cord-stimulation-evaluation" },
-      { label: "Consideración de prueba de estimulación medular", href: "/procedures/spinal-cord-stimulation-evaluation" },
+      { label: "Evaluación para estimulación de la médula espinal", href: "/procedures/spinal-cord-stimulation-evaluation", englishOnly: true },
+      { label: "Consideración de prueba de estimulación medular", href: "/procedures/spinal-cord-stimulation-evaluation", englishOnly: true },
       { label: "Evaluación para estimulación de nervio periférico" },
       { label: "Consideración de prueba de estimulación de nervio periférico" },
     ],
@@ -223,8 +223,8 @@ export default function ProcedimientosPage() {
           >
             Todas las opciones de tratamiento.
           </h2>
-          <p className="text-xs text-[#999] mb-8">
-            Las páginas detalladas de cada procedimiento están actualmente disponibles en inglés.
+          <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
+            Cinco opciones de tratamiento están disponibles en español: inyecciones epidurales, bloqueos de rama medial, ablación por radiofrecuencia, plasma rico en plaquetas (PRP), e inyecciones de cortisona/esteroides. Las demás páginas están actualmente disponibles en inglés. La sección en español se está expandiendo.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
             {procedureGroups.map((group, i) => (
@@ -247,7 +247,7 @@ export default function ProcedimientosPage() {
                           href={item.href}
                           className="hover:text-[#c8a020] transition-colors"
                         >
-                          {item.label} →
+                          {item.label} {item.englishOnly && "— Página en inglés"} →
                         </Link>
                       ) : (
                         item.label

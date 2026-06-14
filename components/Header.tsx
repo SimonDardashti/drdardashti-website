@@ -4,21 +4,28 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const navLinks = [
+const englishNavLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/conditions", label: "Conditions" },
   { href: "/procedures", label: "Procedures" },
 ];
 
+const spanishNavLinks = [
+  { href: "/es", label: "Inicio" },
+  { href: "/es/condiciones", label: "Condiciones" },
+  { href: "/es/procedimientos", label: "Procedimientos" },
+];
+
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const isSpanish = pathname?.startsWith("/es");
 
   return (
     <header className="bg-[#0a0a0a] text-white sticky top-0 z-50 border-b border-[#1a1a1a]">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex flex-col leading-tight">
+        <Link href={isSpanish ? "/es" : "/"} className="flex flex-col leading-tight">
           <span
             className="text-base font-bold tracking-wide text-white"
             style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
@@ -32,7 +39,7 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {(isSpanish ? spanishNavLinks : englishNavLinks).map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -45,12 +52,12 @@ export default function Header() {
           ))}
           <div className="pl-4 border-l border-[#333]">
             <Link
-              href="/es"
+              href={isSpanish ? "/" : "/es"}
               className={`text-xs font-medium tracking-widest uppercase transition-colors duration-200 hover:text-[#c8a020] ${
-                pathname?.startsWith("/es") ? "text-[#c8a020]" : "text-[#888]"
+                isSpanish ? "text-[#888]" : "text-[#c8a020]"
               }`}
             >
-              En Español
+              {isSpanish ? "English" : "En Español"}
             </Link>
           </div>
         </nav>
@@ -69,7 +76,7 @@ export default function Header() {
 
       {menuOpen && (
         <div className="md:hidden bg-[#0f0f0f] border-t border-[#1a1a1a] px-6 py-5 flex flex-col gap-4">
-          {navLinks.map((link) => (
+          {(isSpanish ? spanishNavLinks : englishNavLinks).map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -83,13 +90,13 @@ export default function Header() {
           ))}
           <div className="border-t border-[#1a1a1a] pt-4 mt-2">
             <Link
-              href="/es"
+              href={isSpanish ? "/" : "/es"}
               onClick={() => setMenuOpen(false)}
               className={`text-xs font-medium tracking-widest uppercase py-1 transition-colors hover:text-[#c8a020] block ${
-                pathname?.startsWith("/es") ? "text-[#c8a020]" : "text-[#888]"
+                isSpanish ? "text-[#888]" : "text-[#c8a020]"
               }`}
             >
-              En Español
+              {isSpanish ? "English" : "En Español"}
             </Link>
           </div>
         </div>

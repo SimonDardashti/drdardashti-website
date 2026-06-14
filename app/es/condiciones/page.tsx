@@ -71,47 +71,47 @@ const conditionGroups = [
   {
     title: "Dolor de columna",
     items: [
-      { label: "Dolor de cuello", href: "/conditions/neck-pain" },
-      { label: "Dolor de espalda baja", href: "/conditions/low-back-pain" },
-      { label: "Dolor relacionado con la columna", href: "/conditions/spine-related-pain" },
-      { label: "Dolor mediado por las facetas", href: "/conditions/facet-mediated-pain" },
-      { label: "Dolor de la articulación sacroilíaca", href: "/conditions/sacroiliac-joint-pain" },
+      { label: "Dolor de cuello", href: "/conditions/neck-pain", englishOnly: true },
+      { label: "Dolor de espalda baja", href: "/conditions/low-back-pain", englishOnly: true },
+      { label: "Dolor relacionado con la columna", href: "/conditions/spine-related-pain", englishOnly: true },
+      { label: "Dolor mediado por las facetas", href: "/conditions/facet-mediated-pain", englishOnly: true },
+      { label: "Dolor de la articulación sacroilíaca", href: "/conditions/sacroiliac-joint-pain", englishOnly: true },
     ],
   },
   {
     title: "Dolor nervioso y radicular",
     items: [
-      { label: "Ciática", href: "/conditions/sciatica-radicular-pain" },
-      { label: "Radiculopatía cervical", href: "/conditions/cervical-radiculopathy" },
-      { label: "Radiculopatía lumbar", href: "/conditions/lumbar-radiculopathy" },
-      { label: "Dolor radicular", href: "/conditions/radicular-pain" },
-      { label: "Dolor neuropático", href: "/conditions/neuropathic-pain" },
-      { label: "Dolor de nervios periféricos", href: "/conditions/peripheral-nerve-pain" },
+      { label: "Ciática", href: "/conditions/sciatica-radicular-pain", englishOnly: true },
+      { label: "Radiculopatía cervical", href: "/conditions/cervical-radiculopathy", englishOnly: true },
+      { label: "Radiculopatía lumbar", href: "/conditions/lumbar-radiculopathy", englishOnly: true },
+      { label: "Dolor radicular", href: "/conditions/radicular-pain", englishOnly: true },
+      { label: "Dolor neuropático", href: "/conditions/neuropathic-pain", englishOnly: true },
+      { label: "Dolor de nervios periféricos", href: "/conditions/peripheral-nerve-pain", englishOnly: true },
     ],
   },
   {
     title: "Dolor articular y musculoesquelético",
     items: [
-      { label: "Dolor articular", href: "/conditions/joint-pain" },
-      { label: "Dolor relacionado con la bursa", href: "/conditions/bursa-related-pain" },
-      { label: "Dolor miofascial", href: "/conditions/myofascial-pain" },
-      { label: "Neuralgia occipital", href: "/conditions/occipital-neuralgia" },
-      { label: "Dolor persistente tras lesión o cirugía", href: "/conditions/persistent-pain-after-injury-or-surgery" },
-      { label: "Dolor persistente tras cirugía de columna", href: "/conditions/persistent-pain-after-spine-surgery" },
+      { label: "Dolor articular", href: "/conditions/joint-pain", englishOnly: true },
+      { label: "Dolor relacionado con la bursa", href: "/conditions/bursa-related-pain", englishOnly: true },
+      { label: "Dolor miofascial", href: "/conditions/myofascial-pain", englishOnly: true },
+      { label: "Neuralgia occipital", href: "/conditions/occipital-neuralgia", englishOnly: true },
+      { label: "Dolor persistente tras lesión o cirugía", href: "/conditions/persistent-pain-after-injury-or-surgery", englishOnly: true },
+      { label: "Dolor persistente tras cirugía de columna", href: "/conditions/persistent-pain-after-spine-surgery", englishOnly: true },
     ],
   },
   {
     title: "Dolor nervioso posquirúrgico",
     items: [
-      { label: "Síndrome de dolor posmastectomía", href: "/conditions/post-mastectomy-pain-syndrome" },
+      { label: "Síndrome de dolor posmastectomía", href: "/conditions/post-mastectomy-pain-syndrome", englishOnly: true },
     ],
   },
   {
     title: "Condiciones de dolor complejo",
     items: [
-      { label: "Evaluación de síndrome de dolor regional complejo", href: "/conditions/crps-evaluation" },
-      { label: "Evaluación de síndrome de dolor crónico", href: "/conditions/chronic-pain-syndrome-evaluation" },
-      { label: "Condiciones de dolor complejo", href: "/conditions/complex-pain-conditions" },
+      { label: "Evaluación de síndrome de dolor regional complejo", href: "/conditions/crps-evaluation", englishOnly: true },
+      { label: "Evaluación de síndrome de dolor crónico", href: "/conditions/chronic-pain-syndrome-evaluation", englishOnly: true },
+      { label: "Condiciones de dolor complejo", href: "/conditions/complex-pain-conditions", englishOnly: true },
     ],
   },
 ];
@@ -224,8 +224,8 @@ export default function CondicionesPage() {
           >
             Todas las condiciones evaluadas.
           </h2>
-          <p className="text-xs text-[#999] mb-8">
-            Las páginas detalladas de cada condición están actualmente disponibles en inglés.
+          <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
+            Dos condiciones seleccionadas están disponibles en español: ciática y dolor facetario. Las demás páginas detalladas están actualmente disponibles en inglés. La sección en español se está expandiendo.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border border-[#e5e5e0]">
             {conditionGroups.map((group, i) => (
@@ -248,7 +248,7 @@ export default function CondicionesPage() {
                           href={item.href}
                           className="hover:text-[#c8a020] transition-colors"
                         >
-                          {item.label} →
+                          {item.label} {item.englishOnly && "— Página en inglés"} →
                         </Link>
                       ) : (
                         item.label
