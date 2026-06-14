@@ -71,19 +71,19 @@ const conditionGroups = [
   {
     title: "Dolor de columna",
     items: [
-      { label: "Dolor de cuello", href: "/conditions/neck-pain", englishOnly: true },
-      { label: "Dolor de espalda baja", href: "/conditions/low-back-pain", englishOnly: true },
+      { label: "Dolor de cuello", href: "/es/condiciones/dolor-de-cuello" },
+      { label: "Dolor de espalda baja", href: "/es/condiciones/dolor-lumbar" },
       { label: "Dolor relacionado con la columna", href: "/conditions/spine-related-pain", englishOnly: true },
       { label: "Dolor mediado por las facetas", href: "/conditions/facet-mediated-pain", englishOnly: true },
-      { label: "Dolor de la articulación sacroilíaca", href: "/conditions/sacroiliac-joint-pain", englishOnly: true },
+      { label: "Dolor de la articulación sacroilíaca", href: "/es/condiciones/dolor-articulacion-sacroiliaca" },
     ],
   },
   {
     title: "Dolor nervioso y radicular",
     items: [
       { label: "Ciática", href: "/conditions/sciatica-radicular-pain", englishOnly: true },
-      { label: "Radiculopatía cervical", href: "/conditions/cervical-radiculopathy", englishOnly: true },
-      { label: "Radiculopatía lumbar", href: "/conditions/lumbar-radiculopathy", englishOnly: true },
+      { label: "Radiculopatía cervical", href: "/es/condiciones/radiculopatia-cervical" },
+      { label: "Radiculopatía lumbar", href: "/es/condiciones/radiculopatia-lumbar" },
       { label: "Dolor radicular", href: "/conditions/radicular-pain", englishOnly: true },
       { label: "Dolor neuropático", href: "/conditions/neuropathic-pain", englishOnly: true },
       { label: "Dolor de nervios periféricos", href: "/conditions/peripheral-nerve-pain", englishOnly: true },
@@ -225,7 +225,7 @@ export default function CondicionesPage() {
             Todas las condiciones evaluadas.
           </h2>
           <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
-            Dos condiciones seleccionadas están disponibles en español: ciática y dolor facetario. Las demás páginas detalladas están actualmente disponibles en inglés. La sección en español se está expandiendo.
+            Siete condiciones seleccionadas están disponibles en español: ciática, dolor facetario, dolor de cuello, dolor lumbar, radiculopatía cervical, radiculopatía lumbar y dolor de la articulación sacroilíaca. Muchas otras páginas están actualmente disponibles en inglés. La sección en español continúa expandiéndose.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border border-[#e5e5e0]">
             {conditionGroups.map((group, i) => (
