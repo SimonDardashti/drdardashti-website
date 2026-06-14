@@ -84,7 +84,7 @@ const procedureGroups = [
       { label: "Inyecciones epidurales caudales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
       { label: "Bloqueos selectivos de raíces nerviosas" },
       { label: "Inyecciones de facetas / bloqueos de rama medial", href: "/procedures/facet-joint-injections-medial-branch-blocks", englishOnly: true },
-      { label: "Ablación por radiofrecuencia", href: "/procedures/radiofrequency-ablation", englishOnly: true },
+      { label: "Ablación por radiofrecuencia", href: "/es/procedimientos/ablacion-por-radiofrecuencia" },
       { label: "Inyecciones de la articulación sacroilíaca", href: "/es/procedimientos/inyecciones-articulacion-sacroiliaca" },
     ],
   },
