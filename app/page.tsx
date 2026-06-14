@@ -168,18 +168,18 @@ export default function Home() {
               Explore Conditions &amp; Procedures
             </Link>
 
-            <div className="mt-10 md:mt-16 pt-6 md:pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6 items-end justify-items-center">
-              <div className="flex flex-col items-center text-center">
-                <p className="text-xs font-semibold text-white mb-1 leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Dual Board-Certified</p>
-                <p className="text-xs text-[#555] uppercase tracking-widest">Pain Medicine &amp; Anesthesiology</p>
+            <div className="mt-10 md:mt-16 pt-6 md:pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6 justify-items-center">
+              <div className="flex flex-col items-center text-center justify-start">
+                <p className="text-xl md:text-2xl font-semibold tracking-tight text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Dual Board-Certified</p>
+                <p className="text-xs md:text-sm uppercase tracking-[0.18em] text-neutral-500">Pain Medicine &amp; Anesthesiology</p>
               </div>
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center text-center justify-start">
                 <p className="text-3xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>10+</p>
-                <p className="text-xs text-[#555] uppercase tracking-widest">Years Active Clinical Practice</p>
+                <p className="text-xs md:text-sm uppercase tracking-[0.18em] text-neutral-500">Years Active Clinical Practice</p>
               </div>
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center text-center justify-start">
                 <p className="text-3xl font-bold text-[#8BB8E8] mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>UCLA</p>
-                <p className="text-xs text-[#555] uppercase tracking-widest">Pain Medicine Fellowship</p>
+                <p className="text-xs md:text-sm uppercase tracking-[0.18em] text-neutral-500">Pain Medicine Fellowship</p>
               </div>
             </div>
           </div>
