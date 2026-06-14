@@ -157,10 +157,11 @@ export default function VirtualConsultationsPage() {
               className="text-4xl md:text-6xl font-bold leading-tight"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Virtual Pain Management
-              <br />
-              <em className="not-italic text-[#888]">Consultations with Simon Dardashti, MD.</em>
+              Virtual Pain Management Consultations
             </h1>
+            <p className="text-xl md:text-2xl text-[#888] leading-tight mt-2" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              With Simon Dardashti, MD
+            </p>
             <p className="mt-5 text-[#666] text-lg leading-relaxed max-w-2xl">
               Dr. Simon Dardashti offers virtual pain management consultations for patients with back pain, neck pain, sciatica, and spine pain. A telehealth virtual visit allows you to begin your evaluation from home and receive an online pain management consultation that can help direct next steps in care, review prior imaging, and create a treatment plan. This option may be especially helpful for patients with mobility or transportation barriers, or those who need earlier access to specialty pain medicine evaluation in California.
             </p>

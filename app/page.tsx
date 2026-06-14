@@ -170,7 +170,7 @@ export default function Home() {
 
             <div className="mt-10 md:mt-16 pt-6 md:pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6 justify-items-center">
               <div className="flex flex-col items-center text-center justify-start">
-                <p className="text-xl md:text-2xl font-semibold tracking-tight text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Dual Board-Certified</p>
+                <p className="text-lg md:text-xl font-semibold tracking-tight text-white mb-1" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Dual Board-Certified</p>
                 <p className="text-xs md:text-sm uppercase tracking-[0.18em] text-neutral-500">Pain Medicine &amp; Anesthesiology</p>
               </div>
               <div className="flex flex-col items-center text-center justify-start">
