@@ -156,7 +156,7 @@ export default function Home() {
             <p className="text-[#888] text-xl md:text-2xl leading-relaxed mb-4">
               Board-Certified Interventional Pain Medicine &amp; Anesthesiology
             </p>
-            <p className="text-[#666] text-base leading-relaxed mb-10">
+            <p className="text-[#777] text-base leading-relaxed mb-10">
               Dr. Simon Dardashti evaluates and treats patients with spine, nerve, and joint
               pain using a careful, evidence-informed approach focused on diagnosis, function,
               and practical treatment options.
@@ -168,7 +168,7 @@ export default function Home() {
               Explore Conditions &amp; Procedures
             </Link>
 
-            <div className="mt-16 pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6 items-end justify-items-center">
+            <div className="mt-10 md:mt-16 pt-6 md:pt-10 border-t border-[#1a1a1a] grid grid-cols-3 gap-6 items-end justify-items-center">
               <div className="flex flex-col items-center text-center">
                 <p className="text-xs font-semibold text-white mb-1 leading-snug" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Dual Board-Certified</p>
                 <p className="text-xs text-[#555] uppercase tracking-widest">Pain Medicine &amp; Anesthesiology</p>
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
 
           {/* Photo */}
-          <div className="flex justify-center md:block mt-4 md:mt-0">
+          <div className="flex justify-center md:block mt-2 md:mt-0">
             <img
               src="/headshot.webp"
               alt="Simon Dardashti, MD, board-certified pain medicine physician and anesthesiologist"

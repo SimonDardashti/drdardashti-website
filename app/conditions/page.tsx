@@ -66,6 +66,11 @@ const conditionGroups = [
       { label: "Radicular pain", href: "/conditions/radicular-pain" },
       { label: "Neuropathic pain", href: "/conditions/neuropathic-pain" },
       { label: "Peripheral nerve pain", href: "/conditions/peripheral-nerve-pain" },
+      { label: "Thoracic outlet syndrome", href: "/conditions/thoracic-outlet-syndrome" },
+      { label: "Intercostal neuralgia", href: "/conditions/intercostal-neuralgia" },
+      { label: "Ilioinguinal neuralgia", href: "/conditions/ilioinguinal-neuralgia" },
+      { label: "Iliohypogastric neuralgia", href: "/conditions/iliohypogastric-neuralgia" },
+      { label: "Genitofemoral neuralgia", href: "/conditions/genitofemoral-neuralgia" },
     ],
   },
   {
@@ -83,6 +88,7 @@ const conditionGroups = [
     title: "Nerve & Post-Surgical Pain",
     items: [
       { label: "Post-mastectomy pain syndrome", href: "/conditions/post-mastectomy-pain-syndrome" },
+      { label: "Post-thoracotomy pain syndrome", href: "/conditions/post-thoracotomy-pain-syndrome" },
     ],
   },
   {
