@@ -393,6 +393,52 @@ export default function Home() {
       {/* VIRTUAL CONSULTATIONS BANNER */}
       <VirtualConsultationBanner />
 
+      {/* AUTHORITY PAGES */}
+      <FadeUp>
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-10">
+            <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Key Topics</p>
+            <h2
+              className="text-2xl md:text-3xl font-bold text-[#0a0a0a]"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Understanding Pain &amp; Treatment Options
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1: Pain Without Imaging */}
+            <Link href="/pain-without-imaging" className="group block">
+              <div className="border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors h-full">
+                <div className="w-5 h-px bg-[#c8a020] mb-4" />
+                <h3 className="text-lg font-bold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  Normal MRI but Still in Pain?
+                </h3>
+                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  Learn why significant pain can occur even when imaging appears normal, and how diagnosis relies on more than imaging findings.
+                </p>
+                <p className="text-xs text-[#c8a020] font-semibold">Learn More →</p>
+              </div>
+            </Link>
+
+            {/* Card 2: Treatment Options */}
+            <Link href="/treatment-options" className="group block">
+              <div className="border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors h-full">
+                <div className="w-5 h-px bg-[#c8a020] mb-4" />
+                <h3 className="text-lg font-bold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  Not Sure Whether You Need Therapy, Injections, or Surgery?
+                </h3>
+                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  Understand how treatment decisions are made based on diagnosis and symptoms, and when each option becomes appropriate.
+                </p>
+                <p className="text-xs text-[#c8a020] font-semibold">Learn More →</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+      </FadeUp>
+
       {/* COMMON CONDITIONS & PROCEDURES */}
       <FadeUp>
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">

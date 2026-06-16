@@ -121,6 +121,39 @@ export default function ProceduresPage() {
         </div>
       </section>
 
+      {/* WHEN ARE PROCEDURES APPROPRIATE */}
+      <section className="bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Guidelines</p>
+          </div>
+          <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
+            <h2
+              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              When Are Procedures Appropriate?
+            </h2>
+            <p>
+              Not all patients need procedures. Diagnosis comes first. Most pain conditions improve with appropriate conservative care—physical therapy, activity modification, and appropriate medication management. Procedures are selected when conservative care has been attempted, symptoms persist, and clinical evaluation identifies a specific target that may respond to intervention.
+            </p>
+            <p>
+              Treatment decisions are individualized. Conservative care is often the appropriate initial approach. When procedures are considered, they are selected based on your clinical findings, diagnostic evaluation, and functional goals—not on available technology or procedure volume. This evidence-informed approach ensures treatment matches your specific diagnosis and presentation.
+            </p>
+            <p className="text-sm">
+              <strong>Relevant reading:</strong>{" "}
+              <Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline">
+                Pain Without Imaging Findings
+              </Link>
+              {" "}and{" "}
+              <Link href="/treatment-options" className="text-[#c8a020] hover:underline">
+                Conservative Care vs Injections vs Surgery
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* PROCEDURES GRID */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">

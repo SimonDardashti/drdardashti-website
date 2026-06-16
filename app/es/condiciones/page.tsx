@@ -262,6 +262,54 @@ export default function CondicionesPage() {
         </div>
       </section>
 
+      {/* RECURSOS DESTACADOS */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-8">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Recursos</p>
+            <h2
+              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mt-2"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Recursos Destacados Sobre el Dolor
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1: Pain Without Imaging */}
+            <Link href="/es/dolor-sin-imagenes" className="group block">
+              <div className="border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors h-full">
+                <div className="flex gap-2 mb-3">
+                  <div className="w-1 h-10 bg-[#c8a020]" />
+                  <h3 className="text-lg font-bold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors">
+                    ¿Resonancia Normal Pero Aún Tiene Dolor?
+                  </h3>
+                </div>
+                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  Muchos pacientes experimentan dolor significativo a pesar de hallazgos normales en la resonancia magnética. Entienda por qué los hallazgos de imagen no siempre coinciden con los síntomas clínicos.
+                </p>
+                <p className="text-xs text-[#c8a020] font-semibold">Leer más →</p>
+              </div>
+            </Link>
+
+            {/* Card 2: Treatment Options */}
+            <Link href="/es/opciones-de-tratamiento" className="group block">
+              <div className="border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors h-full">
+                <div className="flex gap-2 mb-3">
+                  <div className="w-1 h-10 bg-[#c8a020]" />
+                  <h3 className="text-lg font-bold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors">
+                    Cuidado Conservador vs Inyecciones vs Cirugía
+                  </h3>
+                </div>
+                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  Las decisiones de tratamiento deben basarse en el diagnóstico y los hallazgos clínicos. Entienda cuándo cada opción es apropiada para su condición.
+                </p>
+                <p className="text-xs text-[#c8a020] font-semibold">Leer más →</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ENFOQUE DE EVALUACIÓN */}
       <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">

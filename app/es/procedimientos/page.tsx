@@ -213,8 +213,41 @@ export default function ProcedimientosPage() {
         </div>
       </section>
 
+      {/* CUÁNDO SON APROPIADOS LOS PROCEDIMIENTOS */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Consideraciones</p>
+          </div>
+          <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
+            <h2
+              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              ¿Cuándo Son Apropiados los Procedimientos?
+            </h2>
+            <p>
+              No todos los pacientes necesitan procedimientos. El diagnóstico viene primero. La mayoría de las condiciones de dolor mejoran con cuidado conservador apropiado—fisioterapia, modificación de actividad y manejo medicamentoso cuando es apropiado. Los procedimientos se seleccionan cuando el cuidado conservador ha sido intentado, los síntomas persisten, y la evaluación clínica identifica un objetivo específico que puede responder a la intervención.
+            </p>
+            <p>
+              Las decisiones de tratamiento son individualizadas. El cuidado conservador suele ser el enfoque inicial apropiado. Cuando se consideran procedimientos, se seleccionan según sus hallazgos clínicos, evaluación diagnóstica y objetivos funcionales—no basado en la tecnología disponible. Este enfoque basado en la evidencia asegura que el tratamiento coincida con su diagnóstico específico y presentación.
+            </p>
+            <p className="text-sm">
+              <strong>Lecturas relevantes:</strong>{" "}
+              <Link href="/es/dolor-sin-imagenes" className="text-[#c8a020] hover:underline">
+                Dolor Sin Hallazgos de Imagen
+              </Link>
+              {" "}y{" "}
+              <Link href="/es/opciones-de-tratamiento" className="text-[#c8a020] hover:underline">
+                Cuidado Conservador vs Inyecciones vs Cirugía
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* TODOS LOS PROCEDIMIENTOS */}
-      <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
+      <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Todas las opciones</p>
           <h2

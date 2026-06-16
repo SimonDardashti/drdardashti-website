@@ -166,6 +166,54 @@ export default function ConditionsPage() {
         </div>
       </section>
 
+      {/* FEATURED PAIN RESOURCES */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-8">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Resources</p>
+            <h2
+              className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mt-2"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Featured Pain Resources
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1: Pain Without Imaging */}
+            <Link href="/pain-without-imaging" className="group block">
+              <div className="border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors h-full">
+                <div className="flex gap-2 mb-3">
+                  <div className="w-1 h-10 bg-[#c8a020]" />
+                  <h3 className="text-lg font-bold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors">
+                    Normal Imaging but Still in Pain?
+                  </h3>
+                </div>
+                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  Many patients experience significant pain despite normal imaging. Learn why imaging findings don't always match clinical symptoms.
+                </p>
+                <p className="text-xs text-[#c8a020] font-semibold">Read More →</p>
+              </div>
+            </Link>
+
+            {/* Card 2: Treatment Options */}
+            <Link href="/treatment-options" className="group block">
+              <div className="border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors h-full">
+                <div className="flex gap-2 mb-3">
+                  <div className="w-1 h-10 bg-[#c8a020]" />
+                  <h3 className="text-lg font-bold text-[#0a0a0a] group-hover:text-[#c8a020] transition-colors">
+                    Conservative Care vs Injections vs Surgery
+                  </h3>
+                </div>
+                <p className="text-sm text-[#666] leading-relaxed mb-4">
+                  Treatment decisions should be based on diagnosis and clinical findings. Understand when each option is appropriate for your condition.
+                </p>
+                <p className="text-xs text-[#c8a020] font-semibold">Read More →</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* VIRTUAL CONSULTATIONS */}
       <VirtualConsultationBanner />
 
