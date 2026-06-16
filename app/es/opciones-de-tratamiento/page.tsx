@@ -117,9 +117,12 @@ export default function OpcionesdeTratamiento() {
       <article className="prose prose-lg max-w-3xl mx-auto px-4 py-12 md:py-16 lg:py-20">
 
         {/* H1 */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-          Cuidado Conservador vs Inyecciones vs Cirugía: Eligiendo el Camino Correcto de Tratamiento
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-900">
+          Cuidado Conservador vs Inyecciones vs Cirugía
         </h1>
+        <p className="text-lg md:text-xl text-gray-600 mb-8 font-medium">
+          Cómo Elegir el Tratamiento Correcto para el Dolor de Espalda, Cuello, Ciática y Nervios
+        </p>
 
         {/* Introduction */}
         <section className="mb-12">
