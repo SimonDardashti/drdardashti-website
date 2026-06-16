@@ -163,8 +163,11 @@ export default function TreatmentOptions() {
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
             The honest answer is: it depends on your diagnosis.
           </p>
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg leading-relaxed text-gray-700 mb-4">
             There is no one-size-fits-all treatment for pain. The right treatment path depends on what is actually causing your pain, how severe your symptoms are, whether your nerves are being damaged, how you are responding to prior care, and what your goals are. This page will help you understand how these decisions are made and what to expect at each stage of treatment.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700">
+            <strong>Note:</strong> If your imaging tests are normal but you still have pain, understanding <Link href="/pain-without-imaging" className="text-blue-600 hover:text-blue-800 font-medium">why normal imaging doesn't rule out real pain</Link> is essential context for this conversation. Many of the conditions discussed here present with normal or minimally abnormal imaging.
           </p>
         </section>
 
@@ -435,6 +438,24 @@ export default function TreatmentOptions() {
           <p className="text-lg leading-relaxed text-gray-700">
             This approach takes time and thought. It is easier to offer the first injection or surgery that comes to mind. But that is not how good medicine works. Good medicine asks: "What is actually wrong? What treatment will address that problem? What is the least invasive option likely to work?" If the answer is physical therapy, that is the recommendation. If it is injections, that is what we do. If it is surgery, we recommend that. The answer depends on your diagnosis.
           </p>
+        </section>
+
+        {/* Physician Authority Box */}
+        <section className="mb-12 bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+          <div className="flex gap-4">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">About Dr. Simon Dardashti, MD</h3>
+              <p className="text-gray-700 mb-2">
+                <strong>Board-Certified in Pain Medicine and Anesthesiology</strong>
+              </p>
+              <ul className="text-sm text-gray-700 space-y-1 mb-3">
+                <li>• UCLA Pain Medicine fellowship-trained</li>
+                <li>• 10+ years specializing in spine, nerve, and musculoskeletal pain</li>
+                <li>• Diagnosis-driven approach to treatment planning</li>
+                <li>• Virtual consultations available for patients worldwide</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Section 8: Next Steps */}

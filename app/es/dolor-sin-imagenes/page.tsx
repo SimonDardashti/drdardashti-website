@@ -359,6 +359,24 @@ export default function DolorSinImagenes() {
           </div>
         </section>
 
+        {/* Physician Authority Box */}
+        <section className="mb-12 bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+          <div className="flex gap-4">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Acerca del Dr. Simon Dardashti, MD</h3>
+              <p className="text-gray-700 mb-2">
+                <strong>Certificado en Medicina del Dolor y Anestesiología</strong>
+              </p>
+              <ul className="text-sm text-gray-700 space-y-1 mb-3">
+                <li>• Entrenamiento en especialidad de Medicina del Dolor de UCLA</li>
+                <li>• Más de 10 años especializándose en dolor de columna, nervios y músculo-esquelético</li>
+                <li>• Enfoque de tratamiento basado en diagnóstico</li>
+                <li>• Consultas virtuales disponibles para pacientes en todo el mundo</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Section 6: Next Steps */}
         <section className="mb-12 bg-blue-50 p-8 rounded-lg">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">

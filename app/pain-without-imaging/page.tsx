@@ -293,6 +293,10 @@ export default function PainWithoutImaging() {
             Many patients improve significantly with conservative care alone—often 70–80% of patients with acute pain improve with appropriate conservative management over 6–12 weeks. Treatment should be based on what we found during evaluation, not on imaging severity.
           </p>
 
+          <p className="text-lg leading-relaxed text-gray-700 mb-4">
+            <strong>Unsure how to choose between conservative care, injections, and surgery?</strong> <Link href="/treatment-options" className="text-blue-600 hover:text-blue-800 font-medium">See a detailed guide to treatment decision-making</Link> that explains when each option is appropriate and how to think through your next steps with your physician.
+          </p>
+
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Interventional Options</h3>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
             If conservative care does not provide adequate relief, interventional options may help:
@@ -389,6 +393,24 @@ export default function PainWithoutImaging() {
               </p>
             </div>
 
+          </div>
+        </section>
+
+        {/* Physician Authority Box */}
+        <section className="mb-12 bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
+          <div className="flex gap-4">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">About Dr. Simon Dardashti, MD</h3>
+              <p className="text-gray-700 mb-2">
+                <strong>Board-Certified in Pain Medicine and Anesthesiology</strong>
+              </p>
+              <ul className="text-sm text-gray-700 space-y-1 mb-3">
+                <li>• UCLA Pain Medicine fellowship-trained</li>
+                <li>• 10+ years specializing in spine, nerve, and musculoskeletal pain</li>
+                <li>• Diagnosis-driven approach to treatment planning</li>
+                <li>• Virtual consultations available for patients worldwide</li>
+              </ul>
+            </div>
           </div>
         </section>
 
