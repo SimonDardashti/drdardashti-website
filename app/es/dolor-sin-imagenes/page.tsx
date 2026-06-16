@@ -120,6 +120,19 @@ export default function DolorSinImagenes() {
           Por Qué Tiene Dolor Cuando Sus Estudios de Imagen Son Normales
         </h1>
 
+        {/* Authority Page Callout */}
+        <section className="mb-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            ¿No Está Seguro Si Necesita Fisioterapia, Inyecciones o Cirugía?
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Las decisiones de tratamiento deben basarse en el diagnóstico, los síntomas y la respuesta al cuidado conservador, no en un enfoque único.
+          </p>
+          <Link href="/es/opciones-de-tratamiento" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors text-sm">
+            Cuidado Conservador vs Inyecciones vs Cirugía
+          </Link>
+        </section>
+
         {/* Introduction */}
         <section className="mb-12">
           <p className="text-lg leading-relaxed text-gray-700 mb-4">

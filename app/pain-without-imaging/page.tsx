@@ -153,6 +153,19 @@ export default function PainWithoutImaging() {
           Why You Have Pain When Your Imaging Tests Are Normal
         </h1>
 
+        {/* Authority Page Callout */}
+        <section className="mb-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            Not Sure Whether You Need Physical Therapy, Injections, or Surgery?
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Treatment decisions should be based on diagnosis, symptoms, and response to conservative care—not a one-size-fits-all approach.
+          </p>
+          <Link href="/treatment-options" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors text-sm">
+            Conservative Care vs Injections vs Surgery
+          </Link>
+        </section>
+
         {/* Introduction */}
         <section className="mb-12">
           <p className="text-lg leading-relaxed text-gray-700 mb-4">

@@ -158,6 +158,19 @@ export default function TreatmentOptions() {
           How to Choose the Right Treatment Path for Back Pain, Neck Pain, Sciatica, and Nerve Pain
         </p>
 
+        {/* Authority Page Callout */}
+        <section className="mb-12 bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            Normal MRI but Still in Pain?
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Many patients experience significant pain despite normal MRI or CT findings. Imaging is only one part of the diagnostic process.
+          </p>
+          <Link href="/pain-without-imaging" className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 px-4 rounded transition-colors text-sm">
+            Pain Without Imaging Findings
+          </Link>
+        </section>
+
         {/* Introduction */}
         <section className="mb-12">
           <p className="text-lg leading-relaxed text-gray-700 mb-4">

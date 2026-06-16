@@ -124,6 +124,19 @@ export default function OpcionesdeTratamiento() {
           Cómo Elegir el Tratamiento Correcto para el Dolor de Espalda, Cuello, Ciática y Nervios
         </p>
 
+        {/* Authority Page Callout */}
+        <section className="mb-12 bg-amber-50 border border-amber-200 rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            ¿Resonancia Normal Pero Aún Tiene Dolor?
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Muchos pacientes experimentan dolor significativo a pesar de hallazgos normales en la resonancia magnética o tomografía. La imagen es solo una parte del proceso diagnóstico.
+          </p>
+          <Link href="/es/dolor-sin-imagenes" className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 px-4 rounded transition-colors text-sm">
+            Dolor Sin Hallazgos de Imagen
+          </Link>
+        </section>
+
         {/* Introduction */}
         <section className="mb-12">
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
