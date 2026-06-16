@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/conditions`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/procedures`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/pain-without-imaging`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/treatment-options`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/conditions/low-back-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/sciatica-radicular-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/epidural-steroid-injections`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
@@ -72,5 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es/condiciones/radiculopatia-lumbar`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/es/condiciones/dolor-articulacion-sacroiliaca`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/es/dolor-sin-imagenes`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/es/opciones-de-tratamiento`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 }
