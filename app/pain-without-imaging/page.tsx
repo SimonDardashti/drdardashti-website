@@ -76,7 +76,7 @@ const pageSchema = {
         name: 'Can injections help if imaging is normal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Diagnostic and therapeutic injections are often valuable when imaging is normal because they help identify the specific pain source. An epidural injection can test whether spinal structures are involved. A medial branch block can determine if facet joints are contributing. If pain improves after an injection targeting a specific structure, that provides both diagnostic information and therapeutic relief. Success depends on accurate diagnosis of what structure is generating pain.',
+          text: 'Yes. Diagnostic and therapeutic injections are often valuable when imaging is normal because they help identify the specific pain source. An epidural injection can test whether spinal structures are involved. A medial branch block can determine if facet joints are contributing. If pain improves after an injection targeting a specific structure, that provides both diagnostic information and therapeutic relief. Success depends on accurate diagnosis of which structure may be contributing to pain.',
         },
       },
       {
@@ -253,7 +253,7 @@ export default function PainWithoutImaging() {
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
             <li><strong><Link href="/epidural-steroid-injection" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> Tests whether spinal canal involvement is contributing to pain. Can provide anti-inflammatory benefit.</li>
-            <li><strong><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Tests whether facet joints are generating pain. A short-duration diagnostic test.</li>
+            <li><strong><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Tests whether facet joints may be contributing to pain. A short-duration diagnostic test.</li>
             <li><strong>Sacroiliac joint injection:</strong> Tests whether SI joint dysfunction is contributing to pain.</li>
             <li><strong>Peripheral nerve blocks:</strong> Test whether specific peripheral nerves are involved.</li>
           </ul>

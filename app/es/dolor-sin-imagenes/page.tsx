@@ -66,7 +66,7 @@ const pageSchema = {
         name: '¿Las inyecciones pueden ayudar si mi imagen es normal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Sí. Las inyecciones diagnósticas y terapéuticas a menudo son valiosas cuando la imagen es normal porque ayudan a identificar la fuente de dolor específica. Una inyección epidural puede demostrar si las estructuras espinales están involucradas. Un bloqueo de rama medial puede determinar si las articulaciones facetarias están contribuyendo. Si el dolor mejora después de una inyección dirigida a una estructura específica, eso proporciona tanto información diagnóstica como alivio terapéutico. El éxito depende del diagnóstico preciso de qué estructura está generando dolor.',
+          text: 'Sí. Las inyecciones diagnósticas y terapéuticas a menudo son valiosas cuando la imagen es normal porque ayudan a identificar la fuente de dolor específica. Una inyección epidural puede demostrar si las estructuras espinales están involucradas. Un bloqueo de rama medial puede determinar si las articulaciones facetarias están contribuyendo. Si el dolor mejora después de una inyección dirigida a una estructura específica, eso proporciona tanto información diagnóstica como alivio terapéutico. El éxito depende del diagnóstico preciso de qué estructura puede estar contribuyendo al dolor.',
         },
       },
       {
@@ -220,7 +220,7 @@ export default function DolorSinImagenes() {
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
             <li><strong>Inyección epidural de esteroides:</strong> Prueba si la implicación del canal espinal contribuye al dolor. Puede proporcionar beneficio antiinflamatorio.</li>
-            <li><strong>Bloqueo de rama medial:</strong> Prueba si las articulaciones facetarias están generando dolor. Una prueba diagnóstica de corta duración.</li>
+            <li><strong>Bloqueo de rama medial:</strong> Prueba si las articulaciones facetarias pueden estar contribuyendo al dolor. Una prueba diagnóstica de corta duración.</li>
             <li><strong>Inyección de articulación sacroilíaca:</strong> Prueba si la disfunción de la articulación SI contribuye al dolor.</li>
             <li><strong>Bloqueos de nervios periféricos:</strong> Prueba si los nervios periféricos específicos están involucrados.</li>
           </ul>
