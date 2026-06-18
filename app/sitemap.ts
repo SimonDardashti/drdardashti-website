@@ -76,5 +76,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es/opciones-de-tratamiento`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/second-opinion-spine-surgery`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/es/segunda-opinion-cirugia-columna`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/articles/aquatic-therapy-arthritis`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
