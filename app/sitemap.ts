@@ -74,5 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es/condiciones/dolor-articulacion-sacroiliaca`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/es/dolor-sin-imagenes`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/es/opciones-de-tratamiento`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/second-opinion-spine-surgery`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/es/segunda-opinion-cirugia-columna`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 }
