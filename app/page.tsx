@@ -517,6 +517,34 @@ export default function Home() {
       </section>
       </FadeUp>
 
+      {/* PATIENT EDUCATION */}
+      <FadeUp>
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Resources</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2
+              className="text-xl md:text-2xl font-bold text-[#0a0a0a] mb-3 leading-snug"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Patient Education Resources.
+            </h2>
+            <p className="text-[#777] text-sm mb-6 max-w-xl">
+              Comprehensive educational materials to help you understand pain conditions, treatment options, conservative care approaches, and procedures.
+            </p>
+            <Link
+              href="/patient-education"
+              className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
+            >
+              Explore Patient Education →
+            </Link>
+          </div>
+        </div>
+      </section>
+      </FadeUp>
+
       {/* SECTION 03 — APPROACH */}
       <FadeUp>
       <section className="bg-[#0a0a0a] py-20 px-6 border-b border-[#1a1a1a]">
