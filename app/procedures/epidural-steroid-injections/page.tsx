@@ -263,6 +263,30 @@ export default function EpiduralSteroidInjectionsPage() {
         </div>
       </section>
 
+      {/* RECOMMENDED READING */}
+      <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Reading</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2 className="text-base font-bold text-[#0a0a0a] mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              Recommended Reading.
+            </h2>
+            <p className="text-[#666] text-sm leading-relaxed mb-6">
+              Learning about your condition and how procedures work can help you prepare for your consultation and make informed decisions about your treatment.
+            </p>
+            <ul className="space-y-3 text-sm">
+              <li><Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline tracking-wide">Pain Without Imaging Findings →</Link></li>
+              <li><Link href="/treatment-options" className="text-[#c8a020] hover:underline tracking-wide">Treatment Decision Framework →</Link></li>
+              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Conservative Treatments for Chronic Pain →</Link></li>
+              <li><Link href="/patient-education" className="text-[#c8a020] hover:underline tracking-wide">Patient Education Resources →</Link></li>
+              <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* RELATED */}
       <section className="bg-[#f9f7f4] py-14 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">

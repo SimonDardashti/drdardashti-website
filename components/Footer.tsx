@@ -11,13 +11,18 @@ export default function Footer() {
   const footerLinks = isSpanish
     ? [
         { href: "/es", label: "Inicio" },
+        { href: "/es/educacion-para-pacientes", label: "Educación para Pacientes" },
+        { href: "/es/articulos", label: "Artículos" },
+        { href: "/es/cuidados-conservadores", label: "Cuidados Conservadores" },
         { href: "/es/condiciones", label: "Condiciones" },
         { href: "/es/procedimientos", label: "Procedimientos" },
         { href: "/", label: "English" },
       ]
     : [
         { href: "/", label: "Home" },
-        { href: "/about", label: "About Dr. Dardashti" },
+        { href: "/patient-education", label: "Patient Education" },
+        { href: "/articles", label: "Articles" },
+        { href: "/conservative-care", label: "Conservative Care" },
         { href: "/conditions", label: "Conditions" },
         { href: "/procedures", label: "Procedures" },
       ];
