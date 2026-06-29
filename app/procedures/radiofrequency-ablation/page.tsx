@@ -162,6 +162,7 @@ export default function RadiofrequencyAblationPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             variant="default"
+            size="xlarge"
             src="/images/conditions/RFA-mechanism v2.png"
             alt="Radiofrequency ablation mechanism showing RF needle placement near medial branch nerve, electrical current delivery, heat generation (80-90°C), and thermal lesion of nerve tissue preventing pain signal transmission"
             caption="How Radiofrequency Ablation Works: A specialized needle is advanced to the medial branch nerve under fluoroscopic guidance. Radiofrequency current is applied, heating the nerve tissue to approximately 80-90°C. This creates a lesion that prevents pain signal transmission from the facet joint. The effect typically lasts 6-12 months before nerve regeneration occurs."
@@ -204,6 +205,7 @@ export default function RadiofrequencyAblationPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             variant="default"
+            size="large"
             src="/images/conditions/medial-branch-3d-perspective.png"
             alt="Three-dimensional anatomical perspective of medial branch nerves in lumbar spine showing bilateral nerve pathways, relationship to facet joints at multiple levels (L3, L4, L5), and needle targeting approach"
             caption="Medial Branch Anatomy: Each facet joint is supplied by two medial branch nerves—one from the level of the facet and one from the level above. This anatomy is why precise needle placement is critical. The 3D perspective shows how the nerves travel alongside the spine."
@@ -214,6 +216,7 @@ export default function RadiofrequencyAblationPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             variant="default"
+            size="large"
             src="/images/procedures/injections/medial-branch-block.png"
             alt="Medial branch block needle placement at the medial branch nerves showing fluoroscopic guidance and needle positioning targeting the nerve that supplies painful facet joints"
             caption="Medial Branch Block: Under fluoroscopic (X-ray) guidance, the needle is positioned at the medial branch nerve—the nerve that supplies sensation and pain signals from the facet joints. Local anesthetic temporarily numbs this nerve. If pain relief occurs during the block period, it confirms the facet joints are contributing significantly to your pain and supports considering radiofrequency ablation."

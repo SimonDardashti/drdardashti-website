@@ -158,6 +158,7 @@ export default function EpiduralSteroidInjectionsPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             variant="default"
+            size="xlarge"
             src="/images/conditions/epidural-mechanism.png"
             alt="Epidural steroid injection showing needle placement in epidural space, steroid delivery around nerve roots, and inflammation reduction mechanism in lumbar and cervical spine"
             caption="How Epidural Steroid Injections Work: The needle advances into the epidural space (the area surrounding the spinal nerves but outside the dura mater). Steroid medication is delivered directly to inflamed nerve tissue, reducing inflammation and pain. This visual shows both lumbar and cervical approaches."
@@ -212,6 +213,7 @@ export default function EpiduralSteroidInjectionsPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             variant="default"
+            size="large"
             src="/images/procedures/injections/lumbar-epidural-steroid-injection.png"
             alt="Lumbar epidural steroid injection technique showing vertebral anatomy, needle trajectory through tissues, epidural space identification, and steroid placement around lumbar nerve roots"
             caption="Lumbar Epidural Approach: This technique targets the epidural space between L4-L5 or L5-S1, depending on symptom distribution. The needle passes through skin, ligaments, and enters the epidural space under fluoroscopic guidance."
@@ -222,6 +224,7 @@ export default function EpiduralSteroidInjectionsPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             variant="default"
+            size="large"
             src="/images/procedures/injections/cervical-epidural-steroid-injection.png"
             alt="Cervical epidural steroid injection showing neck anatomy, needle trajectory at cervical vertebra level, epidural space anatomy at cervical spine, and medication placement"
             caption="Cervical Epidural Approach: For neck and arm pain, the cervical epidural uses similar technique but targets the narrower cervical epidural space. Most commonly performed at C5-C6 or C6-C7 levels."
