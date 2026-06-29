@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/lumbar-spinal-stenosis";
 const SITE_URL = "https://www.drdardashti.com";
@@ -186,6 +187,16 @@ export default function LumbarStenosisPage() {
           <p className="text-lg leading-relaxed text-gray-700">
             <strong>Key insight:</strong> Stenosis by itself isn't dangerous. It becomes problematic when it pressures your nerves enough to cause symptoms. Many people have stenosis on imaging but no symptoms at all.
           </p>
+
+          {/* ILLUSTRATION 1: Lumbar Spinal Stenosis */}
+          <div className="my-12 flex justify-center">
+            <MedicalFigure
+              variant="default"
+              src="/images/anatomy/spine/lumbar-spinal-stenosis.png"
+              alt="Lumbar spinal stenosis showing narrowing of the lumbar spinal canal with ligament thickening, bone spurs from degenerative disc disease, and facet arthritis compressing nerve structures"
+              caption="Lumbar Spinal Stenosis: Stenosis means the spinal canal has narrowed, which can put pressure on nerves. This is common with aging but NOT all stenosis causes pain or requires surgery. Many patients with significant stenosis have minimal symptoms, while others need treatment to relieve pressure."
+            />
+          </div>
         </section>
 
         {/* Section 2 */}
@@ -310,6 +321,16 @@ export default function LumbarStenosisPage() {
             <li><strong>Severity relative to your limitations:</strong> Severe stenosis with severe functional loss may need more aggressive treatment than mild narrowing.</li>
             <li><strong>Emergency findings:</strong> Cauda equina compression (rare) or progressive myelopathy requires urgent evaluation.</li>
           </ul>
+
+          {/* ILLUSTRATION 2: Central Canal Stenosis */}
+          <div className="my-12 flex justify-center">
+            <MedicalFigure
+              variant="default"
+              src="/images/anatomy/spine/lumbar-central-canal-stenosis.png"
+              alt="Cross-sectional view of lumbar spine showing central canal stenosis with narrowing of the lumbar spinal canal from multiple sources including bone spurs, ligament thickening, and disc bulging"
+              caption="Central Canal Stenosis: This cross-sectional view shows how stenosis narrows the canal from multiple directions. While MRI shows exactly where the narrowing is, your symptoms depend more on how much the stenosis actually pressures your nerves—and that can vary widely from person to person."
+            />
+          </div>
         </section>
 
         {/* Section 6 */}
