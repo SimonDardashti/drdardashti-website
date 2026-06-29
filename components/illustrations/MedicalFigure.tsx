@@ -40,12 +40,30 @@ export interface MedicalFigureProps {
  * Alt text is required (accessibility critical).
  * Caption is optional (educational enhancement).
  */
-// Size tier definitions (px)
+// Size tier definitions (proportional to article width)
+// Article container is max-w-5xl (1024px)
+// Sizes scale relative to article width, not fixed pixels
 const SIZE_TIERS = {
-  small: { desktop: 575, caption: '575px' },      // 500-650px tier
-  medium: { desktop: 700, caption: '700px' },     // Default 600px → upgraded to 700px
-  large: { desktop: 850, caption: '850px' },      // Anatomy/technique 800-900px
-  xlarge: { desktop: 950, caption: '950px' },     // Mechanism 900-1000px
+  small: {     // Reference illustrations: 65-70% of article width
+    percent: '70%',
+    maxWidth: '720px',
+    imageRatio: 0.75,
+  },
+  medium: {    // General/comparison illustrations: 75-80% of article width
+    percent: '78%',
+    maxWidth: '800px',
+    imageRatio: 0.75,
+  },
+  large: {     // Anatomy/technique illustrations: 85-90% of article width
+    percent: '88%',
+    maxWidth: '900px',
+    imageRatio: 0.75,
+  },
+  xlarge: {    // Mechanism illustrations: 90-95% of article width
+    percent: '93%',
+    maxWidth: '950px',
+    imageRatio: 0.75,
+  },
 };
 
 export default function MedicalFigure({
@@ -89,30 +107,23 @@ export default function MedicalFigure({
   // DEFAULT VARIANT: Centered image
   // ============================================
   if (variant === 'default' || (!variant && src && !leftSrc)) {
-    // Dynamic width based on size tier
-    const widthClass = {
-      small: 'md:w-[575px]',
-      medium: 'md:w-[700px]',
-      large: 'md:w-[850px]',
-      xlarge: 'md:w-[950px]',
-    }[size];
-
-    const maxWidthClass = {
-      small: 'max-w-[575px]',
-      medium: 'max-w-[700px]',
-      large: 'max-w-[850px]',
-      xlarge: 'max-w-[950px]',
-    }[size];
+    const sizeConfig = SIZE_TIERS[size];
 
     return (
       <figure className="flex flex-col items-center my-8">
-        <div className={`w-full ${widthClass} ${maxWidthClass}`}>
+        <div
+          className="w-full"
+          style={{
+            maxWidth: sizeConfig.maxWidth,
+            width: `min(${sizeConfig.percent}, ${sizeConfig.maxWidth})`,
+          }}
+        >
           <Image
             src={src as string}
             alt={alt as string}
-            width={sizeConfig.desktop}
-            height={Math.round((sizeConfig.desktop * 3) / 4)}
-            sizes={`(max-width: 768px) 100vw, ${sizeConfig.caption}`}
+            width={1200}
+            height={Math.round(1200 * sizeConfig.imageRatio)}
+            sizes={`(max-width: 768px) 100vw, ${sizeConfig.percent}`}
             priority={priority}
             loading={loading}
             quality={90}
@@ -121,7 +132,13 @@ export default function MedicalFigure({
         </div>
 
         {caption && (
-          <figcaption className={`text-sm text-[#666] leading-relaxed mt-3 ${maxWidthClass}`}>
+          <figcaption
+            className="text-sm text-[#666] leading-relaxed mt-3"
+            style={{
+              maxWidth: sizeConfig.maxWidth,
+              width: `min(${sizeConfig.percent}, ${sizeConfig.maxWidth})`,
+            }}
+          >
             {caption}
           </figcaption>
         )}
@@ -133,39 +150,25 @@ export default function MedicalFigure({
   // COMPARISON VARIANT: Two images
   // ============================================
   if (variant === 'comparison') {
-    // Comparison sizes (total width)
-    const comparisonWidths = {
-      small: { container: 600, image: 275 },      // 500-650px tier
-      medium: { container: 750, image: 350 },     // ~700px tier
-      large: { container: 900, image: 400 },      // 800-900px tier
-      xlarge: { container: 1000, image: 450 },    // 900-1000px tier
-    }[size];
-
-    const widthClass = {
-      small: 'md:w-[600px]',
-      medium: 'md:w-[750px]',
-      large: 'md:w-[900px]',
-      xlarge: 'md:w-[1000px]',
-    }[size];
-
-    const maxWidthClass = {
-      small: 'max-w-[600px]',
-      medium: 'max-w-[750px]',
-      large: 'max-w-[900px]',
-      xlarge: 'max-w-[1000px]',
-    }[size];
+    const sizeConfig = SIZE_TIERS[size];
 
     return (
       <figure className="flex flex-col items-center my-8">
-        <div className={`w-full ${widthClass} flex flex-col md:flex-row md:gap-6`}>
+        <div
+          className="w-full flex flex-col md:flex-row md:gap-6"
+          style={{
+            maxWidth: sizeConfig.maxWidth,
+            width: `min(${sizeConfig.percent}, ${sizeConfig.maxWidth})`,
+          }}
+        >
           {/* Left image */}
           <div className="flex-1 mb-4 md:mb-0">
             <Image
               src={leftSrc as string}
               alt={leftAlt as string}
-              width={comparisonWidths.image}
-              height={Math.round((comparisonWidths.image * 3) / 4)}
-              sizes="(max-width: 768px) 100vw, 350px"
+              width={1200}
+              height={Math.round(1200 * sizeConfig.imageRatio)}
+              sizes={`(max-width: 768px) 100vw, calc(${sizeConfig.percent} / 2)`}
               priority={priority}
               loading={loading}
               quality={90}
@@ -183,9 +186,9 @@ export default function MedicalFigure({
             <Image
               src={rightSrc as string}
               alt={rightAlt as string}
-              width={comparisonWidths.image}
-              height={Math.round((comparisonWidths.image * 3) / 4)}
-              sizes="(max-width: 768px) 100vw, 350px"
+              width={1200}
+              height={Math.round(1200 * sizeConfig.imageRatio)}
+              sizes={`(max-width: 768px) 100vw, calc(${sizeConfig.percent} / 2)`}
               priority={priority}
               loading={loading}
               quality={90}
@@ -200,7 +203,13 @@ export default function MedicalFigure({
         </div>
 
         {caption && (
-          <figcaption className={`text-sm text-[#666] leading-relaxed mt-4 ${maxWidthClass}`}>
+          <figcaption
+            className="text-sm text-[#666] leading-relaxed mt-4"
+            style={{
+              maxWidth: sizeConfig.maxWidth,
+              width: `min(${sizeConfig.percent}, ${sizeConfig.maxWidth})`,
+            }}
+          >
             {caption}
           </figcaption>
         )}
