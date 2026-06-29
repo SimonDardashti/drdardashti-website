@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/sacroiliac-joint-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -135,6 +136,16 @@ export default function SacroiliacJointPainPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 1: Sacroiliac Joint Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/joints/sacroiliac-joint-anatomy.png"
+            alt="Sacroiliac joint anatomy showing bilateral sacroiliac joints connecting the sacrum to the iliac bones of the pelvis with ligamentous support and joint surfaces"
+            caption="Sacroiliac Joint Anatomy: The sacroiliac joints connect the sacrum (base of the spine) to the pelvis. These joints are highly mobile in young people but gradually become less mobile with age and can become painful when irritated or inflamed."
+          />
+        </div>
       </section>
 
       {/* DIAGNOSTIC CHALLENGES */}
@@ -167,6 +178,16 @@ export default function SacroiliacJointPainPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 2: Sacroiliac Joint Dysfunction */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/joints/sacroiliac-joint-dysfunction.png"
+            alt="Sacroiliac joint dysfunction showing inflammation, joint instability, and degenerative changes with surrounding muscular dysfunction"
+            caption="Sacroiliac Joint Dysfunction: The sacroiliac joint can become painful from inflammation, instability, or degenerative changes. This illustration shows why clinical examination is so important—sacroiliac joint pain often occurs alongside muscular dysfunction and requires a comprehensive evaluation approach."
+          />
+        </div>
       </section>
 
       {/* EVALUATION APPROACH */}
@@ -193,6 +214,16 @@ export default function SacroiliacJointPainPage() {
               any single finding in isolation.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION 3: Sacroiliac Ligaments */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/joints/sacroiliac-ligaments.png"
+            alt="Sacroiliac ligament anatomy showing anterior sacroiliac ligament, posterior sacroiliac ligament, interosseous ligament, and sacrotuberous and sacrospinous ligaments"
+            caption="Sacroiliac Ligament Support: The sacroiliac joint is supported by strong ligaments that provide stability and distribute load. Ligamentous strain or inflammation can contribute to sacroiliac pain, which is why physical therapy focusing on core stability and muscle balance is often an important part of treatment."
+          />
         </div>
       </section>
 
