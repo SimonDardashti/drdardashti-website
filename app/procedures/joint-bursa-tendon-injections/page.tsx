@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/joint-bursa-tendon-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -172,6 +173,16 @@ export default function JointBursaTendonInjectionsPage() {
               sheath surrounding a tendon, used for tenosynovitis or tendon sheath inflammation.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Joint Injection Example */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/facet-joint-injection.png"
+            alt="Joint injection showing needle placement into joint space, steroid and anesthetic delivery into joint cavity, and inflammation reduction"
+            caption="Joint, Bursa, and Tendon Injections: Medication can be injected into various anatomical structures. This example shows a joint injection, which can reduce inflammation and pain in the joint itself."
+          />
         </div>
       </section>
 

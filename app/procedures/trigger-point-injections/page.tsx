@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/trigger-point-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -170,6 +171,16 @@ export default function TriggerPointInjectionsPage() {
               tenderness and may reproduce or worsen the patient's pain complaint.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Trigger Point Injection */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/trigger-point-injection.png"
+            alt="Trigger point injection showing needle placement into myofascial trigger point, local anesthetic and medication delivery to inflamed muscle tissue, and pain reduction mechanism"
+            caption="Trigger Point Injection: A needle is advanced directly into the trigger point (hyperirritable muscle spot). Medication is injected to reduce inflammation and muscle tension, providing pain relief."
+          />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/sacroiliac-joint-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -196,6 +197,16 @@ export default function SIJointInjectionsPage() {
               symptoms alone.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Sacroiliac Joint Injection */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/sacroiliac-joint-injection.png"
+            alt="Sacroiliac joint injection showing needle placement into SI joint space, steroid and anesthetic delivery, and inflammation reduction at the joint"
+            caption="Sacroiliac Joint Injection: Under imaging guidance, the needle is advanced into the sacroiliac joint space. Steroid and local anesthetic medication are injected to reduce inflammation and pain."
+          />
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/peripheral-nerve-blocks";
 const SITE_URL = "https://www.drdardashti.com";
@@ -172,6 +173,26 @@ export default function PeripheralNerveBlocksPage() {
               anesthetic.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Peripheral Nerve Block Technique */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/peripheral-nerve-block.png"
+            alt="Peripheral nerve block showing needle placement along target peripheral nerve, local anesthetic delivery around nerve, and pain signal blockade"
+            caption="Peripheral Nerve Block Technique: Under imaging or anatomical landmark guidance, local anesthetic is placed around the target peripheral nerve. This blocks pain signals in that nerve's distribution."
+          />
+        </div>
+
+        {/* ILLUSTRATION: Peripheral Nerve Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/nerves/peripheral-nerve-anatomy.png"
+            alt="Peripheral nerve anatomy showing major peripheral nerves, nerve pathways, sensory distributions, and anatomical landmarks for nerve block targeting"
+            caption="Peripheral Nerve Anatomy: Understanding the course and distribution of peripheral nerves is essential for accurate nerve block placement. Different nerves supply sensation and motor function to different limb regions."
+          />
         </div>
       </section>
 
