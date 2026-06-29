@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/lumbar-radiculopathy";
 const SITE_URL = "https://www.drdardashti.com";
@@ -178,6 +179,16 @@ export default function LumbarRadiculopathyPage() {
               ))}
             </ul>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Lumbar Dermatomes */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/nerves/lumbar-dermatomes.png"
+            alt="Lumbar dermatomes showing sensory nerve root distribution across lower back, buttocks, legs, and feet with specific areas labeled L3, L4, L5, and S1"
+            caption="Lumbar Dermatomes: Each spinal nerve root distributes sensation to a specific area of the leg and foot. L3 and L4 refer symptoms to the anterior and medial thigh. L5 distributes to the lateral leg and dorsum of the foot. S1 supplies the posterior and lateral leg and sole of the foot. Understanding your specific symptom distribution helps identify which nerve root may be involved."
+          />
         </div>
       </section>
 

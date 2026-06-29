@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/radiofrequency-ablation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -187,6 +188,16 @@ export default function RadiofrequencyAblationPage() {
               are generally not considered appropriate candidates for RFA at that time.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Medial Branch Block */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/medial-branch-block.png"
+            alt="Medial branch block needle placement at the medial branch nerves showing fluoroscopic guidance and needle positioning targeting the nerve that supplies painful facet joints"
+            caption="Medial Branch Block: Under fluoroscopic (X-ray) guidance, the needle is positioned at the medial branch nerve—the nerve that supplies sensation and pain signals from the facet joints. Local anesthetic temporarily numbs this nerve. If pain relief occurs during the block period, it confirms the facet joints are contributing significantly to your pain and supports considering radiofrequency ablation."
+          />
         </div>
       </section>
 

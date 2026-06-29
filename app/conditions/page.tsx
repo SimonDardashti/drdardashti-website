@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions";
@@ -244,6 +245,15 @@ export default function ConditionsPage() {
               presentation, functional goals, and prior treatment response.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Multiple Pain Generators */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            src="/images/conditions/common-pain-generators.png"
+            alt="Multiple structures of the spine can cause pain including discs, facet joints, sacroiliac joints, muscles, and nerve roots"
+            caption="Multiple Structures Can Cause Pain: The spine and nervous system are complex. Pain can originate from intervertebral discs, facet joints, sacroiliac joints, spinal nerves, muscles, ligaments, and other structures. Comprehensive evaluation helps identify the likely pain source."
+          />
         </div>
       </section>
 

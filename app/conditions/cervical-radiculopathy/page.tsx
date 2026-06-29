@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/cervical-radiculopathy";
 const SITE_URL = "https://www.drdardashti.com";
@@ -148,6 +149,16 @@ export default function CervicalRadiculopathyPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 1: Cervical Spine Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/cervical-spine-anatomy.png"
+            alt="Cervical spine anatomy showing seven cervical vertebrae (C1-C7), intervertebral discs, facet joints, and nerve roots emerging from spinal canal"
+            caption="Cervical Spine Anatomy: The cervical spine has seven vertebrae. Nerve roots exit between vertebrae at each level. When a nerve is compressed at its exit point, it causes arm and hand symptoms specific to that nerve's distribution."
+          />
+        </div>
       </section>
 
       {/* SYMPTOMS */}
@@ -179,7 +190,29 @@ export default function CervicalRadiculopathyPage() {
                 </li>
               ))}
             </ul>
+
+            {/* ILLUSTRATION 2: Cervical Dermatomes */}
+            <div className="max-w-2xl mt-10">
+              <MedicalFigure
+                variant="default"
+                src="/images/anatomy/nerves/cervical-dermatomes.png"
+                alt="Cervical dermatomes showing C5, C6, C7, and C8 sensory distributions across shoulder, arm, forearm, and hand with clear regional demarcation"
+                caption="Cervical Dermatomes: Each cervical nerve supplies sensation to specific areas. Your arm pain pattern—whether upper arm, forearm, specific fingers—tells us which nerve is involved. This is one of our most valuable diagnostic clues."
+              />
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* ILLUSTRATION 3: Cervical Radiculopathy Compression */}
+      <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/cervical-radiculopathy.png"
+            alt="Cervical radiculopathy showing nerve root compressed by herniated disc or bone spurs at cervical vertebra level, with resulting pain radiation down arm"
+            caption="Cervical Radiculopathy: When a cervical nerve root is compressed (usually by a herniated disc or bone spurs), it becomes irritated and sends pain signals down the arm. Unlike lower back pain, cervical radiculopathy affects the arm, forearm, and hand."
+          />
         </div>
       </section>
 
