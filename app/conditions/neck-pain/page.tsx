@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/neck-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -136,6 +137,16 @@ export default function NeckPainPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 1: Cervical Motion Segment */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/cervical-motion-segment.png"
+            alt="Cervical motion segment anatomy showing vertebral bodies, intervertebral disc, facet joints, nerve roots, and supporting ligaments at a single cervical level"
+            caption="Cervical Motion Segment: Each cervical level is a complex structure with multiple potential pain sources. The disc can degenerate or herniate, facet joints can become arthritic, and ligaments can strain. Understanding this anatomy helps explain why neck pain can have different causes and requires careful diagnosis."
+          />
+        </div>
       </section>
 
       {/* REASONS FOR EVALUATION */}
@@ -197,6 +208,16 @@ export default function NeckPainPage() {
               of pain or determine the appropriate treatment.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION 2: Cervical Spine Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/cervical-spine-anatomy.png"
+            alt="Complete cervical spine anatomy showing seven cervical vertebrae (C1-C7), intervertebral discs, nerve roots, and supporting structures"
+            caption="Cervical Spine Anatomy: The cervical spine contains seven vertebrae with intervertebral discs between them. Nerve roots exit at each level to supply the neck, shoulders, and arms. When evaluating neck pain, understanding the anatomy at each level helps pinpoint the likely pain source."
+          />
         </div>
       </section>
 
