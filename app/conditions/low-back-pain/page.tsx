@@ -267,6 +267,16 @@ export default function LowBackPainPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 3: Lumbar Vertebra Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/lumbar-vertebra-exploded.png"
+            alt="Exploded view of lumbar vertebra showing vertebral body, pedicles, laminae, spinous process, transverse processes, and facet joints"
+            caption="Lumbar Vertebra Structure: Each lumbar vertebra has a solid body that bears weight, with bony processes extending posteriorly. The facet joints guide spinal movement, while the vertebral body and disc form the load-bearing unit. Understanding this architecture helps explain different sources of back pain."
+          />
+        </div>
       </section>
 
       {/* IMPORTANT LIMITATIONS */}
