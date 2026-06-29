@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/myofascial-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -180,6 +181,16 @@ export default function MyofascialPainPage() {
                 </li>
               ))}
             </ul>
+
+            {/* ILLUSTRATION: Myofascial Trigger Points */}
+            <div className="max-w-2xl mt-10">
+              <MedicalFigure
+                variant="default"
+                src="/images/anatomy/muscles/myofascial-trigger-points.png"
+                alt="Myofascial trigger points showing localized tender points within muscle tissue and referred pain patterns radiating to distant areas"
+                caption="Myofascial Trigger Points: Trigger points are tender spots within muscles that can refer pain to other locations when pressed. For example, a trigger point in the trapezius muscle can cause referred pain into the head. Identifying and treating trigger points is key to managing myofascial pain."
+              />
+            </div>
           </div>
         </div>
       </section>
