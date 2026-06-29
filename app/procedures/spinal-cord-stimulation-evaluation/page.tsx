@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/spinal-cord-stimulation-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -147,6 +148,16 @@ export default function SpinalCordStimulationEvaluationPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: SCS Mechanism */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/conditions/SCS mechanism.png"
+            alt="Spinal cord stimulation mechanism showing epidural lead placement at spinal cord, electrical pulse generation from implanted pulse generator, gate control theory application preventing pain signal transmission, and typical electrode array positioning"
+            caption="How Spinal Cord Stimulation Works: An electrode lead is placed in the epidural space near the spinal cord. Electrical pulses from an implanted pulse generator stimulate the spinal cord using the 'gate control' theory of pain—the electrical stimulation essentially 'closes the gate' on pain signal transmission, replacing pain sensation with mild tingling (paresthesia)."
+          />
+        </div>
       </section>
 
       {/* PATIENT CONSIDERATION */}
@@ -235,6 +246,16 @@ export default function SpinalCordStimulationEvaluationPage() {
               the process.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: SCS Device */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/neuromodulation/spinal-cord-stimulator.png"
+            alt="Spinal cord stimulator system showing implanted pulse generator (IPG) in buttock/abdomen area, lead extending to epidural space, battery components, and patient remote control programmer for adjusting stimulation settings"
+            caption="SCS System Components: The pulse generator is implanted under the skin in the buttock or abdomen. The lead extends from the generator to the spinal cord. Patients can adjust stimulation intensity and frequency using a remote programmer or smartphone app."
+          />
         </div>
       </section>
 

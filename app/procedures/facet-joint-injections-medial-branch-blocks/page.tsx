@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL =
   "https://www.drdardashti.com/procedures/facet-joint-injections-medial-branch-blocks";
@@ -385,6 +386,26 @@ export default function FacetJointInjectionsPage() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Facet Joint Injection */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/facet-joint-injection.png"
+            alt="Facet joint injection showing needle advancement into facet joint space at lumbar vertebra level, intra-articular steroid placement, and joint anatomy with surrounding ligaments"
+            caption="Facet Joint Injection: The needle advances directly into the facet joint space. Steroid and local anesthetic are injected into the joint itself. This is primarily therapeutic—reducing inflammation within the joint—and also provides diagnostic information if pain is relieved."
+          />
+        </div>
+
+        {/* ILLUSTRATION: Medial Branch Block */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/medial-branch-block.png"
+            alt="Medial branch block showing needle placement at medial branch nerve pathway (not in joint), local anesthetic delivery around nerve, diagnostic blockade of facet joint innervation at multiple levels"
+            caption="Medial Branch Block: Instead of entering the joint, the needle targets the nerve that supplies the joint. Local anesthetic is deposited around the medial branch nerve. If this block relieves pain, it confirms facet joint involvement and predicts RFA success."
+          />
         </div>
       </section>
 
