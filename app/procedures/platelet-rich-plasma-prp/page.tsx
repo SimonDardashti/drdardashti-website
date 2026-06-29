@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/platelet-rich-plasma-prp";
 const SITE_URL = "https://www.drdardashti.com";
@@ -173,6 +174,16 @@ export default function PLRPPage() {
               individual patient factors.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: PRP Mechanism */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/conditions/PRP mechanism.png"
+            alt="PRP mechanism showing blood draw, centrifugation concentrating platelets, growth factor release (PDGF, VEGF, IGF-1), and tissue healing stimulation at injection site (tendon, ligament, joint, nerve)"
+            caption="How Platelet-Rich Plasma Works: Blood is drawn and spun in a centrifuge to concentrate platelets. These platelets are rich in growth factors that promote healing and tissue regeneration. When injected at the injury site, PRP stimulates the body's natural healing response."
+          />
         </div>
       </section>
 

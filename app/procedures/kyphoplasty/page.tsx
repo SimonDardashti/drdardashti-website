@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/kyphoplasty";
 const SITE_URL = "https://www.drdardashti.com";
@@ -285,6 +286,16 @@ export default function KyphoplastyPage() {
               factors and the specific clinical situation.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Kyphoplasty */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/kyphoplasty.png"
+            alt="Kyphoplasty procedure showing percutaneous needle placement in collapsed vertebral body, balloon inflation to restore vertebral height and kyphotic angle correction, and cement injection for stabilization"
+            caption="Kyphoplasty Steps: A needle is advanced into the fractured vertebra. A balloon is inflated to restore height and correct kyphosis (forward curving). Bone cement is then injected to stabilize the restored vertebra and reduce pain."
+          />
         </div>
       </section>
 

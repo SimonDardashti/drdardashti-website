@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/peripheral-nerve-stimulation-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -171,6 +172,16 @@ export default function PeripheralNerveStimulationEvaluationPage() {
               pain relief for the individual patient.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: PNS Mechanism */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/conditions/PNS Mechanism.png"
+            alt="Peripheral nerve stimulation mechanism showing lead placement on target peripheral nerve (femoral, pudendal, other), electrical pulse generation from external or implanted generator, gate control application at peripheral nerve level, and resulting pain reduction in target distribution"
+            caption="How Peripheral Nerve Stimulation Works: Unlike spinal cord stimulation which affects broader regions, PNS targets specific peripheral nerves causing localized pain. The lead is positioned directly on the nerve, and electrical stimulation blocks pain signals before they reach the spinal cord."
+          />
         </div>
       </section>
 
