@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/facet-mediated-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -145,6 +146,16 @@ export default function FacetMediatedPainPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 1: Lumbar Facet Joint Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/joints/lumbar-facet-joint-anatomy.png"
+            alt="Lumbar facet joint anatomy showing paired zygapophyseal joints at each vertebral level, located at the junction of articular processes with joint capsule and surrounding ligaments"
+            caption="Lumbar Facet Joint Anatomy: Facet joints are present at every spinal level. These small joints guide spinal movement and can become arthritic or inflamed. When facet joints are the primary pain generator, targeting the nerves that supply them can help identify and treat the problem."
+          />
+        </div>
       </section>
 
       {/* COMMON SYMPTOMS */}
@@ -214,6 +225,16 @@ export default function FacetMediatedPainPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 2: Facet Arthritis */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/facet-arthritis.png"
+            alt="Facet arthritis showing degenerative changes at lumbar facet joint including cartilage loss, bone spur formation, and joint space narrowing with inflammatory changes"
+            caption="Facet Arthritis: This shows degenerative changes that can occur in facet joints over time. While imaging can reveal arthritis, the clinical picture is what matters—some patients with severe facet arthritis on MRI have minimal pain, while others with mild findings have significant symptoms."
+          />
+        </div>
       </section>
 
       {/* TREATMENT OPTIONS */}
@@ -252,6 +273,16 @@ export default function FacetMediatedPainPage() {
               and goals.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION 3: Facet Joint Innervation */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/nerves/facet-joint-innervation.png"
+            alt="Lumbar facet joint innervation showing medial branches of dorsal rami innervating facet joints from multiple spinal levels, with neural pathway anatomy"
+            caption="Facet Joint Innervation: Facet joints are supplied by medial branches of the dorsal rami—nerves that can be targeted with diagnostic blocks or ablation. Understanding this anatomy explains why medial branch blocks can identify facet-mediated pain and why radiofrequency ablation can provide targeted pain relief."
+          />
         </div>
       </section>
 
