@@ -147,6 +147,16 @@ export default function LumbarRadiculopathyPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION 1: Lumbar Radiculopathy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/anatomy/spine/lumbar-radiculopathy.png"
+            alt="Lumbar radiculopathy showing nerve root compressed by herniated disc at lumbar vertebra level, with pain radiation down leg and foot"
+            caption="Lumbar Radiculopathy: When a lumbar nerve root is compressed or irritated (usually by disc herniation or foraminal stenosis), it sends pain signals down the leg. The pattern of symptoms depends on which nerve root is affected—your specific pain distribution is one of our most important diagnostic clues."
+          />
+        </div>
       </section>
 
       {/* SYMPTOMS */}
