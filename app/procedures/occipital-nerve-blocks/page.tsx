@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/occipital-nerve-blocks";
 const SITE_URL = "https://www.drdardashti.com";
@@ -170,6 +171,26 @@ export default function OccipitalNerveBlocksPage() {
               the back of the head and neck. This pain condition is called occipital neuralgia.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Occipital Neuralgia */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/conditions/headache/occipital-neuralgia.png"
+            alt="Occipital neuralgia showing greater and lesser occipital nerve anatomy, pain distribution at back of scalp and neck, and nerve irritation at cervical spine origin"
+            caption="Occipital Neuralgia: The occipital nerves arise from the upper cervical spine (C1, C2, C3) and travel up the back of the neck to supply the scalp. When these nerves become irritated or compressed, they cause sharp, shooting pain in the back of the head."
+          />
+        </div>
+
+        {/* ILLUSTRATION: Occipital Nerve Block Technique */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/peripheral-nerve-block.png"
+            alt="Peripheral nerve block technique showing needle placement along nerve pathway, local anesthetic delivery around nerve, and pain signal blockade"
+            caption="Occipital Nerve Block Technique: Under imaging guidance or anatomical landmarks, local anesthetic is placed around the greater and lesser occipital nerves. This temporarily numbs the nerves and reduces or eliminates pain in the occipital distribution."
+          />
         </div>
       </section>
 

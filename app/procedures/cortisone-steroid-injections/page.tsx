@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/cortisone-steroid-injections";
 const SITE_URL = "https://www.drdardashti.com";
@@ -184,6 +185,26 @@ export default function CortisoneSteroidsPage() {
               treatment response, and patient-specific risks.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Sacroiliac Joint Cortisone Injection */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/sacroiliac-joint-injection.png"
+            alt="Sacroiliac joint cortisone injection showing needle placement into SI joint space, steroid and anesthetic medication delivery, and inflammation reduction at the joint"
+            caption="Cortisone Injection Example: Sacroiliac Joint. Cortisone injections can target many different joints and structures. This example shows a steroid injection into the sacroiliac joint for SI-related pain."
+          />
+        </div>
+
+        {/* ILLUSTRATION: Trigger Point Cortisone Injection */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            src="/images/procedures/injections/trigger-point-injection.png"
+            alt="Trigger point cortisone injection showing needle placement into myofascial trigger point, steroid delivery to inflamed muscle tissue, and pain reduction mechanism"
+            caption="Cortisone Injection Example: Trigger Point. Cortisone can also be injected into myofascial trigger points or tender muscle areas to reduce localized inflammation and pain."
+          />
         </div>
       </section>
 
