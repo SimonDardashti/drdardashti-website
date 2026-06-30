@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/cervicogenic-headache";
 const SITE_URL = "https://www.drdardashti.com";
@@ -186,6 +187,17 @@ export default function CervicogenicHeadachePage() {
             Cervicogenic headaches develop when structures in the neck irritate nerves—particularly the occipital nerves and upper cervical nerves—that travel toward the head.
           </p>
         </section>
+
+        {/* ILLUSTRATION: Cervicogenic Headache Anatomy */}
+        <div className="my-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/cervicogenic-headache.png"
+            alt="Cervicogenic headache showing upper cervical spine anatomy, cervical facet joints, cervical nerve roots C2-C3, and occipital nerves with referred pain pattern to head"
+            caption="Cervicogenic Headache Sources: Pain can originate from multiple neck structures—cervical facet joints (especially at C2-C3), upper cervical nerve roots, tight neck muscles, or the occipital nerves. These structures share nerve connections with pain-sensing areas in the head, creating a referred pain pattern. This is why the headache is felt in the head even though the problem originates in the neck. Understanding these anatomical pathways helps explain why neck-specific treatments can be effective."
+            priority={true}
+          />
+        </div>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">

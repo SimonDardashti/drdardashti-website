@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/complex-pain-conditions";
 const SITE_URL = "https://www.drdardashti.com";
@@ -151,6 +152,17 @@ export default function ComplexPainConditionsPage() {
               without addressing the broader pain picture.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Complex Pain Mechanisms */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="mechanism"
+            src="/images/conditions/pain-mechanisms.png"
+            alt="Complex pain conditions showing multiple overlapping pain mechanisms including local structural pain generators, peripheral sensitization, central sensitization, and neuropathic components"
+            caption="Understanding Complex Pain: Complex pain conditions often involve multiple overlapping mechanisms. A single patient may have local structural contributors (e.g., facet joint arthritis, disc herniation) plus peripheral sensitization (nerves increasingly responsive) plus central sensitization (nervous system amplifying pain signals). This multidimensional picture explains why treating only one component may leave significant pain unaddressed. Comprehensive evaluation aims to identify all contributing mechanisms and develop a proportionate treatment plan."
+            priority={true}
+          />
         </div>
       </section>
 
