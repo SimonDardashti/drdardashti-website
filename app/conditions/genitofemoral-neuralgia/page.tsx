@@ -149,6 +149,17 @@ export default function GenitofemoralNeuralgiaPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Genitofemoral Nerve Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/genitofemoral-neuralgia.png"
+            alt="Genitofemoral neuralgia showing nerve origin from L1-L2 nerve roots, retroperitoneal course along psoas muscle, division into genital and femoral branches, and sensory distribution to groin, genitals, and upper inner thigh"
+            caption="Genitofemoral Nerve Anatomy: The genitofemoral nerve originates from the L1 and L2 nerve roots in the lower thoracic and upper lumbar spine. It travels vertically through the retroperitoneum alongside the psoas muscle before dividing into two branches: the genital branch (supplies scrotum/labia and inguinal region) and the femoral branch (supplies upper medial thigh). This deep retroperitoneal course makes the nerve vulnerable to injury during hernia repair, pelvic surgeries, or compression from adjacent structures like tight clothing or psoas muscle tension. Understanding this anatomy explains both the pain distribution and why certain movements or positions can trigger symptoms."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* 02 SYMPTOMS */}

@@ -149,6 +149,17 @@ export default function PersistentPainAfterInjuryOrSurgeryPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Pain After Injury Mechanism */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="mechanism"
+            src="/images/conditions/pain-mechanisms.png"
+            alt="Persistent pain after injury or surgery showing multiple contributing mechanisms including nerve irritation, scar tissue formation, altered biomechanics, and central sensitization in the nervous system"
+            caption="Why Pain Persists After Injury or Surgery: Tissue healing does not always mean pain relief. Multiple overlapping mechanisms can contribute to ongoing pain: (1) Nerve irritation—from surgical dissection or trauma—generates persistent neuropathic pain; (2) Scar tissue can compress nerves or alter mechanical function; (3) Altered movement patterns create stress on adjacent structures; (4) Central sensitization occurs when the nervous system becomes increasingly responsive to pain signals, amplifying the sensation; (5) Residual structural pathology (joint wear, disc changes, ligament damage) may persist. Understanding these mechanisms helps guide targeted treatment approaches rather than assuming the original diagnosis remains unchanged."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* POSSIBLE CONTRIBUTORS */}

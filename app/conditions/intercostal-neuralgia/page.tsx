@@ -145,6 +145,17 @@ export default function IntercostalNeuralgiaPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Intercostal Nerve Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/intercostal-neuralgia.png"
+            alt="Intercostal neuralgia showing spinal nerve roots, intercostal nerves running between ribs under the rib groove, sensory distribution to chest wall and skin between ribs, and anatomical vulnerability points"
+            caption="Intercostal Nerve Anatomy: The intercostal nerves branch from thoracic spinal nerve roots (T1-T12) and run horizontally between and beneath the ribs along the chest wall. Each intercostal nerve travels in a groove along the undersurface of a rib, providing sensory innervation to the skin, muscles, and tissues between the ribs. This anatomic position—nestled in a narrow space between the ribs—makes the nerves vulnerable to compression and irritation from trauma, inflammation, post-surgical changes, viral infection (shingles), or poor posture. When irritated, these nerves produce characteristic pain that radiates along the chest wall, often worsening with breathing, coughing, or movement. Understanding this anatomical course helps explain why symptoms follow specific rib levels and why certain movements can trigger pain."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* 02 SYMPTOMS */}

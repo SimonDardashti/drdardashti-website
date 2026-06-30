@@ -148,6 +148,17 @@ export default function IliohypogastricNeuralgiaPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Iliohypogastric Nerve Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/iliohypogastric-neuralgia.png"
+            alt="Iliohypogastric neuralgia showing nerve origin from T12-L1 nerve roots, course through lower abdominal wall muscles and fascia, and sensory distribution to lower abdomen above inguinal ligament and suprapubic region"
+            caption="Iliohypogastric Nerve Anatomy: The iliohypogastric nerve originates from the T12 (12th thoracic) and L1 nerve roots in the lower thoracic and upper lumbar spine. It travels inferiorly through the lower abdominal wall, passing between muscle layers (particularly between the internal and external oblique muscles). The nerve provides sensory innervation to the skin of the lower abdomen above the inguinal ligament and the suprapubic region. This superficial course through the abdominal wall makes it vulnerable to injury during cesarean section, hernia repair, and other abdominal surgeries. Nerve entrapment or irritation from scar tissue or tight structures can cause characteristic neuropathic pain in the lower abdomen."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* 02 SYMPTOMS */}

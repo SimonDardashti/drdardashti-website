@@ -149,6 +149,17 @@ export default function IlioinguinalNeuralgiaPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Ilioinguinal Nerve Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/ilioinguinal-neuralgia.png"
+            alt="Ilioinguinal neuralgia showing nerve origin from T12-L1 nerve roots, course through inguinal canal alongside spermatic cord or ovarian ligament, and sensory distribution to lower abdomen, groin, genitals, and upper medial thigh"
+            caption="Ilioinguinal Nerve Anatomy: The ilioinguinal nerve originates from the T12 and L1 nerve roots and travels through the lower abdominal wall, passing through the inguinal canal. In men, the nerve travels with the spermatic cord; in women, it travels with the ligament of the ovary. It supplies sensory innervation to the skin of the lower abdomen, groin, external genitalia, and upper inner thigh. This course through the inguinal canal—the same path used for hernia repair—makes the nerve vulnerable to surgical injury. The nerve can also be irritated by scar tissue, mesh from hernia repair, or compression from surrounding structures. Understanding this anatomy explains why groin and abdominal surgeries are common causes of this condition."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* 02 SYMPTOMS */}
