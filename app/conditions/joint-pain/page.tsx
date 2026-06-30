@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/joint-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -148,6 +149,17 @@ export default function JointPainPage() {
               Accurate evaluation helps distinguish local joint pathology from referred sources.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Joint Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/joint-pain.png"
+            alt="Joint anatomy showing cartilage, synovium, ligaments, meniscus, bursae, and surrounding soft tissues as potential pain sources including degenerative changes and inflammation"
+            caption="Joint Anatomy and Pain Sources: A joint is a complex structure with multiple components that can become sources of pain. Articular cartilage can degrade (osteoarthritis), the synovium can inflame, ligaments can tear or become lax, and adjacent bursae can become irritated. Associated structures like tendons, muscles, and fascia can also contribute to joint pain. Referred pain from the spine or adjacent joints can mimic local joint pathology. Accurate evaluation requires understanding this anatomy and how different pathological processes present, distinguishing true joint pain from referred sources to guide appropriate treatment."
+            priority={true}
+          />
         </div>
       </section>
 

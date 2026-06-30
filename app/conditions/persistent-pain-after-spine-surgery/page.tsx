@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/persistent-pain-after-spine-surgery";
 const SITE_URL = "https://www.drdardashti.com";
@@ -160,6 +161,17 @@ export default function PersistentPainAfterSpineSurgeryPage() {
             This page explains why symptoms can persist after spine surgery, how to evaluate ongoing pain systematically, and what treatment approaches—from conservative care to minimally invasive procedures to revision surgery—may still help.
           </p>
         </section>
+
+        {/* ILLUSTRATION: Post-Surgical Pain Mechanisms */}
+        <div className="my-12 flex justify-center">
+          <MedicalFigure
+            role="mechanism"
+            src="/images/conditions/pain-mechanisms.png"
+            alt="Persistent pain after spine surgery showing multiple contributing mechanisms including residual nerve irritation, scar tissue formation, adjacent segment degeneration, facet joint pain, and central sensitization"
+            caption="Why Pain Persists After Spine Surgery: Spine surgery addresses specific structural problems, but persistent pain often reflects that the original pain had multiple sources. Common contributors include residual nerve irritation despite decompression, scar tissue formation (epidural fibrosis), adjacent segment degeneration occurring over time, facet or sacroiliac joint pain that was present but not addressed, and changes in how the nervous system processes pain. Understanding these mechanisms helps explain why surgery may not have eliminated all pain, and identifies which specific contributors can still be addressed through targeted procedures or conservative management."
+            priority={true}
+          />
+        </div>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Why Pain Can Persist After Spine Surgery</h2>

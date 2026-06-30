@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/bursa-related-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -147,6 +148,17 @@ export default function BursaRelatedPainPage() {
               identification of the primary pain generator is an important part of evaluation.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Bursa Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/bursa-pain.png"
+            alt="Bursa anatomy showing synovial bursae around major joints, bursal inflammation and swelling, and anatomical locations of commonly affected bursae near shoulders, hips, elbows, and knees"
+            caption="Bursa Anatomy and Bursitis: Bursae are small fluid-filled sacs located around major joints that reduce friction between bones, tendons, and soft tissues during movement. When a bursa becomes inflamed (bursitis), it causes localized pain, swelling, and restricted motion. Bursitis can develop from repetitive mechanical stress, direct trauma, infection, or inflammatory conditions. Common sites include the subacromial bursa (shoulder), trochanteric bursa (hip), olecranon bursa (elbow), and infrapatellar bursa (knee). Understanding bursal anatomy is important for diagnosis and treatment, as targeted interventions can deliver medication directly to the inflamed bursa for pain relief."
+            priority={true}
+          />
         </div>
       </section>
 
