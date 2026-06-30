@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/post-thoracotomy-pain-syndrome";
 const SITE_URL = "https://www.drdardashti.com";
@@ -150,6 +151,17 @@ export default function PostThoracotomyPainSyndromePage() {
           </div>
         </div>
       </section>
+
+      {/* ILLUSTRATION: Post-Thoracotomy Pain */}
+      <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+        <MedicalFigure
+          role="mechanism"
+          src="/images/conditions/pain-mechanisms.png"
+          alt="Post-thoracotomy pain syndrome showing intercostal nerve damage, scar tissue formation, rib injury, and neuropathic pain development after chest surgery"
+          caption="Post-Thoracotomy Pain Syndrome: Following thoracotomy (surgical opening of the chest wall), pain can persist through multiple mechanisms: direct injury to intercostal nerves during rib spreading or dissection produces neuropathic pain; scar tissue formation and nerve entrapment develop as healing occurs; rib fractures or changes in chest wall mechanics alter movement; inflammatory responses create hypersensitivity; and in some patients, central sensitization amplifies pain signals. These mechanisms often coexist, requiring comprehensive evaluation and individualized treatment. Understanding that post-thoracotomy pain is a recognized complication with specific contributing factors helps guide targeted interventions beyond basic pain management."
+          priority={true}
+        />
+      </div>
 
       {/* 02 SYMPTOMS */}
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">

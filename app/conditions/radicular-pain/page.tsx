@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/radicular-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -152,6 +153,17 @@ export default function RadicularPainPage() {
           </div>
         </div>
       </section>
+
+      {/* ILLUSTRATION: Radicular Pain Mechanism */}
+      <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+        <MedicalFigure
+          role="mechanism"
+          src="/images/conditions/radicular-pain.png"
+          alt="Radicular pain showing nerve root compression, irritation from disc herniation or bone spurs, and pain radiation along dermatome distribution into arm or leg"
+          caption="Radicular Pain: When a nerve root is compressed or irritated by a disc herniation, bone spur, stenosis, or other structural problem, it produces pain that radiates away from the spine into the arm (cervical radiculopathy) or leg (lumbar radiculopathy). Radicular pain follows the distribution of the affected nerve (dermatome), often accompanied by numbness, tingling, or weakness. Understanding the nerve root involved and the cause of irritation (mechanical compression, inflammation, or both) guides targeted treatment approaches including physical therapy, injections, or surgical intervention when conservative care is insufficient."
+          priority={true}
+        />
+      </div>
 
       {/* PATTERNS BY REGION */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">

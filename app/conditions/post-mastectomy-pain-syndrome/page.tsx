@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/post-mastectomy-pain-syndrome";
 const SITE_URL = "https://www.drdardashti.com";
@@ -213,6 +214,17 @@ export default function PMPSPage() {
           </div>
         </div>
       </section>
+
+      {/* ILLUSTRATION: Post-Surgical Pain Mechanisms */}
+      <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+        <MedicalFigure
+          role="mechanism"
+          src="/images/conditions/pain-mechanisms.png"
+          alt="Post-mastectomy pain syndrome showing nerve damage, scar tissue formation, central sensitization, and regional pain syndrome development after breast surgery"
+          caption="Post-Mastectomy Pain Syndrome: Following breast surgery, several pain mechanisms can develop: direct nerve injury or sectioning during surgical dissection produces neuropathic pain; scar tissue can irritate healing nerves; altered biomechanics from tissue removal or reconstruction changes movement patterns; inflammatory responses create hypersensitivity; and in some cases, the nervous system develops amplified pain processing (central sensitization). These mechanisms often overlap, requiring comprehensive evaluation to identify all contributors. Understanding the multiple possible sources helps guide individualized treatment strategies including medications, physical therapy, procedures, and psychological support."
+          priority={true}
+        />
+      </div>
 
       {/* SECTION 2 — Why Pain Persists */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
