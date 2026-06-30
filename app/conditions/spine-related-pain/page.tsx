@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/spine-related-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -143,6 +144,17 @@ export default function SpineRelatedPainPage() {
               The character, distribution, and pattern of pain help guide the evaluation.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Spine Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/anatomy/spine/lumbar-radiculopathy.png"
+            alt="Spine anatomy showing cervical, thoracic, and lumbar regions with intervertebral discs, facet joints, spinal nerve roots, and sacroiliac joint as potential pain generators"
+            caption="Spine Anatomy and Pain Sources: The spine comprises three main regions—cervical (neck), thoracic (mid-back), and lumbar (low back)—each with distinct anatomy and potential pain generators. Multiple structures can contribute to spine pain: intervertebral discs (which can herniate or degenerate), facet joints (which can develop arthritis), spinal nerve roots (which can be compressed or irritated), sacroiliac joints, and supporting ligaments and muscles. Pain may be localized (axial) or radiating (radicular) depending on whether nerve roots are involved. Accurate evaluation requires understanding this complex anatomy and how different pain sources present clinically."
+            priority={true}
+          />
         </div>
       </section>
 
