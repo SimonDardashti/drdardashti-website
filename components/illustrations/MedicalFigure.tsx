@@ -19,10 +19,16 @@ export interface MedicalFigureProps {
   // Metadata
   caption?: string;
 
-  // Size tier (default: 'medium')
+  // Sizing by educational role (preferred)
+  // Maps to proportional widths: hero/mechanism→93%, anatomy→88%, referral→82%, comparison→78%, reference→70%
+  role?: 'hero' | 'mechanism' | 'anatomy' | 'referral' | 'comparison' | 'reference';
+
+  // Sizing by legacy size names (backward compatible)
+  // Deprecated: use 'role' instead
   size?: 'small' | 'medium' | 'large' | 'xlarge';
 
   // Performance hint (above-fold images only)
+  // Set priority={true} for hero illustrations and first mechanism illustration on each page
   priority?: boolean;
 }
 
@@ -40,31 +46,42 @@ export interface MedicalFigureProps {
  * Alt text is required (accessibility critical).
  * Caption is optional (educational enhancement).
  */
+// Educational role to sizing tier mapping
+// Maps educational purpose to proportional article-width sizing
+const ROLE_TO_SIZE = {
+  hero: 'xlarge',          // Hero illustrations: 93% of article width
+  mechanism: 'xlarge',     // Mechanism illustrations: 93% of article width (highest priority)
+  anatomy: 'large',        // Anatomy illustrations: 88% of article width
+  referral: 'large',       // Referral maps: 88% of article width (treat as anatomy)
+  comparison: 'medium',    // Comparison illustrations: 78% of article width
+  reference: 'small',      // Reference illustrations: 70% of article width
+} as const;
+
 // Size tier definitions (proportional to article width)
 // Article container is max-w-5xl (1024px)
 // Sizes scale relative to article width, not fixed pixels
 const SIZE_TIERS = {
-  small: {     // Reference illustrations: 65-70% of article width
+  small: {     // Reference illustrations: 70% of article width
     percent: '70%',
     maxWidth: '720px',
     imageRatio: 0.75,
   },
-  medium: {    // General/comparison illustrations: 75-80% of article width
+  medium: {    // Comparison illustrations: 78% of article width
     percent: '78%',
     maxWidth: '800px',
     imageRatio: 0.75,
   },
-  large: {     // Anatomy/technique illustrations: 85-90% of article width
+  large: {     // Anatomy/Referral illustrations: 88% of article width
     percent: '88%',
     maxWidth: '900px',
     imageRatio: 0.75,
   },
-  xlarge: {    // Mechanism illustrations: 90-95% of article width
+  xlarge: {    // Hero/Mechanism illustrations: 93% of article width
     percent: '93%',
     maxWidth: '950px',
     imageRatio: 0.75,
   },
-};
+} as const;
 
 export default function MedicalFigure({
   variant = 'default',
@@ -77,6 +94,7 @@ export default function MedicalFigure({
   leftLabel,
   rightLabel,
   caption,
+  role,
   size = 'medium',
   priority = false,
 }: MedicalFigureProps) {
@@ -97,17 +115,19 @@ export default function MedicalFigure({
     }
   }
 
+  // Resolve educational role to size tier (preferred over legacy size parameter)
+  const resolvedSize = role ? ROLE_TO_SIZE[role] : size;
+
   // Derive loading strategy from priority hint
   const loading = priority ? 'eager' : 'lazy';
 
   // Get size dimensions for current tier
-  const sizeConfig = SIZE_TIERS[size];
+  const sizeConfig = SIZE_TIERS[resolvedSize];
 
   // ============================================
   // DEFAULT VARIANT: Centered image
   // ============================================
   if (variant === 'default' || (!variant && src && !leftSrc)) {
-    const sizeConfig = SIZE_TIERS[size];
 
     return (
       <figure className="flex flex-col items-center my-8">
@@ -150,7 +170,6 @@ export default function MedicalFigure({
   // COMPARISON VARIANT: Two images
   // ============================================
   if (variant === 'comparison') {
-    const sizeConfig = SIZE_TIERS[size];
 
     return (
       <figure className="flex flex-col items-center my-8">
