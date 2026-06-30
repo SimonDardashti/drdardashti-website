@@ -172,6 +172,17 @@ export default function ThoracicOutletSyndromePage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Thoracic Outlet Syndrome Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/conditions/nerve/thoracic-outlet-syndrome.png"
+            alt="Thoracic outlet syndrome showing compression of the brachial plexus and blood vessels as they pass through the thoracic outlet between the collarbone, first rib, and shoulder muscles, illustrating anatomical narrowing and nerve/vessel compression"
+            caption="Thoracic Outlet Syndrome Anatomy: The thoracic outlet is the anatomical space between the neck and shoulder where the brachial plexus (nerve network controlling the arm) and blood vessels pass through. This area is bounded by the collarbone, first rib, and surrounding muscles. Compression in this space can result from anatomical variations (cervical rib, muscle abnormalities), postural factors, repetitive activities, or trauma. Understanding this anatomy explains why TOS causes arm pain, numbness, weakness, and why the compression can affect both nerves and blood vessels. The specific structures compressed determine the symptoms and guide treatment decisions."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* TYPES OF TOS */}
