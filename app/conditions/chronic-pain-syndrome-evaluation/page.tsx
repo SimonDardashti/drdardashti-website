@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/chronic-pain-syndrome-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -149,6 +150,17 @@ export default function ChronicPainSyndromeEvaluationPage() {
               picture and determine what can realistically be improved.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Chronic Pain Mechanism */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="mechanism"
+            src="/images/conditions/chronic-pain-mechanism.png"
+            alt="Chronic pain syndrome showing transition from acute to chronic pain, peripheral sensitization, central sensitization, and neuroplastic changes in pain processing pathways"
+            caption="From Acute to Chronic Pain: Chronic pain can develop when pain signals persist beyond the initial injury healing period. While acute pain is an important warning signal, chronic pain involves changes in how the nervous system processes pain — including peripheral sensitization (nerves become increasingly responsive), central sensitization (the spinal cord and brain amplify pain signals), and neuroplastic changes. Understanding these mechanisms helps inform treatment approaches."
+            priority={true}
+          />
         </div>
       </section>
 

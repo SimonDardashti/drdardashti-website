@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/neuropathic-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -148,6 +149,17 @@ export default function NeuropathicPainPage() {
               involves features of both peripheral and central sensitization.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Neuropathic Pain Mechanism */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="mechanism"
+            src="/images/conditions/peripheral-neuropathy.png"
+            alt="Neuropathic pain showing peripheral nerve damage, pain signal transmission along nerve fibers, spinal cord processing, and brain pain perception pathways"
+            caption="Neuropathic Pain Pathways: Unlike pain from tissue damage (nociceptive pain), neuropathic pain arises when the nervous system itself is damaged or diseased. In peripheral neuropathies, nerve fibers may be damaged or dysfunctional, leading to abnormal pain signaling. These signals travel along damaged fibers to the spinal cord and brain. Understanding nerve-based mechanisms helps guide treatment selection — neuropathic pain often requires different medications and may respond to neuromodulation therapies."
+            priority={true}
+          />
         </div>
       </section>
 
