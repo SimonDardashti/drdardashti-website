@@ -147,6 +147,17 @@ export default function SciaticaPage() {
             </p>
           </div>
         </div>
+
+        {/* ILLUSTRATION: Radicular Pain Distribution */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/anatomy/nerves/lumbar-dermatomes.png"
+            alt="Lumbar dermatomes showing nerve root distribution from L1 through S1, illustrating the typical sensory distribution pattern of radicular pain radiating from the lower back into the leg and foot"
+            caption="Radicular Pain Distribution: Sciatica results from irritation or compression of lumbar nerve roots (typically L4, L5, or S1). Each nerve root supplies sensation to a specific area of the leg called a dermatome. Radicular pain follows this nerve distribution—pain may radiate from the lower back or buttock into the leg, sometimes extending to the foot. Understanding which dermatome is affected helps localize the nerve root involved and guides treatment decisions. The distribution pattern is a key diagnostic feature that distinguishes radicular pain from other types of leg pain."
+            priority={true}
+          />
+        </div>
       </section>
 
       {/* SYMPTOMS */}
