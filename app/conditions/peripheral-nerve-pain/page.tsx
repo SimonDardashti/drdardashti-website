@@ -154,7 +154,7 @@ export default function PeripheralNervePainPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             role="anatomy"
-            src="/images/conditions/peripheral-neuropathy.png"
+            src="/images/conditions/peripheral-neuropathy/peripheral-neuropathy.png"
             alt="Peripheral nerve anatomy showing damage to peripheral nerves, nerve fiber degeneration, and pain signal transmission to spinal cord and brain"
             caption="Peripheral Nerve Anatomy: Peripheral nerves extend throughout the body, carrying sensory and motor signals between the spinal cord and all body tissues. Damage to these nerves—from diabetes, chemotherapy, trauma, infection, or other causes—produces neuropathic pain characterized by burning, tingling, or electrical sensations. Unlike spinal nerve compression which causes localized pain, peripheral neuropathy often affects multiple nerves and regions simultaneously. Understanding peripheral nerve distribution and the mechanisms of nerve damage (axonal degeneration, demyelination, inflammation) helps guide evaluation and targeted treatments including medications, procedures, and neuromodulation."
             priority={true}
