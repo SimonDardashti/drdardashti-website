@@ -179,6 +179,17 @@ export default function WhiplashAssociatedDisorderPage() {
           </p>
         </section>
 
+        {/* ILLUSTRATION: Cervical Spine Anatomy */}
+        <div className="my-12 flex justify-center">
+          <MedicalFigure
+            role="anatomy"
+            src="/images/anatomy/spine/cervical-spine-anatomy.png"
+            alt="Cervical spine anatomy showing the seven cervical vertebrae (C1-C7), supporting ligaments, muscles, discs, facet joints, and nerve roots that are commonly injured in whiplash-associated disorder"
+            caption="Cervical Spine Anatomy Involved in Whiplash Injury: Whiplash-associated disorder injures multiple cervical structures. The cervical spine contains seven vertebrae (C1 through C7) separated by intervertebral discs, supported by muscles and ligaments, and connected by small facet joints. The spinal cord passes through the center, and nerve roots exit between vertebrae. The sudden acceleration-deceleration movement of whiplash causes strain and injury to these structures—muscle tears, ligament stretching, disc stress, and nerve irritation. Understanding this anatomy explains why whiplash injuries can affect multiple areas and why symptoms can persist as these tissues heal or develop chronic inflammation."
+            priority={true}
+          />
+        </div>
+
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
             Common Causes
