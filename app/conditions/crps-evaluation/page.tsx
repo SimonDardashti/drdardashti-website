@@ -157,7 +157,7 @@ export default function CrpsEvaluationPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             role="mechanism"
-            src="/images/conditions/complex-regional-pain-syndrome.png"
+            src="/images/conditions/crps/crps-pathophysiology.png"
             alt="Complex regional pain syndrome showing peripheral sensitization, central sensitization, autonomic dysregulation, and neuroinflammatory changes contributing to chronic pain and associated symptoms"
             caption="CRPS Pathophysiology: Complex regional pain syndrome involves interconnected nervous system changes. Following an inciting event, the peripheral nervous system can become sensitized (increased pain signaling). The central nervous system may then amplify these signals (central sensitization). Autonomic changes can contribute to skin, temperature, sweating, and color changes. These mechanisms together create the characteristic constellation of symptoms seen in CRPS."
             priority={true}
