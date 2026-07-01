@@ -180,7 +180,7 @@ export default function OccipitalNeuralgiaPage() {
         <div className="max-w-5xl mx-auto mt-12 flex justify-center">
           <MedicalFigure
             role="anatomy"
-            src="/images/conditions/occipital-neuralgia.png"
+            src="/images/conditions/headache/occipital-neuralgia.png"
             alt="Occipital neuralgia showing anatomy of greater and lesser occipital nerves originating from C2 and C3 nerve roots, traveling through neck muscles, and supplying sensation to the back of the head and scalp"
             caption="Occipital Nerve Anatomy: The greater and lesser occipital nerves originate from the upper cervical spine (C2 and C3 nerve roots). These nerves travel upward through the neck, passing under or through muscle layers (particularly the trapezius muscle), and then supply sensation to the back of the head and scalp. When these nerves are compressed or irritated — whether from muscle tension, cervical spine pathology, or trauma — occipital neuralgia can result. This anatomical path is key to understanding potential sites of nerve irritation."
             priority={true}
