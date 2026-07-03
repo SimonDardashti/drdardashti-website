@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+import ReferencesSection from "@/components/ReferencesSection";
+import { CITATIONS } from "@/lib/citations";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/crps-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -315,6 +319,12 @@ export default function CrpsEvaluationPage() {
           </div>
         </div>
       </section>
+
+      {/* REFERENCES */}
+      <ReferencesSection references={CITATIONS["/conditions/crps-evaluation"]} />
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/crps-evaluation" />
     </>
   );
 }

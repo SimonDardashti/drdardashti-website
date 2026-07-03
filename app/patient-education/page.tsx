@@ -118,7 +118,7 @@ export default function PatientEducationPage() {
                 <h3 className="font-bold text-[#0a0a0a] mb-2">Conservative Treatments for Chronic Pain</h3>
                 <p className="text-[#666] text-sm leading-relaxed">Comprehensive overview of physical therapy, exercise, mind-body therapies, and lifestyle approaches to pain management.</p>
               </Link>
-              <Link href="/articles/aquatic-therapy-arthritis" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
+              <Link href="/aquatic-therapy-arthritis" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
                 <h3 className="font-bold text-[#0a0a0a] mb-2">Aquatic Physical Therapy</h3>
                 <p className="text-[#666] text-sm leading-relaxed">How water-based therapy reduces weight-bearing stress while providing resistance for strengthening and pain management.</p>
               </Link>

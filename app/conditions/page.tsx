@@ -56,6 +56,7 @@ const conditionGroups = [
       { label: "Spine-related pain", href: "/conditions/spine-related-pain" },
       { label: "Facet-mediated pain", href: "/conditions/facet-mediated-pain" },
       { label: "Sacroiliac joint pain", href: "/conditions/sacroiliac-joint-pain" },
+      { label: "Lumbar spinal stenosis", href: "/conditions/lumbar-spinal-stenosis" },
     ],
   },
   {
@@ -90,6 +91,8 @@ const conditionGroups = [
     items: [
       { label: "Post-mastectomy pain syndrome", href: "/conditions/post-mastectomy-pain-syndrome" },
       { label: "Post-thoracotomy pain syndrome", href: "/conditions/post-thoracotomy-pain-syndrome" },
+      { label: "Whiplash-associated disorder", href: "/conditions/whiplash-associated-disorder" },
+      { label: "Cervicogenic headache", href: "/conditions/cervicogenic-headache" },
     ],
   },
   {

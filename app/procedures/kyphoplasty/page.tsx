@@ -3,6 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+import ReferencesSection from "@/components/ReferencesSection";
+import { CITATIONS } from "@/lib/citations";
+
 const PAGE_URL = "https://www.drdardashti.com/procedures/kyphoplasty";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -456,6 +460,12 @@ export default function KyphoplastyPage() {
           </div>
         </div>
       </section>
+
+      {/* REFERENCES */}
+      <ReferencesSection references={CITATIONS["/procedures/kyphoplasty"]} />
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/procedures/kyphoplasty" />
     </>
   );
 }

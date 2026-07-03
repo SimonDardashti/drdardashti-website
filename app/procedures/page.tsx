@@ -86,6 +86,7 @@ const procedureGroups = [
   {
     title: "Medication & Conservative Care",
     items: [
+      { label: "Cortisone & steroid injections", href: "/procedures/cortisone-steroid-injections" },
       { label: "Medication management when clinically appropriate" },
       { label: "Physical therapy coordination" },
       { label: "Review of imaging and prior treatment history" },

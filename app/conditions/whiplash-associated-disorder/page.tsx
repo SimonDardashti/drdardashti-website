@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+import ReferencesSection from "@/components/ReferencesSection";
+import { CITATIONS } from "@/lib/citations";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/whiplash-associated-disorder";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -530,6 +534,12 @@ export default function WhiplashAssociatedDisorderPage() {
           </p>
         </section>
       </article>
+
+      {/* REFERENCES */}
+      <ReferencesSection references={CITATIONS["/conditions/whiplash-associated-disorder"]} />
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/whiplash-associated-disorder" />
     </>
   );
 }

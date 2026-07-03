@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+import ReferencesSection from "@/components/ReferencesSection";
+import { CITATIONS } from "@/lib/citations";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/cervicogenic-headache";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -573,6 +577,12 @@ export default function CervicogenicHeadachePage() {
           </p>
         </section>
       </article>
+
+      {/* REFERENCES */}
+      <ReferencesSection references={CITATIONS["/conditions/cervicogenic-headache"]} />
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/cervicogenic-headache" />
     </>
   );
 }

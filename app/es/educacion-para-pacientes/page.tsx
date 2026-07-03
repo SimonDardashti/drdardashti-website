@@ -118,7 +118,7 @@ export default function EducacionPacientesPage() {
                 <h3 className="font-bold text-[#0a0a0a] mb-2">Tratamientos Conservadores para el Dolor Crónico</h3>
                 <p className="text-[#666] text-sm leading-relaxed">Descripción general de terapia física, ejercicio, terapias mente-cuerpo y enfoques de estilo de vida para el manejo del dolor.</p>
               </Link>
-              <Link href="/articles/aquatic-therapy-arthritis" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
+              <Link href="/aquatic-therapy-arthritis" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
                 <h3 className="font-bold text-[#0a0a0a] mb-2">Terapia Física Acuática</h3>
                 <p className="text-[#666] text-sm leading-relaxed">Cómo la terapia acuática reduce el estrés de soporte de peso mientras proporciona resistencia para fortalecimiento y manejo del dolor.</p>
               </Link>

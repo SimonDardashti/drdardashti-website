@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/what-to-expect-pain-consultation";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -601,6 +603,9 @@ export default function WhatToExpectPainConsultationPage() {
           </p>
         </section>
       </article>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/what-to-expect-pain-consultation" />
     </>
   );
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/virtual-consultations";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -473,6 +475,9 @@ export default function VirtualConsultationsPage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/virtual-consultations" />
     </>
   );
 }

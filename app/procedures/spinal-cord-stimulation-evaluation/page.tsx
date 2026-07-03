@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+import ReferencesSection from "@/components/ReferencesSection";
+import { CITATIONS } from "@/lib/citations";
+
 const PAGE_URL = "https://www.drdardashti.com/procedures/spinal-cord-stimulation-evaluation";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -307,6 +311,12 @@ export default function SpinalCordStimulationEvaluationPage() {
           </div>
         </div>
       </section>
+
+      {/* REFERENCES */}
+      <ReferencesSection references={CITATIONS["/procedures/spinal-cord-stimulation-evaluation"]} />
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/procedures/spinal-cord-stimulation-evaluation" />
     </>
   );
 }

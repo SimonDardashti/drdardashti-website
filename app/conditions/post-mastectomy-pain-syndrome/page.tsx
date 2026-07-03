@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/post-mastectomy-pain-syndrome";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -624,6 +626,9 @@ export default function PMPSPage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/post-mastectomy-pain-syndrome" />
     </>
   );
 }

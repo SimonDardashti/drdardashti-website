@@ -52,7 +52,7 @@ export default function ArticulosPage() {
       description: "Cómo la terapia acuática reduce el estrés de soporte de peso en las articulaciones mientras proporciona resistencia para fortalecimiento y manejo del dolor.",
       readingTime: "5 min",
       category: "Cuidados Conservadores",
-      href: "/articles/aquatic-therapy-arthritis",
+      href: "/aquatic-therapy-arthritis",
     },
     {
       title: "Ejercicios McGill Big 3 para Dolor de Espalba Baja",

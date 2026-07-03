@@ -52,7 +52,7 @@ export default function ArticlesPage() {
       description: "How water-based therapy reduces weight-bearing stress on joints while providing resistance for strengthening and pain management.",
       readingTime: "5 min read",
       category: "Conservative Care",
-      href: "/articles/aquatic-therapy-arthritis",
+      href: "/aquatic-therapy-arthritis",
     },
     {
       title: "McGill Big 3 Exercises for Low Back Pain",

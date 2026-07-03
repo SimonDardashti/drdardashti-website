@@ -373,7 +373,7 @@ export default function ConservativeCarePage() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/mcgill-big-3-exercises" className="text-[#c8a020] hover:underline tracking-wide">McGill Big 3 Exercises for Low Back Pain →</Link></li>
               <li><Link href="/thoracic-foam-rolling" className="text-[#c8a020] hover:underline tracking-wide">Thoracic Foam Rolling for Neck & Shoulder Pain →</Link></li>
-              <li><Link href="/articles/aquatic-therapy-arthritis" className="text-[#c8a020] hover:underline tracking-wide">Aquatic Therapy for Pain Management →</Link></li>
+              <li><Link href="/aquatic-therapy-arthritis" className="text-[#c8a020] hover:underline tracking-wide">Aquatic Therapy for Pain Management →</Link></li>
               <li><Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline tracking-wide">Pain Without Imaging Findings →</Link></li>
               <li><Link href="/treatment-options" className="text-[#c8a020] hover:underline tracking-wide">Treatment Decision Framework →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>

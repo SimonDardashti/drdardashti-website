@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/second-opinion-spine-surgery";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -539,6 +541,9 @@ export default function SecondOpinionSpineSurgery() {
           </ul>
         </section>
       </article>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/second-opinion-spine-surgery" />
     </>
   );
 }

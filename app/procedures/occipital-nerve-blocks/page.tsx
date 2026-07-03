@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/procedures/occipital-nerve-blocks";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -370,6 +372,9 @@ export default function OccipitalNerveBlocksPage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/procedures/occipital-nerve-blocks" />
     </>
   );
 }

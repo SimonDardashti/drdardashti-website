@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/procedures/joint-bursa-tendon-injections";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -361,6 +363,9 @@ export default function JointBursaTendonInjectionsPage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/procedures/joint-bursa-tendon-injections" />
     </>
   );
 }

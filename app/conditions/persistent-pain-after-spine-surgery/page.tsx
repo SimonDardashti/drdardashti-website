@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/persistent-pain-after-spine-surgery";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -524,6 +526,9 @@ export default function PersistentPainAfterSpineSurgeryPage() {
           </p>
         </section>
       </article>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/persistent-pain-after-spine-surgery" />
     </>
   );
 }

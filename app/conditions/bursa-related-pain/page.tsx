@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/bursa-related-pain";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -315,6 +317,9 @@ export default function BursaRelatedPainPage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/bursa-related-pain" />
     </>
   );
 }

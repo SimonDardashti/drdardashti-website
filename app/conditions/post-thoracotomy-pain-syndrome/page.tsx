@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/post-thoracotomy-pain-syndrome";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -545,6 +547,9 @@ export default function PostThoracotomyPainSyndromePage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/post-thoracotomy-pain-syndrome" />
     </>
   );
 }

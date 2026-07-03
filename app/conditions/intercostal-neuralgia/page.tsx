@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
 const PAGE_URL = "https://www.drdardashti.com/conditions/intercostal-neuralgia";
 const SITE_URL = "https://www.drdardashti.com";
 
@@ -536,6 +538,9 @@ export default function IntercostalNeuralgiaPage() {
           </div>
         </div>
       </section>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/conditions/intercostal-neuralgia" />
     </>
   );
 }

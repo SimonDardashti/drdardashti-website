@@ -100,6 +100,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es/segunda-opinion-cirugia-columna`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/what-to-expect-pain-consultation`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/es/que-esperar-consulta-dolor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE_URL}/articles/aquatic-therapy-arthritis`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/aquatic-therapy-arthritis`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }

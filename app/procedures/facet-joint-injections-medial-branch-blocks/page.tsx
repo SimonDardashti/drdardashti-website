@@ -3,6 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { MedicalFigure } from "@/components/illustrations";
 
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+import ReferencesSection from "@/components/ReferencesSection";
+import { CITATIONS } from "@/lib/citations";
+
 const PAGE_URL =
   "https://www.drdardashti.com/procedures/facet-joint-injections-medial-branch-blocks";
 const SITE_URL = "https://www.drdardashti.com";
@@ -676,6 +680,12 @@ export default function FacetJointInjectionsPage() {
           </div>
         </div>
       </section>
+
+      {/* REFERENCES */}
+      <ReferencesSection references={CITATIONS["/procedures/facet-joint-injections-medial-branch-blocks"]} />
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/procedures/facet-joint-injections-medial-branch-blocks" />
     </>
   );
 }

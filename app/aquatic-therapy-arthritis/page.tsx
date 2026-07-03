@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const PAGE_URL = "https://www.drdardashti.com/articles/aquatic-therapy-arthritis";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
+
+const PAGE_URL = "https://www.drdardashti.com/aquatic-therapy-arthritis";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
@@ -591,6 +593,9 @@ export default function AquaticTherapyArticle() {
           </p>
         </section>
       </article>
+
+      {/* MEDICAL REVIEW */}
+      <MedicalReviewFooter path="/aquatic-therapy-arthritis" />
     </>
   );
 }

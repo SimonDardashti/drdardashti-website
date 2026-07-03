@@ -373,7 +373,7 @@ export default function CuidadosConservadoresPage() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/es/ejercicios-mcgill-big-3" className="text-[#c8a020] hover:underline tracking-wide">Ejercicios McGill Big 3 para Dolor de Espalda Baja →</Link></li>
               <li><Link href="/es/rodillo-espuma-toracica" className="text-[#c8a020] hover:underline tracking-wide">Rodillo de Espuma Torácica para Dolor de Cuello y Hombro →</Link></li>
-              <li><Link href="/articles/aquatic-therapy-arthritis" className="text-[#c8a020] hover:underline tracking-wide">Terapia Acuática para Manejo del Dolor →</Link></li>
+              <li><Link href="/aquatic-therapy-arthritis" className="text-[#c8a020] hover:underline tracking-wide">Terapia Acuática para Manejo del Dolor →</Link></li>
               <li><Link href="/es/dolor-sin-imagenes" className="text-[#c8a020] hover:underline tracking-wide">Dolor Sin Hallazgos en Imágenes →</Link></li>
               <li><Link href="/es/opciones-de-tratamiento" className="text-[#c8a020] hover:underline tracking-wide">Marco de Decisión de Tratamiento →</Link></li>
               <li><Link href="/es/condiciones/dolor-lumbar" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor de Espalda Baja →</Link></li>
