@@ -3,8 +3,6 @@ import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
-import ReferencesSection from "@/components/ReferencesSection";
-import { CITATIONS } from "@/lib/citations";
 
 // This file demonstrates the MedicalFigure framework pattern for all condition pages
 
@@ -358,9 +356,6 @@ export default function LowBackPainPage() {
           </div>
         </div>
       </section>
-
-      {/* REFERENCES */}
-      <ReferencesSection references={CITATIONS["/conditions/low-back-pain"]} />
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/conditions/low-back-pain" />

@@ -3,8 +3,6 @@ import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
-import ReferencesSection from "@/components/ReferencesSection";
-import { CITATIONS } from "@/lib/citations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/lumbar-spinal-stenosis";
 const SITE_URL = "https://www.drdardashti.com";
@@ -539,9 +537,6 @@ export default function LumbarStenosisPage() {
           </ul>
         </section>
       </article>
-
-      {/* REFERENCES */}
-      <ReferencesSection references={CITATIONS["/conditions/lumbar-spinal-stenosis"]} />
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/conditions/lumbar-spinal-stenosis" />

@@ -3,8 +3,6 @@ import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
-import ReferencesSection from "@/components/ReferencesSection";
-import { CITATIONS } from "@/lib/citations";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/facet-mediated-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -339,9 +337,6 @@ export default function FacetMediatedPainPage() {
           </div>
         </div>
       </section>
-
-      {/* REFERENCES */}
-      <ReferencesSection references={CITATIONS["/conditions/facet-mediated-pain"]} />
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/conditions/facet-mediated-pain" />

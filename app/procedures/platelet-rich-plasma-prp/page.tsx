@@ -3,8 +3,6 @@ import Link from "next/link";
 import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
-import ReferencesSection from "@/components/ReferencesSection";
-import { CITATIONS } from "@/lib/citations";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/platelet-rich-plasma-prp";
 const SITE_URL = "https://www.drdardashti.com";
@@ -370,9 +368,6 @@ export default function PLRPPage() {
           </div>
         </div>
       </section>
-
-      {/* REFERENCES */}
-      <ReferencesSection references={CITATIONS["/procedures/platelet-rich-plasma-prp"]} />
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/procedures/platelet-rich-plasma-prp" />
