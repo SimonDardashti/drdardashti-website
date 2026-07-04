@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -229,6 +230,16 @@ export default function AquaticTherapyArticle() {
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
             This dramatic reduction in loading allows you to move with less pain. Your physical therapist can adjust water depth to provide just the right amount of support—enough that you can exercise comfortably, but enough resistance that your muscles still have to work.
           </p>
+
+          {/* IMAGE: Aquatic Therapy Arthritis */}
+          <div className="flex justify-center my-8">
+            <MedicalFigure
+              variant="default"
+              role="anatomy"
+              src="/images/conditions/aquatic-therapy-arthritis.png"
+              alt="Educational illustration showing aquatic therapy for hip and knee arthritis with buoyancy reducing joint loading during low-impact movement."
+            />
+          </div>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Water Resistance</h3>
 

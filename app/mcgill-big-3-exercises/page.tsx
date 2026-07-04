@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
+import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -226,6 +227,16 @@ export default function McGillBig3Page() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* IMAGE: McGill Big 3 Exercises */}
+          <div className="flex justify-center">
+            <MedicalFigure
+              variant="default"
+              role="reference"
+              src="/images/conditions/mcgill-big-3-exercises.png"
+              alt="Educational illustration showing the McGill Big 3 exercises: modified curl-up, side plank, and bird dog with neutral spine positioning."
+            />
           </div>
 
           {/* 04 */}

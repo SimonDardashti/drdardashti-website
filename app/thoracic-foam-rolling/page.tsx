@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
+import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -260,6 +261,16 @@ export default function ThoracicFoamRollingPage() {
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/* IMAGE: Thoracic Foam Rolling Technique */}
+          <div className="flex justify-center">
+            <MedicalFigure
+              variant="default"
+              role="reference"
+              src="/images/conditions/thoracic-foam-rolling-technique.png"
+              alt="Proper thoracic foam rolling technique showing a foam roller positioned horizontally across the upper back with neutral neck alignment and controlled movement along the thoracic spine."
+            />
           </div>
 
           {/* 05 */}
