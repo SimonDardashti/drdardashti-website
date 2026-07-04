@@ -313,6 +313,7 @@ export default function MyofascialPainPage() {
               <li><Link href="/conditions/spine-related-pain" className="text-[#c8a020] hover:underline tracking-wide">Spine-Related Pain Evaluation →</Link></li>
               <li><Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">Facet-Mediated Pain Evaluation →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+              <li><Link href="/procedures/trigger-point-injections" className="text-[#c8a020] hover:underline tracking-wide">Trigger Point Injections →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>

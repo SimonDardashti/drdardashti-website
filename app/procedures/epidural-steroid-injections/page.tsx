@@ -335,6 +335,7 @@ export default function EpiduralSteroidInjectionsPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Sciatica and Radicular Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/lumbar-radiculopathy" className="text-[#c8a020] hover:underline tracking-wide">Lumbar Radiculopathy Evaluation →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
               <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">View all Procedures &amp; Treatment Options →</Link></li>

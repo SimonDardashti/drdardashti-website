@@ -161,6 +161,9 @@ export default function Home() {
               pain using a careful, evidence-informed approach focused on diagnosis, function,
               and practical treatment options.
             </p>
+            <p className="text-[#888] text-sm leading-relaxed mb-8">
+              Educational information about pain conditions and treatment approaches — not a substitute for individualized medical evaluation.
+            </p>
             <Link
               href="/conditions"
               className="inline-block border border-[#333] hover:border-[#c8a020] text-[#888] hover:text-[#c8a020] font-semibold px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-200"
