@@ -97,6 +97,7 @@ const conditionGroups = [
       { label: "Post-thoracotomy pain syndrome", href: "/conditions/post-thoracotomy-pain-syndrome" },
       { label: "Whiplash-associated disorder", href: "/conditions/whiplash-associated-disorder" },
       { label: "Cervicogenic headache", href: "/conditions/cervicogenic-headache" },
+      { label: "Eagle syndrome", href: "/conditions/eagle-syndrome" },
     ],
   },
   {

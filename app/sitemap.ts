@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/conditions/facet-mediated-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/cervical-radiculopathy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/cervicogenic-headache`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/conditions/eagle-syndrome`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/whiplash-associated-disorder`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/conditions/lumbar-radiculopathy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/neuropathic-pain`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
