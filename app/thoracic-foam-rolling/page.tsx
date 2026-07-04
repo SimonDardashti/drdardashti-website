@@ -443,7 +443,7 @@ export default function ThoracicFoamRollingPage() {
               Related Resources.
             </h2>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Conservative Treatments for Chronic Pain →</Link></li>
+              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Rehabilitation & Exercise →</Link></li>
               <li><Link href="/mcgill-big-3-exercises" className="text-[#c8a020] hover:underline tracking-wide">McGill Big 3 Exercises for Core Stability →</Link></li>
               <li><Link href="/conditions/neck-pain" className="text-[#c8a020] hover:underline tracking-wide">Neck Pain Evaluation →</Link></li>
               <li><Link href="/conditions/cervicogenic-headache" className="text-[#c8a020] hover:underline tracking-wide">Cervicogenic Headache →</Link></li>

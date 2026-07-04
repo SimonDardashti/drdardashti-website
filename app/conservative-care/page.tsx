@@ -6,23 +6,23 @@ const PAGE_URL = "https://www.drdardashti.com/conservative-care";
 const SITE_URL = "https://www.drdardashti.com";
 
 export const metadata: Metadata = {
-  title: { absolute: "Conservative Treatments for Chronic Pain | Simon Dardashti, MD" },
+  title: { absolute: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD" },
   description:
-    "Evidence-based conservative care for chronic pain: physical therapy, exercise, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
+    "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     type: "website",
     url: PAGE_URL,
-    title: "Conservative Treatments for Chronic Pain | Simon Dardashti, MD",
+    title: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD",
     description:
-      "Evidence-based conservative care for chronic pain: physical therapy, exercise, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
+      "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
     images: [{ url: "/headshot.webp", width: 1200, height: 630, alt: "Simon Dardashti, MD" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Conservative Treatments for Chronic Pain | Simon Dardashti, MD",
+    title: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD",
     description:
-      "Evidence-based conservative care for chronic pain: physical therapy, exercise, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
+      "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
     images: ["/headshot.webp"],
   },
 };
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
 const pageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Conservative Treatments for Chronic Pain | Simon Dardashti, MD",
+  name: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD",
   url: PAGE_URL,
   description:
-    "Evidence-based conservative care for chronic pain: physical therapy, exercise, mind-body therapies, and lifestyle approaches.",
+    "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches.",
   inLanguage: "en-US",
   isPartOf: { "@type": "WebSite", url: SITE_URL },
   author: { "@type": "Physician", name: "Simon Dardashti, MD", url: SITE_URL },
@@ -41,7 +41,7 @@ const pageSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Conservative Care", item: PAGE_URL },
+      { "@type": "ListItem", position: 2, name: "Rehabilitation & Exercise", item: PAGE_URL },
     ],
   },
 };
@@ -52,23 +52,23 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is conservative care?",
+      name: "What is rehabilitation and non-procedural pain care?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Conservative care refers to non-surgical, non-injection approaches to managing pain. These include physical therapy, exercise, mind-body therapies, and lifestyle modifications. Conservative care is often the appropriate initial approach for many chronic pain conditions.",
+        text: "Rehabilitation and non-procedural pain care refers to non-surgical, non-injection approaches to managing pain. These include physical therapy, exercise, mind-body therapies, and lifestyle modifications. This approach is often the appropriate initial strategy for many chronic pain conditions.",
       },
     },
     {
       "@type": "Question",
-      name: "Is conservative care always effective?",
+      name: "Is this approach always effective?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Response to conservative care varies among patients. Some patients experience significant improvement with conservative approaches alone. Others benefit from conservative care combined with additional interventions. A formal clinical evaluation is needed to determine appropriate treatment for any individual patient.",
+        text: "Response varies among patients. Some patients experience significant improvement with these approaches alone. Others benefit from rehabilitation combined with additional interventions. A formal clinical evaluation is needed to determine appropriate treatment for any individual patient.",
       },
     },
     {
       "@type": "Question",
-      name: "How long does conservative care take to work?",
+      name: "How long does this approach take to work?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "The timeline varies depending on the condition, severity, and individual factors. Physical therapy typically requires several weeks to months of consistent participation. Some patients notice improvement within days, while others require longer treatment periods. Consistency and proper technique are important.",
@@ -76,26 +76,26 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Should I try conservative care before considering injections or surgery?",
+      name: "Should I try rehabilitation before considering injections or surgery?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Conservative care is often an appropriate initial approach for many pain conditions. However, the appropriate sequence and timing of treatment depends on the specific diagnosis, symptom severity, and individual circumstances. A clinical evaluation can help determine the best approach for your situation.",
+        text: "Rehabilitation and non-procedural care is often an appropriate initial approach for many pain conditions. However, the appropriate sequence and timing of treatment depends on the specific diagnosis, symptom severity, and individual circumstances. A clinical evaluation can help determine the best approach for your situation.",
       },
     },
     {
       "@type": "Question",
-      name: "Can conservative care prevent the need for surgery?",
+      name: "Can this approach prevent the need for surgery?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Conservative care may help some patients avoid surgery, while others eventually require surgical or interventional evaluation despite conservative efforts. The role of conservative care in preventing surgery depends on the specific condition and individual response to treatment.",
+        text: "Rehabilitation and non-procedural care may help some patients avoid surgery, while others eventually require surgical or interventional evaluation despite these efforts. The role of this approach in preventing surgery depends on the specific condition and individual response to treatment.",
       },
     },
     {
       "@type": "Question",
-      name: "Are there conditions where conservative care alone is not appropriate?",
+      name: "Are there conditions where this approach alone is not appropriate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Some conditions require urgent evaluation and may not benefit from conservative care alone. A physician evaluation is needed to determine whether conservative care is appropriate and, if so, what additional interventions might be considered.",
+        text: "Yes. Some conditions require urgent evaluation and may not benefit from rehabilitation and non-procedural care alone. A physician evaluation is needed to determine whether this approach is appropriate and, if so, what additional interventions might be considered.",
       },
     },
     {
@@ -108,7 +108,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can I do conservative care on my own, or do I need professional guidance?",
+      name: "Can I do this on my own, or do I need professional guidance?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Both approaches can be helpful. Professional guidance from a physical therapist or physician ensures proper technique and helps identify exercises appropriate for your specific condition. However, some patients benefit from home-based programs with periodic professional check-ins.",
@@ -116,10 +116,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What should I do if conservative care is not helping?",
+      name: "What should I do if this approach is not helping?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If conservative care has been attempted consistently over an adequate period and symptoms persist, a physician evaluation can help determine whether additional interventions might be appropriate. Additional evaluation might identify conditions requiring different treatment approaches.",
+        text: "If rehabilitation and non-procedural care has been attempted consistently over an adequate period and symptoms persist, a physician evaluation can help determine whether additional interventions might be appropriate. Additional evaluation might identify conditions requiring different treatment approaches.",
       },
     },
   ],
@@ -135,15 +135,15 @@ export default function ConservativeCarePage() {
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-5xl mx-auto">
           <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
-            Conservative Care
+            Rehabilitation & Exercise
           </p>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            Conservative Treatments
+            Rehabilitation and
             <br />
-            <em className="not-italic text-[#888]">for Chronic Pain.</em>
+            <em className="not-italic text-[#888]">Non-Procedural Pain Education.</em>
           </h1>
           <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
-            Physical therapy, exercise, mind-body therapies, and lifestyle approaches provide evidence-based options for managing chronic pain without surgery or injections.
+            Physical therapy, exercise, mind-body therapies, and lifestyle approaches provide evidence-based, non-procedural options for managing chronic pain without surgery or injections.
           </p>
         </div>
       </section>
@@ -159,16 +159,16 @@ export default function ConservativeCarePage() {
             </div>
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                Why Conservative Care Matters.
+                Why Rehabilitation and Non-Procedural Care Matters.
               </h2>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                Conservative care—non-surgical, non-injection approaches—is often an appropriate initial treatment strategy for many chronic pain conditions. Physical therapy, exercise, mind-body interventions, and lifestyle modifications have evidence supporting their role in managing pain and improving function.
+                Rehabilitation and non-procedural care—non-surgical, non-injection approaches—is often an appropriate initial treatment strategy for many chronic pain conditions. Physical therapy, exercise, mind-body interventions, and lifestyle modifications have evidence supporting their role in managing pain and improving function.
               </p>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                Not all patients require injections or surgery. Many patients achieve meaningful improvement with conservative approaches. However, response varies among individuals, and some patients eventually benefit from additional interventions when conservative care alone is insufficient.
+                Not all patients require injections or surgery. Many patients achieve meaningful improvement with these approaches. However, response varies among individuals, and some patients eventually benefit from additional interventions when rehabilitation alone is insufficient.
               </p>
               <p className="text-[#666] text-base leading-relaxed max-w-2xl">
-                The role of conservative care is determined by the specific diagnosis, clinical presentation, symptom severity, and individual response to treatment.
+                The role of rehabilitation and non-procedural care is determined by the specific diagnosis, clinical presentation, symptom severity, and individual response to treatment.
               </p>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function ConservativeCarePage() {
                 Therapeutic Modalities & Techniques.
               </h2>
               <p className="text-[#666] text-base leading-relaxed mb-6 max-w-2xl">
-                Additional therapies that may support conservative care include:
+                Additional therapies that may support rehabilitation and non-procedural care include:
               </p>
               <ul className="space-y-3 max-w-2xl mb-4">
                 {[
@@ -269,10 +269,10 @@ export default function ConservativeCarePage() {
             </div>
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                Combining Conservative Approaches.
+                Combining These Approaches.
               </h2>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                The most effective approach often combines multiple conservative strategies. For example, a patient with low back pain might benefit from physical therapy, specific stabilization exercises, mindfulness practices, and activity modification working together.
+                The most effective approach often combines multiple non-procedural strategies. For example, a patient with low back pain might benefit from physical therapy, specific stabilization exercises, mindfulness practices, and activity modification working together.
               </p>
               <p className="text-[#666] text-base leading-relaxed max-w-2xl">
                 Coordination between treatment providers ensures your overall pain management plan is coherent and effective.
@@ -288,13 +288,13 @@ export default function ConservativeCarePage() {
             </div>
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                When Conservative Care Alone May Not Be Enough.
+                When Rehabilitation and Non-Procedural Care Alone May Not Be Enough.
               </h2>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                While many patients benefit significantly from conservative care, some conditions or clinical presentations may require additional evaluation or intervention. This might include diagnostic procedures, targeted injections, or, in selected cases, surgical intervention.
+                While many patients benefit significantly from rehabilitation and non-procedural care, some conditions or clinical presentations may require additional evaluation or intervention. This might include diagnostic procedures, targeted injections, or, in selected cases, surgical intervention.
               </p>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                The need for additional interventions depends on the specific diagnosis, symptom severity, duration of symptoms, and individual response to conservative treatment. A comprehensive clinical evaluation helps determine the appropriate treatment pathway.
+                The need for additional interventions depends on the specific diagnosis, symptom severity, duration of symptoms, and individual response to treatment. A comprehensive clinical evaluation helps determine the appropriate treatment pathway.
               </p>
             </div>
           </div>
@@ -314,40 +314,40 @@ export default function ConservativeCarePage() {
             <div className="space-y-6">
               {[
                 {
-                  q: "What is conservative care?",
-                  a: "Conservative care refers to non-surgical, non-injection approaches to managing pain, including physical therapy, exercise, mind-body therapies, and lifestyle modifications.",
+                  q: "What is rehabilitation and non-procedural pain care?",
+                  a: "Rehabilitation and non-procedural pain care refers to non-surgical, non-injection approaches to managing pain, including physical therapy, exercise, mind-body therapies, and lifestyle modifications.",
                 },
                 {
-                  q: "Is conservative care always effective?",
-                  a: "Response varies among patients. Some experience significant improvement with conservative approaches alone. Others benefit from conservative care combined with additional interventions. Individual evaluation determines appropriate treatment.",
+                  q: "Is this approach always effective?",
+                  a: "Response varies among patients. Some experience significant improvement with these approaches alone. Others benefit from rehabilitation combined with additional interventions. Individual evaluation determines appropriate treatment.",
                 },
                 {
-                  q: "How long does conservative care take to work?",
+                  q: "How long does this approach take to work?",
                   a: "Timelines vary based on condition, severity, and individual factors. Physical therapy typically requires weeks to months of consistent participation.",
                 },
                 {
-                  q: "Should I try conservative care before procedures?",
-                  a: "Conservative care is often appropriate initially for many conditions. The right sequence depends on diagnosis, severity, and individual circumstances.",
+                  q: "Should I try rehabilitation before procedures?",
+                  a: "Rehabilitation and non-procedural care is often appropriate initially for many conditions. The right sequence depends on diagnosis, severity, and individual circumstances.",
                 },
                 {
-                  q: "Can conservative care prevent surgery?",
-                  a: "Conservative care may help some patients avoid surgery. Others eventually require surgical evaluation despite conservative efforts.",
+                  q: "Can this approach prevent surgery?",
+                  a: "Rehabilitation and non-procedural care may help some patients avoid surgery. Others eventually require surgical evaluation despite these efforts.",
                 },
                 {
-                  q: "Are there conditions requiring more than conservative care?",
-                  a: "Yes. Some conditions require urgent evaluation and may not respond adequately to conservative approaches alone.",
+                  q: "Are there conditions requiring more than this approach?",
+                  a: "Yes. Some conditions require urgent evaluation and may not respond adequately to these approaches alone.",
                 },
                 {
                   q: "Is physical therapy always necessary?",
                   a: "Physical therapy benefits many patients, but not all require formal PT. Some benefit from home-based programs or other approaches.",
                 },
                 {
-                  q: "Can I do conservative care independently?",
+                  q: "Can I do this independently?",
                   a: "Both independent and professionally-guided approaches can be helpful. Professional guidance ensures proper technique and appropriate exercises for your condition.",
                 },
                 {
-                  q: "What if conservative care isn't helping?",
-                  a: "If conservative care has been attempted consistently over adequate time without sufficient improvement, physician evaluation can determine whether additional interventions might be appropriate.",
+                  q: "What if this approach isn't helping?",
+                  a: "If rehabilitation and non-procedural care has been attempted consistently over adequate time without sufficient improvement, physician evaluation can determine whether additional interventions might be appropriate.",
                 },
               ].map((item, i) => (
                 <div key={i}>

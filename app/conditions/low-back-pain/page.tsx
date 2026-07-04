@@ -325,7 +325,7 @@ export default function LowBackPainPage() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline tracking-wide">Pain Without Imaging Findings →</Link></li>
               <li><Link href="/treatment-options" className="text-[#c8a020] hover:underline tracking-wide">Treatment Decision Framework →</Link></li>
-              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Conservative Treatments for Chronic Pain →</Link></li>
+              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Rehabilitation & Exercise →</Link></li>
               <li><Link href="/mcgill-big-3-exercises" className="text-[#c8a020] hover:underline tracking-wide">McGill Big 3 Exercises for Low Back Pain →</Link></li>
               <li><Link href="/patient-education" className="text-[#c8a020] hover:underline tracking-wide">Patient Education Resources →</Link></li>
             </ul>

@@ -22,7 +22,7 @@ export default function Footer() {
         { href: "/", label: "Home" },
         { href: "/patient-education", label: "Patient Education" },
         { href: "/articles", label: "Articles" },
-        { href: "/conservative-care", label: "Conservative Care" },
+        { href: "/conservative-care", label: "Rehabilitation & Exercise" },
         { href: "/conditions", label: "Conditions" },
         { href: "/procedures", label: "Procedures" },
       ];

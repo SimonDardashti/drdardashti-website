@@ -108,14 +108,14 @@ export default function PatientEducationPage() {
             </div>
           </div>
 
-          {/* CONSERVATIVE CARE */}
+          {/* REHABILITATION & EXERCISE */}
           <div>
             <h2 className="text-2xl font-bold text-[#0a0a0a] mb-8" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Conservative Care
+              Rehabilitation & Exercise
             </h2>
             <div className="space-y-4">
               <Link href="/conservative-care" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
-                <h3 className="font-bold text-[#0a0a0a] mb-2">Conservative Treatments for Chronic Pain</h3>
+                <h3 className="font-bold text-[#0a0a0a] mb-2">Rehabilitation and Non-Procedural Pain Education</h3>
                 <p className="text-[#666] text-sm leading-relaxed">Comprehensive overview of physical therapy, exercise, mind-body therapies, and lifestyle approaches to pain management.</p>
               </Link>
               <Link href="/aquatic-therapy-arthritis" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">

@@ -443,7 +443,7 @@ export default function McGillBig3Page() {
               Related Resources.
             </h2>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Conservative Treatments for Chronic Pain →</Link></li>
+              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Rehabilitation & Exercise →</Link></li>
               <li><Link href="/thoracic-foam-rolling" className="text-[#c8a020] hover:underline tracking-wide">Thoracic Foam Rolling for Upper Back Mobility →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
               <li><Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline tracking-wide">Pain Without Imaging Findings →</Link></li>

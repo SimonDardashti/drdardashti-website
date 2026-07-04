@@ -315,7 +315,7 @@ export default function EpiduralSteroidInjectionsPage() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline tracking-wide">Pain Without Imaging Findings →</Link></li>
               <li><Link href="/treatment-options" className="text-[#c8a020] hover:underline tracking-wide">Treatment Decision Framework →</Link></li>
-              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Conservative Treatments for Chronic Pain →</Link></li>
+              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Rehabilitation & Exercise →</Link></li>
               <li><Link href="/patient-education" className="text-[#c8a020] hover:underline tracking-wide">Patient Education Resources →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
             </ul>
