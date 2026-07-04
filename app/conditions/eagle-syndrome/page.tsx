@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -146,6 +147,16 @@ export default function EagleSyndromePage() {
               clinical history, and examination findings must be considered together.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Eagle Syndrome Anatomy */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            variant="default"
+            role="anatomy"
+            src="/images/conditions/eagle-syndrome-anatomy.png"
+            alt="Medical illustration of Eagle syndrome showing the styloid process, stylohyoid ligament, throat, ear, jaw, and upper neck pain referral areas."
+          />
         </div>
       </section>
 
