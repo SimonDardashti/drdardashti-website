@@ -30,7 +30,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0a0a0a] text-white border-t border-[#1a1a1a]">
-      <div className="max-w-6xl mx-auto px-6 py-6">
+      <div id="educational-content-notice" className="max-w-6xl mx-auto px-6 py-6 scroll-mt-24">
         <Image
           src="/images/ui/educational-content-footer.png"
           alt="Educational content notice."

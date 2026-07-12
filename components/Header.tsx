@@ -17,6 +17,24 @@ const spanishNavLinks = [
   { href: "/es/procedimientos", label: "Procedimientos" },
 ];
 
+function BookIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-[13px] h-[13px] shrink-0"
+      aria-hidden="true"
+    >
+      <path d="M12 5.5v14" />
+      <path d="M12 5.5c-2.5-2-6-2.2-8.5-1.2v13.5c2.5-1 6-.8 8.5 1.2c2.5-2 6-2.2 8.5-1.2V4.3c-2.5-1-6-.8-8.5 1.2Z" />
+    </svg>
+  );
+}
+
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,6 +68,14 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="#educational-content-notice"
+            aria-label="View patient education notice"
+            className="flex items-center gap-1.5 text-[#c8a020] text-[10px] font-semibold tracking-[0.3em] uppercase opacity-75 hover:opacity-100 transition-opacity duration-200 no-underline"
+          >
+            <BookIcon />
+            {isSpanish ? "Educación para Pacientes" : "Patient Education"}
+          </Link>
           <div className="pl-4 border-l border-[#333]">
             <Link
               href={isSpanish ? "/" : "/es"}
@@ -97,6 +123,17 @@ export default function Header() {
               }`}
             >
               {isSpanish ? "English" : "En Español"}
+            </Link>
+          </div>
+          <div className="border-t border-[#1a1a1a] pt-4 mt-2">
+            <Link
+              href="#educational-content-notice"
+              onClick={() => setMenuOpen(false)}
+              aria-label="View patient education notice"
+              className="flex items-center gap-1.5 text-[#c8a020] text-[10px] font-semibold tracking-[0.3em] uppercase opacity-75 hover:opacity-100 transition-opacity duration-200 no-underline"
+            >
+              <BookIcon />
+              {isSpanish ? "Educación para Pacientes" : "Patient Education"}
             </Link>
           </div>
         </div>
