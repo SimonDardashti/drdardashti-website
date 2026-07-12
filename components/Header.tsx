@@ -68,14 +68,6 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="#educational-content-notice"
-            aria-label="View patient education notice"
-            className="flex items-center gap-1.5 text-[#c8a020] text-[10px] font-semibold tracking-[0.3em] uppercase opacity-75 hover:opacity-100 transition-opacity duration-200 no-underline"
-          >
-            <BookIcon />
-            {isSpanish ? "Educación para Pacientes" : "Patient Education"}
-          </Link>
           <div className="pl-4 border-l border-[#333]">
             <Link
               href={isSpanish ? "/" : "/es"}
@@ -98,6 +90,20 @@ export default function Header() {
           <span className={`block w-5 h-px bg-white transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
           <span className={`block w-5 h-px bg-white transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
         </button>
+      </div>
+
+      {/* Secondary utility row — desktop only */}
+      <div className="hidden md:block">
+        <div className="max-w-6xl mx-auto px-6 h-7 flex items-center justify-end">
+          <Link
+            href="#educational-content-notice"
+            aria-label={isSpanish ? "Ver aviso de educación para pacientes" : "View patient education notice"}
+            className="flex items-center gap-1.5 text-[#c8a020] text-[10px] font-semibold tracking-[0.3em] uppercase opacity-70 hover:opacity-100 transition-opacity duration-200 no-underline"
+          >
+            <BookIcon />
+            {isSpanish ? "Educación para Pacientes" : "Patient Education"}
+          </Link>
+        </div>
       </div>
 
       {menuOpen && (
@@ -129,7 +135,7 @@ export default function Header() {
             <Link
               href="#educational-content-notice"
               onClick={() => setMenuOpen(false)}
-              aria-label="View patient education notice"
+              aria-label={isSpanish ? "Ver aviso de educación para pacientes" : "View patient education notice"}
               className="flex items-center gap-1.5 text-[#c8a020] text-[10px] font-semibold tracking-[0.3em] uppercase opacity-75 hover:opacity-100 transition-opacity duration-200 no-underline"
             >
               <BookIcon />
