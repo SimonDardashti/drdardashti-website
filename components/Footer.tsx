@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -29,7 +30,18 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0a0a0a] text-white border-t border-[#1a1a1a]">
-      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <Image
+          src="/images/ui/educational-content-footer.png"
+          alt="Educational content notice."
+          width={1721}
+          height={914}
+          className="w-full h-auto"
+          sizes="(max-width: 1152px) 100vw, 1152px"
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 pb-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Brand */}
         <div>
           <h3
