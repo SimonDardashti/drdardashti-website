@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -287,6 +288,16 @@ export default function BotoxForChronicMigrainePage() {
               clinical evaluation is required to determine candidacy for any individual patient.
             </p>
           </div>
+        </div>
+
+        {/* ILLUSTRATION: Migraine Pathophysiology */}
+        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
+          <MedicalFigure
+            role="mechanism"
+            src="/images/botox/migraine-botox.jpg"
+            alt="Migraine pathophysiology showing trigeminal nerve activation, neuropeptide release, neurogenic inflammation, sensitization, and transmission of pain signals to the brain."
+            caption="Migraine involves activation of trigeminal pain pathways, neuropeptide signaling, inflammation, and sensitization. Preventive treatments are intended to reduce the frequency and overall burden of this recurring process."
+          />
         </div>
       </section>
 
