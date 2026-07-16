@@ -350,7 +350,6 @@ export default function ThoracicOutletSyndromePage() {
                 "Ergonomic optimization of workspace or daily activities",
                 "Medications such as muscle relaxants or neuropathic pain agents when clinically appropriate",
                 "Conservative management including heat therapy and lifestyle modifications",
-                "Diagnostic nerve blocks or other diagnostic injections to clarify the source of symptoms when indicated",
                 "Surgical referral when conservative measures have been exhausted and symptoms remain significantly disabling, or when specific indications are present",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -362,6 +361,11 @@ export default function ThoracicOutletSyndromePage() {
             <p className="text-[#777] text-sm max-w-2xl">
               Most cases of thoracic outlet syndrome respond to conservative treatment. The response to treatment
               depends on the underlying cause, patient compliance with therapy, and the specifics of the treatment approach.
+              Diagnostic nerve blocks or other diagnostic injections are not a routine or standard treatment for
+              thoracic outlet syndrome itself; they may occasionally be considered to help evaluate a specific
+              suspected pain generator when a patient's presentation suggests an overlapping condition, such as{" "}
+              <Link href="/conditions/myofascial-pain" className="text-[#c8a020] hover:underline">myofascial pain</Link>.
+              Whether any procedure is appropriate depends entirely on the individual clinical presentation.
             </p>
           </div>
         </div>
@@ -389,7 +393,6 @@ export default function ThoracicOutletSyndromePage() {
                 "Symptoms that worsen with overhead activities or repetitive arm use",
                 "Symptoms that developed after a traumatic injury such as whiplash",
                 "Symptoms that have not improved with initial conservative treatment",
-                "New or progressive arm swelling or discoloration",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
@@ -400,6 +403,13 @@ export default function ThoracicOutletSyndromePage() {
             <p className="mt-4">
               A clinical evaluation can help determine whether thoracic outlet syndrome is the underlying cause
               and guide appropriate treatment planning and management.
+            </p>
+            <p className="mt-4">
+              Certain symptoms may reflect vascular involvement and can warrant more prompt or urgent medical
+              evaluation. These include sudden arm swelling, marked discoloration, unusual coolness of the arm
+              or hand, other severe vascular-type symptoms, or symptoms that are rapidly worsening. Not every
+              instance of arm swelling or color change is an emergency, but new or significant vascular symptoms
+              should not be ignored and are best evaluated promptly by a medical professional.
             </p>
           </div>
         </div>
@@ -472,6 +482,8 @@ export default function ThoracicOutletSyndromePage() {
               <li><Link href="/conditions/occipital-neuralgia" className="text-[#c8a020] hover:underline tracking-wide">Occipital Neuralgia Evaluation →</Link></li>
               <li><Link href="/conditions/peripheral-nerve-pain" className="text-[#c8a020] hover:underline tracking-wide">Peripheral Nerve Pain Evaluation →</Link></li>
               <li><Link href="/procedures/peripheral-nerve-blocks" className="text-[#c8a020] hover:underline tracking-wide">Peripheral Nerve Blocks →</Link></li>
+              <li><Link href="/conservative-care" className="text-[#c8a020] hover:underline tracking-wide">Rehabilitation &amp; Exercise →</Link></li>
+              <li><Link href="/patient-education" className="text-[#c8a020] hover:underline tracking-wide">Patient Education Resources →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>
