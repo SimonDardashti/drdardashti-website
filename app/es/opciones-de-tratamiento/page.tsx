@@ -226,9 +226,9 @@ export default function OpcionesdeTratamiento() {
             <strong>Las inyecciones comunes incluyen:</strong>
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
-            <li><strong><Link href="/es/inyeccion-esteroides-epidural" className="text-blue-600 hover:text-blue-800">Inyección epidural de esteroides:</Link></strong> Reduce la inflamación en el canal espinal alrededor de los nervios. Puede mejorar el dolor y la función, permitiendo que la fisioterapia funcione mejor.</li>
-            <li><strong><Link href="/es/bloqueo-rama-medial" className="text-blue-600 hover:text-blue-800">Bloqueo de rama medial:</Link></strong> Se dirige al dolor de la articulación facetaria. Puede proporcionar alivio mientras guía si las articulaciones facetarias son realmente la fuente del dolor.</li>
-            <li><strong><Link href="/es/ablacion-radiofrecuencia" className="text-blue-600 hover:text-blue-800">Ablación por radiofrecuencia:</Link></strong> Para el dolor persistente de la faceta, alivio a más largo plazo mediante calor controlado.</li>
+            <li><strong><Link href="/es/procedimientos/inyecciones-epidurales-de-esteroides" className="text-blue-600 hover:text-blue-800">Inyección epidural de esteroides:</Link></strong> Reduce la inflamación en el canal espinal alrededor de los nervios. Puede mejorar el dolor y la función, permitiendo que la fisioterapia funcione mejor.</li>
+            <li><strong><Link href="/es/procedimientos/bloqueos-de-rama-medial" className="text-blue-600 hover:text-blue-800">Bloqueo de rama medial:</Link></strong> Se dirige al dolor de la articulación facetaria. Puede proporcionar alivio mientras guía si las articulaciones facetarias son realmente la fuente del dolor.</li>
+            <li><strong><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-blue-600 hover:text-blue-800">Ablación por radiofrecuencia:</Link></strong> Para el dolor persistente de la faceta, alivio a más largo plazo mediante calor controlado.</li>
             <li><strong>Inyecciones de articulación sacroilíaca:</strong> Se dirigen a la disfunción de la articulación SI cuando eso es la fuente del dolor.</li>
             <li><strong>Bloqueos de nervios periféricos:</strong> Abordan el dolor de nervios específicos fuera de la columna vertebral.</li>
           </ul>
@@ -470,12 +470,12 @@ export default function OpcionesdeTratamiento() {
             Condiciones y Tratamientos Relacionados
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li><Link href="/es/dolor-lumbar" className="text-blue-600 hover:text-blue-800">Dolor Lumbar</Link></li>
-            <li><Link href="/es/ciatica" className="text-blue-600 hover:text-blue-800">Ciática</Link></li>
-            <li><Link href="/es/radiculopatia-cervical" className="text-blue-600 hover:text-blue-800">Radiculopatía Cervical</Link></li>
-            <li><Link href="/es/inyeccion-esteroides-epidural" className="text-blue-600 hover:text-blue-800">Inyección Epidural de Esteroides</Link></li>
-            <li><Link href="/es/bloqueo-rama-medial" className="text-blue-600 hover:text-blue-800">Bloqueo de Rama Medial</Link></li>
-            <li><Link href="/es/ablacion-radiofrecuencia" className="text-blue-600 hover:text-blue-800">Ablación por Radiofrecuencia</Link></li>
+            <li><Link href="/es/condiciones/dolor-lumbar" className="text-blue-600 hover:text-blue-800">Dolor Lumbar</Link></li>
+            <li><Link href="/es/condiciones/radiculopatia-ciatica" className="text-blue-600 hover:text-blue-800">Ciática</Link></li>
+            <li><Link href="/es/condiciones/radiculopatia-cervical" className="text-blue-600 hover:text-blue-800">Radiculopatía Cervical</Link></li>
+            <li><Link href="/es/procedimientos/inyecciones-epidurales-de-esteroides" className="text-blue-600 hover:text-blue-800">Inyección Epidural de Esteroides</Link></li>
+            <li><Link href="/es/procedimientos/bloqueos-de-rama-medial" className="text-blue-600 hover:text-blue-800">Bloqueo de Rama Medial</Link></li>
+            <li><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-blue-600 hover:text-blue-800">Ablación por Radiofrecuencia</Link></li>
           </ul>
         </section>
 

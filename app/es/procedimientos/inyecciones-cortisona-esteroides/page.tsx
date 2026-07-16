@@ -422,7 +422,7 @@ export default function InyeccionesCortisonaEsteroidesPage() {
               Procedimientos &amp; Condiciones relacionadas.
             </h2>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/es/procedimientos/inyecciones-epidurales-esteroides" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones epidurales de esteroides →</Link></li>
+              <li><Link href="/es/procedimientos/inyecciones-epidurales-de-esteroides" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones epidurales de esteroides →</Link></li>
               <li><Link href="/es/procedimientos/bloqueos-de-rama-medial" className="text-[#c8a020] hover:underline tracking-wide">Bloqueos de rama medial y facetarios →</Link></li>
               <li><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-[#c8a020] hover:underline tracking-wide">Ablación por radiofrecuencia →</Link></li>
               <li><Link href="/es/procedimientos/plasma-rico-en-plaquetas-prp" className="text-[#c8a020] hover:underline tracking-wide">Plasma rico en plaquetas (PRP) →</Link></li>

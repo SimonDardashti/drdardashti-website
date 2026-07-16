@@ -423,12 +423,12 @@ export default function DolorSinImagenes() {
             Condiciones y Tratamientos Relacionados
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li><Link href="/es/dolor-lumbar" className="text-blue-600 hover:text-blue-800">Dolor Lumbar</Link></li>
-            <li><Link href="/es/ciatica" className="text-blue-600 hover:text-blue-800">Ciática</Link></li>
-            <li><Link href="/es/radiculopatia-cervical" className="text-blue-600 hover:text-blue-800">Radiculopatía Cervical</Link></li>
-            <li><Link href="/es/inyeccion-esteroides-epidural" className="text-blue-600 hover:text-blue-800">Inyección Epidural de Esteroides</Link></li>
-            <li><Link href="/es/bloqueo-rama-medial" className="text-blue-600 hover:text-blue-800">Bloqueo de Rama Medial</Link></li>
-            <li><Link href="/es/ablacion-radiofrecuencia" className="text-blue-600 hover:text-blue-800">Ablación por Radiofrecuencia</Link></li>
+            <li><Link href="/es/condiciones/dolor-lumbar" className="text-blue-600 hover:text-blue-800">Dolor Lumbar</Link></li>
+            <li><Link href="/es/condiciones/radiculopatia-ciatica" className="text-blue-600 hover:text-blue-800">Ciática</Link></li>
+            <li><Link href="/es/condiciones/radiculopatia-cervical" className="text-blue-600 hover:text-blue-800">Radiculopatía Cervical</Link></li>
+            <li><Link href="/es/procedimientos/inyecciones-epidurales-de-esteroides" className="text-blue-600 hover:text-blue-800">Inyección Epidural de Esteroides</Link></li>
+            <li><Link href="/es/procedimientos/bloqueos-de-rama-medial" className="text-blue-600 hover:text-blue-800">Bloqueo de Rama Medial</Link></li>
+            <li><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-blue-600 hover:text-blue-800">Ablación por Radiofrecuencia</Link></li>
           </ul>
         </section>
 

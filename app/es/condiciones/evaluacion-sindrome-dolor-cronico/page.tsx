@@ -267,7 +267,7 @@ export default function EvaluacionSindromeDulorCronicoPage() {
               <li><Link href="/es/condiciones/dolor-columna" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor de Columna →</Link></li>
               <li><Link href="/es/condiciones/dolor-miofascial" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Miofascial →</Link></li>
               <li><Link href="/es/procedimientos/estimulacion-medula-espinal" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Estimulación de la Médula Espinal →</Link></li>
-              <li><Link href="/es/procedimientos/ablacion-radiofrecuencia" className="text-[#c8a020] hover:underline tracking-wide">Ablación por Radiofrecuencia →</Link></li>
+              <li><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-[#c8a020] hover:underline tracking-wide">Ablación por Radiofrecuencia →</Link></li>
               <li><Link href="/es/servicios" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios →</Link></li>
             </ul>
           </div>
