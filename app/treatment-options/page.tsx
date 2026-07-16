@@ -264,9 +264,9 @@ export default function TreatmentOptions() {
             <strong>Common injections include:</strong>
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
-            <li><strong><Link href="/epidural-steroid-injection" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> Reduces inflammation in the spinal canal around nerves. Can improve pain and function, allowing physical therapy to work better.</li>
-            <li><strong><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Targets facet joint pain. Can provide relief while guiding whether facet joints are actually the source of pain.</li>
-            <li><strong><Link href="/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency ablation:</Link></strong> For persistent facet pain, longer-term relief through controlled heat.</li>
+            <li><strong><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> Reduces inflammation in the spinal canal around nerves. Can improve pain and function, allowing physical therapy to work better.</li>
+            <li><strong><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Targets facet joint pain. Can provide relief while guiding whether facet joints are actually the source of pain.</li>
+            <li><strong><Link href="/procedures/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency ablation:</Link></strong> For persistent facet pain, longer-term relief through controlled heat.</li>
             <li><strong>Sacroiliac joint injections:</strong> Target SI joint dysfunction when that is the pain source.</li>
             <li><strong>Peripheral nerve blocks:</strong> Address pain from specific nerves outside the spine.</li>
           </ul>
@@ -508,12 +508,12 @@ export default function TreatmentOptions() {
             Related Conditions and Treatments
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li><Link href="/low-back-pain" className="text-blue-600 hover:text-blue-800">Low Back Pain</Link></li>
-            <li><Link href="/sciatica" className="text-blue-600 hover:text-blue-800">Sciatica</Link></li>
-            <li><Link href="/cervical-radiculopathy" className="text-blue-600 hover:text-blue-800">Cervical Radiculopathy</Link></li>
-            <li><Link href="/epidural-steroid-injection" className="text-blue-600 hover:text-blue-800">Epidural Steroid Injection</Link></li>
-            <li><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial Branch Block</Link></li>
-            <li><Link href="/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency Ablation</Link></li>
+            <li><Link href="/conditions/low-back-pain" className="text-blue-600 hover:text-blue-800">Low Back Pain</Link></li>
+            <li><Link href="/conditions/sciatica-radicular-pain" className="text-blue-600 hover:text-blue-800">Sciatica</Link></li>
+            <li><Link href="/conditions/cervical-radiculopathy" className="text-blue-600 hover:text-blue-800">Cervical Radiculopathy</Link></li>
+            <li><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural Steroid Injection</Link></li>
+            <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-blue-600 hover:text-blue-800">Medial Branch Block</Link></li>
+            <li><Link href="/procedures/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency Ablation</Link></li>
           </ul>
         </section>
 

@@ -266,8 +266,8 @@ export default function PainWithoutImaging() {
             <strong>Common diagnostic injections:</strong>
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
-            <li><strong><Link href="/epidural-steroid-injection" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> Tests whether spinal canal involvement is contributing to pain. Can provide anti-inflammatory benefit.</li>
-            <li><strong><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Tests whether facet joints may be contributing to pain. A short-duration diagnostic test.</li>
+            <li><strong><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> Tests whether spinal canal involvement is contributing to pain. Can provide anti-inflammatory benefit.</li>
+            <li><strong><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Tests whether facet joints may be contributing to pain. A short-duration diagnostic test.</li>
             <li><strong>Sacroiliac joint injection:</strong> Tests whether SI joint dysfunction is contributing to pain.</li>
             <li><strong>Peripheral nerve blocks:</strong> Test whether specific peripheral nerves are involved.</li>
           </ul>
@@ -316,9 +316,9 @@ export default function PainWithoutImaging() {
             If conservative care does not provide adequate relief, interventional options may help:
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
-            <li><strong><Link href="/epidural-steroid-injection" className="text-blue-600 hover:text-blue-800">Epidural steroid injection</Link></strong> for spinal pain</li>
-            <li><strong><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial branch blocks</Link></strong> for facet pain</li>
-            <li><strong><Link href="/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency ablation (RFA)</Link></strong> for persistent facet or SI joint pain</li>
+            <li><strong><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural steroid injection</Link></strong> for spinal pain</li>
+            <li><strong><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-blue-600 hover:text-blue-800">Medial branch blocks</Link></strong> for facet pain</li>
+            <li><strong><Link href="/procedures/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency ablation (RFA)</Link></strong> for persistent facet or SI joint pain</li>
             <li><strong>Other procedures</strong> based on specific diagnosis</li>
           </ul>
 
@@ -461,12 +461,12 @@ export default function PainWithoutImaging() {
             Related Conditions and Treatments
           </h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li><Link href="/low-back-pain" className="text-blue-600 hover:text-blue-800">Low Back Pain</Link></li>
-            <li><Link href="/sciatica" className="text-blue-600 hover:text-blue-800">Sciatica</Link></li>
-            <li><Link href="/cervical-radiculopathy" className="text-blue-600 hover:text-blue-800">Cervical Radiculopathy</Link></li>
-            <li><Link href="/epidural-steroid-injection" className="text-blue-600 hover:text-blue-800">Epidural Steroid Injection</Link></li>
-            <li><Link href="/medial-branch-block" className="text-blue-600 hover:text-blue-800">Medial Branch Block</Link></li>
-            <li><Link href="/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency Ablation</Link></li>
+            <li><Link href="/conditions/low-back-pain" className="text-blue-600 hover:text-blue-800">Low Back Pain</Link></li>
+            <li><Link href="/conditions/sciatica-radicular-pain" className="text-blue-600 hover:text-blue-800">Sciatica</Link></li>
+            <li><Link href="/conditions/cervical-radiculopathy" className="text-blue-600 hover:text-blue-800">Cervical Radiculopathy</Link></li>
+            <li><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural Steroid Injection</Link></li>
+            <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-blue-600 hover:text-blue-800">Medial Branch Block</Link></li>
+            <li><Link href="/procedures/radiofrequency-ablation" className="text-blue-600 hover:text-blue-800">Radiofrequency Ablation</Link></li>
           </ul>
         </section>
 
