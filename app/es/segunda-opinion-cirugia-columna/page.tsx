@@ -34,7 +34,7 @@ const pageSchema = {
   headline: "¿Cuándo Debe Obtener una Segunda Opinión Antes de Cirugía de Columna?",
   description:
     "Guía completa para entender recomendaciones de cirugía de columna, cuándo las segundas opiniones son razonables, y cómo evaluar sus opciones de tratamiento.",
-  image: "https://drdardashti.com/og-images/segunda-opinion-cirugia-columna.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

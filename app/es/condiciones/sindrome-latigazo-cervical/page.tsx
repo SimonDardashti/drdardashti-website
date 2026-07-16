@@ -33,7 +33,7 @@ const pageSchema = {
   headline: "Síndrome de Latigazo Cervical: Comprendiendo el Dolor de Cuello Después de una Lesión",
   description:
     "Guía completa sobre síndrome de latigazo cervical escrita por un especialista en medicina del dolor certificado. Cubre mecanismo de lesión, síntomas comunes, por qué el dolor persiste, por qué la imagen puede ser normal, métodos de evaluación, y opciones de tratamiento basadas en evidencia.",
-  image: "https://drdardashti.com/og-images/sindrome-latigazo-cervical.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

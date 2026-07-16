@@ -36,7 +36,7 @@ const pageSchema = {
   headline: "When Should You Get a Second Opinion Before Spine Surgery?",
   description:
     "Comprehensive guide to understanding spine surgery recommendations, when second opinions are reasonable, and how to evaluate your treatment options.",
-  image: "https://drdardashti.com/og-images/second-opinion-spine-surgery.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

@@ -22,7 +22,7 @@ const pageSchema = {
   url: 'https://drdardashti.com/es/opciones-de-tratamiento',
   headline: 'Cuidado Conservador vs Inyecciones vs Cirugía: Eligiendo el Camino Correcto de Tratamiento',
   description: 'Guía completa para comprender las opciones de tratamiento del dolor, del especialista en medicina del dolor certificado Dr. Simon Dardashti.',
-  image: 'https://drdardashti.com/og-images/opciones-de-tratamiento.jpg',
+  image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
   author: {

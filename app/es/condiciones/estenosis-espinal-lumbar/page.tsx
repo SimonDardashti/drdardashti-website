@@ -33,7 +33,7 @@ const pageSchema = {
   headline: "Estenosis Espinal Lumbar: Síntomas, Diagnóstico y Opciones de Tratamiento",
   description:
     "Guía completa sobre estenosis espinal lumbar escrita por un especialista en medicina del dolor certificado. Cubre síntomas, diagnóstico, interpretación de imagen y opciones de tratamiento basadas en evidencia.",
-  image: "https://drdardashti.com/og-images/estenosis-espinal-lumbar.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

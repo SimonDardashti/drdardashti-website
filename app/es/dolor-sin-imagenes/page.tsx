@@ -21,7 +21,7 @@ const pageSchema = {
   url: 'https://drdardashti.com/es/dolor-sin-imagenes',
   headline: 'Por Qué Tiene Dolor Cuando Sus Estudios de Imagen Son Normales',
   description: 'Guía completa para comprender el dolor cuando los estudios de imagen son normales, del especialista en medicina del dolor certificado Dr. Simon Dardashti.',
-  image: 'https://drdardashti.com/og-images/dolor-sin-imagenes.jpg',
+  image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
   author: {

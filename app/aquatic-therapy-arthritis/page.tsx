@@ -44,7 +44,7 @@ const pageSchema = {
   headline: "Aquatic Physical Therapy for Arthritis and Joint Pain: Benefits, Safety, and What to Expect",
   description:
     "Comprehensive guide to aquatic physical therapy for arthritis, joint pain, and low back pain written by a board-certified pain medicine physician.",
-  image: "https://drdardashti.com/og-images/aquatic-therapy-arthritis.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

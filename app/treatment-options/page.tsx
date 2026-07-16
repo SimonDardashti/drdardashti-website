@@ -30,7 +30,7 @@ const pageSchema = {
   url: 'https://drdardashti.com/treatment-options',
   headline: 'Conservative Care vs Injections vs Surgery: Choosing the Right Treatment Path',
   description: 'Comprehensive guide to understanding treatment options for pain, from board-certified pain medicine specialist Dr. Simon Dardashti.',
-  image: 'https://drdardashti.com/og-images/treatment-options.jpg',
+  image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
   author: {

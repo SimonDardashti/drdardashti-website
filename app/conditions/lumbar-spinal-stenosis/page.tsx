@@ -36,7 +36,7 @@ const pageSchema = {
   headline: "Lumbar Spinal Stenosis: Symptoms, Diagnosis, and Treatment Options",
   description:
     "Comprehensive guide to lumbar spinal stenosis written by a board-certified pain medicine physician. Covers symptoms, diagnosis, imaging interpretation, and evidence-based treatment options.",
-  image: "https://drdardashti.com/og-images/lumbar-spinal-stenosis.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

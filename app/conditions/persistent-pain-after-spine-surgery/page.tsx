@@ -37,7 +37,7 @@ const pageSchema = {
   headline: "Persistent Pain After Spine Surgery: Causes, Evaluation, and Treatment Options",
   description:
     "Comprehensive guide to understanding ongoing pain and symptoms after spine surgery, written by a board-certified pain medicine physician. Covers causes, evaluation methods, diagnostic injections, conservative options, neuromodulation, and when revision surgery may be appropriate.",
-  image: "https://drdardashti.com/og-images/persistent-pain-after-spine-surgery.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

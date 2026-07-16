@@ -36,7 +36,7 @@ const pageSchema = {
   headline: "Cervicogenic Headache: When Neck Problems Cause Head Pain",
   description:
     "Comprehensive guide to cervicogenic headaches written by a board-certified pain medicine physician. Covers how neck structures cause head pain, symptoms, diagnosis, imaging interpretation, and evidence-based treatment options.",
-  image: "https://drdardashti.com/og-images/cervicogenic-headache.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

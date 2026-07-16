@@ -36,7 +36,7 @@ const pageSchema = {
   headline: "Whiplash-Associated Disorder: Understanding Neck Pain After Injury",
   description:
     "Comprehensive guide to whiplash-associated disorder written by a board-certified pain medicine physician. Covers mechanism of injury, common symptoms, why pain persists, why imaging may be normal, evaluation methods, and evidence-based treatment options.",
-  image: "https://drdardashti.com/og-images/whiplash-associated-disorder.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

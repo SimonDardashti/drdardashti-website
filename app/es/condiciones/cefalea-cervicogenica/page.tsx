@@ -33,7 +33,7 @@ const pageSchema = {
   headline: "Cefalea Cervicogénica: Cuando los Problemas del Cuello Causan Dolor de Cabeza",
   description:
     "Guía completa sobre cefalea cervicogénica escrita por un especialista en medicina del dolor certificado. Cubre cómo estructuras del cuello causan dolor de cabeza, síntomas, diagnóstico, interpretación de imagen, y opciones de tratamiento basadas en evidencia.",
-  image: "https://drdardashti.com/og-images/cefalea-cervicogenica.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

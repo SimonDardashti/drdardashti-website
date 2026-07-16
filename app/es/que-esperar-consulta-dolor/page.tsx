@@ -33,7 +33,7 @@ const pageSchema = {
   headline: "Qué Esperar Durante Su Consulta de Manejo del Dolor",
   description:
     "Guía completa para entender su consulta de manejo del dolor. Aprenda qué traer, cómo se estructura la evaluación, preguntas comunes, examen físico, y cómo se toman decisiones de tratamiento.",
-  image: "https://drdardashti.com/og-images/que-esperar-consulta-dolor.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

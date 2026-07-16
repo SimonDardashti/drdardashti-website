@@ -35,7 +35,7 @@ const pageSchema = {
   headline: "What to Expect During Your Pain Consultation",
   description:
     "Comprehensive guide to understanding your pain management consultation. Learn what to bring, how the evaluation is structured, common questions, physical examination, and how treatment decisions are made.",
-  image: "https://drdardashti.com/og-images/what-to-expect-pain-consultation.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {

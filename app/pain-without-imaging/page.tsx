@@ -28,7 +28,7 @@ const pageSchema = {
   url: 'https://drdardashti.com/pain-without-imaging',
   headline: 'Why You Have Pain When Your Imaging Tests Are Normal',
   description: 'Comprehensive guide to understanding pain when imaging tests are normal, from board-certified pain medicine specialist Dr. Simon Dardashti.',
-  image: 'https://drdardashti.com/og-images/pain-without-imaging.jpg',
+  image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
   dateModified: '2026-06-16',
   author: {

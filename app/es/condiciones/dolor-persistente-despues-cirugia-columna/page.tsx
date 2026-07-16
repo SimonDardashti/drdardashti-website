@@ -33,7 +33,7 @@ const pageSchema = {
   headline: "Dolor Persistente Después de una Cirugía de Columna: Causas, Evaluación y Opciones de Tratamiento",
   description:
     "Guía completa sobre dolor persistente después de cirugía de columna escrita por un especialista en medicina del dolor certificado. Cubre causas, evaluación, inyecciones diagnósticas, opciones conservadoras, neuromodulación y cuándo la cirugía de revisión puede ser apropiada.",
-  image: "https://drdardashti.com/og-images/dolor-persistente-despues-cirugia-columna.jpg",
+  image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
   dateModified: "2026-06-18",
   author: {
