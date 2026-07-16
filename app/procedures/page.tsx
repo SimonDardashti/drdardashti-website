@@ -72,6 +72,7 @@ const procedureGroups = [
       { label: "Bursa injections", href: "/procedures/joint-bursa-tendon-injections" },
       { label: "Tendon sheath injections", href: "/procedures/joint-bursa-tendon-injections" },
       { label: "Platelet-rich plasma (PRP) injections", href: "/procedures/platelet-rich-plasma-prp" },
+      { label: "Botox for chronic migraine prevention", href: "/procedures/botox-for-chronic-migraine" },
     ],
   },
   {

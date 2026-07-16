@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/procedures/platelet-rich-plasma-prp`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/cortisone-steroid-injections`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/trigger-point-injections`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/procedures/botox-for-chronic-migraine`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/joint-bursa-tendon-injections`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/occipital-nerve-blocks`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/peripheral-nerve-blocks`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
