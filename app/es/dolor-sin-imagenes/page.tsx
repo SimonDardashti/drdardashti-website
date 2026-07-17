@@ -406,10 +406,10 @@ export default function DolorSinImagenes() {
 
           <div className="flex flex-col gap-4">
             <Link
-              href="/es/consultas-virtuales"
+              href="/virtual-consultations"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
             >
-              Programar una Consulta Virtual
+              Programar una Consulta Virtual (en inglés)
             </Link>
             <p className="text-sm text-gray-600">
               Las consultas virtuales nos permiten discutir su condición, responder sus preguntas y determinar el mejor enfoque de evaluación y tratamiento para usted.

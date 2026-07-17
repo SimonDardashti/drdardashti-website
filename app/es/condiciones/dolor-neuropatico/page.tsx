@@ -299,10 +299,10 @@ export default function DulorNeuropaticoPage() {
               Condiciones y Procedimientos Relacionados.
             </h2>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/es/condiciones/sindrome-dolor-regional-complejo" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Síndrome de Dolor Regional Complejo →</Link></li>
-              <li><Link href="/es/procedimientos/estimulacion-medula-espinal" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Estimulación de la Médula Espinal →</Link></li>
+              <li><Link href="/conditions/crps-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Síndrome de Dolor Regional Complejo — Página en inglés →</Link></li>
+              <li><Link href="/procedures/spinal-cord-stimulation-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Estimulación de la Médula Espinal — Página en inglés →</Link></li>
               <li><Link href="/es/condiciones/radiculopatia-ciatica" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Ciatalgia y Dolor Radicular →</Link></li>
-              <li><Link href="/es/servicios" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios →</Link></li>
+              <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios — Página en inglés →</Link></li>
             </ul>
           </div>
         </div>

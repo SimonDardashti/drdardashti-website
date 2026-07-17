@@ -386,10 +386,10 @@ export default function SindromeLatigazoCervicalPage() {
           </p>
 
           <Link
-            href="/es/consultas-virtuales"
+            href="/virtual-consultations"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
           >
-            Programe una Consulta Virtual
+            Programe una Consulta Virtual (en inglés)
           </Link>
           <p className="text-sm text-gray-600 mt-4">
             Las consultas virtuales permiten toma de historial detallada y discusión de sus síntomas y opciones de tratamiento.

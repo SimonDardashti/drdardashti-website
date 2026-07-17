@@ -223,8 +223,8 @@ export default function DolorPersistenteDespuesCirugiaColumnaPage() {
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
             Si ha tenido cirugía de columna y aún tiene síntomas, una evaluación comprehensiva puede aclarar qué está causando el dolor y qué opciones pueden ayudar. Podemos revisar sus registros quirúrgicos, imagen, y síntomas para desarrollar un plan de tratamiento dirigido.
           </p>
-          <Link href="/es/consultas-virtuales" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
-            Programe una Consulta Virtual
+          <Link href="/virtual-consultations" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            Programe una Consulta Virtual (en inglés)
           </Link>
         </section>
 
@@ -234,7 +234,7 @@ export default function DolorPersistenteDespuesCirugiaColumnaPage() {
             <li><Link href="/es/dolor-sin-imagenes" className="text-blue-600 hover:text-blue-800">Dolor Sin Hallazgos de Imagen</Link></li>
             <li><Link href="/es/opciones-de-tratamiento" className="text-blue-600 hover:text-blue-800">Opciones de Tratamiento</Link></li>
             <li><Link href="/es/segunda-opinion-cirugia-columna" className="text-blue-600 hover:text-blue-800">Segunda Opinión Antes de Cirugía</Link></li>
-            <li><Link href="/es/consultas-virtuales" className="text-blue-600 hover:text-blue-800">Consultas Virtuales</Link></li>
+            <li><Link href="/virtual-consultations" className="text-blue-600 hover:text-blue-800">Consultas Virtuales (en inglés)</Link></li>
           </ul>
         </section>
 

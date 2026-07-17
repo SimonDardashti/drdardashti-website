@@ -262,13 +262,13 @@ export default function EvaluacionSindromeDulorCronicoPage() {
               Condiciones y Procedimientos Relacionados.
             </h2>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/es/condiciones/condiciones-dolor-complejas" className="text-[#c8a020] hover:underline tracking-wide">Condiciones de Dolor Complejas →</Link></li>
+              <li><Link href="/conditions/complex-pain-conditions" className="text-[#c8a020] hover:underline tracking-wide">Condiciones de Dolor Complejas — Página en inglés →</Link></li>
               <li><Link href="/es/condiciones/dolor-neuropatico" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Neuropático →</Link></li>
-              <li><Link href="/es/condiciones/dolor-columna" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor de Columna →</Link></li>
+              <li><Link href="/conditions/spine-related-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor de Columna — Página en inglés →</Link></li>
               <li><Link href="/es/condiciones/dolor-miofascial" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Miofascial →</Link></li>
-              <li><Link href="/es/procedimientos/estimulacion-medula-espinal" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Estimulación de la Médula Espinal →</Link></li>
+              <li><Link href="/procedures/spinal-cord-stimulation-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Estimulación de la Médula Espinal — Página en inglés →</Link></li>
               <li><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-[#c8a020] hover:underline tracking-wide">Ablación por Radiofrecuencia →</Link></li>
-              <li><Link href="/es/servicios" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios →</Link></li>
+              <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios — Página en inglés →</Link></li>
             </ul>
           </div>
         </div>

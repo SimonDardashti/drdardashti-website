@@ -303,8 +303,8 @@ export default function DulorArticularPage() {
               <li><Link href="/es/condiciones/dolor-articulacion-sacroiliaca" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Articular Sacroiliaca →</Link></li>
               <li><Link href="/es/condiciones/dolor-facetario" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Facetario →</Link></li>
               <li><Link href="/es/procedimientos/inyecciones-articulacion-sacroiliaca" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones Articulación Sacroiliaca →</Link></li>
-              <li><Link href="/es/procedimientos/inyecciones-articulos-facetarios" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones Articular Facetaria y Bloqueos de Rama Medial →</Link></li>
-              <li><Link href="/es/servicios" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios →</Link></li>
+              <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones Articular Facetaria y Bloqueos de Rama Medial — Página en inglés →</Link></li>
+              <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios — Página en inglés →</Link></li>
             </ul>
           </div>
         </div>

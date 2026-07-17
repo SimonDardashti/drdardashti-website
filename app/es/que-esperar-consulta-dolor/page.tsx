@@ -469,10 +469,10 @@ export default function QueEsperarConsultaDolorPage() {
           </p>
 
           <Link
-            href="/es/consultas-virtuales"
+            href="/virtual-consultations"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
           >
-            Programe una Consulta Virtual
+            Programe una Consulta Virtual (en inglés)
           </Link>
           <p className="text-sm text-gray-600 mt-4">
             Las consultas iniciales se pueden conducir vía videoconferencia. Toda información necesaria será recolectada para asegurar una evaluación comprehensiva.
@@ -489,7 +489,7 @@ export default function QueEsperarConsultaDolorPage() {
             <li><Link href="/es/segunda-opinion-cirugia-columna" className="text-blue-600 hover:text-blue-800">Segunda Opinión Antes de Cirugía de Columna</Link></li>
             <li><Link href="/es/condiciones/dolor-lumbar" className="text-blue-600 hover:text-blue-800">Dolor Lumbar</Link></li>
             <li><Link href="/es/condiciones/dolor-de-cuello" className="text-blue-600 hover:text-blue-800">Dolor de Cuello</Link></li>
-            <li><Link href="/es/consultas-virtuales" className="text-blue-600 hover:text-blue-800">Consultas Virtuales</Link></li>
+            <li><Link href="/virtual-consultations" className="text-blue-600 hover:text-blue-800">Consultas Virtuales (en inglés)</Link></li>
           </ul>
         </section>
 
