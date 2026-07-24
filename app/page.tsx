@@ -145,7 +145,7 @@ export default function Home() {
           {/* Text */}
           <div>
             <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-6">
-              Pain Medicine Physician · <span className="whitespace-nowrap">Mission Hills, CA</span>
+              Pain Medicine Physician · <span className="whitespace-nowrap">Los Angeles, CA</span>
             </p>
             <h1
               className="text-2xl md:text-3xl font-bold leading-[1.2] mb-4"
