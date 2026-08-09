@@ -45,45 +45,12 @@ const pageSchema = {
   },
 };
 
-const featuredProcedures = [
-  {
-    title: "Inyecciones de cortisona y esteroides",
-    body: "Información educativa sobre las inyecciones de cortisona y esteroides, cómo funcionan, preocupaciones sobre la salud de los huesos, efectos sobre el azúcar en la sangre para pacientes con diabetes y cómo encajan en un plan de tratamiento. Esta información es importante para entender los tratamientos inyectables locales.",
-    link: { label: "Leer más", href: "/es/procedimientos/inyecciones-cortisona-esteroides" },
-  },
-  {
-    title: "Inyecciones epidurales de esteroides",
-    body: "Las inyecciones epidurales de esteroides pueden considerarse para pacientes seleccionados con dolor de cuello, dolor de espalda o dolor que se irradia hacia los brazos o las piernas. El medicamento se aplica en el espacio epidural, cerca de las raíces nerviosas afectadas. La respuesta al tratamiento varía y depende del cuadro clínico individual.",
-    link: { label: "Leer más", href: "/es/procedimientos/inyecciones-epidurales-de-esteroides" },
-  },
-  {
-    title: "Bloqueos de rama medial y bloqueos facetarios",
-    body: "Los bloqueos de rama medial y las inyecciones en las articulaciones facetarias pueden estar indicados en pacientes con dolor de cuello o espalda que puede estar relacionado con las articulaciones facetarias de la columna. Estos procedimientos también pueden utilizarse con fines diagnósticos. La evaluación clínica ayuda a determinar si este tipo de procedimiento puede ser apropiado.",
-    link: { label: "Leer más", href: "/es/procedimientos/bloqueos-de-rama-medial" },
-  },
-  {
-    title: "Ablación por radiofrecuencia",
-    body: "La ablación por radiofrecuencia puede considerarse en pacientes seleccionados cuyos síntomas han respondido a bloqueos diagnósticos de rama medial. El objetivo es interrumpir temporalmente las señales de dolor provenientes de las articulaciones facetarias de la columna. La respuesta varía según el paciente y no puede predecirse con anticipación.",
-    link: { label: "Leer más", href: "/es/procedimientos/ablacion-por-radiofrecuencia" },
-  },
-  {
-    title: "Plasma rico en plaquetas (PRP)",
-    body: "El plasma rico en plaquetas es una opción terapéutica que puede considerarse en pacientes seleccionados con ciertas condiciones musculoesqueléticas. El procedimiento utiliza componentes derivados de la propia sangre del paciente. La evaluación clínica determina si puede ser apropiado para cada caso. La evidencia sobre su efectividad varía según la indicación.",
-    link: { label: "Leer más", href: "/es/procedimientos/plasma-rico-en-plaquetas-prp" },
-  },
-];
-
 const procedureGroups = [
   {
     title: "Procedimientos de columna",
     items: [
-      { label: "Inyecciones epidurales cervicales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
-      { label: "Inyecciones epidurales lumbares de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
-      { label: "Inyecciones epidurales transforaminales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
-      { label: "Inyecciones epidurales interlaminares de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
-      { label: "Inyecciones epidurales caudales de esteroides", href: "/procedures/epidural-steroid-injections", englishOnly: true },
-      { label: "Bloqueos selectivos de raíces nerviosas" },
-      { label: "Inyecciones de facetas / bloqueos de rama medial", href: "/procedures/facet-joint-injections-medial-branch-blocks", englishOnly: true },
+      { label: "Inyecciones epidurales de esteroides", href: "/es/procedimientos/inyecciones-epidurales-de-esteroides" },
+      { label: "Bloqueos de rama medial y bloqueos facetarios", href: "/es/procedimientos/bloqueos-de-rama-medial" },
       { label: "Ablación por radiofrecuencia", href: "/es/procedimientos/ablacion-por-radiofrecuencia" },
       { label: "Inyecciones de la articulación sacroilíaca", href: "/es/procedimientos/inyecciones-articulacion-sacroiliaca" },
     ],
@@ -95,26 +62,13 @@ const procedureGroups = [
       { label: "Bloqueos de nervio occipital", href: "/es/procedimientos/bloqueos-nervio-occipital" },
       { label: "Inyecciones en puntos gatillo", href: "/es/procedimientos/inyecciones-puntos-gatillo" },
       { label: "Inyecciones articulares, de bursa y tendón", href: "/es/procedimientos/inyecciones-articulares-bursa-tendon" },
-      { label: "Inyecciones de bursa" },
-      { label: "Inyecciones en vainas tendinosas" },
-    ],
-  },
-  {
-    title: "Procedimientos avanzados",
-    items: [
-      { label: "Evaluación para estimulación de la médula espinal", href: "/procedures/spinal-cord-stimulation-evaluation", englishOnly: true },
-      { label: "Consideración de prueba de estimulación medular", href: "/procedures/spinal-cord-stimulation-evaluation", englishOnly: true },
-      { label: "Evaluación para estimulación de nervio periférico" },
-      { label: "Consideración de prueba de estimulación de nervio periférico" },
     ],
   },
   {
     title: "Medicación y cuidado conservador",
     items: [
-      { label: "Manejo de medicamentos cuando es clínicamente apropiado" },
-      { label: "Coordinación de fisioterapia" },
-      { label: "Revisión de imágenes e historial de tratamiento previo" },
-      { label: "Planificación multimodal del manejo del dolor" },
+      { label: "Inyecciones de cortisona y esteroides", href: "/es/procedimientos/inyecciones-cortisona-esteroides" },
+      { label: "Plasma rico en plaquetas (PRP)", href: "/es/procedimientos/plasma-rico-en-plaquetas-prp" },
     ],
   },
 ];
@@ -178,41 +132,6 @@ export default function ProcedimientosPage() {
         </div>
       </section>
 
-      {/* PROCEDIMIENTOS FRECUENTES */}
-      <section className="bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Procedimientos frecuentes</p>
-          <h2
-            className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Opciones de tratamiento evaluadas con frecuencia.
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {featuredProcedures.map((item) => (
-              <div key={item.title} className="bg-white border border-[#e5e5e0] p-8 flex flex-col gap-4">
-                <div className="w-5 h-px bg-[#c8a020]" />
-                <h3
-                  className="font-bold text-[#0a0a0a] text-base leading-snug"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                >
-                  {item.title}
-                </h3>
-                <p className="text-sm text-[#555] leading-relaxed flex-1">{item.body}</p>
-                {item.link && (
-                  <Link
-                    href={item.link.href}
-                    className="text-xs text-[#c8a020] hover:underline tracking-wide"
-                  >
-                    {item.link.label} →
-                  </Link>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CUÁNDO SON APROPIADOS LOS PROCEDIMIENTOS */}
       <section className="bg-white py-16 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
@@ -257,7 +176,7 @@ export default function ProcedimientosPage() {
             Todas las opciones de tratamiento.
           </h2>
           <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
-            Diez opciones de tratamiento están disponibles en español: inyecciones epidurales de esteroides, bloqueos de rama medial, ablación por radiofrecuencia, plasma rico en plaquetas (PRP), inyecciones de cortisona/esteroides, inyecciones de la articulación sacroilíaca, inyecciones en puntos gatillo, inyecciones articulares/de bursa y tendón, bloqueos de nervios periféricos, y bloqueos del nervio occipital. Las demás páginas están actualmente disponibles en inglés. La sección en español se está expandiendo.
+            Diez opciones de tratamiento están disponibles en español, organizadas a continuación por categoría. Contenido adicional está disponible en inglés.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
             {procedureGroups.map((group, i) => (
@@ -280,7 +199,7 @@ export default function ProcedimientosPage() {
                           href={item.href}
                           className="hover:text-[#c8a020] transition-colors"
                         >
-                          {item.label} {item.englishOnly && "— Página en inglés"} →
+                          {item.label} →
                         </Link>
                       ) : (
                         item.label
@@ -291,6 +210,12 @@ export default function ProcedimientosPage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-sm text-[#666]">
+            Contenido adicional sobre procedimientos y opciones de tratamiento está disponible (en inglés).{" "}
+            <Link href="/procedures" className="text-[#c8a020] hover:underline">
+              Ver todos los procedimientos y opciones de tratamiento (en inglés) →
+            </Link>
+          </p>
         </div>
       </section>
 

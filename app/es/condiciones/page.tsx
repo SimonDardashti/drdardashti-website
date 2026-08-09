@@ -45,73 +45,41 @@ const pageSchema = {
   },
 };
 
-const featuredConditions = [
-  {
-    title: "Radiculopatía y dolor radicular (ciática)",
-    body: "La radiculopatía ocurre cuando una raíz nerviosa de la columna se irrita o comprime, lo que puede causar dolor, entumecimiento u hormigueo que se extiende hacia el brazo o la pierna. Cuando afecta la región lumbar, puede manifestarse como ciática. La evaluación clínica puede incluir revisión del historial, examen físico y estudios de imagen cuando corresponda.",
-    links: [
-      { label: "Leer más — Información en español", href: "/es/condiciones/radiculopatia-ciatica" },
-      { label: "Ciática y dolor radicular — Página en inglés", href: "/conditions/sciatica-radicular-pain" },
-      { label: "Dolor radicular — Página en inglés", href: "/conditions/radicular-pain" },
-      { label: "Radiculopatía lumbar — Página en inglés", href: "/conditions/lumbar-radiculopathy" },
-      { label: "Radiculopatía cervical — Página en inglés", href: "/conditions/cervical-radiculopathy" },
-    ],
-  },
-  {
-    title: "Artritis facetaria y dolor de las articulaciones facetarias",
-    body: "Las articulaciones facetarias conectan las vértebras de la columna y pueden ser una fuente de dolor de cuello o espalda. El dolor mediado por estas articulaciones puede estar relacionado con cambios degenerativos o irritación articular. La evaluación clínica ayuda a determinar si el dolor puede tener relación con las articulaciones facetarias.",
-    links: [
-      { label: "Leer más — Información en español", href: "/es/condiciones/dolor-facetario" },
-      { label: "Dolor mediado por las facetas — Página en inglés", href: "/conditions/facet-mediated-pain" },
-    ],
-  },
-];
-
 const conditionGroups = [
   {
     title: "Dolor de columna",
     items: [
       { label: "Dolor de cuello", href: "/es/condiciones/dolor-de-cuello" },
       { label: "Dolor de espalda baja", href: "/es/condiciones/dolor-lumbar" },
-      { label: "Dolor relacionado con la columna", href: "/conditions/spine-related-pain", englishOnly: true },
-      { label: "Dolor mediado por las facetas", href: "/conditions/facet-mediated-pain", englishOnly: true },
+      { label: "Dolor mediado por las facetas", href: "/es/condiciones/dolor-facetario" },
       { label: "Dolor de la articulación sacroilíaca", href: "/es/condiciones/dolor-articulacion-sacroiliaca" },
+      { label: "Cefalea cervicogénica", href: "/es/condiciones/cefalea-cervicogenica" },
+      { label: "Síndrome de latigazo cervical", href: "/es/condiciones/sindrome-latigazo-cervical" },
+      { label: "Estenosis espinal lumbar", href: "/es/condiciones/estenosis-espinal-lumbar" },
     ],
   },
   {
     title: "Dolor nervioso y radicular",
     items: [
-      { label: "Ciática", href: "/conditions/sciatica-radicular-pain", englishOnly: true },
+      { label: "Ciática", href: "/es/condiciones/radiculopatia-ciatica" },
       { label: "Radiculopatía cervical", href: "/es/condiciones/radiculopatia-cervical" },
       { label: "Radiculopatía lumbar", href: "/es/condiciones/radiculopatia-lumbar" },
-      { label: "Dolor radicular", href: "/conditions/radicular-pain", englishOnly: true },
-      { label: "Dolor neuropático", href: "/conditions/neuropathic-pain", englishOnly: true },
-      { label: "Dolor de nervios periféricos", href: "/conditions/peripheral-nerve-pain", englishOnly: true },
+      { label: "Dolor neuropático", href: "/es/condiciones/dolor-neuropatico" },
+      { label: "Dolor de nervios periféricos", href: "/es/condiciones/dolor-nervio-periferico" },
     ],
   },
   {
     title: "Dolor articular y musculoesquelético",
     items: [
-      { label: "Dolor articular", href: "/conditions/joint-pain", englishOnly: true },
-      { label: "Dolor relacionado con la bursa", href: "/conditions/bursa-related-pain", englishOnly: true },
-      { label: "Dolor miofascial", href: "/conditions/myofascial-pain", englishOnly: true },
-      { label: "Neuralgia occipital", href: "/conditions/occipital-neuralgia", englishOnly: true },
-      { label: "Dolor persistente tras lesión o cirugía", href: "/conditions/persistent-pain-after-injury-or-surgery", englishOnly: true },
-      { label: "Dolor persistente tras cirugía de columna", href: "/conditions/persistent-pain-after-spine-surgery", englishOnly: true },
+      { label: "Dolor articular", href: "/es/condiciones/dolor-articular" },
+      { label: "Dolor miofascial", href: "/es/condiciones/dolor-miofascial" },
     ],
   },
   {
-    title: "Dolor nervioso posquirúrgico",
+    title: "Condiciones de dolor complejo y persistente",
     items: [
-      { label: "Síndrome de dolor posmastectomía", href: "/conditions/post-mastectomy-pain-syndrome", englishOnly: true },
-    ],
-  },
-  {
-    title: "Condiciones de dolor complejo",
-    items: [
-      { label: "Evaluación de síndrome de dolor regional complejo", href: "/conditions/crps-evaluation", englishOnly: true },
-      { label: "Evaluación de síndrome de dolor crónico", href: "/conditions/chronic-pain-syndrome-evaluation", englishOnly: true },
-      { label: "Condiciones de dolor complejo", href: "/conditions/complex-pain-conditions", englishOnly: true },
+      { label: "Dolor persistente tras cirugía de columna", href: "/es/condiciones/dolor-persistente-despues-cirugia-columna" },
+      { label: "Evaluación de síndrome de dolor crónico", href: "/es/condiciones/evaluacion-sindrome-dolor-cronico" },
     ],
   },
 ];
@@ -175,45 +143,6 @@ export default function CondicionesPage() {
         </div>
       </section>
 
-      {/* CONDICIONES FRECUENTES */}
-      <section className="bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-xs text-[#999] uppercase tracking-widest mb-2">Condiciones frecuentes</p>
-          <h2
-            className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-10"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-          >
-            Condiciones evaluadas con frecuencia.
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {featuredConditions.map((item) => (
-              <div key={item.title} className="bg-white border border-[#e5e5e0] p-8 flex flex-col gap-4">
-                <div className="w-5 h-px bg-[#c8a020]" />
-                <h3
-                  className="font-bold text-[#0a0a0a] text-base leading-snug"
-                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
-                >
-                  {item.title}
-                </h3>
-                <p className="text-sm text-[#555] leading-relaxed flex-1">{item.body}</p>
-                <ul className="space-y-1.5">
-                  {item.links.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className="text-xs text-[#c8a020] hover:underline tracking-wide"
-                      >
-                        {link.label} →
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* TODAS LAS CONDICIONES */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto">
@@ -225,7 +154,7 @@ export default function CondicionesPage() {
             Todas las condiciones evaluadas.
           </h2>
           <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
-            Siete condiciones seleccionadas están disponibles en español: ciática, dolor facetario, dolor de cuello, dolor lumbar, radiculopatía cervical, radiculopatía lumbar y dolor de la articulación sacroilíaca. Muchas otras páginas están actualmente disponibles en inglés. La sección en español continúa expandiéndose.
+            Dieciséis condiciones están disponibles en español, organizadas a continuación por categoría. Contenido adicional está disponible en inglés.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border border-[#e5e5e0]">
             {conditionGroups.map((group, i) => (
@@ -248,7 +177,7 @@ export default function CondicionesPage() {
                           href={item.href}
                           className="hover:text-[#c8a020] transition-colors"
                         >
-                          {item.label} {item.englishOnly && "— Página en inglés"} →
+                          {item.label} →
                         </Link>
                       ) : (
                         item.label
@@ -259,6 +188,12 @@ export default function CondicionesPage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-sm text-[#666]">
+            Contenido adicional sobre condiciones de dolor está disponible (en inglés).{" "}
+            <Link href="/conditions" className="text-[#c8a020] hover:underline">
+              Ver todas las condiciones evaluadas (en inglés) →
+            </Link>
+          </p>
         </div>
       </section>
 
