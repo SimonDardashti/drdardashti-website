@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/cefalea-cervicogenica";
 const SITE_URL = "https://www.drdardashti.com";
@@ -524,6 +525,9 @@ export default function CefaleaCervicogenicaPage() {
           </p>
         </section>
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/cefalea-cervicogenica" locale="es" />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/dolor-persistente-despues-cirugia-columna";
 const SITE_URL = "https://www.drdardashti.com";
@@ -242,6 +243,9 @@ export default function DolorPersistenteDespuesCirugiaColumnaPage() {
           <p><strong>Descargo de Responsabilidad:</strong> Este contenido es educativo y no constituye consejo médico. Todas las decisiones médicas deben hacerse en consulta con un médico calificado.</p>
         </section>
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/dolor-persistente-despues-cirugia-columna" locale="es" />
     </>
   );
 }

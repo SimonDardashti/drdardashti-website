@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/que-esperar-consulta-dolor";
 const SITE_URL = "https://www.drdardashti.com";
@@ -499,6 +500,9 @@ export default function QueEsperarConsultaDolorPage() {
           </p>
         </section>
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/que-esperar-consulta-dolor" locale="es" />
     </>
   );
 }

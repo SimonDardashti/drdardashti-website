@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/dolor-miofascial";
 const SITE_URL = "https://www.drdardashti.com";
@@ -301,6 +302,9 @@ export default function DulorMiofascialPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/dolor-miofascial" locale="es" />
     </>
   );
 }

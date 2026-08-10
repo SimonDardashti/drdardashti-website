@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/procedimientos/bloqueos-nervio-occipital";
 const SITE_URL = "https://www.drdardashti.com";
@@ -275,6 +276,9 @@ export default function BloqueoOccipitalPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/procedimientos/bloqueos-nervio-occipital" locale="es" />
     </>
   );
 }

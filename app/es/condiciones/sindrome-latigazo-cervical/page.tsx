@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/sindrome-latigazo-cervical";
 const SITE_URL = "https://www.drdardashti.com";
@@ -402,6 +403,9 @@ export default function SindromeLatigazoCervicalPage() {
           </p>
         </section>
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/sindrome-latigazo-cervical" locale="es" />
     </>
   );
 }

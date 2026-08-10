@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/procedimientos/inyecciones-articulacion-sacroiliaca";
 const SITE_URL = "https://www.drdardashti.com";
@@ -318,6 +319,9 @@ export default function InyeccionesArtSacroiliacaPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/procedimientos/inyecciones-articulacion-sacroiliaca" locale="es" />
     </>
   );
 }

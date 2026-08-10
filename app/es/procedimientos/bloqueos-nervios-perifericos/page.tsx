@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/procedimientos/bloqueos-nervios-perifericos";
 const SITE_URL = "https://www.drdardashti.com";
@@ -262,6 +263,9 @@ export default function BloqueoNerviosPerifericosPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/procedimientos/bloqueos-nervios-perifericos" locale="es" />
     </>
   );
 }

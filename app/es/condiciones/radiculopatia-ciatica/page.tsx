@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/radiculopatia-ciatica";
 const SITE_URL = "https://www.drdardashti.com";
@@ -254,6 +255,9 @@ export default function RadiculopatiaPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/radiculopatia-ciatica" locale="es" />
     </>
   );
 }

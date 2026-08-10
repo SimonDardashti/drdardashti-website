@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/dolor-nervio-periferico";
 const SITE_URL = "https://www.drdardashti.com";
@@ -308,6 +309,9 @@ export default function DulorNervioPerifericoPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/dolor-nervio-periferico" locale="es" />
     </>
   );
 }

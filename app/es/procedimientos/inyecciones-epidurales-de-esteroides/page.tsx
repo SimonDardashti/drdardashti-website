@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/procedimientos/inyecciones-epidurales-de-esteroides";
 const SITE_URL = "https://www.drdardashti.com";
@@ -307,6 +308,9 @@ export default function InyeccionesEpidualesPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/procedimientos/inyecciones-epidurales-de-esteroides" locale="es" />
     </>
   );
 }

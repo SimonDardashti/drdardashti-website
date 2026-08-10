@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/rodillo-espuma-toracica";
 const SITE_URL = "https://www.drdardashti.com";
@@ -444,6 +445,9 @@ export default function RodilloEspumaToracicaPage() {
 
       {/* CTA */}
       <VirtualConsultationBanner />
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/rodillo-espuma-toracica" locale="es" />
     </>
   );
 }

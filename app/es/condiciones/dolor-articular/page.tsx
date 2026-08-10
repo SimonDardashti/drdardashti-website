@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/dolor-articular";
 const SITE_URL = "https://www.drdardashti.com";
@@ -309,6 +310,9 @@ export default function DulorArticularPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/dolor-articular" locale="es" />
     </>
   );
 }

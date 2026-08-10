@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 export const metadata: Metadata = {
   title: 'Dolor Sin Hallazgos de Imagen: Por Qué Duele Cuando los Estudios Son Normales',
@@ -433,6 +434,9 @@ export default function DolorSinImagenes() {
         </section>
 
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/dolor-sin-imagenes" locale="es" />
     </>
   )
 }

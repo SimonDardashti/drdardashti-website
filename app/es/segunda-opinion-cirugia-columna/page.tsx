@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/segunda-opinion-cirugia-columna";
 const SITE_URL = "https://www.drdardashti.com";
@@ -284,6 +285,9 @@ export default function SegundaOpinionCirugia() {
           </ul>
         </section>
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/segunda-opinion-cirugia-columna" locale="es" />
     </>
   );
 }

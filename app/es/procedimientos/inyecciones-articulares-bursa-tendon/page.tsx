@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/procedimientos/inyecciones-articulares-bursa-tendon";
 const SITE_URL = "https://www.drdardashti.com";
@@ -243,6 +244,9 @@ export default function InyeccionesArticularesPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/procedimientos/inyecciones-articulares-bursa-tendon" locale="es" />
     </>
   );
 }

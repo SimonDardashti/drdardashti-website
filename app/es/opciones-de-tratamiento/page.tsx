@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 export const metadata: Metadata = {
   title: 'Cuidado Conservador vs Inyecciones vs Cirugía: Opciones de Tratamiento',
@@ -480,6 +481,9 @@ export default function OpcionesdeTratamiento() {
         </section>
 
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/opciones-de-tratamiento" locale="es" />
     </>
   )
 }

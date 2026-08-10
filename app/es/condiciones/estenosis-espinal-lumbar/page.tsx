@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/estenosis-espinal-lumbar";
 const SITE_URL = "https://www.drdardashti.com";
@@ -312,6 +313,9 @@ export default function EstenosisEspinalLumbarPage() {
           </ul>
         </section>
       </article>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/estenosis-espinal-lumbar" locale="es" />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/condiciones/dolor-facetario";
 const SITE_URL = "https://www.drdardashti.com";
@@ -264,6 +265,9 @@ export default function DolorFacetarioPage() {
           </div>
         </div>
       </section>
+
+      {/* REVISIÓN MÉDICA */}
+      <MedicalReviewFooter path="/es/condiciones/dolor-facetario" locale="es" />
     </>
   );
 }
