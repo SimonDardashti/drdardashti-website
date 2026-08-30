@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
+const PAGE_URL = 'https://www.drdardashti.com/es/dolor-sin-imagenes'
+
 export const metadata: Metadata = {
   title: 'Dolor Sin Hallazgos de Imagen: Por Qué Duele Cuando los Estudios Son Normales',
   description: 'Su resonancia magnética normal no significa que su dolor sea imaginario. Aprenda por qué los síntomas y los hallazgos de imagen no siempre coinciden, y cómo el Dr. Simon Dardashti evalúa el dolor cuando la imagen es normal.',
@@ -12,6 +14,13 @@ export const metadata: Metadata = {
     'diagnosticar dolor sin MRI',
     'medicina del dolor Los Ángeles',
   ],
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: 'Dolor Sin Hallazgos de Imagen: Por Qué Duele Cuando los Estudios Son Normales',
+    description: 'Su resonancia magnética normal no significa que su dolor sea imaginario. Aprenda por qué los síntomas y los hallazgos de imagen no siempre coinciden, y cómo el Dr. Simon Dardashti evalúa el dolor cuando la imagen es normal.',
+    type: 'article',
+    url: PAGE_URL,
+  },
 }
 
 // JSON-LD Schema (Spanish)
@@ -19,7 +28,7 @@ const pageSchema = {
   '@context': 'https://schema.org',
   '@type': ['MedicalWebPage', 'Article'],
   name: 'Dolor Sin Hallazgos de Imagen: Por Qué Duele Cuando los Estudios Son Normales',
-  url: 'https://drdardashti.com/es/dolor-sin-imagenes',
+  url: PAGE_URL,
   headline: 'Por Qué Tiene Dolor Cuando Sus Estudios de Imagen Son Normales',
   description: 'Guía completa para comprender el dolor cuando los estudios de imagen son normales, del especialista en medicina del dolor certificado Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
@@ -29,7 +38,7 @@ const pageSchema = {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
     title: 'Médico Especialista en Medicina del Dolor Certificado',
-    url: 'https://drdardashti.com/es/acerca-de/',
+    url: 'https://www.drdardashti.com/about',
   },
   publisher: {
     '@type': 'Organization',

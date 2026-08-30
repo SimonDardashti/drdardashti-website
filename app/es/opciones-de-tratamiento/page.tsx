@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
+const PAGE_URL = 'https://www.drdardashti.com/es/opciones-de-tratamiento'
+
 export const metadata: Metadata = {
   title: 'Cuidado Conservador vs Inyecciones vs Cirugía: Opciones de Tratamiento',
   description: 'Comprenda cuándo es apropiado el cuidado conservador, inyecciones y cirugía para el dolor de cuello y espalda. Aprenda cómo se toman las decisiones de tratamiento.',
@@ -13,6 +15,13 @@ export const metadata: Metadata = {
     'inyección epidural',
     'tratamiento no quirúrgico',
   ],
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: 'Cuidado Conservador vs Inyecciones vs Cirugía: Opciones de Tratamiento',
+    description: 'Comprenda cuándo es apropiado el cuidado conservador, inyecciones y cirugía para el dolor de cuello y espalda. Aprenda cómo se toman las decisiones de tratamiento.',
+    type: 'article',
+    url: PAGE_URL,
+  },
 }
 
 // JSON-LD Schema (Spanish)
@@ -20,7 +29,7 @@ const pageSchema = {
   '@context': 'https://schema.org',
   '@type': ['MedicalWebPage', 'Article'],
   name: 'Cuidado Conservador vs Inyecciones vs Cirugía: Eligiendo el Camino Correcto de Tratamiento',
-  url: 'https://drdardashti.com/es/opciones-de-tratamiento',
+  url: PAGE_URL,
   headline: 'Cuidado Conservador vs Inyecciones vs Cirugía: Eligiendo el Camino Correcto de Tratamiento',
   description: 'Guía completa para comprender las opciones de tratamiento del dolor, del especialista en medicina del dolor certificado Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
@@ -30,7 +39,7 @@ const pageSchema = {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
     title: 'Médico Especialista en Medicina del Dolor Certificado',
-    url: 'https://drdardashti.com/es/acerca-de/',
+    url: 'https://www.drdardashti.com/about',
   },
   publisher: {
     '@type': 'Organization',
