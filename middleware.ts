@@ -14,7 +14,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, { status: 301 });
   }
 
-  return NextResponse.next();
+  const requestHeaders = new Headers(request.headers);
+  const isSpanishRoute = request.nextUrl.pathname === "/es" || request.nextUrl.pathname.startsWith("/es/");
+  requestHeaders.set("x-html-lang", isSpanishRoute ? "es" : "en");
+
+  return NextResponse.next({ request: { headers: requestHeaders } });
 }
 
 export const config = {
