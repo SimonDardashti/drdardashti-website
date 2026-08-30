@@ -2,8 +2,61 @@ import type { MetadataRoute } from "next";
 
 const SITE_URL = "https://www.drdardashti.com";
 
+const BILINGUAL_ROUTE_PAIRS = [
+  ["/", "/es"],
+  ["/conditions", "/es/condiciones"],
+  ["/procedures", "/es/procedimientos"],
+  ["/pain-without-imaging", "/es/dolor-sin-imagenes"],
+  ["/treatment-options", "/es/opciones-de-tratamiento"],
+  ["/patient-education", "/es/educacion-para-pacientes"],
+  ["/articles", "/es/articulos"],
+  ["/conservative-care", "/es/cuidados-conservadores"],
+  ["/mcgill-big-3-exercises", "/es/ejercicios-mcgill-big-3"],
+  ["/thoracic-foam-rolling", "/es/rodillo-espuma-toracica"],
+  ["/second-opinion-spine-surgery", "/es/segunda-opinion-cirugia-columna"],
+  ["/what-to-expect-pain-consultation", "/es/que-esperar-consulta-dolor"],
+  ["/conditions/sciatica-radicular-pain", "/es/condiciones/radiculopatia-ciatica"],
+  ["/conditions/facet-mediated-pain", "/es/condiciones/dolor-facetario"],
+  ["/conditions/low-back-pain", "/es/condiciones/dolor-lumbar"],
+  ["/conditions/neck-pain", "/es/condiciones/dolor-de-cuello"],
+  ["/conditions/cervical-radiculopathy", "/es/condiciones/radiculopatia-cervical"],
+  ["/conditions/cervicogenic-headache", "/es/condiciones/cefalea-cervicogenica"],
+  ["/conditions/whiplash-associated-disorder", "/es/condiciones/sindrome-latigazo-cervical"],
+  ["/conditions/lumbar-radiculopathy", "/es/condiciones/radiculopatia-lumbar"],
+  ["/conditions/sacroiliac-joint-pain", "/es/condiciones/dolor-articulacion-sacroiliaca"],
+  ["/conditions/lumbar-spinal-stenosis", "/es/condiciones/estenosis-espinal-lumbar"],
+  ["/conditions/persistent-pain-after-spine-surgery", "/es/condiciones/dolor-persistente-despues-cirugia-columna"],
+  ["/conditions/neuropathic-pain", "/es/condiciones/dolor-neuropatico"],
+  ["/conditions/myofascial-pain", "/es/condiciones/dolor-miofascial"],
+  ["/conditions/joint-pain", "/es/condiciones/dolor-articular"],
+  ["/conditions/peripheral-nerve-pain", "/es/condiciones/dolor-nervio-periferico"],
+  ["/conditions/chronic-pain-syndrome-evaluation", "/es/condiciones/evaluacion-sindrome-dolor-cronico"],
+  ["/procedures/epidural-steroid-injections", "/es/procedimientos/inyecciones-epidurales-de-esteroides"],
+  ["/procedures/facet-joint-injections-medial-branch-blocks", "/es/procedimientos/bloqueos-de-rama-medial"],
+  ["/procedures/radiofrequency-ablation", "/es/procedimientos/ablacion-por-radiofrecuencia"],
+  ["/procedures/platelet-rich-plasma-prp", "/es/procedimientos/plasma-rico-en-plaquetas-prp"],
+  ["/procedures/cortisone-steroid-injections", "/es/procedimientos/inyecciones-cortisona-esteroides"],
+  ["/procedures/sacroiliac-joint-injections", "/es/procedimientos/inyecciones-articulacion-sacroiliaca"],
+  ["/procedures/trigger-point-injections", "/es/procedimientos/inyecciones-puntos-gatillo"],
+  ["/procedures/joint-bursa-tendon-injections", "/es/procedimientos/inyecciones-articulares-bursa-tendon"],
+  ["/procedures/occipital-nerve-blocks", "/es/procedimientos/bloqueos-nervio-occipital"],
+  ["/procedures/peripheral-nerve-blocks", "/es/procedimientos/bloqueos-nervios-perifericos"],
+] as const;
+
+const LANGUAGE_ALTERNATES = new Map<string, { en: string; es: string }>();
+
+for (const [englishPath, spanishPath] of BILINGUAL_ROUTE_PAIRS) {
+  const languages = {
+    en: `${SITE_URL}${englishPath}`,
+    es: `${SITE_URL}${spanishPath}`,
+  };
+
+  LANGUAGE_ALTERNATES.set(languages.en, languages);
+  LANGUAGE_ALTERNATES.set(languages.es, languages);
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const entries: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
     { url: `${SITE_URL}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/services`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
@@ -104,4 +157,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es/que-esperar-consulta-dolor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/aquatic-therapy-arthritis`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
+
+  return entries.map((entry) => {
+    const languages = LANGUAGE_ALTERNATES.get(entry.url);
+
+    return languages ? { ...entry, alternates: { languages } } : entry;
+  });
 }
