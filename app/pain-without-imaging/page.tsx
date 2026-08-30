@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import MedicalReviewFooter from "@/components/MedicalReviewFooter"
 
+const PAGE_URL = 'https://www.drdardashti.com/pain-without-imaging'
+
 export const metadata: Metadata = {
   title: 'Pain Without Imaging Findings: Why You Hurt When Tests Are Normal',
   description: 'Your normal MRI does not mean your pain is imaginary. Learn why symptoms and imaging do not always match, and how Dr. Simon Dardashti evaluates pain when imaging is normal.',
@@ -12,11 +14,12 @@ export const metadata: Metadata = {
     'diagnosing pain without MRI',
     'pain medicine Los Angeles',
   ],
+  alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Pain Without Imaging Findings: Why You Hurt When Tests Are Normal',
     description: 'Learn why normal MRI and imaging do not rule out real pain, and how comprehensive evaluation identifies pain sources.',
     type: 'article',
-    url: 'https://drdardashti.com/pain-without-imaging',
+    url: PAGE_URL,
   },
 }
 
@@ -25,7 +28,7 @@ const pageSchema = {
   '@context': 'https://schema.org',
   '@type': ['MedicalWebPage', 'Article'],
   name: 'Pain Without Imaging Findings: Why You Hurt When Tests Are Normal',
-  url: 'https://drdardashti.com/pain-without-imaging',
+  url: PAGE_URL,
   headline: 'Why You Have Pain When Your Imaging Tests Are Normal',
   description: 'Comprehensive guide to understanding pain when imaging tests are normal, from board-certified pain medicine specialist Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
@@ -35,15 +38,11 @@ const pageSchema = {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
     title: 'Board-Certified Pain Medicine Physician',
-    url: 'https://drdardashti.com/about/',
+    url: 'https://www.drdardashti.com/about',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Simon Dardashti, MD',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://drdardashti.com/logo.png',
-    },
   },
   mainEntity: {
     '@type': 'FAQPage',
@@ -121,19 +120,19 @@ const pageSchema = {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://drdardashti.com/',
+        item: 'https://www.drdardashti.com/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Conditions',
-        item: 'https://drdardashti.com/conditions/',
+        item: 'https://www.drdardashti.com/conditions/',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Pain Without Imaging Findings',
-        item: 'https://drdardashti.com/pain-without-imaging/',
+        item: PAGE_URL,
       },
     ],
   },

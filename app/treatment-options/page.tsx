@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import MedicalReviewFooter from "@/components/MedicalReviewFooter"
 
+const PAGE_URL = 'https://www.drdardashti.com/treatment-options'
+
 export const metadata: Metadata = {
   title: 'Conservative Care vs Injections vs Surgery: Treatment Options for Pain',
   description: 'Understand when conservative care, injections, and surgery are appropriate for neck and back pain. Learn how treatment decisions are made and what to expect at each step.',
@@ -14,11 +16,12 @@ export const metadata: Metadata = {
     'nonsurgical pain treatment',
     'pain management before surgery',
   ],
+  alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Conservative Care vs Injections vs Surgery: Understanding Your Treatment Options',
     description: 'Learn how to choose between conservative care, injections, and surgery based on diagnosis and clinical response.',
     type: 'article',
-    url: 'https://drdardashti.com/treatment-options',
+    url: PAGE_URL,
   },
 }
 
@@ -27,7 +30,7 @@ const pageSchema = {
   '@context': 'https://schema.org',
   '@type': ['MedicalWebPage', 'Article'],
   name: 'Conservative Care vs Injections vs Surgery: Choosing the Right Treatment Path',
-  url: 'https://drdardashti.com/treatment-options',
+  url: PAGE_URL,
   headline: 'Conservative Care vs Injections vs Surgery: Choosing the Right Treatment Path',
   description: 'Comprehensive guide to understanding treatment options for pain, from board-certified pain medicine specialist Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
@@ -37,15 +40,11 @@ const pageSchema = {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
     title: 'Board-Certified Pain Medicine Physician',
-    url: 'https://drdardashti.com/about/',
+    url: 'https://www.drdardashti.com/about',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Simon Dardashti, MD',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://drdardashti.com/logo.png',
-    },
   },
   mainEntity: {
     '@type': 'FAQPage',
@@ -123,19 +122,19 @@ const pageSchema = {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://drdardashti.com/',
+        item: 'https://www.drdardashti.com/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Conditions',
-        item: 'https://drdardashti.com/conditions/',
+        item: 'https://www.drdardashti.com/conditions/',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Treatment Options',
-        item: 'https://drdardashti.com/treatment-options/',
+        item: PAGE_URL,
       },
     ],
   },
