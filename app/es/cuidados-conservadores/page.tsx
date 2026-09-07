@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
 
 const PAGE_URL = "https://www.drdardashti.com/es/cuidados-conservadores";
 const SITE_URL = "https://www.drdardashti.com";
@@ -383,9 +382,6 @@ export default function CuidadosConservadoresPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <VirtualConsultationBanner />
     </>
   );
 }

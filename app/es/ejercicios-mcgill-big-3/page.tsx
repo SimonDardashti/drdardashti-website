@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/es/ejercicios-mcgill-big-3";
@@ -442,9 +441,6 @@ export default function EjerciciosMcGillPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <VirtualConsultationBanner />
 
       {/* REVISIÓN MÉDICA */}
       <MedicalReviewFooter path="/es/ejercicios-mcgill-big-3" locale="es" />
