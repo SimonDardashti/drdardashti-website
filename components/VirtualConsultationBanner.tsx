@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+/** English-only CTA. Do not import from app/es/** — there is no Spanish virtual-consultations page. */
 export default function VirtualConsultationBanner() {
   return (
     <section className="bg-white py-12 px-6 border-b border-[#e5e5e0]">
