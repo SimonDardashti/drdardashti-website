@@ -81,5 +81,49 @@ for (const phrase of ENGLISH_STRINGS) {
 
 if (!process.exitCode) {
   console.log("OK: VirtualConsultationBanner English copy is unchanged");
+}
+
+const prerenderRoot = join(ROOT, ".next/server/app");
+if (statSync(prerenderRoot, { throwIfNoEntry: false })) {
+  const spanishHtml = [
+    "es/cuidados-conservadores.html",
+    "es/ejercicios-mcgill-big-3.html",
+    "es/rodillo-espuma-toracica.html",
+  ];
+  const englishHtml = [
+    "conservative-care.html",
+    "index.html",
+    "conditions.html",
+    "thoracic-foam-rolling.html",
+    "procedures.html",
+    "mcgill-big-3-exercises.html",
+  ];
+
+  for (const rel of spanishHtml) {
+    const html = readFileSync(join(prerenderRoot, rel), "utf8");
+    for (const phrase of ENGLISH_STRINGS) {
+      if (html.includes(phrase)) {
+        fail(`.next/server/app/${rel} still renders English banner copy: "${phrase}"`);
+      }
+    }
+  }
+
+  for (const rel of englishHtml) {
+    const html = readFileSync(join(prerenderRoot, rel), "utf8");
+    for (const phrase of ENGLISH_STRINGS) {
+      if (!html.includes(phrase)) {
+        fail(`.next/server/app/${rel} is missing expected English banner copy: "${phrase}"`);
+      }
+    }
+  }
+
+  if (!process.exitCode) {
+    console.log("OK: prerendered HTML keeps English banner off Spanish routes and on English routes");
+  }
+} else {
+  console.log("SKIP: .next/server/app not present (run after npm run build for prerender checks)");
+}
+
+if (!process.exitCode) {
   console.log("DRD-013 source verification passed");
 }
