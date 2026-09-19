@@ -7,25 +7,25 @@ import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/kyphoplasty";
 const SITE_URL = "https://www.drdardashti.com";
+const PAGE_TITLE = "Kyphoplasty for Painful Compression Fractures | Simon Dardashti, MD";
+const PAGE_DESCRIPTION =
+  "When a vertebral compression fracture causes significant pain and limits function, kyphoplasty may be considered after imaging and clinical evaluation. Mission Hills / Los Angeles area.";
 
 export const metadata: Metadata = {
-  title: { absolute: "Kyphoplasty for Vertebral Compression Fractures | Simon Dardashti, MD" },
-  description:
-    "Learn how kyphoplasty may be considered for selected patients with painful vertebral compression fractures after careful clinical evaluation and imaging review.",
+  title: { absolute: PAGE_TITLE },
+  description: PAGE_DESCRIPTION,
   alternates: { canonical: PAGE_URL },
   openGraph: {
     type: "website",
     url: PAGE_URL,
-    title: "Kyphoplasty for Vertebral Compression Fractures | Simon Dardashti, MD",
-    description:
-      "Learn how kyphoplasty may be considered for selected patients with painful vertebral compression fractures after careful clinical evaluation and imaging review.",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     images: [{ url: "/headshot.webp", width: 1200, height: 630, alt: "Simon Dardashti, MD" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kyphoplasty for Vertebral Compression Fractures | Simon Dardashti, MD",
-    description:
-      "Learn how kyphoplasty may be considered for selected patients with painful vertebral compression fractures after careful clinical evaluation and imaging review.",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     images: ["/headshot.webp"],
   },
 };
@@ -33,10 +33,9 @@ export const metadata: Metadata = {
 const pageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Kyphoplasty for Vertebral Compression Fractures | Simon Dardashti, MD",
+  name: PAGE_TITLE,
   url: PAGE_URL,
-  description:
-    "Learn how kyphoplasty may be considered for selected patients with painful vertebral compression fractures after careful clinical evaluation and imaging review.",
+  description: PAGE_DESCRIPTION,
   inLanguage: "en-US",
   isPartOf: { "@type": "WebSite", url: SITE_URL },
   about: { "@type": "MedicalProcedure", name: "Kyphoplasty" },
@@ -109,10 +108,24 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function KyphoplastyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
       <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
@@ -127,7 +140,7 @@ export default function KyphoplastyPage() {
             >
               Kyphoplasty
               <br />
-              <em className="not-italic text-[#888]">for Compression Fractures.</em>
+              <em className="not-italic text-[#888]">for Painful Vertebral Compression Fractures</em>
             </h1>
             <p className="mt-5 text-[#666] text-lg leading-relaxed">
               Kyphoplasty is a minimally invasive, image-guided procedure used for selected
