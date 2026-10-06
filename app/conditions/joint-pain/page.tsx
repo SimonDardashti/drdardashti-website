@@ -318,6 +318,7 @@ export default function JointPainPage() {
               <li><Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">Facet-Mediated Pain Evaluation →</Link></li>
               <li><Link href="/procedures/sacroiliac-joint-injections" className="text-[#c8a020] hover:underline tracking-wide">Sacroiliac Joint Injections →</Link></li>
               <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Facet Joint Injections &amp; Medial Branch Blocks →</Link></li>
+              <li><Link href="/procedures/joint-bursa-tendon-injections" className="text-[#c8a020] hover:underline tracking-wide">Joint, Bursa &amp; Tendon Injections →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>

@@ -297,6 +297,7 @@ export default function DulorMiofascialPage() {
               <li><Link href="/conditions/spine-related-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor de Columna — Página en inglés →</Link></li>
               <li><Link href="/es/condiciones/dolor-facetario" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Facetario →</Link></li>
               <li><Link href="/es/condiciones/dolor-lumbar" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Lumbar →</Link></li>
+              <li><Link href="/es/procedimientos/inyecciones-puntos-gatillo" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones de Puntos Gatillo →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios — Página en inglés →</Link></li>
             </ul>
           </div>

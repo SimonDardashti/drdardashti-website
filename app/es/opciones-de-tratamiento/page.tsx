@@ -190,7 +190,7 @@ export default function OpcionesdeTratamiento() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            El cuidado conservador no es solo "esperar a ver". Es un enfoque activo y estructurado para manejar el dolor y restaurar la función.
+            El <Link href="/es/cuidados-conservadores" className="text-blue-600 hover:text-blue-800">cuidado conservador</Link> no es solo "esperar a ver". Es un enfoque activo y estructurado para manejar el dolor y restaurar la función.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Fisioterapia</h3>

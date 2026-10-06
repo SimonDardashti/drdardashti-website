@@ -303,6 +303,7 @@ export default function DulorNervioPerifericoPage() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/es/condiciones/dolor-neuropatico" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Dolor Neuropático →</Link></li>
               <li><Link href="/es/condiciones/radiculopatia-ciatica" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Ciatalgia y Dolor Radicular →</Link></li>
+              <li><Link href="/es/procedimientos/bloqueos-nervios-perifericos" className="text-[#c8a020] hover:underline tracking-wide">Bloqueos de Nervios Periféricos →</Link></li>
               <li><Link href="/procedures/spinal-cord-stimulation-evaluation" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de Estimulación de la Médula Espinal — Página en inglés →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las Condiciones y Servicios — Página en inglés →</Link></li>
             </ul>
