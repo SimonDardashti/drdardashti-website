@@ -97,6 +97,10 @@ export default function PatientEducationPage() {
               Preparing for Your Visit
             </h2>
             <div className="space-y-4">
+              <Link href="/mri-anxiety-claustrophobia" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
+                <h3 className="font-bold text-[#0a0a0a] mb-2">MRI Anxiety &amp; Claustrophobia Guide</h3>
+                <p className="text-[#666] text-sm leading-relaxed">What an MRI is, why it uses no ionizing radiation, how open MRI differs, and practical comfort options to discuss before the scan.</p>
+              </Link>
               <Link href="/what-to-expect-pain-consultation" className="block border border-[#e5e5e0] p-6 hover:border-[#c8a020] transition-colors">
                 <h3 className="font-bold text-[#0a0a0a] mb-2">What to Expect During a Pain Consultation</h3>
                 <p className="text-[#666] text-sm leading-relaxed">Guide to the pain evaluation process, including what records to bring, examination components, and how treatment decisions are made.</p>
