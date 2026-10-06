@@ -20,6 +20,12 @@ const nextConfig: NextConfig = {
         destination: "/virtual-consultations",
         permanent: true,
       },
+      // Short, patient-friendly address for the canonical MRI anxiety guide.
+      {
+        source: "/mri-comfort",
+        destination: "/mri-anxiety-claustrophobia",
+        permanent: true,
+      },
     ];
   },
 };
