@@ -363,7 +363,7 @@ export default function TreatmentOptions() {
                 Should I try physical therapy before injections?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                In most cases, yes. Conservative care should be the first treatment attempted for most pain conditions, unless you have severe neurological deficits or progressive weakness. Physical therapy helps identify which structures are involved, improves function, and often reduces pain without needles or injections. If conservative care does not provide adequate relief within 4–8 weeks of appropriate treatment, injections may become useful.
+                In most cases, yes. <Link href="/conservative-care" className="text-blue-600 hover:text-blue-800">Conservative care</Link> should be the first treatment attempted for most pain conditions, unless you have severe neurological deficits or progressive weakness. Physical therapy helps identify which structures are involved, improves function, and often reduces pain without needles or injections. If conservative care does not provide adequate relief within 4–8 weeks of appropriate treatment, injections may become useful.
               </p>
             </div>
 

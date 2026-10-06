@@ -312,6 +312,7 @@ export default function BursaRelatedPainPage() {
               <li><Link href="/conditions/joint-pain" className="text-[#c8a020] hover:underline tracking-wide">Joint Pain Evaluation →</Link></li>
               <li><Link href="/conditions/myofascial-pain" className="text-[#c8a020] hover:underline tracking-wide">Myofascial Pain Evaluation →</Link></li>
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+              <li><Link href="/procedures/joint-bursa-tendon-injections" className="text-[#c8a020] hover:underline tracking-wide">Joint, Bursa &amp; Tendon Injections →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>

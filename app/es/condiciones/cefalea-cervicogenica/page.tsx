@@ -396,7 +396,7 @@ export default function CefaleaCervicogenicaPage() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Bloqueos del Nervio Occipital</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3"><Link href="/es/procedimientos/bloqueos-nervio-occipital" className="text-blue-600 hover:text-blue-800">Bloqueos del Nervio Occipital</Link></h3>
               <p className="text-gray-700">
                 Los bloqueos del nervio occipital entregan medicamento adormecedor alrededor de nervios en la parte posterior de la cabeza. Si esto proporciona alivio significativo, confirma que irritación del nervio occipital (de estructuras del cuello) está causando su dolor de cabeza. El bloqueo proporciona alivio temporal e identifica si tratamientos de más larga duración podrían ayudar.
               </p>
