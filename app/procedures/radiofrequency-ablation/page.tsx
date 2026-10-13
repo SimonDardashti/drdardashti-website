@@ -58,7 +58,7 @@ const inBrief = [
   },
   {
     heading: "Diagnostic Blocks First",
-    body: "Medial branch blocks are typically performed before RFA to confirm that the facet joints are a significant contributor to the patient's pain.",
+    body: "Medial branch blocks are typically performed before RFA to help assess whether the facet joints contribute to the patient's pain.",
   },
   {
     heading: "Response Varies",
@@ -89,7 +89,7 @@ export default function RadiofrequencyAblationPage() {
             <p className="mt-5 text-[#666] text-lg leading-relaxed">
               Radiofrequency ablation may be considered for selected patients with suspected
               facet-mediated spine pain. The procedure is performed after appropriate clinical
-              evaluation and diagnostic nerve blocks confirm a likely facet joint contribution
+              evaluation and diagnostic nerve blocks support a possible facet joint contribution
               to the patient's pain.
             </p>
           </div>
@@ -221,7 +221,7 @@ export default function RadiofrequencyAblationPage() {
             size="large"
             src="/images/procedures/injections/medial-branch-block.png"
             alt="Medial branch block needle placement at the medial branch nerves showing fluoroscopic guidance and needle positioning targeting the nerve that supplies painful facet joints"
-            caption="Medial Branch Block: Under fluoroscopic (X-ray) guidance, the needle is positioned at the medial branch nerve—the nerve that supplies sensation and pain signals from the facet joints. Local anesthetic temporarily numbs this nerve. If pain relief occurs during the block period, it confirms the facet joints are contributing significantly to your pain and supports considering radiofrequency ablation."
+            caption="Medial Branch Block: Under fluoroscopic (X-ray) guidance, the needle is positioned at the medial branch nerve—the nerve that supplies sensation and pain signals from the facet joints. Local anesthetic temporarily numbs this nerve. If pain relief occurs during the block period, it may support a facet joint contribution and consideration of radiofrequency ablation. A block result alone does not establish the source with certainty or guarantee benefit."
           />
         </div>
       </section>
