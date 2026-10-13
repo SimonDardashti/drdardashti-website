@@ -207,7 +207,7 @@ export default function BotoxForChronicMigrainePage() {
             <p>
               Chronic migraine is generally defined as headache occurring on 15 or more days
               per month, with migraine features present on at least 8 of those days, for more
-              than 3 months, in the absence of medication overuse or another underlying cause.
+              than 3 months, with evaluation for other headache causes and for medication-overuse headache, which may coexist with chronic migraine.
             </p>
             <p>
               This is a distinct diagnosis from episodic migraine, which involves fewer
