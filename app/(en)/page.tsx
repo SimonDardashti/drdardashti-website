@@ -199,6 +199,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-[#f9f7f4] py-14 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+          <div>
+            <p className="text-xs text-[#777] uppercase tracking-widest mb-3">CRPS Education · Los Angeles Area</p>
+            <h2 className="text-2xl font-bold text-[#0a0a0a] mb-4">Complex Regional Pain Syndrome (CRPS)</h2>
+            <p className="text-[#555] leading-relaxed mb-5">Learn how CRPS is evaluated, how reported symptoms differ from examination findings, and how treatment planning considers function and individual needs.</p>
+            <Link href="/conditions/crps-evaluation" className="text-[#8a6b12] underline font-semibold">Read about CRPS evaluation and treatment planning →</Link>
+          </div>
+          <div className="text-[#555] leading-relaxed">
+            <h3 className="text-lg font-bold text-[#0a0a0a] mb-4">Physician background and clinical offices</h3>
+            <p className="mb-4">The official Providence profile lists Dr. Dardashti&apos;s training, board certifications, and clinical offices in Mission Hills and Valencia.</p>
+            <a href="https://www.providence.org/doctors/pain-medicine/ca/mission-hills/simon-dardashti-1023335957" className="text-[#8a6b12] underline">View the official physician profile and office information →</a>
+            <p className="text-sm mt-4">Use the appropriate medical office for appointments and individual clinical questions. This website provides educational information.</p>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 01 — ABOUT */}
       <FadeUp>
       <section className="bg-white py-24 px-6 border-b border-[#e5e5e0]">
@@ -257,7 +274,7 @@ export default function Home() {
               Clinical Focus.
             </h2>
             <p className="text-[#555] text-base leading-relaxed max-w-2xl">
-              Dr. Dardashti's clinical focus includes evaluation and treatment of spine-related
+              Dr. Dardashti&apos;s clinical focus includes evaluation and treatment of spine-related
               pain, nerve pain, joint and musculoskeletal pain, radicular pain, sacroiliac joint
               pain, neuropathic pain, and selected complex pain conditions.
             </p>
@@ -567,14 +584,14 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-[#888] text-sm leading-relaxed">
             <p>
-              Treatment recommendations are based on the patient's history, physical examination,
+              Treatment recommendations are based on the patient&apos;s history, physical examination,
               imaging when available, prior treatment response, medical history, and overall
               clinical context.
             </p>
             <p>
-              Dr. Dardashti's approach emphasizes careful diagnostic evaluation, clear
+              Dr. Dardashti&apos;s approach emphasizes careful diagnostic evaluation, clear
               communication, evidence-informed decision-making, and treatment options tailored
-              to the patient's clinical presentation and functional goals.
+              to the patient&apos;s clinical presentation and functional goals.
             </p>
           </div>
         </div>
