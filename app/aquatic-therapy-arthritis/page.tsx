@@ -46,7 +46,7 @@ const pageSchema = {
     "Comprehensive guide to aquatic physical therapy for arthritis, joint pain, and low back pain written by a board-certified pain medicine physician.",
   image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
-  dateModified: "2026-06-18",
+  dateModified: "2026-10-13",
   author: {
     "@type": "Person",
     name: "Simon Dardashti, MD",
@@ -67,7 +67,7 @@ const pageSchema = {
         name: "Is aquatic therapy effective for arthritis pain?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Research shows that aquatic therapy significantly reduces pain and improves function in patients with knee osteoarthritis, hip osteoarthritis, and chronic low back pain. Water's buoyancy reduces stress on joints while allowing muscle strengthening and improved movement patterns. Many patients experience benefits comparable to traditional physical therapy, with the added advantage of lower impact on joints.",
+          text: "Aquatic exercise can be a useful option when exercising on land is difficult. Reviews report benefits for pain and physical function, with results generally comparable to land-based exercise. The choice of setting should reflect the patient’s condition, preferences and ability to participate.",
         },
       },
       {
@@ -75,7 +75,7 @@ const pageSchema = {
         name: "How often should I do aquatic physical therapy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The typical recommendation is 2–3 sessions per week for 6–12 weeks, though this varies based on your specific diagnosis and response to treatment. Your physical therapist will design a program specific to your needs and goals. Consistency matters more than intensity—regular sessions over time tend to produce better results than occasional intensive sessions.",
+          text: "Response varies. Your therapist can adjust the activities and progression to your symptoms, function and treatment goals. A particular schedule does not guarantee pain relief or functional improvement.",
         },
       },
       {
@@ -91,7 +91,7 @@ const pageSchema = {
         name: "Is aquatic therapy safe for older adults?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, it is generally very safe for older adults. In fact, aquatic therapy is excellent for older adults because it provides resistance training and balance practice in a low-impact environment with reduced fall risk. Water's buoyancy helps reduce fall force, and therapists can provide hands-on support as needed. Older adults often benefit greatly from improved strength, balance, and confidence in water.",
+          text: "Suitability depends on the individual’s health, mobility and ability to enter and leave the pool safely. Discuss supervision and any medical precautions with your clinician and therapist.",
         },
       },
       {
@@ -99,7 +99,7 @@ const pageSchema = {
         name: "What if I have a joint replacement? Can I do aquatic therapy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Often yes, but timing matters. You typically need clearance from your orthopedic surgeon. Most surgeons recommend waiting until surgical incisions are fully healed and you've had initial rehabilitation. After clearance, aquatic therapy can be excellent for post-surgical rehabilitation—the water provides gentle resistance while supporting healing structures and building strength.",
+          text: "After surgery, begin pool-based therapy only after your surgical team confirms that the incision has healed adequately and that immersion and the planned exercises are appropriate.",
         },
       },
       {
@@ -222,9 +222,7 @@ export default function AquaticTherapyArticle() {
           </p>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-            <li>Waist-deep water: Your joints support roughly 50% of your body weight</li>
-            <li>Chest-deep water: Your joints support roughly 25% of your body weight</li>
-            <li>Neck-deep water: Your joints support roughly 10% of your body weight</li>
+            <li>Buoyancy reduces weight-bearing load while you exercise. The amount of support depends on immersion depth and individual factors.</li>
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -268,7 +266,7 @@ export default function AquaticTherapyArticle() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            Research consistently shows that aquatic therapy reduces knee pain and improves function in patients with knee osteoarthritis. Many patients find they can progress to more challenging exercises—and eventually land-based activities—after building strength in water.
+            Aquatic exercise can be a useful option when exercising on land is difficult. Reviews report benefits for pain and physical function, with results generally comparable to land-based exercise. The choice of setting should reflect the patient’s condition, preferences and ability to participate.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Hip Osteoarthritis</h3>
@@ -404,7 +402,7 @@ export default function AquaticTherapyArticle() {
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">When Aquatic Therapy Should Be Used Carefully</h3>
 
           <ul className="list-disc list-inside space-y-3 text-gray-700 mb-6">
-            <li><strong>Recent surgical incisions:</strong> Allow adequate healing time (usually 2–3 weeks) before water immersion</li>
+            <li><strong>Recent surgical incisions:</strong> After surgery, begin pool-based therapy only after your surgical team confirms that the incision has healed adequately and that immersion and the planned exercises are appropriate.</li>
             <li><strong>Active infections or fever:</strong> Wait until resolved before beginning therapy</li>
             <li><strong>Uncontrolled heart conditions:</strong> Discuss with your cardiologist—some conditions allow aquatic therapy, others don't</li>
             <li><strong>Severe circulation problems:</strong> Cold water can affect circulation; discuss pool temperature with your therapist</li>
@@ -425,7 +423,7 @@ export default function AquaticTherapyArticle() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Cooler water (around 78°F/26°C) provides more resistance but may not be as comfortable for patients with significant pain.
+            Pool temperature affects comfort and tolerance. Discuss the appropriate setting and exercise intensity with your therapist.
           </p>
         </section>
 
@@ -484,7 +482,7 @@ export default function AquaticTherapyArticle() {
                 How long before I see improvement?
               </h3>
               <p className="text-lg leading-relaxed text-gray-700">
-                Many patients notice reduced pain within 2–3 weeks of consistent therapy. Functional improvement (easier walking, more activity tolerance) typically takes 4–8 weeks. Full benefit often becomes evident after 3–4 months of consistent participation.
+                Response varies. Your therapist can adjust the activities and progression to your symptoms, function and treatment goals. A particular schedule does not guarantee pain relief or functional improvement.
               </p>
             </div>
 
@@ -502,7 +500,7 @@ export default function AquaticTherapyArticle() {
                 What if I have had a joint replacement?
               </h3>
               <p className="text-lg leading-relaxed text-gray-700">
-                Aquatic therapy is excellent for post-surgical rehabilitation. Get clearance from your orthopedic surgeon first, usually available 3–4 weeks after surgery once incisions are healed. Then aquatic therapy can accelerate recovery.
+                After surgery, begin pool-based therapy only after your surgical team confirms that the incision has healed adequately and that immersion and the planned exercises are appropriate.
               </p>
             </div>
 
@@ -544,8 +542,8 @@ export default function AquaticTherapyArticle() {
           <ul className="space-y-3 text-gray-700">
             <li><strong>Aquatic therapy reduces joint loading</strong> while providing resistance training—allowing exercise when traditional activity is too painful.</li>
             <li><strong>It's effective for knee and hip osteoarthritis, chronic low back pain, and older adults</strong> seeking safe, effective exercise.</li>
-            <li><strong>Water depth determines loading:</strong> Waist-deep reduces weight bearing to roughly 50%; chest-deep to roughly 25%; neck-deep to roughly 10%.</li>
-            <li><strong>Success requires consistency:</strong> 2–3 sessions weekly for 6–12 weeks typically produces meaningful results.</li>
+            <li><strong>Buoyancy reduces loading:</strong> The amount of support depends on immersion depth and individual factors.</li>
+            <li><strong>Progression is individual:</strong> Your therapist adjusts the program to your symptoms, function and goals.</li>
             <li><strong>You don't need to be a swimmer.</strong> Most therapy occurs in shallow water where you can stand.</li>
             <li><strong>It often works best as part of a comprehensive plan,</strong> combining aquatic therapy with land-based exercise as tolerance improves.</li>
             <li><strong>Consult your physician before starting</strong> if you have heart condition, active infections, or recent surgery.</li>
@@ -585,14 +583,8 @@ export default function AquaticTherapyArticle() {
           </h2>
 
           <ol className="list-decimal list-inside space-y-2 text-gray-700 text-sm">
-            <li>Barker AL, Talevski J, Morello RT, et al. Aquatic exercise for osteoarthritis of the knee: a systematic review with meta-analysis. Arch Phys Med Rehabil. 2014;95(12):2425-2432. doi:10.1016/j.apmr.2014.08.015</li>
-            <li>Masala GL, Tommasini A, Zini A, et al. Efficacy of sequential aquatic physical therapy and supervised walking in elderly patients with hip osteoarthritis. Clin Interv Aging. 2014;9:1625-1633. doi:10.2147/CIA.S68923</li>
-            <li>Veldhuijzen van Zanten JJ, Ripa S, Guicciardi M, et al. Effects of aquatic exercise on health and physical function in people with osteoarthritis: a randomized controlled trial. Phys Ther. 2012;92(8):1052-1061. doi:10.2522/ptj.20110256</li>
-            <li>Laufer Y, Itzhak SB, Palzur E. The effect of thermal water pool exercise on pain and function in patients with osteoarthritis. Am J Phys Med Rehabil. 2005;84(12):909-916. doi:10.1097/01.phm.0000176518.73614.64</li>
-            <li>Cadenas-Sanchez C, Rodriguez-Ayllon M, Esteban-Cornejo D, et al. Aquatic physical activity and cardiovascular health. Front Physiol. 2020;11:875. doi:10.3389/fphys.2020.00875</li>
-            <li>Barbosa TM, Marinho DA. Generalized adaptation to aquatic aerobic training. J Sports Med Phys Fitness. 2010;50(3):255-266.</li>
-            <li>Batterham SI, Heywood S, Keating JL. Systematic review and meta-analysis of the effect of aquatic exercises on cancers-related fatigue and quality of life. Support Care Cancer. 2011;19(12):1909-1918. doi:10.1007/s00520-011-1286-6</li>
-            <li>Halaji M, Ebrahimian S, Moussavi SJ, et al. The effect of resistance exercises in water on pain and function in patients with knee osteoarthritis. J Back Musculoskelet Rehabil. 2017;30(1):45-52. doi:10.3233/BMR-160717</li>
+            <li>Barker AL, Talevski J, Morello RT, et al. Effectiveness of aquatic exercise for musculoskeletal conditions: a meta-analysis. Arch Phys Med Rehabil. 2014;95(9):1776–1786. <a href="https://pubmed.ncbi.nlm.nih.gov/24769068/" className="text-blue-600 underline">doi:10.1016/j.apmr.2014.04.005</a></li>
+            <li>Batterham SI, Heywood S, Keating JL. Systematic review and meta-analysis comparing land and aquatic exercise for people with hip or knee arthritis on function, mobility and other health outcomes. BMC Musculoskelet Disord. 2011;12:123. <a href="https://pubmed.ncbi.nlm.nih.gov/21635746/" className="text-blue-600 underline">doi:10.1186/1471-2474-12-123</a></li>
           </ol>
         </section>
 
