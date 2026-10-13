@@ -356,11 +356,9 @@ export default function ThoracicFoamRollingPage() {
               </p>
               <ul className="space-y-3 max-w-2xl">
                 {[
-                  "Immediate effect: Temporary improved sensation of mobility or reduced muscle tension",
-                  "Acute: Within days to a few weeks, some patients notice improved posture or reduced neck/shoulder tension",
-                  "Short-term: After 2-4 weeks of consistent foam rolling, measurable improvements in thoracic extension mobility",
-                  "Medium-term: After 4-8 weeks of consistent practice, some patients report sustained reduction in compensatory neck/shoulder pain",
-                  "Long-term: Continuation of practice helps maintain mobility gains; discontinuation typically results in gradual loss of improvements",
+                  "Response varies: A change in comfort or mobility is not guaranteed",
+                  "Progression: Your clinician or therapist can reassess technique, tolerance and goals",
+                  "Reassessment: Stop and seek advice if symptoms worsen or new symptoms develop",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
