@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -96,7 +95,7 @@ const faqs = [
   },
   {
     q: "Will I be asleep during the procedure?",
-    a: "Most patients remain awake. Light sedation may be offered in some cases, but general anesthesia is not typically used. The skin is numbed with local anesthetic before the procedure.",
+    a: "Diagnostic medial branch blocks are generally performed without routine sedation because sedation can affect interpretation of the response. Individual circumstances may justify it. Discuss the plan with your physician and follow the specific preparation and discharge instructions.",
   },
   {
     q: "How soon will I know if it helped?",
@@ -218,8 +217,8 @@ export default function FacetJointInjectionsPage() {
             </h2>
             <p>
               Facet joints — also called zygapophyseal joints — are small
-              paired joints located along the back of the spine at every
-              vertebral level. They help guide spinal motion and provide
+              paired joints located along the back of the spine at many
+              spinal levels. They help guide spinal motion and provide
               stability. Like other joints in the body, facet joints can become
               painful due to arthritis, inflammation, injury, or degenerative
               changes over time.
@@ -391,24 +390,10 @@ export default function FacetJointInjectionsPage() {
         </div>
 
         {/* ILLUSTRATION: Facet Joint Injection */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            src="/images/procedures/injections/facet-joint-injection.png"
-            alt="Facet joint injection showing needle advancement into facet joint space at lumbar vertebra level, intra-articular steroid placement, and joint anatomy with surrounding ligaments"
-            caption="Facet Joint Injection: The needle advances directly into the facet joint space. Steroid and local anesthetic are injected into the joint itself. This is primarily therapeutic—reducing inflammation within the joint—and also provides diagnostic information if pain is relieved."
-          />
-        </div>
+
 
         {/* ILLUSTRATION: Medial Branch Block */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            src="/images/procedures/injections/medial-branch-block.png"
-            alt="Medial branch block showing needle placement at medial branch nerve pathway (not in joint), local anesthetic delivery around nerve, diagnostic blockade of facet joint innervation at multiple levels"
-            caption="Medial Branch Block: Instead of entering the joint, the needle targets the nerve that supplies the joint. Local anesthetic is deposited around the medial branch nerve. Temporary relief can support a facet joint source of pain and help guide consideration of RFA. It does not by itself confirm the diagnosis or guarantee RFA benefit."
-          />
-        </div>
+
       </section>
 
       {/* SECTION 04 — THE PROCEDURE */}
@@ -463,11 +448,7 @@ export default function FacetJointInjectionsPage() {
               anti-inflammatory effect may develop over the following days.
             </p>
             <p>
-              With medial branch blocks specifically, the pattern of pain relief
-              during the block period — rather than the duration of relief — is
-              what matters most diagnostically. Patients are typically asked to
-              track their pain levels and activity tolerance in the hours after
-              the procedure to help assess the response.
+              For a medial branch block, record the degree and timing of pain relief, activity during assessment, and any sedation or other medication as instructed. These findings are interpreted together with the technique and clinical picture; relief alone does not prove the diagnosis or guarantee RFA benefit.
             </p>
           </div>
         </div>
@@ -681,6 +662,7 @@ export default function FacetJointInjectionsPage() {
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/procedures/facet-joint-injections-medial-branch-blocks" />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Interpreting results and questions to ask</h2><p className="text-gray-700 mb-4">Selection for radiofrequency ablation depends on the spinal region, diagnosis, technique, and documented block response. Clinical guidelines and coverage policies can use different protocols; a single block number or relief percentage should not be applied without context. A positive block does not guarantee successful ablation.</p><p className="text-gray-700 mb-6">Ask about the assessment, whether sedation is needed, risks such as bleeding, infection or nerve injury, and the plan if treatment does not help. Sedation is not routinely used for diagnostic blocks because it can affect interpretation. Do not change medication on your own; follow the individual plan from your treating team.</p><h3 className="text-xl font-semibold mb-3">Sources and scope</h3><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7362874/">Consensus practice guidelines on interventions for lumbar facet joint pain from a multispecialty, international working group</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8633772/">Consensus practice guidelines on interventions for cervical spine (facet) joint pain from a multispecialty international working group</a></li></ul><p className="text-gray-700 mt-4">These sources support general education; they do not establish your diagnosis or replace individual assessment.</p></section>
     </>
   );
 }
