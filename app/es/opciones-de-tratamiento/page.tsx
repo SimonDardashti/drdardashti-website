@@ -34,7 +34,7 @@ const pageSchema = {
   description: 'Guía completa para comprender las opciones de tratamiento del dolor, del especialista en medicina del dolor certificado Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
-  dateModified: '2026-06-16',
+  dateModified: '2026-10-13',
   author: {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
@@ -53,7 +53,7 @@ const pageSchema = {
         name: '¿Debo probar la fisioterapia antes de las inyecciones?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'En la mayoría de los casos, sí. El cuidado conservador debe ser el tratamiento intentado primero para la mayoría de las condiciones de dolor, a menos que tenga déficits neurológicos graves o debilidad progresiva. La fisioterapia ayuda a identificar qué estructuras están involucradas, mejora la función y a menudo reduce el dolor sin agujas ni inyecciones. Si el cuidado conservador no proporciona alivio adecuado dentro de 4-8 semanas de tratamiento apropiado, las inyecciones pueden volverse útiles.',
+          text: "La fisioterapia y otras opciones no quirúrgicas suelen ser apropiadas, según el diagnóstico y la exploración. No existe un único plazo de espera antes de considerar una inyección. Los síntomas persistentes deben reevaluarse con su médico. La debilidad progresiva requiere valoración pronta; los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia.",
         },
       },
       {
@@ -61,7 +61,7 @@ const pageSchema = {
         name: '¿Las inyecciones previenen la cirugía?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Las inyecciones pueden retrasar o a veces eliminar la necesidad de cirugía al reducir la inflamación, mejorar la función y proporcionar tiempo para sanar. Sin embargo, las inyecciones no son una garantía contra la cirugía. Si su dolor proviene de una condición que requiere cirugía, las inyecciones son probablemente un puente temporal, no una solución permanente. El objetivo es siempre encontrar el tratamiento menos invasivo que aborde su diagnóstico específico.',
+          text: "Una inyección puede ayudar con ciertos síntomas, pero no garantiza evitar la cirugía. Deben discutirse la indicación, el beneficio esperado, los riesgos y las alternativas del procedimiento específico. Una inyección no es un paso obligatorio antes de una valoración quirúrgica urgente.",
         },
       },
       {
@@ -69,7 +69,7 @@ const pageSchema = {
         name: '¿Pueden las inyecciones curar una hernia discal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. Las inyecciones no pueden reparar una hernia discal ni deshacer el daño estructural. Lo que las inyecciones pueden hacer es reducir la inflamación alrededor del disco y el nervio, lo que a menudo reduce el dolor y mejora la función. Muchas hernias discales mejoran con el tiempo sin ningún tratamiento específico. El papel de la inyección es manejar la inflamación mientras su cuerpo sana, no curar el problema estructural subyacente.',
+          text: "Una inyección no repara una hernia discal. Una inyección epidural de esteroides puede reducir los síntomas en pacientes seleccionados, pero la respuesta varía y no garantiza la recuperación. La decisión debe considerar el diagnóstico clínico, los riesgos, las alternativas y las metas del tratamiento.",
         },
       },
       {
@@ -77,7 +77,7 @@ const pageSchema = {
         name: '¿Cuánto tiempo debo intentar el cuidado conservador?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Esto depende de su diagnóstico específico y de cómo está respondiendo. Para la mayoría de los pacientes con dolor nervioso o dolor mecánico, 4-8 semanas de cuidado conservador apropiado es razonable. Si está mejorando, continuar es apropiado. Si no mejora después de 6-8 semanas a pesar del esfuerzo consistente, es razonable considerar inyecciones u otras opciones. Algunas condiciones progresan más rápidamente y garantizan intervención más temprana. La clave es tener un diagnóstico preciso y rastrear si el tratamiento está funcionando.',
+          text: "La duración del cuidado conservador depende del diagnóstico, la intensidad de los síntomas, las limitaciones funcionales y la respuesta al tratamiento. Acuerde metas y un plan de reevaluación con su médico en lugar de usar un plazo fijo. Los síntomas neurológicos nuevos o que empeoran requieren reevaluación más pronta; los síntomas de emergencia requieren atención inmediata.",
         },
       },
       {
@@ -85,7 +85,7 @@ const pageSchema = {
         name: '¿Cuándo es la cirugía verdaderamente inevitable?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'La cirugía se vuelve necesaria cuando: tiene déficits neurológicos progresivos (debilidad empeorante, pérdida de sensibilidad o pérdida de control intestinal/vejiga), compresión nerviosa grave que causa discapacidad significativa a pesar del tratamiento apropiado, o inestabilidad espinal. En estas situaciones, retrasar la cirugía puede resultar en daño nervioso permanente. Sin embargo, estas situaciones son menos comunes de lo que muchos pacientes temen. La mayoría de los pacientes con hernias discales o estenosis espinal mejoran con tratamiento conservador o intervencionista.',
+          text: "La cirugía se considera después de una valoración individual del diagnóstico, los síntomas, la exploración, las imágenes y los beneficios y riesgos esperados. La debilidad progresiva requiere valoración pronta. Los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia. Estos síntomas requieren evaluación y no establecen por sí solos la necesidad de una operación específica.",
         },
       },
       {
@@ -101,7 +101,7 @@ const pageSchema = {
         name: '¿Qué si mi resonancia muestra daño significativo pero me siento relativamente bien?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Esto es muy común. Muchas personas con hallazgos significativos de imágenes tienen poco o ningún dolor. Este desajuste significa que su dolor no proviene de la estructura que se ve mal en la imagen. Esto es importante porque cambia las decisiones de tratamiento. Buscar cirugía para reparar el hallazgo "malo" probablemente no ayudará si eso no está causando realmente su dolor. El diagnóstico depende de la evaluación clínica, no de la gravedad de la imagen.',
+          text: "Los hallazgos de imágenes y los síntomas no siempre coinciden. Una resonancia anormal por sí sola no establece la fuente del dolor ni la necesidad de cirugía. Su médico debe comparar los hallazgos con sus antecedentes y exploración; una discrepancia no demuestra por sí sola que una anomalía sea ajena a los síntomas.",
         },
       },
       {
@@ -109,7 +109,7 @@ const pageSchema = {
         name: '¿Qué si mi resonancia es normal pero tengo dolor significativo?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Una imagen normal no significa que no haya nada mal. Su dolor puede provenir de estructuras que la imagen no puede detectar. Una imagen normal realmente guía el tratamiento porque nos dice que su dolor no proviene de daño estructural grave. Esto a menudo significa que el cuidado conservador es apropiado y que las inyecciones, si son necesarias, deben dirigirse al problema funcional en lugar de una lesión estructural grande.',
+          text: "Una imagen normal no excluye el dolor ni establece su causa. Los siguientes pasos dependen de los antecedentes, la exploración y las limitaciones del estudio. Los síntomas persistentes o cambiantes pueden requerir más evaluación. El tratamiento debe seguir una valoración clínica individual, no solamente el resultado de la imagen.",
         },
       },
     ],
@@ -167,11 +167,11 @@ export default function OpcionesdeTratamiento() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Una de las cosas más importantes que debe entender es que la mayoría del dolor de cuello y espalda mejora sin cirugía. Esto está bien documentado en la literatura médica. Muchas condiciones que se ven preocupantes en la imagen—hernias discales, estenosis espinal, cambios degenerativos—mejoran durante semanas a meses con tratamiento conservador apropiado.
+            Muchos pacientes pueden tratarse sin cirugía inmediata, pero el plan depende de la condición específica y los hallazgos neurológicos. Una anomalía de imagen por sí sola no es motivo para operar. Los síntomas de emergencia nuevos o la debilidad progresiva requieren valoración oportuna, sin esperar a completar una secuencia rutinaria de tratamientos.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Las hernias discales, en particular, tienden a encogerse con el tiempo. El cuerpo tiene mecanismos de curación natural. A medida que la inflamación se resuelve y el dolor mejora, su función regresa. Este proceso a menudo toma semanas a meses, pero sucede frecuentemente sin ningún tratamiento específico.
+            La evolución de los síntomas relacionados con un disco varía. Es posible mejorar sin cirugía, pero esta página no puede predecir si un disco específico se reducirá ni si se recuperará la función. El tratamiento y seguimiento deben basarse en la situación clínica individual.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -195,7 +195,7 @@ export default function OpcionesdeTratamiento() {
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Fisioterapia</h3>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Esta es la base. La fisioterapia aborda la disfunción real que causa dolor—debilidad muscular, problemas de patrón de movimiento, inflexibilidad, o mala postura. Un buen fisioterapeuta evaluará sus limitaciones específicas y diseñará un programa dirigido a su problema. Debe esperar sentirse peor antes de sentirse mejor a medida que comienza a hacer ejercicio, pero el objetivo es una mejora progresiva durante semanas.
+            La fisioterapia puede abordar la fuerza, el movimiento y las limitaciones funcionales mediante un programa individualizado. El ejercicio debe ajustarse a su condición y tolerancia. No suponga que el empeoramiento del dolor es una parte necesaria de la recuperación; consulte con su médico si empeora o aparecen síntomas nuevos. La debilidad progresiva o los cambios de sensibilidad requieren reevaluación.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Modificación de Actividad</h3>
@@ -214,11 +214,11 @@ export default function OpcionesdeTratamiento() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Cronograma y expectativas:</strong> La mayoría de los pacientes deben esperar 4-8 semanas de cuidado conservador consistente antes de decidir si está funcionando. Si está mejorando—incluso lentamente—continuar generalmente es lo correcto. Si no mejora después de 6-8 semanas de tratamiento apropiado, es razonable considerar inyecciones u otras opciones.
+            <strong>Cronograma y expectativas:</strong> Acuerde metas individuales de dolor, función y actividad con su médico. La reevaluación depende del diagnóstico y de la respuesta, no de un número fijo de semanas. El empeoramiento puede requerir revisión más pronta.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            La tasa de éxito del cuidado conservador varía según el diagnóstico. Para el dolor agudo con causas mecánicas claras, las tasas de éxito son frecuentemente del 70-80%. Para el dolor crónico o casos complejos, el éxito puede ser menor. La clave es saber qué es el éxito para su problema específico.
+            La respuesta al cuidado conservador varía según el diagnóstico y las circunstancias individuales. El progreso debe evaluarse según las metas funcionales acordadas y los síntomas, sin depender de un porcentaje general de éxito.
           </p>
         </section>
 
@@ -259,7 +259,7 @@ export default function OpcionesdeTratamiento() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            La cirugía es apropiada cuando el cuidado conservador e inyecciones no han resuelto el dolor, o cuando la condición misma justifica la intervención quirúrgica. Las indicaciones específicas incluyen:
+            Una consulta quirúrgica puede ser apropiada para una condición que pueda beneficiarse de la cirugía, incluidos los síntomas persistentes y discapacitantes a pesar del cuidado no quirúrgico apropiado. Las inyecciones no son obligatorias antes de toda consulta. Los problemas neurológicos urgentes requieren valoración oportuna.
           </p>
 
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
@@ -270,11 +270,11 @@ export default function OpcionesdeTratamiento() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Una nota importante:</strong> Las decisiones sobre cirugía deben tomarse en consulta con un cirujano de columna que lo haya evaluado personalmente. Mi papel como médico especialista en medicina del dolor es asegurar que haya intentado opciones conservas e intervencionistas apropiadas, ayudarle a entender qué está causando su dolor, y ayudarle a pensar a través de si la cirugía aborda su problema específico. La decisión final sobre cirugía le pertenece a usted y a su cirujano.
+            <strong>Una nota importante:</strong> Las decisiones sobre cirugía deben tomarse con un cirujano que lo haya evaluado. Mi papel es ayudar a aclarar el diagnóstico del dolor y discutir opciones apropiadas. Una secuencia rutinaria de terapia e inyecciones no debe retrasar una valoración urgente.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Muchos pacientes se preocupan de que "deberían" tener cirugía porque su imagen se ve mal. Así no funciona. La decisión de operar debe basarse en: (1) ¿El paciente tiene síntomas?, (2) ¿Esos síntomas provienen de la estructura que se ve mal en la imagen?, (3) ¿Hay una posibilidad razonable de que la cirugía mejore esos síntomas?, y (4) ¿Se han intentado alternativas apropiadas? Si la respuesta a cualquiera de estas es "no," la cirugía puede no ser la opción correcta.
+            Una decisión quirúrgica considera el diagnóstico clínico, la exploración, las imágenes pertinentes, las alternativas, los beneficios esperados y los riesgos. La urgencia de la condición importa. No existe una lista universal que determine si la cirugía es adecuada para todos los pacientes.
           </p>
         </section>
 
@@ -315,7 +315,7 @@ export default function OpcionesdeTratamiento() {
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Inyecciones Diagnósticas Cuando Es Apropiado</h3>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Si es poco claro qué estructura está causando dolor, una inyección diagnóstica puede proporcionar información importante. Si el dolor mejora después de inyectar una estructura específica, eso nos dice que esa estructura está involucrada en su dolor. Si el dolor no mejora, podemos descartar esa estructura y buscar en otro lugar. Esta es información diagnóstica que guía el tratamiento.
+            Una inyección diagnóstica puede aportar información sobre una posible fuente del dolor. La respuesta debe interpretarse junto con la técnica, el medicamento, el momento de evaluación, la actividad y los demás hallazgos clínicos. El alivio no demuestra concluyentemente un diagnóstico, y su ausencia no excluye automáticamente una estructura.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
@@ -336,7 +336,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Debo probar la fisioterapia antes de las inyecciones?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                En la mayoría de los casos, sí. El cuidado conservador debe ser el tratamiento intentado primero para la mayoría de las condiciones de dolor, a menos que tenga déficits neurológicos graves o debilidad progresiva. La fisioterapia ayuda a identificar qué estructuras están involucradas, mejora la función y a menudo reduce el dolor sin agujas ni inyecciones. Si el cuidado conservador no proporciona alivio adecuado dentro de 4-8 semanas de tratamiento apropiado, las inyecciones pueden volverse útiles.
+                La fisioterapia y otras opciones no quirúrgicas suelen ser apropiadas, según el diagnóstico y la exploración. No existe un único plazo de espera antes de considerar una inyección. Los síntomas persistentes deben reevaluarse con su médico. La debilidad progresiva requiere valoración pronta; los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia.
               </p>
             </div>
 
@@ -345,7 +345,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Las inyecciones previenen la cirugía?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Las inyecciones pueden retrasar o a veces eliminar la necesidad de cirugía al reducir la inflamación, mejorar la función y proporcionar tiempo para sanar. Sin embargo, las inyecciones no son una garantía contra la cirugía. Si su dolor proviene de una condición que requiere cirugía, las inyecciones son probablemente un puente temporal, no una solución permanente. El objetivo es siempre encontrar el tratamiento menos invasivo que aborde su diagnóstico específico.
+                Una inyección puede ayudar con ciertos síntomas, pero no garantiza evitar la cirugía. Deben discutirse la indicación, el beneficio esperado, los riesgos y las alternativas del procedimiento específico. Una inyección no es un paso obligatorio antes de una valoración quirúrgica urgente.
               </p>
             </div>
 
@@ -354,7 +354,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Pueden las inyecciones curar una hernia discal?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                No. Las inyecciones no pueden reparar una hernia discal ni deshacer el daño estructural. Lo que las inyecciones pueden hacer es reducir la inflamación alrededor del disco y el nervio, lo que a menudo reduce el dolor y mejora la función. Muchas hernias discales mejoran con el tiempo sin ningún tratamiento específico. El papel de la inyección es manejar la inflamación mientras su cuerpo sana, no curar el problema estructural subyacente.
+                Una inyección no repara una hernia discal. Una inyección epidural de esteroides puede reducir los síntomas en pacientes seleccionados, pero la respuesta varía y no garantiza la recuperación. La decisión debe considerar el diagnóstico clínico, los riesgos, las alternativas y las metas del tratamiento.
               </p>
             </div>
 
@@ -363,7 +363,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Cuánto tiempo debo intentar el cuidado conservador?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Esto depende de su diagnóstico específico y de cómo está respondiendo. Para la mayoría de los pacientes con dolor nervioso o dolor mecánico, 4-8 semanas de cuidado conservador apropiado es razonable. Si está mejorando, continuar es apropiado. Si no mejora después de 6-8 semanas a pesar del esfuerzo consistente, es razonable considerar inyecciones u otras opciones. Algunas condiciones progresan más rápidamente y garantizan intervención más temprana. La clave es tener un diagnóstico preciso y rastrear si el tratamiento está funcionando.
+                La duración del cuidado conservador depende del diagnóstico, la intensidad de los síntomas, las limitaciones funcionales y la respuesta al tratamiento. Acuerde metas y un plan de reevaluación con su médico en lugar de usar un plazo fijo. Los síntomas neurológicos nuevos o que empeoran requieren reevaluación más pronta; los síntomas de emergencia requieren atención inmediata.
               </p>
             </div>
 
@@ -372,7 +372,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Cuándo es la cirugía verdaderamente inevitable?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                La cirugía se vuelve necesaria cuando: tiene déficits neurológicos progresivos (debilidad empeorante, pérdida de sensibilidad o pérdida de control intestinal/vejiga), compresión nerviosa grave que causa discapacidad significativa a pesar del tratamiento apropiado, o inestabilidad espinal. En estas situaciones, retrasar la cirugía puede resultar en daño nervioso permanente. Sin embargo, estas situaciones son menos comunes de lo que muchos pacientes temen. La mayoría de los pacientes con hernias discales o estenosis espinal mejoran con tratamiento conservador o intervencionista.
+                La cirugía se considera después de una valoración individual del diagnóstico, los síntomas, la exploración, las imágenes y los beneficios y riesgos esperados. La debilidad progresiva requiere valoración pronta. Los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia. Estos síntomas requieren evaluación y no establecen por sí solos la necesidad de una operación específica.
               </p>
             </div>
 
@@ -390,7 +390,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Qué si mi resonancia muestra daño significativo pero me siento relativamente bien?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Esto es muy común. Muchas personas con hallazgos significativos de imágenes tienen poco o ningún dolor. Este desajuste significa que su dolor no proviene de la estructura que se ve mal en la imagen. Esto es importante porque cambia las decisiones de tratamiento. Buscar cirugía para reparar el hallazgo "malo" probablemente no ayudará si eso no está causando realmente su dolor. El diagnóstico depende de la evaluación clínica, no de la gravedad de la imagen.
+                Los hallazgos de imágenes y los síntomas no siempre coinciden. Una resonancia anormal por sí sola no establece la fuente del dolor ni la necesidad de cirugía. Su médico debe comparar los hallazgos con sus antecedentes y exploración; una discrepancia no demuestra por sí sola que una anomalía sea ajena a los síntomas.
               </p>
             </div>
 
@@ -399,7 +399,7 @@ export default function OpcionesdeTratamiento() {
                 ¿Qué si mi resonancia es normal pero tengo dolor significativo?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Una imagen normal no significa que no haya nada mal. Su dolor puede provenir de estructuras que la imagen no puede detectar. Una imagen normal realmente guía el tratamiento porque nos dice que su dolor no proviene de daño estructural grave. Esto a menudo significa que el cuidado conservador es apropiado y que las inyecciones, si son necesarias, deben dirigirse al problema funcional en lugar de una lesión estructural grande.
+                Una imagen normal no excluye el dolor ni establece su causa. Los siguientes pasos dependen de los antecedentes, la exploración y las limitaciones del estudio. Los síntomas persistentes o cambiantes pueden requerir más evaluación. El tratamiento debe seguir una valoración clínica individual, no solamente el resultado de la imagen.
               </p>
             </div>
 
@@ -489,6 +489,7 @@ export default function OpcionesdeTratamiento() {
           </ul>
         </section>
 
+      <section className="mb-12"><h2 className="text-2xl font-bold mb-4">Fuentes y alcance</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li></ul><p className="text-gray-700 mt-4">La guía NICE trata el dolor lumbar y la ciática; no es una regla para toda condición del cuello o la espalda. Esta página ofrece educación general y no puede determinar su tratamiento.</p></section>
       </article>
 
       {/* REVISIÓN MÉDICA */}
