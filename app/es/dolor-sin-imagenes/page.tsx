@@ -33,7 +33,7 @@ const pageSchema = {
   description: 'Guía completa para comprender el dolor cuando los estudios de imagen son normales, del especialista en medicina del dolor certificado Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
-  dateModified: '2026-06-16',
+  dateModified: '2026-10-13',
   author: {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
@@ -68,7 +68,7 @@ const pageSchema = {
         name: '¿La fisioterapia ayudará si mi imagen es normal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Sí, a menudo significativamente. La fisioterapia puede ser particularmente efectiva para el dolor que implica disfunción muscular, patrones de movimiento y sensibilidad del sistema nervioso. La clave es que su terapeuta comprenda el tipo específico de dolor que tiene. Si su dolor implica fuentes miofasciales o disfunción del movimiento, el ejercicio dirigido y la terapia manual frecuentemente proporcionan un alivio sustancial. La mayoría de los pacientes que participan en fisioterapia apropiada ven una mejora significativa dentro de 6 a 12 semanas cuando el diagnóstico es preciso.',
+          text: "La respuesta a la fisioterapia depende de la condición, los objetivos y el plan individual. Su terapeuta debe reevaluar los síntomas y la función y ajustar el programa; no se garantiza un porcentaje de mejoría ni un plazo fijo.",
         },
       },
       {
@@ -76,7 +76,7 @@ const pageSchema = {
         name: '¿Las inyecciones pueden ayudar si mi imagen es normal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Sí. Las inyecciones diagnósticas y terapéuticas a menudo son valiosas cuando la imagen es normal porque ayudan a identificar la fuente de dolor específica. Una inyección epidural puede demostrar si las estructuras espinales están involucradas. Un bloqueo de rama medial puede determinar si las articulaciones facetarias están contribuyendo. Si el dolor mejora después de una inyección dirigida a una estructura específica, eso proporciona tanto información diagnóstica como alivio terapéutico. El éxito depende del diagnóstico preciso de qué estructura puede estar contribuyendo al dolor.',
+          text: "Las inyecciones tienen distintos objetivos. Un bloqueo de rama medial puede ayudar a evaluar una posible contribución facetaria, mientras que una inyección epidural de esteroides puede considerarse como tratamiento en casos seleccionados. La respuesta no establece por sí sola la causa del dolor ni garantiza un beneficio duradero.",
         },
       },
       {
@@ -92,7 +92,7 @@ const pageSchema = {
         name: '¿Puede existir dolor nervioso sin hallazgos de resonancia?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Absolutamente. Los nervios pueden irritarse, inflamarse o dañarse parcialmente de maneras que no se muestran en una resonancia magnética estándar. Un nervio puede funcionar anormalmente y causar dolor —punzante, ardiente, sensación radiante— sin compresión obvia visible en la imagen. Los hallazgos del examen físico, los patrones de síntomas y la respuesta a los bloqueos nerviosos diagnósticos pueden confirmar la implicación nerviosa incluso cuando la imagen parece normal. Esta es una de las razones más comunes de imagen normal con dolor significativo.',
+          text: 'Absolutamente. Los nervios pueden irritarse, inflamarse o dañarse parcialmente de maneras que no se muestran en una resonancia magnética estándar. Un nervio puede funcionar anormalmente y causar dolor —punzante, ardiente, sensación radiante— sin compresión obvia visible en la imagen. Los hallazgos del examen físico, los patrones de síntomas y la respuesta a los bloqueos nerviosos diagnósticos pueden ayudar a evaluar una posible implicación nerviosa incluso cuando la imagen parece normal. Esta es una de las razones más comunes de imagen normal con dolor significativo.',
         },
       },
       {
@@ -215,7 +215,7 @@ export default function DolorSinImagenes() {
 
           <div className="bg-gray-50 border-l-4 border-blue-500 p-6 mb-6">
             <p className="text-gray-800 mb-4">
-              <strong>Ejemplo Clínico:</strong> Un paciente de 52 años con dolor en el brazo, resonancia cervical normal, pero prueba de Spurling positiva y debilidad en la abducción del pulgar (distribución del nervio C6). Los hallazgos clínicos sugieren fuertemente la implicación del nervio C6. Comenzamos con cuidado conservador dirigido a ese nervio específico —ejercicios específicos, modificación de postura. Si eso no proporciona un alivio adecuado en 4 a 6 semanas, un bloqueo diagnóstico de rama medial cervical dirigido a la articulación facetaria en ese nivel puede ayudar a identificar si la articulación facetaria está contribuyendo a los síntomas mientras proporciona alivio potencial. La resonancia era normal, pero la imagen clínica proporcionó orientación diagnóstica.
+              <strong>Ejemplo Clínico:</strong> Una persona con dolor de cuello y brazo puede tener síntomas que no se explican por la resonancia. La evaluación considera el patrón de síntomas, la fuerza, la sensibilidad y los reflejos. Un bloqueo de rama medial evalúa una posible contribución de las articulaciones facetarias; no es una prueba de compresión de la raíz nerviosa ni un tratamiento de la debilidad neurológica.
             </p>
           </div>
 
@@ -235,21 +235,21 @@ export default function DolorSinImagenes() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Cómo funcionan:</strong> Inyecto anestésico local alrededor de una estructura específica —un espacio epidural, una articulación facetaria, un nervio— para adormecerla temporalmente. Si su dolor mejora o desaparece, eso sugiere que la estructura que marqué puede estar contribuyendo al dolor. Si el dolor no mejora, esa estructura probablemente no es la fuente principal y consideramos otras posibilidades.
+            <strong>Cómo funcionan:</strong> Algunas inyecciones dirigidas utilizan anestésico local para evaluar una posible fuente de dolor. La respuesta se interpreta junto con el historial y el examen. La técnica, la dispersión del anestésico y varias fuentes de dolor pueden influir en el resultado; la ausencia de alivio no descarta automáticamente una estructura.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Inyecciones diagnósticas comunes:</strong>
+            <strong>Inyecciones con distintos objetivos:</strong>
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
-            <li><strong>Inyección epidural de esteroides:</strong> Prueba si la implicación del canal espinal contribuye al dolor. Puede proporcionar beneficio antiinflamatorio.</li>
+            <li><strong>Inyección epidural de esteroides:</strong> Puede considerarse como tratamiento del dolor relacionado con una raíz nerviosa en casos seleccionados; la respuesta por sí sola no establece la causa.</li>
             <li><strong>Bloqueo de rama medial:</strong> Prueba si las articulaciones facetarias pueden estar contribuyendo al dolor. Una prueba diagnóstica de corta duración.</li>
             <li><strong>Inyección de articulación sacroilíaca:</strong> Prueba si la disfunción de la articulación SI contribuye al dolor.</li>
             <li><strong>Bloqueos de nervios periféricos:</strong> Prueba si los nervios periféricos específicos están involucrados.</li>
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            El valor de las inyecciones diagnósticas es doble: Proporcionan información diagnóstica sobre qué puede estar causando el dolor, y proporcionan alivio terapéutico mientras recopilamos esa información. Esto es eficiente: usted puede recibir tanto información diagnóstica como mejora de síntomas simultáneamente.
+            El objetivo de una inyección depende del procedimiento y de la pregunta clínica. Algunas se utilizan para obtener información durante la evaluación; otras tienen un objetivo terapéutico. El alivio puede ser temporal o no producirse, y el resultado requiere interpretación clínica.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
@@ -280,7 +280,7 @@ export default function DolorSinImagenes() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Muchos pacientes mejoran significativamente con cuidado conservador solo —a menudo el 70–80% de los pacientes con dolor agudo mejoran con manejo conservador apropiado durante 6 a 12 semanas. El tratamiento debe basarse en lo que encontramos durante la evaluación, no en la gravedad de la imagen.
+            La respuesta al cuidado conservador varía según la condición y la persona. El tratamiento y la reevaluación deben basarse en los hallazgos clínicos, la función y la respuesta al tratamiento. Una resonancia normal no exige ni descarta por sí sola un procedimiento.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Opciones Intervencionistas</h3>
@@ -330,7 +330,7 @@ export default function DolorSinImagenes() {
                 ¿La fisioterapia ayudará si mi imagen es normal?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Sí, a menudo significativamente. La fisioterapia puede ser particularmente efectiva para el dolor que implica disfunción muscular, patrones de movimiento y sensibilidad del sistema nervioso. La clave es que su terapeuta comprenda el tipo específico de dolor que tiene. Si su dolor implica fuentes miofasciales o disfunción del movimiento, el ejercicio dirigido y la terapia manual frecuentemente proporcionan un alivio sustancial. La mayoría de los pacientes que participan en fisioterapia apropiada ven una mejora significativa dentro de 6 a 12 semanas cuando el diagnóstico es preciso.
+                La respuesta a la fisioterapia depende de la condición, los objetivos y el plan individual. Su terapeuta debe reevaluar los síntomas y la función y ajustar el programa; no se garantiza un porcentaje de mejoría ni un plazo fijo.
               </p>
             </div>
 
@@ -339,7 +339,7 @@ export default function DolorSinImagenes() {
                 ¿Las inyecciones pueden ayudar si mi imagen es normal?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Sí. Las inyecciones diagnósticas y terapéuticas a menudo son valiosas cuando la imagen es normal porque ayudan a identificar la fuente de dolor específica. Una inyección epidural puede probar si las estructuras espinales están involucradas. Un bloqueo de rama medial puede determinar si las articulaciones facetarias están contribuyendo. Si el dolor mejora después de una inyección dirigida a una estructura específica, eso proporciona tanto información diagnóstica como alivio terapéutico. El éxito depende del diagnóstico preciso de qué estructura puede estar contribuyendo al dolor.
+                Las inyecciones tienen distintos objetivos. Un bloqueo de rama medial puede ayudar a evaluar una posible contribución facetaria, mientras que una inyección epidural de esteroides puede considerarse como tratamiento en casos seleccionados. La respuesta no establece por sí sola la causa del dolor ni garantiza un beneficio duradero.
               </p>
             </div>
 
@@ -357,7 +357,7 @@ export default function DolorSinImagenes() {
                 ¿Puede existir dolor nervioso sin hallazgos de resonancia?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Absolutamente. Los nervios pueden irritarse, inflamarse o dañarse parcialmente de maneras que no se muestran en una resonancia magnética estándar. Un nervio puede funcionar anormalmente y causar dolor —punzante, ardiente, sensación radiante— sin compresión obvia visible en la imagen. Los hallazgos del examen físico, los patrones de síntomas y la respuesta a los bloqueos nerviosos diagnósticos pueden confirmar la implicación nerviosa incluso cuando la imagen parece normal. Esta es una de las razones más comunes de imagen normal con dolor significativo.
+                Absolutamente. Los nervios pueden irritarse, inflamarse o dañarse parcialmente de maneras que no se muestran en una resonancia magnética estándar. Un nervio puede funcionar anormalmente y causar dolor —punzante, ardiente, sensación radiante— sin compresión obvia visible en la imagen. Los hallazgos del examen físico, los patrones de síntomas y la respuesta a los bloqueos nerviosos diagnósticos pueden ayudar a evaluar una posible implicación nerviosa incluso cuando la imagen parece normal. Esta es una de las razones más comunes de imagen normal con dolor significativo.
               </p>
             </div>
 
@@ -442,7 +442,9 @@ export default function DolorSinImagenes() {
           </ul>
         </section>
 
+        <section className="mb-12"><h2 className="text-2xl font-semibold mb-4">Fuentes para la evaluación de articulaciones facetarias</h2><ul className="list-disc list-inside text-gray-700"><li><a className="text-blue-600 underline" href="https://pubmed.ncbi.nlm.nih.gov/34764220/">Hurley et al. Consensus practice guidelines on interventions for cervical spine (facet) joint pain (2021).</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5764531/">Bartleson and Maus. Diagnostic and therapeutic spinal interventions: Facet joint interventions (2014).</a></li></ul></section>
       </article>
+
 
       {/* REVISIÓN MÉDICA */}
       <MedicalReviewFooter path="/es/dolor-sin-imagenes" locale="es" />
