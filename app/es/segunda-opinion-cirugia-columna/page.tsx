@@ -37,7 +37,7 @@ const pageSchema = {
     "Guía completa para entender recomendaciones de cirugía de columna, cuándo las segundas opiniones son razonables, y cómo evaluar sus opciones de tratamiento.",
   image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
-  dateModified: "2026-06-18",
+  dateModified: "2026-10-13",
   author: {
     "@type": "Person",
     name: "Simon Dardashti, MD",
@@ -58,7 +58,7 @@ const pageSchema = {
         name: "¿Cuándo es razonable obtener una segunda opinión antes de cirugía de columna?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Una segunda opinión es razonable siempre que sienta incertidumbre sobre una recomendación quirúrgica. Esto es especialmente cierto si: los síntomas han estado presentes menos de 3-6 meses, no ha intentado cuidado conservador adecuadamente, los hallazgos de imagen parecen inconsistentes con sus síntomas, tiene preguntas sobre el procedimiento recomendado, o simplemente quiere perspectiva adicional. Los cirujanos generalmente entienden y respetan que los pacientes busquen segundas opiniones.",
+          text: "Una segunda opinión puede ayudar a aclarar una recomendación quirúrgica electiva, los beneficios esperados, los riesgos y las alternativas. Pregunte al equipo tratante si es seguro esperar. No retrase una valoración de emergencia o un tratamiento urgente para obtener una segunda opinión rutinaria.",
         },
       },
       {
@@ -66,7 +66,7 @@ const pageSchema = {
         name: "¿Cuándo la cirugía de columna es claramente necesaria?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "La cirugía se vuelve claramente necesaria en situaciones específicas: déficits neurológicos progresivos (debilidad empeorante, pérdida de sensibilidad, o pérdida de control intestinal/vejiga), síndrome de cauda equina (emergencia), compresión severa causando discapacidad significativa a pesar de cuidado conservador apropiado, o inestabilidad espinal. Estas situaciones requieren evaluación quirúrgica urgente o electiva. La mayoría de otros casos permiten tiempo para manejo conservador u obtener segundas opiniones.",
+          text: "Las decisiones quirúrgicas requieren valoración individual de los síntomas, la exploración, las imágenes y los beneficios y riesgos esperados. Los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia. La debilidad progresiva requiere valoración pronta. Estos síntomas requieren evaluación y no establecen por sí solos la operación necesaria.",
         },
       },
       {
@@ -74,7 +74,7 @@ const pageSchema = {
         name: "¿Cómo sé si el cuidado conservador ha sido intentado adecuadamente?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "El cuidado conservador adecuado típicamente incluye 6-12 semanas de fisioterapia estructurada enfocada en su diagnóstico específico, modificación de actividad apropiada a sus síntomas, y a veces medicamentos antiinflamatorios cuando sea clínicamente apropiado. Su fisioterapeuta debe haber realizado evaluación inicial, diseñado un programa específico para su diagnóstico (no ejercicios genéricos), y ajustado el programa basado en su respuesta. Si ha intentado menos que esto o la terapia fue sin enfoque, el cuidado conservador puede no haber sido intentado justamente.",
+          text: "La suficiencia del cuidado depende del diagnóstico, la evolución clínica, las metas funcionales, el tratamiento recibido, la respuesta y las contraindicaciones. Revise estos aspectos con su médico. No existe un número mínimo universal de semanas o visitas, y la rehabilitación rutinaria no debe retrasar una valoración urgente.",
         },
       },
       {
@@ -82,7 +82,7 @@ const pageSchema = {
         name: "¿Qué preguntas debo hacer a un cirujano antes de acordar cirugía?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Las preguntas clave incluyen: '¿Qué estructura específica está causando mi dolor y cómo se relaciona con mis síntomas?' '¿Qué cambiará esta cirugía físicamente?' '¿Cuáles son las tasas de éxito realistas para mi diagnóstico específico?' '¿Cuáles son los riesgos y complicaciones potenciales?' '¿Cómo se compara esto con continuar cuidado conservador?' '¿Si la cirugía no funciona, cuáles son las opciones?' '¿Por qué ahora en lugar de intentar más cuidado conservador primero?' Un cirujano cómodo con estas preguntas está demostrando buen juicio.",
+          text: "Pregunte qué diagnóstico y hallazgos apoyan la recomendación, qué busca cambiar la operación, qué beneficios y riesgos son pertinentes para usted, qué alternativas existen y qué ocurre si espera. Pregunte cómo se mide la mejoría y qué seguimiento existe si persisten los síntomas. La conversación apoya una decisión informada; no es una prueba del carácter del médico.",
         },
       },
       {
@@ -90,7 +90,7 @@ const pageSchema = {
         name: "¿Qué hallazgos de imagen de alerta roja sugieren evaluación quirúrgica urgente?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Los hallazgos de alerta incluyen: síndrome de cauda equina (compresión de múltiples raíces nerviosas), estenosis canal central severa causando dolor significativo en piernas, déficits neurológicos progresivos en imagen y examen, inestabilidad espinal, o absceso/infección epidural. Estos hallazgos justifican evaluación quirúrgica rápida. Muchas otras anomalías de imagen (hernias discales, estenosis, cambios degenerativos) pueden frecuentemente manejarse conservadoramente primero si la función neurológica está intacta.",
+          text: "Las imágenes deben interpretarse junto con los síntomas y la exploración. La sospecha de infección, lesión inestable o compresión con síntomas neurológicos nuevos puede requerir valoración urgente. Los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento de la zona genital o anal, requieren atención de emergencia; no espere una imagen ambulatoria ni una segunda opinión. Un informe de imagen por sí solo no determina la urgencia ni la operación.",
         },
       },
     ],
@@ -141,8 +141,8 @@ export default function SegundaOpinionCirugia() {
           <div className="bg-gray-50 border-l-4 border-blue-500 p-6 mb-6">
             <ul className="space-y-3 text-gray-700">
               <li><strong>Siente incertidumbre.</strong> Si algo no se siente correcto o no está seguro de la recomendación, ese sentimiento vale la pena explorar.</li>
-              <li><strong>Los síntomas son relativamente recientes.</strong> Si el dolor comenzó hace 3-6 meses, el cuidado conservador puede no haber tenido suficiente tiempo.</li>
-              <li><strong>No ha intentado cuidado conservador robusto.</strong> Si la fisioterapia fue breve, sin enfoque, o no abordó su diagnóstico específico, el cuidado conservador merece otro intento.</li>
+              <li><strong>Los síntomas o la función están cambiando.</strong> Pregunte cómo la evolución afecta la recomendación y si necesita más evaluación.</li>
+              <li><strong>Preguntas sobre el cuidado previo.</strong> Revise si otro tratamiento no quirúrgico es apropiado en su situación; no es un paso obligatorio antes de una evaluación urgente.</li>
               <li><strong>La imagen no coincide claramente con síntomas.</strong> Si la imagen muestra patología pero no explica sus síntomas, la cirugía puede no abordarse su problema actual.</li>
               <li><strong>Quiere entender todas las opciones.</strong> Esto es razonable. Punto. No necesita explicación.</li>
               <li><strong>Múltiples cirujanos han recomendado enfoques diferentes.</strong> Cuando las recomendaciones se contradicen, explorar el razonamiento es esencial.</li>
@@ -151,7 +151,7 @@ export default function SegundaOpinionCirugia() {
           </div>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Esto es normal. La mayoría de cirujanos experimentados entienden que los pacientes buscan segundas opiniones y lo respetan. Un cirujano que se pone a la defensiva sobre una solicitud de segunda opinión está demostrando mal juicio.
+            Puede pedir al equipo tratante que explique la recomendación, atienda sus inquietudes y facilite otra opinión cuando sea clínicamente seguro. La respuesta a una solicitud por sí sola no establece la competencia clínica ni la idoneidad de la operación propuesta.
           </p>
         </section>
 
@@ -162,15 +162,15 @@ export default function SegundaOpinionCirugia() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Ciertas situaciones requieren evaluación quirúrgica urgente o electiva. Entender estas ayuda a distinguir entre "la cirugía es una opción" y "la cirugía es claramente necesaria":
+            Algunas presentaciones requieren valoración de emergencia o pronta; otras permiten una conversación electiva. Los ejemplos siguientes describen motivos para solicitar evaluación, no una lista que demuestre que se requiere cirugía.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Condiciones Quirúrgicas de Emergencia</h3>
           <div className="bg-red-50 border-l-4 border-red-500 p-6 mb-6">
             <ul className="space-y-3 text-gray-700">
-              <li><strong>Síndrome de cauda equina:</strong> Pérdida progresiva de control intestinal/vejiga, dolor bilateral en piernas, debilidad progresiva en piernas, o anestesia en silla de montar. Esta es una emergencia quirúrgica.</li>
+              <li><strong>Posible síndrome de cauda equina:</strong> Los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia. No espere una cita rutinaria ni una segunda opinión.</li>
               <li><strong>Mielopatía con déficits progresivos:</strong> Debilidad progresiva o pérdida de función de la mano por compresión de la médula espinal cervical.</li>
-              <li><strong>Infección epidural o absceso:</strong> Fiebre, déficits neurológicos progresivos, e imagen mostrando infección requiere descompresión urgente.</li>
+              <li><strong>Sospecha de infección espinal:</strong> La fiebre con dolor de espalda preocupante o síntomas neurológicos nuevos requiere valoración médica urgente. Los hallazgos del especialista determinan el tratamiento; esta lista no supone que se necesita cirugía.</li>
               <li><strong>Fractura patológica o inestabilidad:</strong> Fracturas de tumores u osteoporosis severa con compromiso neurológico.</li>
             </ul>
           </div>
@@ -178,7 +178,7 @@ export default function SegundaOpinionCirugia() {
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Indicaciones Electivas Pero Claras</h3>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
             <ul className="space-y-3 text-gray-700">
-              <li><strong>Discapacidad significativa a pesar de cuidado conservador apropiado:</strong> 3+ meses de fisioterapia robusta, modificación de actividad, y manejo medicamentoso apropiado sin mejora adecuada.</li>
+              <li><strong>Síntomas persistentes y discapacitantes:</strong> Los síntomas a pesar del cuidado no quirúrgico apropiado pueden justificar discutir cirugía cuando el diagnóstico y el tratamiento propuesto concuerdan; no existe una duración obligatoria universal.</li>
               <li><strong>Correlación clara entre imagen y síntomas:</strong> La imagen muestra compresión específica que coincide exactamente con sus hallazgos neurológicos y patrón de dolor.</li>
               <li><strong>Déficits neurológicos progresivos en examen:</strong> No solo dolor—debilidad actual, pérdida progresiva de sensibilidad, o pérdida de reflejos empeorando con el tiempo a pesar del cuidado conservador.</li>
               <li><strong>Estenosis severa causando limitación funcional significativa:</strong> Capacidad de caminar distancias muy cortas debido a dolor/debilidad en piernas con imagen mostrando estrechamiento crítico.</li>
@@ -198,7 +198,7 @@ export default function SegundaOpinionCirugia() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Una de las preguntas más importantes es si el cuidado conservador ha sido verdaderamente optimizado. No se trata de sufrir innecesariamente—se trata de dar tiempo a la opción más probable de efectivo:
+            Revise qué cuidado no quirúrgico era apropiado, qué se recibió y cómo cambiaron los síntomas y la función. Esta evaluación debe considerar las contraindicaciones y la urgencia, sin imponer una duración o secuencia obligatoria.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Qué Incluye el Cuidado Conservador Adecuado</h3>
@@ -209,7 +209,7 @@ export default function SegundaOpinionCirugia() {
                 <strong>Fisioterapia específica:</strong> No ejercicios genéricos. Su PT debe tener un programa específico para diagnóstico (diferente para estenosis vs hernias de disco vs dolor de facetas) y debe progresar basado en su respuesta.
               </li>
               <li>
-                <strong>Duración:</strong> Mínimo 6 semanas, idealmente 8-12 semanas de terapia estructurada asistiendo 2-3 veces por semana.
+                <strong>Duración y frecuencia:</strong> Individualice el programa y la reevaluación según el diagnóstico, la respuesta, la tolerancia y la urgencia, sin imponer semanas o visitas fijas.
               </li>
               <li>
                 <strong>Modificación de actividad:</strong> Entender qué posiciones/movimientos empeoran síntomas y estructurar su día en consecuencia.
@@ -224,11 +224,11 @@ export default function SegundaOpinionCirugia() {
           </div>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Fisioterapia corta o genérica no cuenta.</strong> Pocas sesiones de ejercicios generales no revelará si un programa específico para diagnóstico funciona. De manera similar, si le dijeron "nada puede ayudar su dolor" sin un intento estructurado de terapia apropiada, el cuidado conservador no ha sido justamente evaluado.
+            <strong>Revise el cuidado recibido.</strong> Un curso corto no significa automáticamente que el tratamiento fue insuficiente. Considere el programa, la tolerancia, la respuesta, las barreras y los motivos para detenerlo o cambiarlo.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Aquí está la clave: <strong>La mayoría de pacientes incluso con patología significativa de imagen mejoran con cuidado conservador estructurado.</strong> Esto no significa que la patología quirúrgica no exista—significa que su cuerpo frecuentemente puede adaptarse y compensar. La cirugía debe considerarse después que el cuidado conservador verdaderamente adecuado no haya proporcionado alivio.
+            La respuesta al cuidado no quirúrgico varía. La gravedad de una imagen por sí sola no predice la recuperación. Las decisiones deben considerar la evolución clínica individual, la discapacidad, los hallazgos neurológicos y los riesgos de esperar.
           </p>
         </section>
 
@@ -284,6 +284,7 @@ export default function SegundaOpinionCirugia() {
             <li><Link href="/virtual-consultations" className="text-blue-600 hover:text-blue-800">Consultas Virtuales (en inglés)</Link> — Obtenga una segunda opinión</li>
           </ul>
         </section>
+      <section className="mb-12"><h2 className="text-2xl font-bold mb-6">Preguntas frecuentes</h2><div className="space-y-6">{pageSchema.mainEntity.mainEntity.map((item) => (<div key={item.name}><h3 className="text-xl font-semibold mb-2">{item.name}</h3><p className="text-gray-700">{item.acceptedAnswer.text}</p></div>))}</div></section><section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Fuentes y alcance</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/tests-and-treatments/having-surgery/specialist/">NHS: Seeing a specialist — Having an operation (surgery)</a></li></ul><p className="mt-4 text-gray-700">La guía NICE citada trata el dolor lumbar y la ciática, no toda condición del cuello o la espalda. Esta página no puede determinar si usted necesita cirugía ni justificar retrasar una evaluación urgente.</p></section>
       </article>
 
       {/* REVISIÓN MÉDICA */}

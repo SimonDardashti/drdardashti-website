@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -10,7 +10,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 const SITE_URL = "https://www.drdardashti.com";
 const GA_MEASUREMENT_ID = "G-ZK9B6SYW06";
 
-export const metadata: Metadata = {
+export const siteMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Simon Dardashti, MD | Interventional Pain Medicine Physician",
@@ -104,9 +104,9 @@ const physicianSchema = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootDocument({ children, lang }: { children: React.ReactNode; lang: "en" | "es" }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} h-full`}>
+    <html lang={lang} className={`${inter.variable} ${playfair.variable} h-full`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }} />

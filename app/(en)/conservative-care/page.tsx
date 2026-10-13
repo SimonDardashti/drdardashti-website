@@ -71,7 +71,7 @@ const faqSchema = {
       name: "How long does this approach take to work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The timeline varies depending on the condition, severity, and individual factors. Physical therapy typically requires several weeks to months of consistent participation. Some patients notice improvement within days, while others require longer treatment periods. Consistency and proper technique are important.",
+        text: "Improvement varies by diagnosis and individual circumstances. Agree on functional goals and a reassessment plan with your clinician. Worsening or new symptoms may require earlier review; there is no universal waiting period before reassessment.",
       },
     },
     {
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Are there conditions where this approach alone is not appropriate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Some conditions require urgent evaluation and may not benefit from rehabilitation and non-procedural care alone. A physician evaluation is needed to determine whether this approach is appropriate and, if so, what additional interventions might be considered.",
+        text: "Some symptoms require prompt assessment rather than a routine rehabilitation programme. With back pain, new bowel or bladder changes or numbness around the genitals or anus require emergency care. Progressive weakness needs prompt assessment. A clinician must determine whether rehabilitation is appropriate.",
       },
     },
     {
@@ -111,7 +111,7 @@ const faqSchema = {
       name: "Can I do this on my own, or do I need professional guidance?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Both approaches can be helpful. Professional guidance from a physical therapist or physician ensures proper technique and helps identify exercises appropriate for your specific condition. However, some patients benefit from home-based programs with periodic professional check-ins.",
+        text: "Professional guidance can help identify suitable exercises and monitor technique and response. A home programme may be appropriate after assessment, with a plan for follow-up. Guidance does not guarantee a particular result.",
       },
     },
     {
@@ -119,7 +119,7 @@ const faqSchema = {
       name: "What should I do if this approach is not helping?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If rehabilitation and non-procedural care has been attempted consistently over an adequate period and symptoms persist, a physician evaluation can help determine whether additional interventions might be appropriate. Additional evaluation might identify conditions requiring different treatment approaches.",
+        text: "Discuss persistent symptoms, barriers to participation, or deterioration with your clinician. Review the diagnosis, programme, functional goals, and alternatives. New neurological or emergency symptoms require earlier or immediate assessment rather than waiting to finish a routine course.",
       },
     },
   ],
@@ -187,7 +187,7 @@ export default function ConservativeCarePage() {
                 Physical therapy focuses on restoring function, improving mobility, and managing pain through targeted exercises, manual techniques, and functional training. A licensed physical therapist personalizes the approach based on your diagnosis, examination findings, and functional goals.
               </p>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                Effective physical therapy requires consistency and active participation over weeks to months. The timeline for improvement varies depending on the condition and individual response. Regular reassessment helps ensure the program remains appropriate and effective.
+                Participation and technique matter, but there is no single duration that establishes an adequate therapy course for every condition. Review symptoms and function with your clinician and adjust the programme to your response.
               </p>
             </div>
           </div>
@@ -275,7 +275,7 @@ export default function ConservativeCarePage() {
                 The most effective approach often combines multiple non-procedural strategies. For example, a patient with low back pain might benefit from physical therapy, specific stabilization exercises, mindfulness practices, and activity modification working together.
               </p>
               <p className="text-[#666] text-base leading-relaxed max-w-2xl">
-                Coordination between treatment providers ensures your overall pain management plan is coherent and effective.
+                Coordination between treatment providers can help clarify goals, review progress, and adjust the overall plan; it does not guarantee effectiveness.
               </p>
             </div>
           </div>
@@ -312,47 +312,10 @@ export default function ConservativeCarePage() {
               Frequently Asked Questions.
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "What is rehabilitation and non-procedural pain care?",
-                  a: "Rehabilitation and non-procedural pain care refers to non-surgical, non-injection approaches to managing pain, including physical therapy, exercise, mind-body therapies, and lifestyle modifications.",
-                },
-                {
-                  q: "Is this approach always effective?",
-                  a: "Response varies among patients. Some experience significant improvement with these approaches alone. Others benefit from rehabilitation combined with additional interventions. Individual evaluation determines appropriate treatment.",
-                },
-                {
-                  q: "How long does this approach take to work?",
-                  a: "Timelines vary based on condition, severity, and individual factors. Physical therapy typically requires weeks to months of consistent participation.",
-                },
-                {
-                  q: "Should I try rehabilitation before procedures?",
-                  a: "Rehabilitation and non-procedural care is often appropriate initially for many conditions. The right sequence depends on diagnosis, severity, and individual circumstances.",
-                },
-                {
-                  q: "Can this approach prevent surgery?",
-                  a: "Rehabilitation and non-procedural care may help some patients avoid surgery. Others eventually require surgical evaluation despite these efforts.",
-                },
-                {
-                  q: "Are there conditions requiring more than this approach?",
-                  a: "Yes. Some conditions require urgent evaluation and may not respond adequately to these approaches alone.",
-                },
-                {
-                  q: "Is physical therapy always necessary?",
-                  a: "Physical therapy benefits many patients, but not all require formal PT. Some benefit from home-based programs or other approaches.",
-                },
-                {
-                  q: "Can I do this independently?",
-                  a: "Both independent and professionally-guided approaches can be helpful. Professional guidance ensures proper technique and appropriate exercises for your condition.",
-                },
-                {
-                  q: "What if this approach isn't helping?",
-                  a: "If rehabilitation and non-procedural care has been attempted consistently over adequate time without sufficient improvement, physician evaluation can determine whether additional interventions might be appropriate.",
-                },
-              ].map((item, i) => (
+              {faqSchema.mainEntity.map((item, i) => (
                 <div key={i}>
-                  <h3 className="font-bold text-[#0a0a0a] mb-2">{item.q}</h3>
-                  <p className="text-[#666] text-sm leading-relaxed">{item.a}</p>
+                  <h3 className="font-bold text-[#0a0a0a] mb-2">{item.name}</h3>
+                  <p className="text-[#666] text-sm leading-relaxed">{item.acceptedAnswer.text}</p>
                 </div>
               ))}
             </div>
@@ -386,6 +349,7 @@ export default function ConservativeCarePage() {
 
       {/* CTA */}
       <VirtualConsultationBanner />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Sources and scope</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li><li><a className="text-blue-600 underline" href="https://pubmed.ncbi.nlm.nih.gov/28192789/">Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians</a></li></ul><p className="mt-4 text-gray-700">The cited NICE and ACP guidelines concern low back pain; recommendations depend on the condition and can differ. They are not universal rules for all pain or guarantees of response. This page is educational and cannot replace individual assessment.</p></section>
     </>
   );
 }

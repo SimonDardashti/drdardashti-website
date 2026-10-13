@@ -38,7 +38,7 @@ const pageSchema = {
     "Comprehensive guide to understanding spine surgery recommendations, when second opinions are reasonable, and how to evaluate your treatment options.",
   image: "https://www.drdardashti.com/headshot.webp",
   datePublished: "2026-06-18",
-  dateModified: "2026-06-18",
+  dateModified: "2026-10-13",
   author: {
     "@type": "Person",
     name: "Simon Dardashti, MD",
@@ -59,7 +59,7 @@ const pageSchema = {
         name: "When is it reasonable to get a second opinion before spine surgery?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A second opinion is reasonable whenever you feel uncertain about a surgical recommendation. This is especially true if: symptoms have been present less than 3-6 months, you haven't tried conservative care adequately, imaging findings seem inconsistent with your symptoms, you have questions about the recommended procedure, or you simply want additional perspective before a major decision. Surgeons generally understand and respect that patients seek second opinions.",
+          text: "A second opinion can help clarify an elective surgical recommendation, expected benefits, risks, and alternatives. Ask the treating team whether it is safe to wait. Do not delay emergency assessment or time-sensitive treatment to obtain a routine second opinion.",
         },
       },
       {
@@ -67,7 +67,7 @@ const pageSchema = {
         name: "When is spine surgery clearly necessary?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Spine surgery becomes clearly necessary in specific situations: progressive neurologic deficits (worsening weakness, numbness, or loss of bowel/bladder control), cauda equina syndrome (emergency requiring urgent decompression), severe compression causing significant disability despite appropriate conservative care, or spinal instability threatening neurologic injury. These situations require urgent or elective surgical evaluation. Most other cases allow time for conservative management or second opinions.",
+          text: "Surgical decisions require an individual assessment of symptoms, examination, imaging, and expected benefits and risks. New bowel or bladder changes or numbness around the genitals or anus require emergency care. Progressive weakness needs prompt assessment. These symptoms require evaluation and do not by themselves establish the operation needed.",
         },
       },
       {
@@ -75,7 +75,7 @@ const pageSchema = {
         name: "How do I know if conservative care has been tried adequately?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Adequate conservative care typically includes 6-12 weeks of structured physical therapy focused on your specific diagnosis, activity modification appropriate to your symptoms, and sometimes anti-inflammatory medications when clinically appropriate. Your physical therapist should have performed initial assessment, designed a specific program for your diagnosis (not generic exercises), and adjusted the program based on your response. If you've tried less than this or therapy was unfocused, conservative care may not have been given a fair trial yet.",
+          text: "Adequacy depends on the diagnosis, clinical course, functional goals, treatment delivered, response, and contraindications. Review these with your clinician. There is no universal minimum number of weeks or visits, and routine rehabilitation should not delay urgent assessment.",
         },
       },
       {
@@ -83,7 +83,7 @@ const pageSchema = {
         name: "What questions should I ask a surgeon before agreeing to surgery?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Key questions include: 'What specific structure is causing my pain and how does it match my symptoms?' 'What will this surgery change physically?' 'What are realistic success rates for my specific diagnosis?' 'What are the risks and potential complications?' 'How does this compare to continued conservative care?' 'If surgery doesn't work, what are the options?' 'Why now rather than trying more conservative care first?' A surgeon comfortable with these questions is demonstrating good judgment.",
+          text: "Ask what diagnosis and findings support the recommendation, what the operation aims to change, what benefits and risks are relevant to you, what alternatives exist, and what happens if you wait. Ask how improvement is measured and what follow-up is available if symptoms persist. The discussion supports informed decision-making; it is not a test of the clinician character.",
         },
       },
       {
@@ -91,7 +91,7 @@ const pageSchema = {
         name: "What imaging red flags suggest urgent surgical evaluation?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Urgent imaging findings include: cauda equina syndrome (compression of multiple nerve roots in lumbar spine), severe central canal stenosis causing significant leg pain and claudication, progressive neurologic deficits on imaging and exam, spinal instability, or epidural abscess/infection. These findings warrant prompt surgical evaluation. Many other imaging abnormalities (disc herniations, stenosis, degenerative changes) can often be managed conservatively first if neurologic function is intact.",
+          text: "Imaging must be interpreted with symptoms and examination. Suspected infection, unstable injury, or compression with new neurological symptoms may require urgent specialist assessment. New bowel or bladder changes or saddle numbness need emergency care; do not wait for an outpatient scan or second opinion. An imaging report alone does not determine the urgency or operation.",
         },
       },
       {
@@ -99,7 +99,7 @@ const pageSchema = {
         name: "Can normal imaging make surgery unnecessary?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Normal imaging doesn't automatically make surgery unnecessary if clinical findings clearly point to a specific problem. However, it suggests that whatever is causing pain is not a large structural abnormality requiring decompression. This often means conservative care is more likely to succeed, or if procedures are considered, injections targeting the specific tissue may be more effective than surgery. The correlation between imaging findings and symptoms is critical—surgery should address the structure actually causing pain.",
+          text: "A normal scan does not exclude pain or determine the treatment. The clinician considers the examination, the test limitations, and whether additional assessment is needed. This page cannot predict whether non-surgical care, injections, or surgery will be most effective.",
         },
       },
       {
@@ -107,7 +107,7 @@ const pageSchema = {
         name: "What's the difference between a pain specialist evaluation and a surgeon's perspective?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Surgeons excel at identifying surgical pathology and performing technically sound operations. Pain specialists are trained to evaluate the entire clinical picture—whether imaging findings correlate with symptoms, whether conservative care has been truly optimized, whether targeted injections might address the problem, and whether surgery addresses the actual pain generator. Both perspectives are valuable. A pain specialist's opinion doesn't mean 'don't have surgery'—it means 'let's ensure surgery addresses your specific problem and conservative care has been fully explored.'",
+          text: "Surgeons and pain specialists have overlapping clinical responsibilities and can contribute different expertise. Both should consider the diagnosis, neurological findings, relevant imaging, alternatives, urgency, and patient goals. A pain consultation complements appropriate surgical assessment and should not delay urgent care.",
         },
       },
       {
@@ -115,7 +115,7 @@ const pageSchema = {
         name: "What if I have legitimate surgical pathology but am still unsure?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Legitimate surgical pathology (like a large herniated disc compressing a nerve root) doesn't mean surgery must happen immediately. Most patients with even significant pathology improve with 2-3 months of appropriate conservative care. The exception is progressive neurologic deficits or emergency situations. Having clear pathology plus significant disability despite conservative care strengthens the surgical recommendation. Having pathology but minimal disability or recent symptom onset suggests more time for conservative management is reasonable.",
+          text: "A structural finding does not by itself establish the timing of surgery. Discuss the diagnosis, disability, neurological findings, response to prior care, and risks of waiting with the treating team. Time-sensitive problems may need prompt treatment rather than a routine trial of further therapy.",
         },
       },
       {
@@ -123,7 +123,7 @@ const pageSchema = {
         name: "How should I think about surgery success rates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Success rates vary significantly based on condition, surgical technique, and how 'success' is defined. Ask specifically: 'What percentage of patients with my diagnosis have meaningful symptom relief?' 'How is success defined—50% pain reduction, return to work, elimination of pain?' 'What's the timeline for feeling better?' Successful spine surgery often provides 70-80% improvement in radicular pain for the right patients with clear surgical pathology. Success rates are lower for general back pain without clear nerve compression. Comparing outcomes across different diagnostic categories is misleading.",
+          text: "Ask for evidence relevant to the proposed procedure and your condition, how success is defined, what outcomes are measured, the follow-up period, and how applicable the results are to you. A general website percentage cannot predict your response.",
         },
       },
       {
@@ -131,7 +131,7 @@ const pageSchema = {
         name: "What happens if surgery doesn't solve the problem?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "This important question should be discussed before surgery. The reality is that 10-20% of patients have inadequate relief or develop new problems after spine surgery. Understand your surgeon's options if this happens—revision surgery, pain management support, or other approaches. Some surgeons are better at discussing this realistic possibility than others. A surgeon who acknowledges this risk and has a plan for ongoing care is demonstrating good judgment.",
+          text: "Discuss the possibility of persistent symptoms or complications before surgery and ask what reassessment, rehabilitation, pain care, or further specialist review would be available. Additional treatment depends on the findings; revision surgery is not automatically the next step.",
         },
       },
     ],
@@ -182,8 +182,8 @@ export default function SecondOpinionSpineSurgery() {
           <div className="bg-gray-50 border-l-4 border-blue-500 p-6 mb-6">
             <ul className="space-y-3 text-gray-700">
               <li><strong>You feel uncertain.</strong> If something doesn't feel right or you're unsure about the recommendation, that feeling is worth exploring.</li>
-              <li><strong>Symptoms are relatively recent.</strong> If pain started within 3-6 months, conservative care may not have been given enough time.</li>
-              <li><strong>You haven't tried robust conservative care.</strong> If physical therapy was brief, unfocused, or didn't address your specific diagnosis, conservative care deserves another attempt.</li>
+              <li><strong>Symptoms or function are changing.</strong> Ask how the clinical course affects the recommendation and whether further assessment is needed.</li>
+              <li><strong>Questions about prior care.</strong> Review whether further non-surgical treatment is suitable in your situation; it is not a mandatory step before urgent evaluation.</li>
               <li><strong>Imaging doesn't clearly match symptoms.</strong> If imaging shows pathology but it doesn't explain your symptoms, surgery may not address your actual problem.</li>
               <li><strong>You want to understand all options.</strong> This is reasonable. Period. No explanation needed.</li>
               <li><strong>Multiple surgeons have recommended different approaches.</strong> When recommendations conflict, exploring the reasoning is essential.</li>
@@ -192,7 +192,7 @@ export default function SecondOpinionSpineSurgery() {
           </div>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            This is normal. Most experienced surgeons understand that patients seek second opinions and respect it. A surgeon who becomes defensive about a second opinion request is demonstrating poor judgment.
+            You can ask the treating team to explain the recommendation, address your concerns, and help arrange another opinion when it is clinically safe. A response to a request alone does not establish clinical competence or the appropriateness of the proposed operation.
           </p>
         </section>
 
@@ -203,15 +203,15 @@ export default function SecondOpinionSpineSurgery() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Certain situations require urgent or elective surgical evaluation. Understanding these helps distinguish between "surgery is an option" and "surgery is clearly needed":
+            Some presentations need emergency or prompt specialist assessment; others allow an elective discussion. The examples below describe reasons to seek evaluation, not a checklist that proves surgery is required.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Emergency Surgical Conditions</h3>
           <div className="bg-red-50 border-l-4 border-red-500 p-6 mb-6">
             <ul className="space-y-3 text-gray-700">
-              <li><strong>Cauda equina syndrome:</strong> Progressive loss of bowel/bladder control, bilateral leg pain, progressive leg weakness, or saddle anesthesia. This is a surgical emergency.</li>
+              <li><strong>Possible cauda equina syndrome:</strong> New bowel or bladder changes or numbness around the genitals or anus require emergency assessment. Do not wait for a routine appointment or second opinion.</li>
               <li><strong>Myelopathy with progressive deficits:</strong> Progressive weakness or loss of hand function from cervical spinal cord compression.</li>
-              <li><strong>Epidural infection or abscess:</strong> Fever, progressive neurologic deficits, and imaging showing infection requires urgent decompression.</li>
+              <li><strong>Suspected spinal infection:</strong> Fever with concerning back pain or new neurological symptoms needs urgent medical assessment. Specialist findings determine treatment; surgery is not assumed from this list.</li>
               <li><strong>Pathologic fracture or instability:</strong> Fractures from tumors or severe osteoporosis with neurologic compromise.</li>
             </ul>
           </div>
@@ -219,7 +219,7 @@ export default function SecondOpinionSpineSurgery() {
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Elective but Clear Indications</h3>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
             <ul className="space-y-3 text-gray-700">
-              <li><strong>Significant disability despite appropriate conservative care:</strong> 3+ months of robust physical therapy, activity modification, and appropriate medication management without adequate improvement.</li>
+              <li><strong>Persistent disabling symptoms:</strong> Symptoms despite appropriate non-surgical care may justify discussing surgery when the diagnosis and proposed treatment fit; there is no universal required treatment duration.</li>
               <li><strong>Clear correlation between imaging and symptoms:</strong> Imaging shows specific compression that matches your neurologic findings and pain pattern exactly.</li>
               <li><strong>Progressive neurologic deficits on exam:</strong> Not just pain—actual weakness, numbness progression, or loss of reflexes getting worse over time despite conservative care.</li>
               <li><strong>Severe stenosis causing significant functional limitation:</strong> Ability to walk very short distances due to leg pain/weakness with imaging showing critical narrowing.</li>
@@ -239,7 +239,7 @@ export default function SecondOpinionSpineSurgery() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            One of the most important questions is whether conservative care has been truly optimized. This isn't about suffering needlessly—it's about giving the most likely effective option time to work:
+            Review what non-surgical care was suitable, what was delivered, and how symptoms and function changed. This assessment should account for contraindications and urgency rather than a mandatory duration or sequence.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">What Adequate Conservative Care Includes</h3>
@@ -250,7 +250,7 @@ export default function SecondOpinionSpineSurgery() {
                 <strong>Specific physical therapy:</strong> Not generic exercises. Your PT should have a diagnosis-specific program (different for stenosis vs. disc herniation vs. facet pain) and should progress based on your response.
               </li>
               <li>
-                <strong>Duration:</strong> Minimum 6 weeks, ideally 8-12 weeks of structured therapy attending 2-3x per week.
+                <strong>Duration and frequency:</strong> Individualize the programme and reassessment according to diagnosis, response, tolerance, and urgency rather than a fixed number of weeks or visits.
               </li>
               <li>
                 <strong>Activity modification:</strong> Understanding what positions/movements make symptoms worse and structuring your day accordingly.
@@ -265,11 +265,11 @@ export default function SecondOpinionSpineSurgery() {
           </div>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Short-term or generic "physical therapy" doesn't count.</strong> A few sessions of general exercises won't reveal whether a diagnosis-specific program works. Similarly, if you were told "nothing can help your pain" without a structured trial of appropriate therapy, conservative care hasn't been fairly evaluated.
+            <strong>Review the actual care delivered.</strong> A short course does not automatically mean treatment was inadequate. Consider the programme, tolerance, response, barriers, and reasons for stopping or escalating care.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Here's the key: <strong>Most patients with even significant imaging pathology improve with structured conservative care.</strong> This doesn't mean surgical pathology doesn't exist—it means your body often can adapt and compensate. Surgery should be considered after truly adequate conservative care hasn't provided relief.
+            Response to non-surgical care varies. Imaging severity alone cannot predict recovery. Decisions about further care or surgery should consider the individual clinical course, disability, neurological findings, and risks of waiting.
           </p>
         </section>
 
@@ -296,7 +296,7 @@ export default function SecondOpinionSpineSurgery() {
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
               <p className="font-semibold text-gray-900 mb-2">3. What are realistic success rates for my specific diagnosis?</p>
-              <p className="text-gray-700">Not general statistics. For someone like you, with your exact condition, how many patients have meaningful improvement? What does "meaningful" mean? Success rates vary dramatically—radicular pain from clear nerve compression might have 75-85% success, while surgery for general low back pain is closer to 50-60%.</p>
+              <p className="text-gray-700">Ask for procedure- and condition-specific outcome evidence and its limitations. Clarify whether the goal is reduced symptoms, improved function, protection of neurological function, or another outcome. Avoid applying a general success percentage to your own situation.</p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
@@ -306,12 +306,12 @@ export default function SecondOpinionSpineSurgery() {
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
               <p className="font-semibold text-gray-900 mb-2">5. How does this compare to continuing conservative care?</p>
-              <p className="text-gray-700">What happens if you DON'T have surgery? Conservative care alone has success rates too—often better than surgery for certain diagnoses. Surgery should provide clear advantage for your situation.</p>
+              <p className="text-gray-700">Ask what may happen with continued non-surgical care or observation, including benefits, risks, and uncertainty. Compare these with the proposed operation in your clinical situation rather than assuming one option has a higher general success rate.</p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
               <p className="font-semibold text-gray-900 mb-2">6. If surgery doesn't work, what's the plan?</p>
-              <p className="text-gray-700">10-20% of spine surgeries don't provide adequate relief. Understanding revision options, pain management support, and your surgeon's follow-up plan is important. A surgeon with a clear answer to this is prepared for reality.</p>
+              <p className="text-gray-700">Ask about the possibility of persistent symptoms, complications, and the plan for reassessment and ongoing care. A general failure percentage cannot describe every diagnosis or operation.</p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
@@ -321,7 +321,7 @@ export default function SecondOpinionSpineSurgery() {
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
               <p className="font-semibold text-gray-900 mb-2">8. Can I get a second opinion?</p>
-              <p className="text-gray-700">A surgeon who encourages this is demonstrating confidence and good judgment. Defensiveness is a red flag.</p>
+              <p className="text-gray-700">Ask how to obtain another opinion and whether any delay would be safe in your situation.</p>
             </div>
           </div>
         </section>
@@ -338,12 +338,12 @@ export default function SecondOpinionSpineSurgery() {
 
           <ul className="list-disc list-inside space-y-3 text-gray-700 mb-6">
             <li><strong>Surgery recommended without adequate trial of conservative care.</strong> Conservative care deserves time first (except emergencies).</li>
-            <li><strong>Imaging findings don't match your symptoms.</strong> Example: "You have stenosis" but you have one-sided leg pain and stenosis is central.</li>
-            <li><strong>Surgeon can't clearly explain what you have or why surgery helps.</strong> Vague explanations suggest unclear thinking.</li>
-            <li><strong>Pressure to decide quickly.</strong> Legitimate surgical problems aren't fixed by rushing. Take time to think and get second opinions.</li>
+            <li><strong>Unclear clinical and imaging relationship.</strong> Ask how the findings support the diagnosis; a short symptom description is not enough to establish or exclude a connection.</li>
+            <li><strong>Unanswered questions.</strong> Request clarification about the diagnosis, proposed operation, risks, alternatives, and uncertainty.</li>
+            <li><strong>Unclear urgency.</strong> Ask why a decision is time-sensitive and what the risks of waiting are. Do not postpone emergency evaluation to obtain a routine second opinion.</li>
             <li><strong>Multiple surgeons recommending different surgeries.</strong> When surgeon A recommends fusion and surgeon B recommends decompression, that's a clue the indication may be less clear-cut than first described.</li>
             <li><strong>Surgery recommended for pain alone without neurologic deficits.</strong> Pure pain (no weakness, numbness, or dysfunction) often responds well to conservative care.</li>
-            <li><strong>Dismissal of your concerns.</strong> A surgeon who doesn't listen or respect your hesitation is not demonstrating good judgment.</li>
+            <li><strong>Concerns remain unresolved.</strong> Ask for further discussion or another opinion when it is safe to do so.</li>
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700">
@@ -361,29 +361,7 @@ export default function SecondOpinionSpineSurgery() {
             One of the most important concepts: imaging findings should match your clinical symptoms. When they don't, surgery is less likely to help:
           </p>
 
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Imaging Findings That Match Symptoms</h3>
-          <div className="bg-green-50 border-l-4 border-green-600 p-6 mb-6">
-            <ul className="space-y-3 text-gray-700">
-              <li>Right-sided disc herniation + right leg pain with L5 nerve distribution = Good correlation</li>
-              <li>Cervical stenosis at C5-C6 + hand weakness in C6 distribution = Good correlation</li>
-              <li>Central stenosis + bilateral leg claudication (pain with walking) = Good correlation</li>
-            </ul>
-            <p className="text-sm mt-4 font-semibold">Surgery is more likely to help here.</p>
-          </div>
-
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Imaging Findings That DON'T Match Symptoms</h3>
-          <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-6">
-            <ul className="space-y-3 text-gray-700">
-              <li>Right-sided disc bulge + bilateral leg pain = Poor correlation</li>
-              <li>Stenosis at L4-L5 + pure lower back pain (no leg pain) = Poor correlation</li>
-              <li>Normal MRI + severe leg pain = No structural correlation</li>
-            </ul>
-            <p className="text-sm mt-4 font-semibold">Surgery for these is less likely to solve the pain. A pain specialist evaluation may be helpful.</p>
-          </div>
-
-          <p className="text-lg leading-relaxed text-gray-700">
-            <strong>Key insight:</strong> Many people have imaging abnormalities that don't cause their pain. Surgery to fix an imaging finding that isn't actually causing pain won't help. This is why <Link href="/pain-without-imaging" className="text-blue-600 hover:text-blue-800 font-medium">understanding normal imaging with real pain</Link> matters—imaging is one piece of the puzzle, not the whole answer.
-          </p>
+          <p className="text-lg leading-relaxed text-gray-700">A clinician assesses the level and type of abnormality together with symptom distribution, neurological examination, and other possible explanations. Neither a simple side-by-side example nor an abnormal scan alone establishes the pain source or predicts surgical benefit. See <Link href="/pain-without-imaging" className="text-blue-600 underline">pain without imaging findings</Link> for the limitations of imaging.</p>
         </section>
 
         {/* Section 7 */}
@@ -403,15 +381,15 @@ export default function SecondOpinionSpineSurgery() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">2. Has conservative care been truly optimized?</p>
-              <p className="text-gray-700">Before recommending second opinion surgery, a pain specialist ensures you've had best-possible conservative approach specific to your diagnosis.</p>
+              <p className="text-gray-700">Review which non-surgical options were appropriate and how you responded, while considering whether urgent surgical assessment is needed.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900">3. Would targeted injections help before surgery?</p>
-              <p className="text-gray-700">Sometimes diagnostic injections can clarify whether a structure is actually causing pain. If an injection targeting that structure helps, surgery becomes more predictable.</p>
+              <p className="text-gray-700">A diagnostic injection may contribute information about a suspected pain source, but response must be interpreted with technique and other findings. It does not by itself predict the success of an operation.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900">4. Are there medical factors affecting outcome?</p>
-              <p className="text-gray-700">Psychological factors, medication overuse, sleep issues, and other factors can reduce surgical success. A pain specialist addresses these first.</p>
+              <p className="text-gray-700">The team may consider medication use, sleep, other medical conditions, and coping needs when planning care. These factors should be assessed individually rather than used as automatic reasons to delay necessary surgical assessment.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900">5. Is the diagnosis clear and does surgery address it?</p>
@@ -446,7 +424,7 @@ export default function SecondOpinionSpineSurgery() {
 
             <div className="bg-blue-50 p-5 rounded-lg">
               <p className="font-semibold text-gray-900 mb-2">✓ Has conservative care been truly tried?</p>
-              <p className="text-gray-700">If you could have 2-3 more months of structured, specific therapy—or haven't tried it yet—that's worth doing first.</p>
+              <p className="text-gray-700">Ask whether further non-surgical care is suitable and whether waiting carries neurological or other risks. Do not use a fixed waiting period to postpone necessary assessment.</p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg">
@@ -456,12 +434,12 @@ export default function SecondOpinionSpineSurgery() {
 
             <div className="bg-blue-50 p-5 rounded-lg">
               <p className="font-semibold text-gray-900 mb-2">✓ Is the surgery clearly necessary?</p>
-              <p className="text-gray-700">Emergency situations are clear. Elective surgery should feel like the right next step, not rushed or uncertain.</p>
+              <p className="text-gray-700">Ask the treating team to explain the urgency and the potential risks of delaying treatment. Emergency symptoms require immediate evaluation.</p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg">
               <p className="font-semibold text-gray-900 mb-2">✓ Have you gotten second opinions?</p>
-              <p className="text-gray-700">At minimum for elective surgery. Ideally from both another surgeon AND a pain specialist to get different expertise perspectives.</p>
+              <p className="text-gray-700">Another opinion may be useful when you have unanswered questions. Whether to obtain one, and from whom, depends on the clinical question and whether delay is safe.</p>
             </div>
           </div>
         </section>
@@ -540,6 +518,7 @@ export default function SecondOpinionSpineSurgery() {
             <li><Link href="/virtual-consultations" className="text-blue-600 hover:text-blue-800">Virtual Consultations</Link> — Get a second opinion</li>
           </ul>
         </section>
+      <section className="mb-12"><h2 className="text-2xl font-bold mb-6">Frequently asked questions</h2><div className="space-y-6">{pageSchema.mainEntity.mainEntity.map((item) => (<div key={item.name}><h3 className="text-xl font-semibold mb-2">{item.name}</h3><p className="text-gray-700">{item.acceptedAnswer.text}</p></div>))}</div></section><section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Sources and scope</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/tests-and-treatments/having-surgery/specialist/">NHS: Seeing a specialist — Having an operation (surgery)</a></li></ul><p className="mt-4 text-gray-700">The cited NICE guideline concerns low back pain and sciatica, not every neck or back condition. This page cannot determine whether you need surgery or justify delaying urgent assessment.</p></section>
       </article>
 
       {/* MEDICAL REVIEW */}
