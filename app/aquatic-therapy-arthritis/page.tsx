@@ -63,70 +63,54 @@ const pageSchema = {
     "@type": "FAQPage",
     mainEntity: [
       {
-        "@type": "Question",
-        name: "Is aquatic therapy effective for arthritis pain?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Aquatic exercise can be a useful option when exercising on land is difficult. Reviews report benefits for pain and physical function, with results generally comparable to land-based exercise. The choice of setting should reflect the patient’s condition, preferences and ability to participate.",
-        },
+            "@type": "Question",
+            "name": "How long before I see improvement?",
+            "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Response varies. Your therapist can adjust the activities and progression to your symptoms, function and treatment goals. A particular schedule does not guarantee pain relief or functional improvement."
+            }
       },
       {
-        "@type": "Question",
-        name: "How often should I do aquatic physical therapy?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Response varies. Your therapist can adjust the activities and progression to your symptoms, function and treatment goals. A particular schedule does not guarantee pain relief or functional improvement.",
-        },
+            "@type": "Question",
+            "name": "Will I be in a group or one-on-one?",
+            "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Both options exist. Individual therapy allows personalization; group therapy provides social engagement and often lower cost. Ask what your facility offers and discuss which would work best for you."
+            }
       },
       {
-        "@type": "Question",
-        name: "Can I do aquatic therapy if I'm not a strong swimmer?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Absolutely. You do not need to be able to swim. Aquatic therapy typically takes place in shallow water (chest-deep or waist-deep) where you can stand or hold onto the pool edge. Many exercises are done standing in water, not swimming. Tell your therapist about any water comfort concerns—they can modify exercises and provide support as needed.",
-        },
+            "@type": "Question",
+            "name": "What if I have had a joint replacement?",
+            "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "After surgery, begin pool-based therapy only after your surgical team confirms that the incision has healed adequately and that immersion and the planned exercises are appropriate."
+            }
       },
       {
-        "@type": "Question",
-        name: "Is aquatic therapy safe for older adults?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Suitability depends on the individual’s health, mobility and ability to enter and leave the pool safely. Discuss supervision and any medical precautions with your clinician and therapist.",
-        },
+            "@type": "Question",
+            "name": "How much does it cost?",
+            "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cost varies by location and facility. Many insurance plans cover physical therapy, including aquatic therapy. Some facilities offer sliding scale fees. Ask about costs and insurance coverage when contacting facilities."
+            }
       },
       {
-        "@type": "Question",
-        name: "What if I have a joint replacement? Can I do aquatic therapy?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "After surgery, begin pool-based therapy only after your surgical team confirms that the incision has healed adequately and that immersion and the planned exercises are appropriate.",
-        },
+            "@type": "Question",
+            "name": "Can I continue aquatic therapy long-term?",
+            "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Some patients continue aquatic therapy indefinitely for maintenance and ongoing benefit. Others graduate to land-based exercise as their condition improves. Your therapist helps determine the right long-term plan for you."
+            }
       },
       {
-        "@type": "Question",
-        name: "Do I need a waterproof cast or brace for aquatic therapy?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "It depends on your specific situation. If you wear a brace for support during land-based activities, you may not need it in water because water provides support. However, some patients benefit from water-safe braces that provide additional support and confidence. Your physical therapist will advise based on your needs and treatment plan.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can aquatic therapy help with weight loss?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Water-based exercise does burn calories and can be part of a weight management program, but it's generally lower intensity than land-based exercise due to water's buoyancy reducing impact forces. The real value for overweight patients with joint pain is that aquatic therapy allows them to exercise and build strength while protecting joints from excessive load—creating a foundation for more activity as pain improves.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What should I bring to aquatic therapy sessions?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Bring a swimsuit that allows full range of motion, a towel, water shoes (optional but helpful for slip prevention), and any medications you might need. Arrive a few minutes early to discuss any concerns with your therapist. You may want to eat a light meal before therapy but avoid heavy meals immediately beforehand.",
-        },
-      },
-    ],
+            "@type": "Question",
+            "name": "Is aquatic therapy better than land-based therapy?",
+            "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not necessarily \"better\"—different. Aquatic therapy is often better tolerated for patients with significant joint pain. Many patients benefit from combining both: aquatic therapy when pain is high, progressing to land-based therapy as tolerance improves. Your therapist can recommend what works best for your situation."
+            }
+      }
+],
   },
   breadcrumb: {
     "@type": "BreadcrumbList",
@@ -172,7 +156,7 @@ export default function AquaticTherapyArticle() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Water-based exercise offers something unique: the ability to strengthen muscles, improve movement, and reduce pain without putting excess stress on damaged joints. For patients who struggle with land-based exercise due to pain, aquatic therapy can be a game-changer.
+            Water-based exercise may offer another way to work on strength and movement when exercise on land is difficult. It does not guarantee pain relief, and the program should be individualized.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
@@ -218,7 +202,7 @@ export default function AquaticTherapyArticle() {
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Buoyancy and Unweighting</h3>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            When you're in water, buoyancy reduces how much weight your joints have to support. Here's approximately how much:
+            Buoyancy provides support during water-based exercise:
           </p>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
@@ -259,10 +243,10 @@ export default function AquaticTherapyArticle() {
           </p>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-            <li>Move your knee through fuller range of motion without pain</li>
+            <li>Practice knee movement within a comfortable range</li>
             <li>Strengthen the quadriceps and hip muscles that stabilize the knee</li>
             <li>Improve walking mechanics and gait patterns</li>
-            <li>Practice balance and stability in a safer environment</li>
+            <li>Practice balance and stability with appropriate supervision</li>
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
@@ -283,7 +267,7 @@ export default function AquaticTherapyArticle() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            Hip osteoarthritis often limits traditional exercise because walking or standing exercises are painful. Water changes that equation—you can exercise for 30–45 minutes in water often with minimal pain when walking on land would be intolerable after just a few minutes.
+            Hip osteoarthritis may make exercise on land difficult. Aquatic exercise is one option to discuss with your clinician or therapist; the activities and duration should reflect your tolerance.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Chronic Low Back Pain</h3>
@@ -311,11 +295,11 @@ export default function AquaticTherapyArticle() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Falls are a major concern for older adults, and poor balance is a major fall risk factor. Aquatic therapy is exceptionally valuable for older adults because it provides:
+            For older adults, a therapist may consider water-based activities as part of an individualized program:
           </p>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-            <li><strong>Safer balance training:</strong> Water provides support that reduces fall risk while you practice balance</li>
+            <li><strong>Balance practice:</strong> Activities require appropriate supervision and safe entry and exit from the pool.</li>
             <li><strong>Strength building:</strong> Resistance training in water builds leg and core strength needed for balance</li>
             <li><strong>Confidence:</strong> Successfully performing exercises in water often improves confidence for land-based activities</li>
             <li><strong>Lower impact on joints:</strong> Older adults can exercise at adequate intensity without excessive joint stress</li>
@@ -323,7 +307,7 @@ export default function AquaticTherapyArticle() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Studies show that aquatic exercise programs for older adults improve balance, reduce fall risk, and improve overall quality of life.
+            The studies cited below address pain and physical function. They do not establish that this program prevents falls. Discuss balance concerns and safety precautions with your clinician.
           </p>
         </section>
 
@@ -338,7 +322,7 @@ export default function AquaticTherapyArticle() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Aquatic therapy breaks that cycle. By reducing joint loading, it allows patients to exercise at adequate intensity without triggering pain flares. Over time, improved strength and better movement patterns reduce baseline pain, allowing gradual progression to land-based exercise.
+            Water-based exercise may help some patients participate in activities that are difficult on land. Symptoms can still flare, and your therapist should adjust the activities and progression to your response.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -375,7 +359,7 @@ export default function AquaticTherapyArticle() {
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Balance and Stability Training</h3>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Standing on one leg, walking narrowly, or performing movements that challenge balance—all safer in water where buoyancy provides support.
+            Balance activities may be included when appropriate. Follow your therapist’s instructions and use the support and supervision needed for safety.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Range of Motion and Flexibility</h3>
@@ -413,7 +397,7 @@ export default function AquaticTherapyArticle() {
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Water Temperature Matters</h3>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Therapeutic pools are typically warmer than recreational pools—usually 82–90°F (28–32°C). Warm water:
+            Pool temperature should suit your health and tolerance. Discuss comfort and precautions with your therapist before starting. Some people find warm water comfortable, but responses vary:
           </p>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
@@ -450,13 +434,13 @@ export default function AquaticTherapyArticle() {
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Typical Session</h3>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            A typical aquatic therapy session lasts 45–60 minutes and includes:
+            Session duration and activities depend on the individualized program. A session may include:
           </p>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-            <li><strong>Warm-up (5–10 minutes):</strong> Gentle movement to warm muscles</li>
-            <li><strong>Main exercise portion (30–40 minutes):</strong> Specific exercises targeting your goals</li>
-            <li><strong>Cool-down (5–10 minutes):</strong> Gentle movement and flexibility work</li>
+            <li><strong>Warm-up:</strong> Gentle movement to warm muscles</li>
+            <li><strong>Main exercise portion:</strong> Specific exercises targeting your goals</li>
+            <li><strong>Cool-down:</strong> Gentle movement and flexibility work</li>
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -541,7 +525,7 @@ export default function AquaticTherapyArticle() {
 
           <ul className="space-y-3 text-gray-700">
             <li><strong>Aquatic therapy reduces joint loading</strong> while providing resistance training—allowing exercise when traditional activity is too painful.</li>
-            <li><strong>It's effective for knee and hip osteoarthritis, chronic low back pain, and older adults</strong> seeking safe, effective exercise.</li>
+            <li><strong>Research supports potential benefits for pain and physical function.</strong> Suitability and response vary by patient.</li>
             <li><strong>Buoyancy reduces loading:</strong> The amount of support depends on immersion depth and individual factors.</li>
             <li><strong>Progression is individual:</strong> Your therapist adjusts the program to your symptoms, function and goals.</li>
             <li><strong>You don't need to be a swimmer.</strong> Most therapy occurs in shallow water where you can stand.</li>
