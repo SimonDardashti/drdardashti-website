@@ -70,7 +70,7 @@ const faqSchema = {
       name: "¿Cuánto tiempo tarda el cuidado conservador en funcionar?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "El cronograma varía según la condición, la gravedad y los factores individuales. La terapia física típicamente requiere varias semanas a meses de participación consistente. Algunos pacientes notan mejoras en días, mientras que otros requieren períodos de tratamiento más largos. La consistencia y la técnica adecuada son importantes.",
+        text: "La mejoría varía según el diagnóstico y las circunstancias individuales. Acuerde metas funcionales y un plan de reevaluación con su médico. El empeoramiento o los síntomas nuevos pueden requerir revisión más pronta; no existe un plazo universal antes de reevaluar.",
       },
     },
     {
@@ -94,7 +94,7 @@ const faqSchema = {
       name: "¿Hay condiciones donde el cuidado conservador solo no es apropiado?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sí. Algunas condiciones requieren evaluación urgente y pueden no beneficiarse del cuidado conservador solo. Se necesita una evaluación médica para determinar si el cuidado conservador es apropiado y, si es así, qué intervenciones adicionales podrían considerarse.",
+        text: "Algunos síntomas requieren valoración pronta en lugar de un programa rutinario de rehabilitación. Con dolor de espalda, los cambios nuevos del control intestinal o de la vejiga, o el entumecimiento alrededor de los genitales o del ano, requieren atención de emergencia. La debilidad progresiva requiere valoración pronta. Un médico debe determinar si la rehabilitación es apropiada.",
       },
     },
     {
@@ -110,7 +110,7 @@ const faqSchema = {
       name: "¿Puedo hacer cuidado conservador por mi cuenta, o necesito orientación profesional?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ambos enfoques pueden ser útiles. La orientación profesional de un fisioterapeuta o médico asegura la técnica adecuada e identifica ejercicios apropiados para su condición específica. Sin embargo, algunos pacientes se benefician de programas en el hogar con controles profesionales periódicos.",
+        text: "La orientación profesional puede ayudar a identificar ejercicios apropiados y vigilar la técnica y la respuesta. Un programa en el hogar puede ser apropiado después de una evaluación, con un plan de seguimiento. La orientación no garantiza un resultado específico.",
       },
     },
     {
@@ -118,7 +118,7 @@ const faqSchema = {
       name: "¿Qué debo hacer si el cuidado conservador no está ayudando?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Si el cuidado conservador se ha intentado consistentemente durante un período adecuado y los síntomas persisten, una evaluación médica puede ayudar a determinar si intervenciones adicionales podrían ser apropiadas. La evaluación adicional podría identificar condiciones que requieren enfoques de tratamiento diferentes.",
+        text: "Consulte con su médico sobre síntomas persistentes, barreras para participar o empeoramiento. Revise el diagnóstico, el programa, las metas funcionales y las alternativas. Los síntomas neurológicos nuevos o de emergencia requieren valoración más pronta o inmediata, sin esperar a terminar un curso rutinario.",
       },
     },
   ],
@@ -186,7 +186,7 @@ export default function CuidadosConservadoresPage() {
                 La terapia física se enfoca en restaurar la función, mejorar la movilidad y manejar el dolor a través de ejercicios dirigidos, técnicas manuales y entrenamiento funcional. Un fisioterapeuta licenciado personaliza el enfoque basado en su diagnóstico, hallazgos del examen y objetivos funcionales.
               </p>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
-                La terapia física efectiva requiere consistencia y participación activa durante semanas a meses. El cronograma para la mejora varía según la condición y la respuesta individual. La reevaluación regular ayuda a garantizar que el programa siga siendo apropiado y efectivo.
+                La participación y la técnica importan, pero no existe una duración única que defina un curso adecuado de terapia para toda condición. Revise los síntomas y la función con su médico y ajuste el programa según su respuesta.
               </p>
             </div>
           </div>
@@ -274,7 +274,7 @@ export default function CuidadosConservadoresPage() {
                 El enfoque más efectivo a menudo combina múltiples estrategias conservadoras. Por ejemplo, un paciente con dolor de espalda baja podría beneficiarse de terapia física, ejercicios de estabilización específicos, prácticas de atención plena y modificación de actividades trabajando juntas.
               </p>
               <p className="text-[#666] text-base leading-relaxed max-w-2xl">
-                La coordinación entre proveedores de tratamiento asegura que su plan general de manejo del dolor sea coherente y efectivo.
+                La coordinación entre profesionales puede ayudar a aclarar metas, revisar el progreso y ajustar el plan general; no garantiza su eficacia.
               </p>
             </div>
           </div>
@@ -311,47 +311,10 @@ export default function CuidadosConservadoresPage() {
               Preguntas Frecuentes.
             </h2>
             <div className="space-y-6">
-              {[
-                {
-                  q: "¿Qué es el cuidado conservador?",
-                  a: "El cuidado conservador se refiere a enfoques no quirúrgicos y sin inyecciones para manejar el dolor, incluyendo terapia física, ejercicio, terapias mente-cuerpo y modificaciones del estilo de vida.",
-                },
-                {
-                  q: "¿El cuidado conservador siempre es efectivo?",
-                  a: "La respuesta varía entre los pacientes. Algunos experimentan mejoras significativas solo con enfoques conservadores. Otros se benefician del cuidado conservador combinado con intervenciones adicionales.",
-                },
-                {
-                  q: "¿Cuánto tiempo tarda el cuidado conservador en funcionar?",
-                  a: "Los cronogramas varían según la condición, gravedad y factores individuales. La terapia física típicamente requiere semanas a meses de participación consistente.",
-                },
-                {
-                  q: "¿Debo intentar cuidado conservador antes de procedimientos?",
-                  a: "El cuidado conservador es a menudo apropiado inicialmente para muchas condiciones. La secuencia correcta depende del diagnóstico, gravedad y circunstancias individuales.",
-                },
-                {
-                  q: "¿Puede el cuidado conservador prevenir la cirugía?",
-                  a: "El cuidado conservador puede ayudar a algunos pacientes a evitar la cirugía. Otros eventualmente requieren evaluación quirúrgica a pesar de los esfuerzos conservadores.",
-                },
-                {
-                  q: "¿Hay condiciones que requieren más que cuidado conservador?",
-                  a: "Sí. Algunas condiciones requieren evaluación urgente y pueden no responder adecuadamente a enfoques conservadores solos.",
-                },
-                {
-                  q: "¿La terapia física siempre es necesaria?",
-                  a: "La terapia física beneficia a muchos pacientes, pero no todos requieren PT formal. Algunos se benefician de programas en el hogar u otros enfoques.",
-                },
-                {
-                  q: "¿Puedo hacer cuidado conservador de forma independiente?",
-                  a: "Ambos enfoques, independiente y guiado profesionalmente, pueden ser útiles. La orientación profesional asegura la técnica adecuada y ejercicios apropiados.",
-                },
-                {
-                  q: "¿Qué hago si el cuidado conservador no está ayudando?",
-                  a: "Si el cuidado conservador se ha intentado consistentemente durante tiempo adecuado sin mejora suficiente, una evaluación médica puede determinar si intervenciones adicionales son apropiadas.",
-                },
-              ].map((item, i) => (
+              {faqSchema.mainEntity.map((item, i) => (
                 <div key={i}>
-                  <h3 className="font-bold text-[#0a0a0a] mb-2">{item.q}</h3>
-                  <p className="text-[#666] text-sm leading-relaxed">{item.a}</p>
+                  <h3 className="font-bold text-[#0a0a0a] mb-2">{item.name}</h3>
+                  <p className="text-[#666] text-sm leading-relaxed">{item.acceptedAnswer.text}</p>
                 </div>
               ))}
             </div>
@@ -382,6 +345,7 @@ export default function CuidadosConservadoresPage() {
           </div>
         </div>
       </section>
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Fuentes y alcance</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li><li><a className="text-blue-600 underline" href="https://pubmed.ncbi.nlm.nih.gov/28192789/">Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians</a></li></ul><p className="mt-4 text-gray-700">Las guías NICE y ACP citadas tratan el dolor lumbar; las recomendaciones dependen de la condición y pueden diferir. No son reglas universales para todo dolor ni una garantía de respuesta. Esta página es educativa y no sustituye una valoración individual.</p></section>
     </>
   );
 }
