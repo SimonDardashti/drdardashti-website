@@ -35,7 +35,7 @@ const pageSchema = {
   description: 'Comprehensive guide to understanding treatment options for pain, from board-certified pain medicine specialist Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
-  dateModified: '2026-06-16',
+  dateModified: '2026-10-13',
   author: {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
@@ -54,7 +54,7 @@ const pageSchema = {
         name: 'Should I try physical therapy before injections?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'In most cases, yes. Conservative care should be the first treatment attempted for most pain conditions, unless you have severe neurological deficits or progressive weakness. Physical therapy helps identify which structures are involved, improves function, and often reduces pain without needles or injections. If conservative care does not provide adequate relief within 4–8 weeks of appropriate treatment, injections may become useful.',
+          text: "Physical therapy and other non-surgical options are often appropriate, depending on the diagnosis and examination. There is no single waiting period before an injection is considered. Persistent symptoms should be reassessed with your clinician. Progressive weakness needs prompt medical assessment; new bowel or bladder dysfunction or numbness around the genitals or anus requires emergency care.",
         },
       },
       {
@@ -62,7 +62,7 @@ const pageSchema = {
         name: 'Do injections prevent surgery?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Injections can delay or sometimes eliminate the need for surgery by reducing inflammation, improving function, and providing time for the body to heal. However, injections are not a guarantee against surgery. If your pain is from a condition that requires surgery—like severe nerve compression or progressive neurological deficits—injections are likely a temporary bridge, not a permanent solution. The goal is always to find the least invasive treatment that addresses your specific diagnosis.',
+          text: "An injection may help selected symptoms, but it cannot guarantee that surgery will be avoided. The indication, expected benefit, risks, and alternatives should be discussed for the specific procedure. An injection is not a required step before urgent surgical assessment.",
         },
       },
       {
@@ -70,7 +70,7 @@ const pageSchema = {
         name: 'Can injections cure a herniated disc?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. Injections cannot repair a herniated disc or undo structural damage. What injections can do is reduce inflammation around the disc and nerve, which often reduces pain and improves function. Many herniated discs improve over time without any specific treatment. The injection\'s role is to manage inflammation while your body heals, not to cure the underlying structural problem.',
+          text: "An injection does not repair a herniated disc. An epidural steroid injection may reduce symptoms in selected patients, but the response varies and is not a guarantee of recovery. The decision should consider the clinical diagnosis, risks, alternatives, and goals of treatment.",
         },
       },
       {
@@ -78,7 +78,7 @@ const pageSchema = {
         name: 'How long should I try conservative care before considering other options?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This depends on your specific diagnosis and how you\'re responding. For most patients with nerve pain or mechanical pain, 4–8 weeks of appropriate conservative care is reasonable. If you\'re improving, continuing is appropriate. If you\'re not improving after 6–8 weeks despite consistent effort, it\'s reasonable to consider injections or other options. Some conditions progress more rapidly and warrant earlier intervention. The key is having an accurate diagnosis and tracking whether treatment is working.',
+          text: "The duration of conservative care depends on the diagnosis, symptom severity, functional limitations, and response to treatment. Agree on goals and a reassessment plan with your clinician rather than using a fixed waiting period. New or worsening neurological symptoms need reassessment sooner; emergency symptoms require immediate care.",
         },
       },
       {
@@ -86,7 +86,7 @@ const pageSchema = {
         name: 'When is surgery truly unavoidable?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Surgery becomes necessary when: you have progressive neurological deficits (worsening weakness, loss of feeling, or loss of bowel/bladder control), severe nerve compression causing significant disability despite appropriate treatment, or structural instability. In these situations, delaying surgery can result in permanent nerve damage. However, these situations are less common than many patients fear. Most patients with herniated discs or spinal stenosis improve with conservative or interventional treatment.',
+          text: "Surgery is considered after an individual assessment of the diagnosis, symptoms, examination, imaging, and expected benefits and risks. Progressive weakness needs prompt assessment. New bowel or bladder dysfunction or numbness around the genitals or anus requires emergency care. These symptoms require evaluation and do not establish the need for a particular operation by themselves.",
         },
       },
       {
@@ -102,7 +102,7 @@ const pageSchema = {
         name: 'What if my MRI shows significant damage but I feel relatively well?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'This is actually common. Many people with significant imaging findings—disc herniations, spinal stenosis, degenerative changes—have minimal or no pain. This mismatch means your pain is not coming from the structure that looks bad on imaging. This is important because it changes treatment decisions. Pursuing surgery to fix the "bad" MRI finding likely won\'t help if that\'s not actually causing your pain. Diagnosis depends on clinical evaluation, not imaging severity.',
+          text: "Imaging findings and symptoms do not always correspond. An abnormal MRI alone does not establish the source of pain or the need for surgery. Your clinician should compare the findings with your history and examination; a mismatch does not by itself prove that an abnormality is unrelated.",
         },
       },
       {
@@ -110,7 +110,7 @@ const pageSchema = {
         name: 'What if my MRI is normal but I have significant pain?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Normal imaging does not mean there\'s nothing wrong. Your pain may come from structures imaging cannot detect—nerve irritation, muscle dysfunction, or movement pattern problems. Normal imaging actually guides treatment because it tells us your pain is not from severe structural damage. This often means conservative care is appropriate and that injections, if needed, should target the functional problem rather than a large structural lesion.',
+          text: "Normal imaging does not exclude pain or establish its cause. The next steps depend on the history, examination, and the limitations of the test. Persistent or changing symptoms may need further assessment. Treatment should follow an individual clinical evaluation rather than the scan result alone.",
         },
       },
     ],
@@ -194,11 +194,11 @@ export default function TreatmentOptions() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            One of the most important things to understand is that most neck and back pain improves without surgery. This is well-documented in medical literature. Many conditions that look concerning on imaging—herniated discs, spinal stenosis, degenerative changes—improve over weeks to months with appropriate conservative treatment.
+            Many patients can be managed without immediate surgery, but the treatment path depends on the particular condition and neurological findings. An imaging abnormality alone is not a reason to operate. New emergency symptoms or progressive weakness require timely assessment rather than completion of a routine treatment sequence.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Disc herniations, in particular, tend to shrink over time. The body has natural healing mechanisms. As inflammation resolves and pain improves, your function returns. This process often takes weeks to months, but it happens frequently without any specific treatment.
+            The course of disc-related symptoms varies. Improvement is possible without surgery, but this page cannot predict whether a particular disc will shrink or whether function will recover. Treatment and follow-up should be based on the individual clinical picture.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -222,7 +222,7 @@ export default function TreatmentOptions() {
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Physical Therapy</h3>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            This is the foundation. Physical therapy addresses the actual dysfunction causing pain—muscle weakness, movement pattern problems, inflexibility, or poor posture. A good physical therapist will assess your specific limitations and design a program targeting your problem. You should expect to feel worse before you feel better as you begin exercising, but the goal is progressive improvement over weeks.
+            Physical therapy can address strength, movement, and functional limitations through an individualized program. Exercise should be adjusted to your condition and tolerance. Do not assume that worsening pain is a necessary part of recovery; discuss deterioration or new symptoms with your clinician. Progressive weakness or sensory changes need reassessment.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Activity Modification</h3>
@@ -241,11 +241,11 @@ export default function TreatmentOptions() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Timeline and expectations:</strong> Most patients should expect 4–8 weeks of consistent conservative care before deciding whether it is working. If you are improving—even slowly—continuing is usually right. If you are not improving after 6–8 weeks of appropriate treatment, it is reasonable to consider injections or other options.
+            <strong>Timeline and expectations:</strong> Set individual goals for pain, function, and activity with your clinician. Reassessment depends on the diagnosis and response, rather than a fixed number of weeks. Worsening symptoms may require earlier review.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            The success rate of conservative care varies by diagnosis. For acute pain with clear mechanical causes, success rates are often 70–80%. For chronic pain or complex cases, success may be lower. The key is knowing what success looks like for your specific problem.
+            Response to conservative care varies by diagnosis and individual circumstances. Progress should be assessed against your agreed functional goals and symptoms, without relying on a general success percentage.
           </p>
         </section>
 
@@ -286,7 +286,7 @@ export default function TreatmentOptions() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Surgery is appropriate when conservative care and injections have not resolved pain, or when the condition itself warrants surgical intervention. Specific indications include:
+            A surgical consultation may be appropriate for a condition that can benefit from surgery, including persistent disabling symptoms despite appropriate non-surgical care. Injections are not mandatory before every consultation. Urgent neurological problems require timely assessment.
           </p>
 
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
@@ -297,11 +297,11 @@ export default function TreatmentOptions() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>An important note:</strong> Decisions about surgery should be made in consultation with a spine surgeon who has evaluated you personally. My role as a pain medicine physician is to ensure you have tried appropriate conservative and interventional options, to help you understand what is causing your pain, and to help you think through whether surgery addresses your specific problem. The final decision about surgery belongs with you and your surgeon.
+            <strong>An important note:</strong> Decisions about surgery should be made with a surgeon who has evaluated you. My role is to help clarify the pain diagnosis and discuss suitable treatment options. A routine sequence of therapy and injections should not delay urgent assessment.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
-            Many patients worry that they "should" have surgery because their imaging looks bad. This is not how it works. The decision to operate should be based on: (1) Does the patient have symptoms?, (2) Are those symptoms coming from the structure that looks bad on imaging?, (3) Is there a reasonable chance surgery will improve those symptoms?, and (4) Have appropriate alternatives been tried? If the answer to any of these is "no," surgery may not be the right choice.
+            A surgical decision considers the clinical diagnosis, examination, relevant imaging, alternatives, expected benefits, and risks. The urgency of the condition matters. There is no universal checklist that determines whether surgery is right for every patient.
           </p>
         </section>
 
@@ -342,7 +342,7 @@ export default function TreatmentOptions() {
 
           <h3 className="text-2xl font-semibold mb-4 text-gray-900">Diagnostic Injections When Appropriate</h3>
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            If it is unclear which structure is causing pain, a diagnostic injection can provide important information. If pain improves after injecting a specific structure, that tells us that structure is involved in your pain. If pain does not improve, we can rule that structure out and look elsewhere. This is diagnostic information that guides treatment.
+            A diagnostic injection may contribute information about a suspected pain source. The response must be interpreted with the technique, medication, timing, activity, and other clinical findings. Relief does not conclusively prove a diagnosis, and lack of relief does not automatically exclude a structure.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
@@ -363,7 +363,7 @@ export default function TreatmentOptions() {
                 Should I try physical therapy before injections?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                In most cases, yes. <Link href="/conservative-care" className="text-blue-600 hover:text-blue-800">Conservative care</Link> should be the first treatment attempted for most pain conditions, unless you have severe neurological deficits or progressive weakness. Physical therapy helps identify which structures are involved, improves function, and often reduces pain without needles or injections. If conservative care does not provide adequate relief within 4–8 weeks of appropriate treatment, injections may become useful.
+                Physical therapy and other non-surgical options are often appropriate, depending on the diagnosis and examination. There is no single waiting period before an injection is considered. Persistent symptoms should be reassessed with your clinician. Progressive weakness needs prompt medical assessment; new bowel or bladder dysfunction or numbness around the genitals or anus requires emergency care.
               </p>
             </div>
 
@@ -372,7 +372,7 @@ export default function TreatmentOptions() {
                 Do injections prevent surgery?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Injections can delay or sometimes eliminate the need for surgery by reducing inflammation, improving function, and providing time for the body to heal. However, injections are not a guarantee against surgery. If your pain is from a condition that requires surgery—like severe nerve compression or progressive neurological deficits—injections are likely a temporary bridge, not a permanent solution. The goal is always to find the least invasive treatment that addresses your specific diagnosis.
+                An injection may help selected symptoms, but it cannot guarantee that surgery will be avoided. The indication, expected benefit, risks, and alternatives should be discussed for the specific procedure. An injection is not a required step before urgent surgical assessment.
               </p>
             </div>
 
@@ -381,7 +381,7 @@ export default function TreatmentOptions() {
                 Can injections cure a herniated disc?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                No. Injections cannot repair a herniated disc or undo structural damage. What injections can do is reduce inflammation around the disc and nerve, which often reduces pain and improves function. Many herniated discs improve over time without any specific treatment. The injection's role is to manage inflammation while your body heals, not to cure the underlying structural problem.
+                An injection does not repair a herniated disc. An epidural steroid injection may reduce symptoms in selected patients, but the response varies and is not a guarantee of recovery. The decision should consider the clinical diagnosis, risks, alternatives, and goals of treatment.
               </p>
             </div>
 
@@ -390,7 +390,7 @@ export default function TreatmentOptions() {
                 How long should I try conservative care before considering other options?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                This depends on your specific diagnosis and how you're responding. For most patients with nerve pain or mechanical pain, 4–8 weeks of appropriate conservative care is reasonable. If you're improving, continuing is appropriate. If you're not improving after 6–8 weeks despite consistent effort, it's reasonable to consider injections or other options. Some conditions progress more rapidly and warrant earlier intervention. The key is having an accurate diagnosis and tracking whether treatment is working.
+                The duration of conservative care depends on the diagnosis, symptom severity, functional limitations, and response to treatment. Agree on goals and a reassessment plan with your clinician rather than using a fixed waiting period. New or worsening neurological symptoms need reassessment sooner; emergency symptoms require immediate care.
               </p>
             </div>
 
@@ -399,7 +399,7 @@ export default function TreatmentOptions() {
                 When is surgery truly unavoidable?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Surgery becomes necessary when: you have progressive neurological deficits (worsening weakness, loss of feeling, or loss of bowel/bladder control), severe nerve compression causing significant disability despite appropriate treatment, or structural instability. In these situations, delaying surgery can result in permanent nerve damage. However, these situations are less common than many patients fear. Most patients with herniated discs or spinal stenosis improve with conservative or interventional treatment.
+                Surgery is considered after an individual assessment of the diagnosis, symptoms, examination, imaging, and expected benefits and risks. Progressive weakness needs prompt assessment. New bowel or bladder dysfunction or numbness around the genitals or anus requires emergency care. These symptoms require evaluation and do not establish the need for a particular operation by themselves.
               </p>
             </div>
 
@@ -417,7 +417,7 @@ export default function TreatmentOptions() {
                 What if my MRI shows significant damage but I feel relatively well?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                This is actually common. Many people with significant imaging findings—disc herniations, spinal stenosis, degenerative changes—have minimal or no pain. This mismatch means your pain is not coming from the structure that looks bad on imaging. This is important because it changes treatment decisions. Pursuing surgery to fix the "bad" MRI finding likely won't help if that's not actually causing your pain. Diagnosis depends on clinical evaluation, not imaging severity.
+                Imaging findings and symptoms do not always correspond. An abnormal MRI alone does not establish the source of pain or the need for surgery. Your clinician should compare the findings with your history and examination; a mismatch does not by itself prove that an abnormality is unrelated.
               </p>
             </div>
 
@@ -426,7 +426,7 @@ export default function TreatmentOptions() {
                 What if my MRI is normal but I have significant pain?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Normal imaging does not mean there's nothing wrong. Your pain may come from structures imaging cannot detect—nerve irritation, muscle dysfunction, or movement pattern problems. Normal imaging actually guides treatment because it tells us your pain is not from severe structural damage. This often means conservative care is appropriate and that injections, if needed, should target the functional problem rather than a large structural lesion.
+                Normal imaging does not exclude pain or establish its cause. The next steps depend on the history, examination, and the limitations of the test. Persistent or changing symptoms may need further assessment. Treatment should follow an individual clinical evaluation rather than the scan result alone.
               </p>
             </div>
 
@@ -516,6 +516,7 @@ export default function TreatmentOptions() {
           </ul>
         </section>
 
+      <section className="mb-12"><h2 className="text-2xl font-bold mb-4">Sources and scope</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li></ul><p className="text-gray-700 mt-4">The NICE guideline concerns low back pain and sciatica; it is not a rule for every neck or back condition. This page provides general education and cannot determine your treatment.</p></section>
       </article>
 
       {/* MEDICAL REVIEW */}
