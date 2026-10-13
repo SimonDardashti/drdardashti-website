@@ -33,7 +33,7 @@ const pageSchema = {
   description: 'Comprehensive guide to understanding pain when imaging tests are normal, from board-certified pain medicine specialist Dr. Simon Dardashti.',
   image: 'https://www.drdardashti.com/headshot.webp',
   datePublished: '2026-06-16',
-  dateModified: '2026-06-16',
+  dateModified: '2026-10-13',
   author: {
     '@type': 'Person',
     name: 'Simon Dardashti, MD',
@@ -68,7 +68,7 @@ const pageSchema = {
         name: 'Will physical therapy help if my imaging is normal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, often significantly. Physical therapy can be particularly effective for pain involving muscle dysfunction, movement patterns, and nervous system sensitivity. The key is that your therapist understands the specific type of pain you have. If your pain involves myofascial sources or movement dysfunction, targeted exercise and manual therapy frequently provide substantial relief. Most patients who engage in appropriate physical therapy see meaningful improvement within 6–12 weeks when the diagnosis is accurate.',
+          text: "Response to physical therapy depends on the condition, goals and individual plan. Your therapist should reassess symptoms and function and adjust the program; no percentage of improvement or fixed recovery time is guaranteed.",
         },
       },
       {
@@ -76,7 +76,7 @@ const pageSchema = {
         name: 'Can injections help if imaging is normal?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Diagnostic and therapeutic injections are often valuable when imaging is normal because they help identify the specific pain source. An epidural injection can test whether spinal structures are involved. A medial branch block can determine if facet joints are contributing. If pain improves after an injection targeting a specific structure, that provides both diagnostic information and therapeutic relief. Success depends on accurate diagnosis of which structure may be contributing to pain.',
+          text: "Injections have different purposes. A medial branch block may help assess a facet-joint contribution, while an epidural steroid injection may be considered as treatment in selected cases. The response does not establish the cause of pain by itself or guarantee lasting benefit.",
         },
       },
       {
@@ -92,7 +92,7 @@ const pageSchema = {
         name: 'Can nerve pain exist without MRI findings?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Absolutely. Nerves can be irritated, inflamed, or partially damaged in ways that do not show on standard MRI. A nerve can fire abnormally and cause pain (shooting, burning, radiating sensation) without obvious compression visible on imaging. Physical exam findings, symptom patterns, and response to diagnostic nerve blocks can confirm nerve involvement even when imaging appears normal. This is one of the most common reasons for normal imaging with significant pain.',
+          text: 'Absolutely. Nerves can be irritated, inflamed, or partially damaged in ways that do not show on standard MRI. A nerve can fire abnormally and cause pain (shooting, burning, radiating sensation) without obvious compression visible on imaging. Physical exam findings, symptom patterns, and response to diagnostic nerve blocks can help assess possible nerve involvement even when imaging appears normal. This is one of the most common reasons for normal imaging with significant pain.',
         },
       },
       {
@@ -238,7 +238,7 @@ export default function PainWithoutImaging() {
 
           <div className="bg-gray-50 border-l-4 border-blue-500 p-6 mb-6">
             <p className="text-gray-800 mb-4">
-              <strong>Clinical Example:</strong> A 52-year-old with arm pain, normal cervical MRI, but positive Spurling test and weakness in thumb abduction (C6 nerve distribution). Clinical findings strongly suggest C6 nerve involvement. We start with conservative care targeting that specific nerve—specific exercises, posture modification. If that does not provide adequate relief in 4–6 weeks, a diagnostic cervical medial branch block targeting the facet joint at that level can help identify whether the facet joint is contributing to symptoms while providing potential relief. The MRI was normal, but the clinical picture provided diagnostic direction.
+              <strong>Clinical Example:</strong> A person with neck and arm pain may have symptoms that are not explained by MRI. Evaluation considers the symptom pattern, strength, sensation and reflexes. A medial branch block assesses a possible facet-joint contribution; it is not a test of nerve-root compression or a treatment for neurological weakness.
             </p>
           </div>
 
@@ -258,21 +258,21 @@ export default function PainWithoutImaging() {
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>How they work:</strong> I inject local anesthetic around a specific structure—an epidural space, a facet joint, a nerve—to temporarily numb only that structure. If your pain improves or resolves, that suggests the structure I targeted may be contributing to pain. If pain does not improve, that structure is likely not the primary source, and we consider other possibilities.
+            <strong>How they work:</strong> Some targeted injections use local anesthetic to assess a possible pain source. The response is interpreted with the history and examination. Technique, anesthetic spread and multiple pain sources can affect the result; lack of relief does not automatically rule out a structure.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            <strong>Common diagnostic injections:</strong>
+            <strong>Injections with different purposes:</strong>
           </p>
           <ul className="list-disc list-inside mb-6 text-gray-700 space-y-2">
-            <li><strong><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> Tests whether spinal canal involvement is contributing to pain. Can provide anti-inflammatory benefit.</li>
+            <li><strong><Link href="/procedures/epidural-steroid-injections" className="text-blue-600 hover:text-blue-800">Epidural steroid injection:</Link></strong> May be considered as treatment for selected nerve-root-related pain; response alone does not establish the cause.</li>
             <li><strong><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-blue-600 hover:text-blue-800">Medial branch block:</Link></strong> Tests whether facet joints may be contributing to pain. A short-duration diagnostic test.</li>
             <li><strong>Sacroiliac joint injection:</strong> Tests whether SI joint dysfunction is contributing to pain.</li>
             <li><strong>Peripheral nerve blocks:</strong> Test whether specific peripheral nerves are involved.</li>
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            The value of diagnostic injections is two-fold: They provide diagnostic information about what may be causing pain, and they provide therapeutic relief while we gather that information. This is efficient—you may receive both diagnostic insight and symptom improvement simultaneously.
+            The purpose of an injection depends on the procedure and clinical question. Some are used to inform evaluation; others have a therapeutic aim. Relief may be temporary or absent, and the result requires clinical interpretation.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
@@ -303,7 +303,7 @@ export default function PainWithoutImaging() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            Many patients improve significantly with conservative care alone—often 70–80% of patients with acute pain improve with appropriate conservative management over 6–12 weeks. Treatment should be based on what we found during evaluation, not on imaging severity.
+            Response to conservative care varies by condition and individual. Treatment and reassessment should reflect clinical findings, function and response. A normal MRI neither requires nor rules out a procedure by itself.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -357,7 +357,7 @@ export default function PainWithoutImaging() {
                 Will physical therapy help if my imaging is normal?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Yes, often significantly. Physical therapy can be particularly effective for pain involving muscle dysfunction, movement patterns, and nervous system sensitivity. The key is that your therapist understands the specific type of pain you have. If your pain involves myofascial sources or movement dysfunction, targeted exercise and manual therapy frequently provide substantial relief. Most patients who engage in appropriate physical therapy see meaningful improvement within 6–12 weeks when the diagnosis is accurate.
+                Response to physical therapy depends on the condition, goals and individual plan. Your therapist should reassess symptoms and function and adjust the program; no percentage of improvement or fixed recovery time is guaranteed.
               </p>
             </div>
 
@@ -366,7 +366,7 @@ export default function PainWithoutImaging() {
                 Can injections help if imaging is normal?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Yes. Diagnostic and therapeutic injections are often valuable when imaging is normal because they help identify the specific pain source. An epidural injection can test whether spinal structures are involved. A medial branch block can determine if facet joints are contributing. If pain improves after an injection targeting a specific structure, that provides both diagnostic information and therapeutic relief. Success depends on accurate diagnosis of which structure may be contributing to pain.
+                Injections have different purposes. A medial branch block may help assess a facet-joint contribution, while an epidural steroid injection may be considered as treatment in selected cases. The response does not establish the cause of pain by itself or guarantee lasting benefit.
               </p>
             </div>
 
@@ -384,7 +384,7 @@ export default function PainWithoutImaging() {
                 Can nerve pain exist without MRI findings?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Absolutely. Nerves can be irritated, inflamed, or partially damaged in ways that do not show on standard MRI. A nerve can fire abnormally and cause pain—shooting, burning, radiating sensation—without obvious compression visible on imaging. Physical exam findings, symptom patterns, and response to diagnostic nerve blocks can confirm nerve involvement even when imaging appears normal. This is one of the most common reasons for normal imaging with significant pain.
+                Absolutely. Nerves can be irritated, inflamed, or partially damaged in ways that do not show on standard MRI. A nerve can fire abnormally and cause pain—shooting, burning, radiating sensation—without obvious compression visible on imaging. Physical exam findings, symptom patterns, and response to diagnostic nerve blocks can help assess possible nerve involvement even when imaging appears normal. This is one of the most common reasons for normal imaging with significant pain.
               </p>
             </div>
 
@@ -469,7 +469,9 @@ export default function PainWithoutImaging() {
           </ul>
         </section>
 
+        <section className="mb-12"><h2 className="text-2xl font-semibold mb-4">Sources for Facet-Joint Evaluation</h2><ul className="list-disc list-inside text-gray-700"><li><a className="text-blue-600 underline" href="https://pubmed.ncbi.nlm.nih.gov/34764220/">Hurley et al. Consensus practice guidelines on interventions for cervical spine (facet) joint pain (2021).</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5764531/">Bartleson and Maus. Diagnostic and therapeutic spinal interventions: Facet joint interventions (2014).</a></li></ul></section>
       </article>
+
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/pain-without-imaging" />
