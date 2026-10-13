@@ -406,7 +406,7 @@ export default function FacetJointInjectionsPage() {
             variant="default"
             src="/images/procedures/injections/medial-branch-block.png"
             alt="Medial branch block showing needle placement at medial branch nerve pathway (not in joint), local anesthetic delivery around nerve, diagnostic blockade of facet joint innervation at multiple levels"
-            caption="Medial Branch Block: Instead of entering the joint, the needle targets the nerve that supplies the joint. Local anesthetic is deposited around the medial branch nerve. If this block relieves pain, it confirms facet joint involvement and predicts RFA success."
+            caption="Medial Branch Block: Instead of entering the joint, the needle targets the nerve that supplies the joint. Local anesthetic is deposited around the medial branch nerve. Temporary relief can support a facet joint source of pain and help guide consideration of RFA. It does not by itself confirm the diagnosis or guarantee RFA benefit."
           />
         </div>
       </section>
@@ -526,7 +526,7 @@ export default function FacetJointInjectionsPage() {
                 when clinically appropriate.
               </p>
               <p className="mb-4">
-                When medial branch blocks confirm a significant facet joint
+                When medial branch blocks support a significant facet joint
                 contribution to a patient's pain,{" "}
                 <Link
                   href="/procedures/radiofrequency-ablation"
