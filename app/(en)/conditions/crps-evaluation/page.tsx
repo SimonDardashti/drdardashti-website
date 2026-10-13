@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -89,13 +88,13 @@ export default function CrpsEvaluationPage() {
             <p className="mt-5 text-[#666] text-lg leading-relaxed">
               Complex regional pain syndrome (CRPS) is a chronic pain condition that requires
               careful clinical evaluation. Diagnosis is based on accepted criteria interpreted
-              in the context of the patient's history, symptoms, and physical examination.
+              in the context of the patient&apos;s history, symptoms, and physical examination.
             </p>
           </div>
           <div className="hidden md:block w-[300px] aspect-[3/4] shrink-0 relative overflow-hidden rounded-xl">
             <Image
               src="/images/conditions/crps-lower-leg-hero.webp"
-              alt="Lower leg swelling and color change associated with complex regional pain syndrome."
+              alt="Illustrative lower leg swelling and color change; these findings are not specific to CRPS."
               fill
               sizes="300px"
               className="object-cover object-center"
@@ -142,9 +141,9 @@ export default function CrpsEvaluationPage() {
               character and severity.
             </p>
             <p>
-              Two types are described: CRPS Type I, in which there is no confirmed nerve injury,
-              and CRPS Type II, in which a specific nerve injury is identified. The distinction
-              is based on clinical history and evaluation rather than imaging alone.
+              CRPS Type I is described without an identified major nerve injury; Type II is
+              associated with an identified major nerve injury. Type I does not prove that
+              all nerve injury is absent. Clinical assessment is needed to interpret the distinction.
             </p>
             <p>
               CRPS is a clinical diagnosis. It requires careful evaluation to support, and other
@@ -155,16 +154,6 @@ export default function CrpsEvaluationPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION: CRPS Pathophysiology */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            role="mechanism"
-            src="/images/conditions/crps/crps-pathophysiology.png"
-            alt="Complex regional pain syndrome showing peripheral sensitization, central sensitization, autonomic dysregulation, and neuroinflammatory changes contributing to chronic pain and associated symptoms"
-            caption="CRPS Pathophysiology: Complex regional pain syndrome involves interconnected nervous system changes. Following an inciting event, the peripheral nervous system can become sensitized (increased pain signaling). The central nervous system may then amplify these signals (central sensitization). Autonomic changes can contribute to skin, temperature, sweating, and color changes. These mechanisms together create the characteristic constellation of symptoms seen in CRPS."
-            priority={true}
-          />
-        </div>
       </section>
 
       {/* DIAGNOSTIC EVALUATION */}
@@ -179,17 +168,18 @@ export default function CrpsEvaluationPage() {
               How CRPS Is Evaluated.
             </h2>
             <p className="text-[#666] text-base leading-relaxed mb-6 max-w-2xl">
-              The diagnosis of CRPS is based on clinical findings rather than a single laboratory
-              test or imaging study. Accepted diagnostic criteria — commonly the Budapest Criteria
-              — describe a set of symptoms and signs that must be present and cannot be better
-              explained by another diagnosis. Features that may be evaluated include:
+              The clinical Budapest Criteria require continuing pain disproportionate to an
+              inciting event, at least one reported symptom in at least three of four categories,
+              and at least one sign observed at evaluation in at least two categories. No other diagnosis should better
+              explain the findings. A symptom is what the patient reports; a sign is what the
+              clinician observes. The categories are:
             </p>
             <ul className="space-y-3 max-w-2xl mb-6">
               {[
-                "Sensory changes — allodynia, hyperalgesia, or other sensory abnormalities",
+                "Sensory — hyperalgesia (increased pain sensitivity) or allodynia (pain from normally non-painful stimuli)",
                 "Vasomotor changes — skin temperature asymmetry or skin color changes",
                 "Sudomotor and edema findings — swelling or sweating abnormalities",
-                "Motor and trophic changes — weakness, tremor, dystonia, or changes to skin, hair, or nails",
+                "Motor/trophic — reduced range of motion, weakness, tremor, dystonia, or changes to skin, hair, or nails",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
@@ -200,7 +190,9 @@ export default function CrpsEvaluationPage() {
             <p className="text-[#666] text-base leading-relaxed max-w-2xl">
               These findings must be interpreted in clinical context. Not all features are
               present in every patient, and findings may change over time or with treatment.
-              Pain alone is not sufficient to support a diagnosis of CRPS.
+              Pain alone is not sufficient to support a diagnosis of CRPS. These are clinical
+              criteria, not a self-diagnosis checklist or the separate research decision rule.
+              Meeting diagnostic criteria does not by itself establish the cause of the condition.
             </p>
           </div>
         </div>
@@ -226,8 +218,14 @@ export default function CrpsEvaluationPage() {
             <p>
               The clinical history — including the timing of symptom onset relative to any
               inciting event, the pattern of symptom evolution, prior treatments and their
-              responses, and the patient's functional limitations — is an essential component
+              responses, and the patient&apos;s functional limitations — is an essential component
               of evaluation. The goal is a complete clinical picture, not a symptom checklist.
+            </p>
+            <h3 className="text-xl font-bold text-[#0a0a0a] pt-4">What information is useful for an evaluation?</h3>
+            <p>
+              Bring relevant prior records and test reports, a treatment and medication history,
+              and a description of symptom changes and daily activities that have become difficult.
+              Share patient-specific information through the appropriate medical office channel.
             </p>
           </div>
         </div>
@@ -315,6 +313,18 @@ export default function CrpsEvaluationPage() {
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* SOURCES */}
+      <section className="bg-white py-12 px-6 border-t border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto space-y-4 text-sm text-[#555] leading-relaxed">
+          <h2 className="text-xl font-bold text-[#0a0a0a]">Sources and scope</h2>
+          <p>These references support the diagnostic framework and individualized treatment discussion. They do not predict an individual patient&apos;s diagnosis, cause, or treatment outcome.</p>
+          <ul className="space-y-3">
+            <li><a href="https://doi.org/10.1016/j.pain.2010.04.030" className="text-[#8a6b12] underline">Harden RN, Bruehl S, Perez RSGM, et al. Validation of proposed diagnostic criteria (the “Budapest Criteria”) for Complex Regional Pain Syndrome.</a> <em>Pain.</em> 2010;150(2):268–274.</li>
+            <li><a href="https://doi.org/10.1093/pm/pnac046" className="text-[#8a6b12] underline">Harden RN, McCabe CS, Goebel A, et al. Complex Regional Pain Syndrome: Practical Diagnostic and Treatment Guidelines, 5th Edition.</a> <em>Pain Medicine.</em> 2022;23(Suppl 1):S1–S53.</li>
+          </ul>
         </div>
       </section>
 
