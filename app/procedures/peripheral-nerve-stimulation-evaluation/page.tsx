@@ -80,15 +80,15 @@ const faqs = [
   },
   {
     q: "What does a trial consist of?",
-    a: "A trial (also called a screening or evaluation) typically involves percutaneous placement of a temporary electrode near the target nerve. The patient tests the stimulation for several days to a week to assess whether it provides adequate pain relief. If successful, a permanent system may then be considered.",
+    a: "The process depends on the device. Some systems use a temporary treatment course; others may use a screening trial before a permanently implanted system is considered. A temporary treatment course is not necessarily a trial for permanent implantation.",
   },
   {
     q: "How is the device controlled?",
-    a: "Once implanted, the peripheral nerve stimulation system includes a small generator implanted under the skin and a remote control that allows the patient to adjust stimulation settings. Patients learn to control the device to optimize pain relief.",
+    a: "Controls depend on the system. Some systems use an external generator and others an implanted generator. Your treatment team explains the controls and permitted adjustments for the proposed device.",
   },
   {
     q: "Is implantation required?",
-    a: "A trial does not require implantation — it uses temporary leads. If the trial is successful and both patient and physician agree that implantation is appropriate, then a permanent system can be surgically implanted. Not all patients proceed to implantation.",
+    a: "Temporary leads are placed through the skin. Temporary treatment systems and permanently implanted systems have different pathways. Your physician should explain the proposed device, treatment duration and removal or implantation plan; a temporary course does not necessarily lead to a permanent implant.",
   },
   {
     q: "What are the limitations?",
@@ -267,20 +267,13 @@ export default function PeripheralNerveStimulationEvaluationPage() {
               className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Trial Period and Implantation Consideration.
+              Temporary Treatment and Implantation Considerations.
             </h2>
             <p>
-              If evaluation suggests PNS may be beneficial, a trial period may be recommended.
-              During trial, a temporary electrode is percutaneously placed near the target nerve,
-              connected to an external generator. The patient tests stimulation at home for
-              several days to assess pain relief. A successful trial (typically defined as 50%
-              or greater pain relief) suggests candidacy for permanent implantation.
+              The pathway depends on the specific PNS system. Some systems use a temporary treatment course, while others may use a screening trial before a permanently implanted system is considered. The physician should explain the indication, expected treatment course, response assessment and removal or implantation plan.
             </p>
             <p>
-              If the trial is successful and the patient wishes to proceed, permanent
-              implantation of the PNS system is a surgical procedure. Not all patients who
-              undergo trial proceed to implantation — some may decline after trial or may not
-              meet implantation criteria.
+              A permanently implanted system may be considered when appropriate for the device and clinical situation. Temporary treatment systems instead have their own planned removal pathway. Discuss the specific options, benefits, risks and follow-up with your physician.
             </p>
           </div>
         </div>
