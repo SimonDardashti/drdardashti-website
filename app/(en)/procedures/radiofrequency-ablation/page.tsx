@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -161,15 +160,7 @@ export default function RadiofrequencyAblationPage() {
         </div>
 
         {/* ILLUSTRATION: RFA Mechanism */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            size="xlarge"
-            src="/images/conditions/RFA-mechanism v2.png"
-            alt="Radiofrequency ablation mechanism showing RF needle placement near medial branch nerve, electrical current delivery, heat generation (80-90°C), and thermal lesion of nerve tissue preventing pain signal transmission"
-            caption="How Radiofrequency Ablation Works: A specialized needle is advanced to the medial branch nerve under fluoroscopic guidance. Radiofrequency current is applied, heating the nerve tissue to approximately 80-90°C. This creates a lesion that prevents pain signal transmission from the facet joint. The effect typically lasts 6-12 months before nerve regeneration occurs."
-          />
-        </div>
+
       </section>
 
       {/* DIAGNOSTIC PROCESS */}
@@ -204,26 +195,10 @@ export default function RadiofrequencyAblationPage() {
         </div>
 
         {/* ILLUSTRATION: Medial Branch 3D Perspective */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            size="large"
-            src="/images/conditions/medial-branch-3d-perspective.png"
-            alt="Three-dimensional anatomical perspective of medial branch nerves in lumbar spine showing bilateral nerve pathways, relationship to facet joints at multiple levels (L3, L4, L5), and needle targeting approach"
-            caption="Medial Branch Anatomy: Each facet joint is supplied by two medial branch nerves—one from the level of the facet and one from the level above. This anatomy is why precise needle placement is critical. The 3D perspective shows how the nerves travel alongside the spine."
-          />
-        </div>
+
 
         {/* ILLUSTRATION: Medial Branch Block */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            size="large"
-            src="/images/procedures/injections/medial-branch-block.png"
-            alt="Medial branch block needle placement at the medial branch nerves showing fluoroscopic guidance and needle positioning targeting the nerve that supplies painful facet joints"
-            caption="Medial Branch Block: Under fluoroscopic (X-ray) guidance, the needle is positioned at the medial branch nerve—the nerve that supplies sensation and pain signals from the facet joints. Local anesthetic temporarily numbs this nerve. If pain relief occurs during the block period, it may support a facet joint contribution and consideration of radiofrequency ablation. A block result alone does not establish the source with certainty or guarantee benefit."
-          />
-        </div>
+
       </section>
 
       {/* WHEN MAY RFA BE CONSIDERED */}
@@ -315,6 +290,7 @@ export default function RadiofrequencyAblationPage() {
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/procedures/radiofrequency-ablation" />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Interpreting results and questions to ask</h2><p className="text-gray-700 mb-4">Selection for radiofrequency ablation depends on the spinal region, diagnosis, technique, and documented block response. Clinical guidelines and coverage policies can use different protocols; a single block number or relief percentage should not be applied without context. A positive block does not guarantee successful ablation.</p><p className="text-gray-700 mb-6">Ask about the assessment, whether sedation is needed, risks such as bleeding, infection or nerve injury, and the plan if treatment does not help. Sedation is not routinely used for diagnostic blocks because it can affect interpretation. Do not change medication on your own; follow the individual plan from your treating team.</p><h3 className="text-xl font-semibold mb-3">Sources and scope</h3><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7362874/">Consensus practice guidelines on interventions for lumbar facet joint pain from a multispecialty, international working group</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8633772/">Consensus practice guidelines on interventions for cervical spine (facet) joint pain from a multispecialty international working group</a></li></ul><p className="text-gray-700 mt-4">These sources support general education; they do not establish your diagnosis or replace individual assessment.</p></section>
     </>
   );
 }

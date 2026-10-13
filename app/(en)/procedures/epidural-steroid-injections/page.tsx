@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -149,23 +148,13 @@ export default function EpiduralSteroidInjectionsPage() {
               compressed nerve roots, which may help reduce associated pain, numbness, or tingling.
             </p>
             <p>
-              The procedure is typically performed under fluoroscopic (X-ray) or other imaging
-              guidance to confirm accurate needle placement. ESIs are not a structural treatment
-              and do not repair underlying disc or spinal pathology.
+              Imaging guidance helps assess needle position and medication spread, but does not eliminate risk. The approach and access level depend on the indication, anatomy, and reviewed imaging. For cervical injections, the access point may differ from the level of the symptomatic disc. ESIs do not repair a disc or other structural spinal condition.
             </p>
           </div>
         </div>
 
         {/* ILLUSTRATION: Epidural Mechanism */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            size="xlarge"
-            src="/images/conditions/epidural-mechanism.png"
-            alt="Epidural steroid injection showing needle placement in epidural space, steroid delivery around nerve roots, and inflammation reduction mechanism in lumbar and cervical spine"
-            caption="How Epidural Steroid Injections Work: The needle advances into the epidural space (the area surrounding the spinal nerves but outside the dura mater). Steroid medication is delivered directly to inflamed nerve tissue, reducing inflammation and pain. This visual shows both lumbar and cervical approaches."
-          />
-        </div>
+
       </section>
 
       {/* APPROACHES */}
@@ -212,26 +201,10 @@ export default function EpiduralSteroidInjectionsPage() {
         </div>
 
         {/* ILLUSTRATION: Lumbar Epidural */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            size="large"
-            src="/images/procedures/injections/lumbar-epidural-steroid-injection.png"
-            alt="Lumbar epidural steroid injection technique showing vertebral anatomy, needle trajectory through tissues, epidural space identification, and steroid placement around lumbar nerve roots"
-            caption="Lumbar Epidural Approach: This technique targets the epidural space between L4-L5 or L5-S1, depending on symptom distribution. The needle passes through skin, ligaments, and enters the epidural space under fluoroscopic guidance."
-          />
-        </div>
+
 
         {/* ILLUSTRATION: Cervical Epidural */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            size="large"
-            src="/images/procedures/injections/cervical-epidural-steroid-injection.png"
-            alt="Cervical epidural steroid injection showing neck anatomy, needle trajectory at cervical vertebra level, epidural space anatomy at cervical spine, and medication placement"
-            caption="Cervical Epidural Approach: For neck and arm pain, the cervical epidural uses similar technique but targets the narrower cervical epidural space. Most commonly performed at C5-C6 or C6-C7 levels."
-          />
-        </div>
+
       </section>
 
       {/* WHEN MAY ESIs BE CONSIDERED */}
@@ -346,6 +319,7 @@ export default function EpiduralSteroidInjectionsPage() {
 
       {/* MEDICAL REVIEW */}
       <MedicalReviewFooter path="/procedures/epidural-steroid-injections" />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Evidence, risks, and discussion with your physician</h2><p className="text-gray-700 mb-4">Benefits differ by condition and response varies. The AAN review found benefits for radicular pain and disability mainly in the short term; durable pain relief remains uncertain. Findings for spinal stenosis differ, and benefit should not be assumed from an abnormal scan alone. Each repeat injection needs its own clinical rationale.</p><p className="text-gray-700 mb-6">Epidural use of corticosteroids is off-label: FDA has not approved this route of administration. FDA warns of rare serious neurological complications, including stroke, paralysis, vision loss, and death. Discuss the expected benefit, individual risks, medication, approach, and alternatives with your physician. New sudden weakness, vision changes, severe unusual headache, or seizures after an injection require emergency assessment.</p><h3 className="text-xl font-semibold mb-3">Sources and scope</h3><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://aanfiles.blob.core.windows.net/guidelines/e5b9aa53-c4e9-48a5-b43a-3a33d66a6b03/25_EpiduralInjectnReview-Clinician_v04.pdf">AAN: Epidural steroids for cervical and lumbar radicular pain and spinal stenosis — Summary for clinicians</a></li><li><a className="text-blue-600 underline" href="https://www.fda.gov/files/drugs/published/FDA-Drug-Safety-Communication-for-Corticosteroid.pdf">FDA Drug Safety Communication: rare but serious neurologic problems after epidural corticosteroid injections</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12002863/">Safety practices for interventional pain procedures: Epidural and sacroiliac interventions</a></li></ul><p className="text-gray-700 mt-4">These sources support general education; they do not establish your diagnosis or replace individual assessment.</p></section>
     </>
   );
 }
