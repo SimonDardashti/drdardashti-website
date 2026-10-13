@@ -162,7 +162,7 @@ export default function McGillBig3Page() {
             </div>
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                Who Was Stuart McGill?
+                Who Is Stuart McGill?
               </h2>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
                 Stuart McGill is a biomechanist and professor emeritus who spent decades researching spinal mechanics, spine loading during movement, and the relationship between exercise, motor control, and back pain. His work emphasized understanding how the spine functions and how to load it appropriately during exercise.
@@ -209,7 +209,7 @@ export default function McGillBig3Page() {
               <div className="mb-8">
                 <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">Curl-up</h3>
                 <p className="text-[#666] text-base leading-relaxed mb-3 max-w-2xl">
-                  The curl-up targets the rectus abdominis without excessive spinal flexion. Performed by supporting the head with hands and gently raising the shoulders slightly while maintaining a neutral lower spine. The movement is modest and controlled.
+                  The curl-up targets the rectus abdominis without excessive spinal flexion. The modified curl-up uses a modest, controlled movement while minimizing motion of the lumbar and cervical spine. Ask your physical therapist to demonstrate the setup and a variation appropriate for you.
                 </p>
               </div>
 
