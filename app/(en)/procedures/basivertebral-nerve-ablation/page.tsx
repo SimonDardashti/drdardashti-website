@@ -44,11 +44,7 @@ const facts = [
 ];
 
 const sources = [
-  ["FDA 510(k) summary for the Intracept System (K190504)", "https://www.accessdata.fda.gov/cdrh_docs/pdf19/K190504.pdf"],
   ["Intracept System Instructions for Use: indications, contraindications, risks, procedure details", "https://www.bostonscientific.com/content/dam/elabeling/nm/intracept/51875763-01B_INTRACEPT_IFU_ML_s.pdf"],
-  ["Fischgrund et al. — sham-controlled SMART trial (2018)", "https://pubmed.ncbi.nlm.nih.gov/29423885/"],
-  ["Smuck et al. — randomized INTRACEPT trial, 12-month results (2021)", "https://pubmed.ncbi.nlm.nih.gov/34031220/"],
-  ["Sayed et al. — ASPN best-practice guidelines (2022)", "https://pubmed.ncbi.nlm.nih.gov/36128549/"],
   ["Khalil et al. — pooled five-year follow-up analysis (2024)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11700295/"],
 ];
 
@@ -154,7 +150,7 @@ export default function BasivertebralNerveAblationPage() {
     <section className="border-b border-[#e5e5e0] bg-white px-5 py-14 sm:px-6 md:py-16" aria-labelledby="bvna-sources">
       <div className="mx-auto max-w-6xl">
         <h2 id="bvna-sources" className="text-2xl font-bold text-[#111]" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Sources and further reading</h2>
-        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#555]">Regulatory labeling, original clinical studies, and professional guidance inform this overview. Cited studies describe group results and do not establish an individual&rsquo;s outcome.</p>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#555]">Device safety labeling and long-term clinical evidence inform this overview. Study results describe groups and do not establish an individual&rsquo;s outcome.</p>
         <ol className="mt-5 grid grid-cols-1 gap-3 text-sm leading-relaxed md:grid-cols-2">
           {sources.map(([label, href]) => <li key={href}><a href={href} target="_blank" rel="noopener noreferrer" className="text-[#806207] underline decoration-[#c8a020] underline-offset-4 hover:text-[#594507] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c8a020]">{label}<span className="sr-only"> (opens in a new tab)</span></a></li>)}
         </ol>
