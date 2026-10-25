@@ -351,6 +351,7 @@ export default function LowBackPainPage() {
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
               <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Facet Joint Injections &amp; Medial Branch Blocks →</Link></li>
               <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Radiofrequency Ablation →</Link></li>
+              <li><Link href="/procedures/basivertebral-nerve-ablation" className="text-[#c8a020] hover:underline tracking-wide">Basivertebral Nerve Ablation →</Link></li>
               <li><Link href="/services" className="text-[#c8a020] hover:underline tracking-wide">View all Conditions &amp; Services →</Link></li>
             </ul>
           </div>
