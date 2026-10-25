@@ -75,6 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/conditions/sciatica-radicular-pain`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/epidural-steroid-injections`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/radiofrequency-ablation`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/procedures/basivertebral-nerve-ablation`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/procedures/facet-joint-injections-medial-branch-blocks`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/neck-pain`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/sacroiliac-joint-pain`, changeFrequency: "monthly", priority: 0.8 },

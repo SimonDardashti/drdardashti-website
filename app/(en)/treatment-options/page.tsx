@@ -271,6 +271,10 @@ export default function TreatmentOptions() {
           </ul>
 
           <p className="text-lg leading-relaxed text-gray-700 mb-4">
+            <strong><Link href="/procedures/basivertebral-nerve-ablation" className="text-blue-600 hover:text-blue-800">Basivertebral nerve ablation:</Link></strong> May be discussed for selected chronic vertebrogenic low back pain; it targets a different nerve than facet radiofrequency ablation.
+          </p>
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-4">
             <strong>What injections can and cannot do:</strong> Injections can reduce inflammation, improve function, and provide relief while your body heals. They can also provide diagnostic information—if pain improves after targeting a specific structure, that tells you something important about where the pain is coming from. What injections cannot do is repair structural damage or guarantee permanent relief. They are tools, used in the right situation, for the right patient.
           </p>
 

@@ -282,6 +282,7 @@ export default function RadiofrequencyAblationPage() {
               <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
               <li><Link href="/conditions/neck-pain" className="text-[#c8a020] hover:underline tracking-wide">Neck Pain Evaluation →</Link></li>
               <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Epidural Steroid Injections →</Link></li>
+              <li><Link href="/procedures/basivertebral-nerve-ablation" className="text-[#c8a020] hover:underline tracking-wide">Basivertebral Nerve Ablation (different target) →</Link></li>
               <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">View all Procedures &amp; Treatment Options →</Link></li>
             </ul>
           </div>
