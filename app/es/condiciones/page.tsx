@@ -114,9 +114,9 @@ export default function CondicionesPage() {
 
       {/* SPANISH SECTION NAV */}
       <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <Link
               href="/es"
               className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors"
@@ -320,9 +320,9 @@ export default function CondicionesPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/es/procedimientos" className="text-[#c8a020] hover:underline tracking-wide">Ver procedimientos y opciones de tratamiento (en español) →</Link></li>
-              <li><Link href="/procedures/epidural-steroid-injections" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones epidurales de esteroides →</Link></li>
-              <li><Link href="/procedures/facet-joint-injections-medial-branch-blocks" className="text-[#c8a020] hover:underline tracking-wide">Bloqueos de rama medial y bloqueos facetarios →</Link></li>
-              <li><Link href="/procedures/radiofrequency-ablation" className="text-[#c8a020] hover:underline tracking-wide">Ablación por radiofrecuencia →</Link></li>
+              <li><Link href="/es/procedimientos/inyecciones-epidurales-de-esteroides" className="text-[#c8a020] hover:underline tracking-wide">Inyecciones epidurales de esteroides →</Link></li>
+              <li><Link href="/es/procedimientos/bloqueos-de-rama-medial" className="text-[#c8a020] hover:underline tracking-wide">Bloqueos de rama medial y bloqueos facetarios →</Link></li>
+              <li><Link href="/es/procedimientos/ablacion-por-radiofrecuencia" className="text-[#c8a020] hover:underline tracking-wide">Ablación por radiofrecuencia →</Link></li>
               <li><Link href="/conditions" className="text-[#c8a020] hover:underline tracking-wide">Ver todas las condiciones evaluadas (en inglés) →</Link></li>
             </ul>
           </div>

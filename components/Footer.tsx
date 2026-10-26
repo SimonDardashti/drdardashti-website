@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { getLanguageSwitchHref } from "@/lib/language-routes";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -17,7 +18,7 @@ export default function Footer() {
         { href: "/es/cuidados-conservadores", label: "Cuidados Conservadores" },
         { href: "/es/condiciones", label: "Condiciones" },
         { href: "/es/procedimientos", label: "Procedimientos" },
-        { href: "/", label: "English" },
+        { href: getLanguageSwitchHref(pathname || "/es"), label: "English" },
       ]
     : [
         { href: "/", label: "Home" },

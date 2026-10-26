@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { getLanguageSwitchHref } from "@/lib/language-routes";
 
 const englishNavLinks = [
   { href: "/", label: "Home" },
@@ -38,7 +39,8 @@ function BookIcon() {
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const isSpanish = pathname?.startsWith("/es");
+  const isSpanish = pathname === "/es" || pathname?.startsWith("/es/");
+  const languageHref = getLanguageSwitchHref(pathname || "/");
 
   return (
     <header className="bg-[#0a0a0a] text-white sticky top-0 z-50 border-b border-[#1a1a1a]">
@@ -70,7 +72,8 @@ export default function Header() {
           ))}
           <div className="pl-4 border-l border-[#333]">
             <Link
-              href={isSpanish ? "/" : "/es"}
+              href={languageHref}
+              hrefLang={isSpanish ? "en" : "es"}
               className={`text-xs font-medium tracking-widest uppercase transition-colors duration-200 hover:text-[#c8a020] ${
                 isSpanish ? "text-[#888]" : "text-[#c8a020]"
               }`}
@@ -85,6 +88,8 @@ export default function Header() {
           className="md:hidden flex flex-col gap-1.5 p-1"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           <span className={`block w-5 h-px bg-white transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
           <span className={`block w-5 h-px bg-white transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
@@ -107,7 +112,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-[#0f0f0f] border-t border-[#1a1a1a] px-6 py-5 flex flex-col gap-4">
+        <div id="mobile-navigation" className="md:hidden bg-[#0f0f0f] border-t border-[#1a1a1a] px-6 py-5 flex flex-col gap-4">
           {(isSpanish ? spanishNavLinks : englishNavLinks).map((link) => (
             <Link
               key={link.href}
@@ -122,7 +127,8 @@ export default function Header() {
           ))}
           <div className="border-t border-[#1a1a1a] pt-4 mt-2">
             <Link
-              href={isSpanish ? "/" : "/es"}
+              href={languageHref}
+              hrefLang={isSpanish ? "en" : "es"}
               onClick={() => setMenuOpen(false)}
               className={`text-xs font-medium tracking-widest uppercase py-1 transition-colors hover:text-[#c8a020] block ${
                 isSpanish ? "text-[#888]" : "text-[#c8a020]"
