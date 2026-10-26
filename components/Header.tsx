@@ -140,7 +140,16 @@ export default function Header() {
           <div className="border-t border-[#1a1a1a] pt-4 mt-2">
             <Link
               href="#educational-content-notice"
-              onClick={() => setMenuOpen(false)}
+              onClick={(event) => {
+                event.preventDefault();
+                setMenuOpen(false);
+                window.requestAnimationFrame(() => {
+                  window.location.hash = "educational-content-notice";
+                  const notice = document.getElementById("educational-content-notice");
+                  notice?.scrollIntoView({ block: "start" });
+                  notice?.focus({ preventScroll: true });
+                });
+              }}
               aria-label={isSpanish ? "Ver aviso de educación para pacientes" : "View patient education notice"}
               className="flex items-center gap-1.5 text-[#c8a020] text-[10px] font-semibold tracking-[0.3em] uppercase opacity-75 hover:opacity-100 transition-opacity duration-200 no-underline"
             >
