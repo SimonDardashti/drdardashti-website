@@ -75,9 +75,9 @@ export default function BloqueoNerviosPerifericosPage() {
 
       {/* SPANISH SECTION NAV */}
       <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <Link href="/es" className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors">Inicio</Link>
             <span className="w-px h-4 bg-[#333]" />
             <Link href="/es/condiciones" className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors">Condiciones</Link>

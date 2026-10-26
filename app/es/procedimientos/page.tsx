@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: "Procedimientos de Manejo del Dolor | Simon Dardashti, MD" },
   description:
     "Información educativa en español sobre procedimientos y opciones de tratamiento para dolor de columna, nervios y articulaciones.",
-  alternates: { canonical: PAGE_URL },
+  alternates: { canonical: PAGE_URL, languages: { en: `${SITE_URL}/procedures`, es: PAGE_URL } },
   openGraph: {
     type: "website",
     url: PAGE_URL,
@@ -73,6 +73,15 @@ const procedureGroups = [
   },
 ];
 
+const englishOnlyProcedures = [
+  { label: "Bloqueo de nervios geniculares para dolor de rodilla", href: "/procedures/genicular-nerve-block" },
+  { label: "Ablación del nervio basivertebral (BVNA)", href: "/procedures/basivertebral-nerve-ablation" },
+  { label: "Cifoplastia", href: "/procedures/kyphoplasty" },
+  { label: "Bótox para la prevención de la migraña crónica", href: "/procedures/botox-for-chronic-migraine" },
+  { label: "Evaluación para estimulación de la médula espinal", href: "/procedures/spinal-cord-stimulation-evaluation" },
+  { label: "Evaluación para estimulación de nervios periféricos", href: "/procedures/peripheral-nerve-stimulation-evaluation" },
+];
+
 export default function ProcedimientosPage() {
   return (
     <>
@@ -103,9 +112,9 @@ export default function ProcedimientosPage() {
 
       {/* SPANISH SECTION NAV */}
       <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <Link
               href="/es"
               className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors"
@@ -178,7 +187,7 @@ export default function ProcedimientosPage() {
           <p className="text-sm text-[#666] mb-8 max-w-2xl leading-relaxed">
             Diez opciones de tratamiento están disponibles en español, organizadas a continuación por categoría. Contenido adicional está disponible en inglés.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-[#e5e5e0]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#e5e5e0]">
             {procedureGroups.map((group, i) => (
               <div
                 key={group.title}
@@ -209,6 +218,13 @@ export default function ProcedimientosPage() {
                 </ul>
               </div>
             ))}
+          </div>
+          <div className="mt-8 border border-[#e5e5e0] bg-white p-6">
+            <h3 className="text-lg font-bold text-[#111]" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Más procedimientos: información en inglés</h3>
+            <p className="mt-3 text-sm leading-relaxed text-[#555]">Las siguientes guías están disponibles actualmente solo en inglés. Cada enlace abre una página en inglés, no una traducción al español.</p>
+            <ul className="mt-4 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+              {englishOnlyProcedures.map((item) => <li key={item.href}><Link href={item.href} hrefLang="en" className="text-[#806207] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#806207]">{item.label}{" "}<span className="whitespace-nowrap">(en inglés)</span></Link></li>)}
+            </ul>
           </div>
           <p className="mt-8 text-sm text-[#666]">
             Contenido adicional sobre procedimientos y opciones de tratamiento está disponible (en inglés).{" "}
@@ -293,9 +309,9 @@ export default function ProcedimientosPage() {
             </h2>
             <ul className="space-y-3 text-sm">
               <li><Link href="/es/condiciones" className="text-[#c8a020] hover:underline tracking-wide">Ver condiciones evaluadas (en español) →</Link></li>
-              <li><Link href="/conditions/sciatica-radicular-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de ciática y dolor radicular →</Link></li>
-              <li><Link href="/conditions/facet-mediated-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor mediado por las facetas →</Link></li>
-              <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor de espalda baja →</Link></li>
+              <li><Link href="/es/condiciones/radiculopatia-ciatica" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de ciática y dolor radicular →</Link></li>
+              <li><Link href="/es/condiciones/dolor-facetario" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor mediado por las facetas →</Link></li>
+              <li><Link href="/es/condiciones/dolor-lumbar" className="text-[#c8a020] hover:underline tracking-wide">Evaluación de dolor de espalda baja →</Link></li>
               <li><Link href="/procedures" className="text-[#c8a020] hover:underline tracking-wide">Ver todos los procedimientos y opciones de tratamiento (en inglés) →</Link></li>
             </ul>
           </div>

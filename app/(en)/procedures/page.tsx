@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: { absolute: "Procedures & Treatment Options | Simon Dardashti, MD" },
   description:
     "Dr. Simon Dardashti evaluates selected patients for epidural steroid injections, radiofrequency ablation, spinal cord stimulation, and other interventional pain procedures in Mission Hills, CA.",
-  alternates: { canonical: PAGE_URL },
+  alternates: { canonical: PAGE_URL, languages: { en: PAGE_URL, es: `${SITE_URL}/es/procedimientos` } },
   openGraph: {
     type: "website",
     url: PAGE_URL,
@@ -67,6 +67,7 @@ const procedureGroups = [
     title: "Peripheral Nerve & Musculoskeletal",
     items: [
       { label: "Peripheral nerve blocks", href: "/procedures/peripheral-nerve-blocks" },
+      { label: "Genicular nerve block for knee pain", href: "/procedures/genicular-nerve-block" },
       { label: "Occipital nerve blocks", href: "/procedures/occipital-nerve-blocks" },
       { label: "Trigger point injections", href: "/procedures/trigger-point-injections" },
       { label: "Joint injections", href: "/procedures/joint-bursa-tendon-injections" },
