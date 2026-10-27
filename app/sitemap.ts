@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/conditions/whiplash-associated-disorder`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/conditions/lumbar-radiculopathy`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/neuropathic-pain`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/conditions/peripheral-neuropathy`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/peripheral-nerve-pain`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/joint-pain`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/conditions/bursa-related-pain`, changeFrequency: "monthly", priority: 0.8 },

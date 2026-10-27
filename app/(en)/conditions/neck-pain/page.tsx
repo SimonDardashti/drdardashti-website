@@ -223,6 +223,30 @@ export default function NeckPainPage() {
         </div>
       </section>
 
+      <section id="neck-diagnoses" className="scroll-mt-28 bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]" aria-labelledby="neck-diagnoses-heading">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs text-[#806207] uppercase tracking-widest mb-4">Explore possible causes</p>
+          <h2 id="neck-diagnoses-heading" className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Neck pain is a symptom, not one diagnosis.</h2>
+          <p className="text-[#555] leading-relaxed max-w-3xl">These guides explain different conditions that may be considered during evaluation. Symptoms can overlap; a page description or an imaging finding alone does not establish the cause.</p>
+          <ul className="mt-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { href: "/conditions/cervical-radiculopathy", label: "Cervical radiculopathy", text: "Neck symptoms with arm pain, tingling, numbness, or weakness related to a cervical nerve root." },
+              { href: "/conditions/facet-mediated-pain", label: "Facet-mediated pain", text: "Pain that may arise from the small joints of the spine, including the neck." },
+              { href: "/conditions/cervicogenic-headache", label: "Cervicogenic headache", text: "Headache that may be related to structures in the neck and requires distinction from other headache causes." },
+              { href: "/conditions/whiplash-associated-disorder", label: "Whiplash-associated disorder", text: "Neck pain and related symptoms after an acceleration-deceleration injury." },
+            ].map((item) => <li key={item.href} className="border-t border-[#ded8ca] pt-4">
+              <Link href={item.href} className="inline-flex min-h-11 items-center text-[#806207] font-semibold underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">{item.label}<span aria-hidden="true">&nbsp;→</span></Link>
+              <p className="text-sm text-[#555] leading-relaxed mt-2">{item.text}</p>
+            </li>)}
+          </ul>
+          <div className="mt-8 border-l-2 border-[#b28c24] pl-5">
+            <h3 className="font-bold text-[#111]">Less common head and neck causes</h3>
+            <Link href="/conditions/eagle-syndrome" className="inline-flex min-h-11 items-center text-[#806207] font-semibold underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Eagle syndrome<span aria-hidden="true">&nbsp;→</span></Link>
+            <p className="text-sm text-[#555] leading-relaxed max-w-3xl">An uncommon condition associated with the styloid process or stylohyoid ligament, rather than a cervical disc or joint diagnosis. Its dedicated guide discusses overlapping throat, ear, facial, and neck symptoms and evaluation considerations.</p>
+          </div>
+        </div>
+      </section>
+
       {/* TREATMENT OPTIONS */}
       <section className="bg-white py-20 px-6 border-b border-[#e5e5e0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
