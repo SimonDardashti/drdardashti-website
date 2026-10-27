@@ -67,6 +67,7 @@ const conditionGroups = [
       { label: "Lumbar radiculopathy", href: "/conditions/lumbar-radiculopathy" },
       { label: "Radicular pain", href: "/conditions/radicular-pain" },
       { label: "Neuropathic pain", href: "/conditions/neuropathic-pain" },
+      { label: "Peripheral neuropathy & balance", href: "/conditions/peripheral-neuropathy" },
       { label: "Peripheral nerve pain", href: "/conditions/peripheral-nerve-pain" },
       { label: "Thoracic outlet syndrome", href: "/conditions/thoracic-outlet-syndrome" },
       { label: "Intercostal neuralgia", href: "/conditions/intercostal-neuralgia" },
