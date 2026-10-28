@@ -52,7 +52,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "¿Quién fue Stuart McGill?",
+      name: "¿Quién es Stuart McGill?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Stuart McGill es un biomecánico e investigador que pasó décadas estudiando la mecánica espinal y las relaciones entre el ejercicio, la carga espinal y el dolor. Su investigación enfatizó la importancia de la estabilidad espinal y el control motor para manejar el dolor de espalda.",
@@ -159,7 +159,7 @@ export default function EjerciciosMcGillPage() {
             </div>
             <div className="md:col-span-10">
               <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                ¿Quién Fue Stuart McGill?
+                ¿Quién Es Stuart McGill?
               </h2>
               <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
                 Stuart McGill es un biomecánico e investigador que pasó décadas investigando la mecánica espinal, la carga espinal durante el movimiento y la relación entre el ejercicio, el control motor y el dolor de espalda. Su trabajo enfatizó la comprensión de cómo funciona la columna vertebral y cómo cargarla apropiadamente durante el ejercicio.
@@ -206,7 +206,7 @@ export default function EjerciciosMcGillPage() {
               <div className="mb-8">
                 <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">Flexión Abdominal (Curl-up)</h3>
                 <p className="text-[#666] text-base leading-relaxed mb-3 max-w-2xl">
-                  La flexión abdominal apunta al recto abdominal sin flexión espinal excesiva. Se realiza apoyando la cabeza con las manos y levantando suavemente los hombros un poco mientras se mantiene una columna lumbar neutral. El movimiento es modesto y controlado.
+                  La flexión abdominal apunta al recto abdominal sin flexión espinal excesiva. La flexión abdominal modificada utiliza un movimiento pequeño y controlado, minimizando el movimiento de la columna lumbar y cervical. Pida a su fisioterapeuta que le demuestre la posición y una variante apropiada para usted.
                 </p>
               </div>
 
@@ -218,7 +218,7 @@ export default function EjerciciosMcGillPage() {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">Pájaro Volador (Bird Dog)</h3>
+                <h3 className="text-lg font-bold text-[#0a0a0a] mb-3">Extensión Alternada de Brazo y Pierna (Bird Dog)</h3>
                 <p className="text-[#666] text-base leading-relaxed max-w-2xl">
                   El pájaro volador apunta al multífido y promueve el control motor. Se realiza en posición cuadrúpeda (manos y rodillas) extendiendo el brazo y la pierna opuestos mientras se mantiene una columna neutral. El ejercicio enfatiza la coordinación y el control en lugar de la fuerza.
                 </p>

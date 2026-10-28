@@ -64,7 +64,7 @@ const inBrief = [
   },
   {
     heading: "Guiado por imagen",
-    body: "El procedimiento se realiza bajo guía de imagen para garantizar la colocación correcta del anestésico alrededor de los nervios facetarios.",
+    body: "La guía de imagen ayuda a ubicar la aguja y evaluar el procedimiento, pero no garantiza la colocación ni elimina los riesgos.",
   },
 ];
 
@@ -75,9 +75,9 @@ export default function BloqueosRamaMedialPage() {
 
       {/* SPANISH SECTION NAV */}
       <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <Link href="/es" className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors">Inicio</Link>
             <span className="w-px h-4 bg-[#333]" />
             <Link href="/es/condiciones" className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors">Condiciones</Link>
@@ -131,7 +131,7 @@ export default function BloqueosRamaMedialPage() {
               Las articulaciones facetarias conectan las vértebras de la columna y están inervadas por nervios llamados ramas mediales. Cuando hay sospecha de que el dolor está relacionado con estas articulaciones, se pueden realizar bloqueos de rama medial inyectando anestésico alrededor de estos nervios para bloquear temporalmente las señales de dolor.
             </p>
             <p>
-              Los bloqueos facetarios son inyecciones directamente en la articulación facetaria. Ambos procedimientos se pueden usar tanto con propósito diagnóstico (para ayudar a identificar la fuente del dolor) como con propósito terapéutico (para proporcionar alivio del dolor). Los procedimientos se realizan bajo guía de fluoroscopia (rayos X) u otra guía de imagen.
+              Una inyección facetaria coloca medicamento en la articulación. Un bloqueo de rama medial coloca anestésico cerca de los nervios que llevan señales de esa articulación y se utiliza principalmente para evaluación diagnóstica o pronóstica. El alivio puede ser temporal; no debe presentarse como un tratamiento duradero rutinario. La respuesta se interpreta con la técnica, la actividad y otros hallazgos clínicos.
             </p>
           </div>
         </div>
@@ -179,10 +179,10 @@ export default function BloqueosRamaMedialPage() {
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Cómo se realiza el procedimiento</h2>
             <p>
-              El paciente se posiciona típicamente en decúbito prono (boca abajo). Bajo guía de fluoroscopia, se identifica el sitio de la rama medial u la articulación facetaria, y se inyecta anestésico local alrededor de los nervios o dentro de la articulación. El procedimiento típicamente toma de 15 a 30 minutos. El paciente es observado brevemente después y generalmente va a casa el mismo día.
+              La posición, técnica y duración dependen de la región y los niveles tratados. El anestésico se coloca cerca del nervio o en la articulación según el procedimiento seleccionado. Siga las instrucciones específicas de preparación, observación y alta de su médico.
             </p>
             <p>
-              Si el bloqueo proporciona alivio significativo, puede proporcionar evidencia diagnóstica de que el dolor está relacionado con las articulaciones facetarias. Esto puede llevar a consideración de procedimientos más duraderos como la ablación por radiofrecuencia.
+              Registre el grado y el momento del alivio, la actividad durante la evaluación y cualquier sedación o medicamento adicional según las instrucciones. El resultado puede apoyar la evaluación de dolor facetario, pero no confirma por sí solo el diagnóstico ni garantiza beneficio con la ablación por radiofrecuencia.
             </p>
           </div>
         </div>
@@ -228,6 +228,7 @@ export default function BloqueosRamaMedialPage() {
 
       {/* REVISIÓN MÉDICA */}
       <MedicalReviewFooter path="/es/procedimientos/bloqueos-de-rama-medial" locale="es" />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Cómo se interpreta el resultado y qué preguntar</h2><p className="text-gray-700 mb-4">La selección para ablación por radiofrecuencia depende de la región de la columna, el diagnóstico, la técnica y la respuesta documentada a los bloqueos. Las guías clínicas y las políticas de cobertura pueden usar diferentes protocolos; no existe un número o porcentaje universal que deba aplicarse sin contexto. Un bloqueo positivo no garantiza éxito con la ablación.</p><p className="text-gray-700 mb-6">Pregunte sobre la evaluación, la necesidad de sedación, los riesgos de sangrado, infección o lesión nerviosa, y el plan si no mejora. La sedación no se usa de rutina para bloqueos diagnósticos porque puede afectar su interpretación. No cambie medicamentos por su cuenta; siga el plan individual indicado por su equipo.</p><h3 className="text-xl font-semibold mb-3">Fuentes y alcance</h3><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7362874/">Consensus practice guidelines on interventions for lumbar facet joint pain from a multispecialty, international working group</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8633772/">Consensus practice guidelines on interventions for cervical spine (facet) joint pain from a multispecialty international working group</a></li></ul><p className="text-gray-700 mt-4">Estas fuentes apoyan la educación general; no establecen su diagnóstico ni sustituyen una evaluación individual.</p></section>
     </>
   );
 }

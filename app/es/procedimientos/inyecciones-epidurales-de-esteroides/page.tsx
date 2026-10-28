@@ -75,9 +75,9 @@ export default function InyeccionesEpidualesPage() {
 
       {/* SPANISH SECTION NAV */}
       <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <Link
               href="/es"
               className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors"
@@ -168,10 +168,7 @@ export default function InyeccionesEpidualesPage() {
               u hormigueo asociado.
             </p>
             <p>
-              El procedimiento se realiza típicamente bajo guía de fluoroscopia (rayos X) u otra guía de
-              imagen para confirmar la colocación correcta de la aguja. Las inyecciones epidurales de
-              esteroides no son un tratamiento estructural y no reparan la patología subyacente del disco o
-              de la columna.
+              La guía de imagen ayuda a evaluar la posición de la aguja y la distribución del medicamento, pero no elimina los riesgos. El abordaje y el nivel de acceso dependen de la indicación, la anatomía y las imágenes revisadas. En las inyecciones cervicales, el punto de acceso puede diferir del nivel del disco que produce síntomas. Estas inyecciones no reparan un disco ni otra condición estructural de la columna.
             </p>
           </div>
         </div>
@@ -311,6 +308,7 @@ export default function InyeccionesEpidualesPage() {
 
       {/* REVISIÓN MÉDICA */}
       <MedicalReviewFooter path="/es/procedimientos/inyecciones-epidurales-de-esteroides" locale="es" />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Evidencia, riesgos y conversación con su médico</h2><p className="text-gray-700 mb-4">Los beneficios dependen de la condición y la respuesta varía. La revisión de la AAN encontró beneficios para el dolor radicular y la discapacidad principalmente a corto plazo; el alivio duradero del dolor sigue siendo incierto. Los hallazgos para la estenosis espinal difieren, y una imagen anormal por sí sola no garantiza beneficio. Cada inyección repetida necesita su propia justificación clínica.</p><p className="text-gray-700 mb-6">El uso epidural de corticoesteroides es fuera de indicación aprobada: la FDA no ha aprobado esta vía de administración. La FDA advierte sobre complicaciones neurológicas graves y poco frecuentes, incluidos accidente cerebrovascular, parálisis, pérdida de visión y muerte. Discuta con su médico el beneficio esperado, los riesgos individuales, el medicamento, el abordaje y las alternativas. La debilidad súbita nueva, los cambios de visión, el dolor de cabeza intenso e inusual o las convulsiones después de una inyección requieren valoración de emergencia.</p><h3 className="text-xl font-semibold mb-3">Fuentes y alcance</h3><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://aanfiles.blob.core.windows.net/guidelines/e5b9aa53-c4e9-48a5-b43a-3a33d66a6b03/25_EpiduralInjectnReview-Clinician_v04.pdf">AAN: Epidural steroids for cervical and lumbar radicular pain and spinal stenosis — Summary for clinicians</a></li><li><a className="text-blue-600 underline" href="https://www.fda.gov/files/drugs/published/FDA-Drug-Safety-Communication-for-Corticosteroid.pdf">FDA Drug Safety Communication: rare but serious neurologic problems after epidural corticosteroid injections</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12002863/">Safety practices for interventional pain procedures: Epidural and sacroiliac interventions</a></li></ul><p className="text-gray-700 mt-4">Estas fuentes apoyan la educación general; no establecen su diagnóstico ni sustituyen una evaluación individual.</p></section>
     </>
   );
 }

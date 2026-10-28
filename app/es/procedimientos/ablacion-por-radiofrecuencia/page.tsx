@@ -64,7 +64,7 @@ const inBrief = [
   },
   {
     heading: "Guiado por imagen",
-    body: "El procedimiento se realiza bajo guía de fluoroscopia para garantizar la colocación correcta del electrodo.",
+    body: "La fluoroscopia ayuda a ubicar el electrodo; la guía de imagen no garantiza el resultado ni elimina los riesgos.",
   },
 ];
 
@@ -75,9 +75,9 @@ export default function AblacionRadiofrecuenciaPage() {
 
       {/* SPANISH SECTION NAV */}
       <section className="bg-[#0a0a0a] py-4 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <span className="text-[10px] text-[#666] uppercase tracking-widest">Sección en español</span>
-          <nav className="flex items-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <Link href="/es" className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors">Inicio</Link>
             <span className="w-px h-4 bg-[#333]" />
             <Link href="/es/condiciones" className="text-xs font-medium tracking-widest uppercase text-[#888] hover:text-[#c8a020] transition-colors">Condiciones</Link>
@@ -179,7 +179,7 @@ export default function AblacionRadiofrecuenciaPage() {
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Duración del alivio</h2>
             <p>
-              La duración del alivio después de la ablación por radiofrecuencia varía entre pacientes. Algunos pacientes experimentan alivio durante meses o más, mientras que otros pueden tener duraciones de alivio más cortas. Con el tiempo, el nervio puede regenerarse y el dolor puede retornar, en cuyo caso el procedimiento puede repetirse.
+              La duración del alivio varía; puede haber beneficio parcial, temporal o ningún beneficio. Si reaparece el dolor, el médico debe reevaluar la causa, la respuesta previa y los riesgos antes de considerar repetir el procedimiento. No existe un calendario universal de regeneración nerviosa o repetición.
             </p>
             <p>
               La respuesta individual es muy variable y no puede predecirse completamente antes del procedimiento. La efectividad depende de si el dolor está realmente relacionado con la rama medial que se está ablacionando.
@@ -228,6 +228,7 @@ export default function AblacionRadiofrecuenciaPage() {
 
       {/* REVISIÓN MÉDICA */}
       <MedicalReviewFooter path="/es/procedimientos/ablacion-por-radiofrecuencia" locale="es" />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Cómo se interpreta el resultado y qué preguntar</h2><p className="text-gray-700 mb-4">La selección para ablación por radiofrecuencia depende de la región de la columna, el diagnóstico, la técnica y la respuesta documentada a los bloqueos. Las guías clínicas y las políticas de cobertura pueden usar diferentes protocolos; no existe un número o porcentaje universal que deba aplicarse sin contexto. Un bloqueo positivo no garantiza éxito con la ablación.</p><p className="text-gray-700 mb-6">Pregunte sobre la evaluación, la necesidad de sedación, los riesgos de sangrado, infección o lesión nerviosa, y el plan si no mejora. La sedación no se usa de rutina para bloqueos diagnósticos porque puede afectar su interpretación. No cambie medicamentos por su cuenta; siga el plan individual indicado por su equipo.</p><h3 className="text-xl font-semibold mb-3">Fuentes y alcance</h3><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7362874/">Consensus practice guidelines on interventions for lumbar facet joint pain from a multispecialty, international working group</a></li><li><a className="text-blue-600 underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8633772/">Consensus practice guidelines on interventions for cervical spine (facet) joint pain from a multispecialty international working group</a></li></ul><p className="text-gray-700 mt-4">Estas fuentes apoyan la educación general; no establecen su diagnóstico ni sustituyen una evaluación individual.</p></section>
     </>
   );
 }

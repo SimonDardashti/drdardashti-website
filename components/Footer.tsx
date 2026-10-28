@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { getLanguageSwitchHref } from "@/lib/language-routes";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -17,7 +18,7 @@ export default function Footer() {
         { href: "/es/cuidados-conservadores", label: "Cuidados Conservadores" },
         { href: "/es/condiciones", label: "Condiciones" },
         { href: "/es/procedimientos", label: "Procedimientos" },
-        { href: "/", label: "English" },
+        { href: getLanguageSwitchHref(pathname || "/es"), label: "English" },
       ]
     : [
         { href: "/", label: "Home" },
@@ -30,7 +31,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0a0a0a] text-white border-t border-[#1a1a1a]">
-      <div id="educational-content-notice" className="max-w-6xl mx-auto px-6 py-6 scroll-mt-24">
+      <div id="educational-content-notice" tabIndex={-1} className="max-w-6xl mx-auto px-6 py-6 scroll-mt-24">
         <Image
           src={isSpanish ? "/images/ui/educational-content-footer-es.png" : "/images/ui/educational-content-footer.png"}
           alt={isSpanish ? "Aviso de contenido educativo." : "Educational content notice."}
@@ -39,6 +40,9 @@ export default function Footer() {
           className="w-full h-auto"
           sizes="(max-width: 1152px) 100vw, 1152px"
         />
+        <p className="mt-3 text-sm leading-relaxed text-[#aaa] md:sr-only">
+          {isSpanish ? "Este sitio web ofrece información educativa general y no sustituye el consejo médico personalizado." : "This website provides general educational information and is not a substitute for individualized medical advice."}
+        </p>
       </div>
 
       <div className="max-w-6xl mx-auto px-6 pb-16 grid grid-cols-1 md:grid-cols-3 gap-12">

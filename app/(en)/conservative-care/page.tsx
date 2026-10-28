@@ -1,0 +1,355 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
+
+const PAGE_URL = "https://www.drdardashti.com/conservative-care";
+const SITE_URL = "https://www.drdardashti.com";
+
+export const metadata: Metadata = {
+  title: { absolute: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD" },
+  description:
+    "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    type: "website",
+    url: PAGE_URL,
+    title: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD",
+    description:
+      "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
+    images: [{ url: "/headshot.webp", width: 1200, height: 630, alt: "Simon Dardashti, MD" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD",
+    description:
+      "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches. Physician-authored patient education.",
+    images: ["/headshot.webp"],
+  },
+};
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Rehabilitation and Non-Procedural Pain Education | Simon Dardashti, MD",
+  url: PAGE_URL,
+  description:
+    "Educational overview of rehabilitation and non-procedural approaches to pain: physical therapy, exercise, aquatic therapy, mind-body therapies, and lifestyle approaches.",
+  inLanguage: "en-US",
+  isPartOf: { "@type": "WebSite", url: SITE_URL },
+  author: { "@type": "Physician", name: "Simon Dardashti, MD", url: SITE_URL },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Rehabilitation & Exercise", item: PAGE_URL },
+    ],
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is rehabilitation and non-procedural pain care?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Rehabilitation and non-procedural pain care refers to non-surgical, non-injection approaches to managing pain. These include physical therapy, exercise, mind-body therapies, and lifestyle modifications. This approach is often the appropriate initial strategy for many chronic pain conditions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is this approach always effective?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Response varies among patients. Some patients experience significant improvement with these approaches alone. Others benefit from rehabilitation combined with additional interventions. A formal clinical evaluation is needed to determine appropriate treatment for any individual patient.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does this approach take to work?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Improvement varies by diagnosis and individual circumstances. Agree on functional goals and a reassessment plan with your clinician. Worsening or new symptoms may require earlier review; there is no universal waiting period before reassessment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Should I try rehabilitation before considering injections or surgery?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Rehabilitation and non-procedural care is often an appropriate initial approach for many pain conditions. However, the appropriate sequence and timing of treatment depends on the specific diagnosis, symptom severity, and individual circumstances. A clinical evaluation can help determine the best approach for your situation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can this approach prevent the need for surgery?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Rehabilitation and non-procedural care may help some patients avoid surgery, while others eventually require surgical or interventional evaluation despite these efforts. The role of this approach in preventing surgery depends on the specific condition and individual response to treatment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there conditions where this approach alone is not appropriate?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some symptoms require prompt assessment rather than a routine rehabilitation programme. With back pain, new bowel or bladder changes or numbness around the genitals or anus require emergency care. Progressive weakness needs prompt assessment. A clinician must determine whether rehabilitation is appropriate.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is physical therapy always necessary?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Physical therapy is beneficial for many pain conditions, but not all patients require formal physical therapy. Some patients benefit from home-based exercise programs. Others may benefit from a combination of approaches. A clinical evaluation and discussion with a physical therapist can help determine the best approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I do this on my own, or do I need professional guidance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Professional guidance can help identify suitable exercises and monitor technique and response. A home programme may be appropriate after assessment, with a plan for follow-up. Guidance does not guarantee a particular result.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What should I do if this approach is not helping?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Discuss persistent symptoms, barriers to participation, or deterioration with your clinician. Review the diagnosis, programme, functional goals, and alternatives. New neurological or emergency symptoms require earlier or immediate assessment rather than waiting to finish a routine course.",
+      },
+    },
+  ],
+};
+
+export default function ConservativeCarePage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
+      {/* HERO */}
+      <section className="bg-[#0a0a0a] text-white py-20 px-6 border-b border-[#1a1a1a]">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[#c8a020] text-xs font-semibold tracking-[0.3em] uppercase mb-4">
+            Rehabilitation & Exercise
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            Rehabilitation and
+            <br />
+            <em className="not-italic text-[#888]">Non-Procedural Pain Education.</em>
+          </h1>
+          <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
+            Physical therapy, exercise, mind-body therapies, and lifestyle approaches provide evidence-based, non-procedural options for managing chronic pain without surgery or injections.
+          </p>
+        </div>
+      </section>
+
+      {/* CONTENT */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-16">
+          {/* 01 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>01</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Why</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Why Rehabilitation and Non-Procedural Care Matters.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                Rehabilitation and non-procedural care—non-surgical, non-injection approaches—is often an appropriate initial treatment strategy for many chronic pain conditions. Physical therapy, exercise, mind-body interventions, and lifestyle modifications have evidence supporting their role in managing pain and improving function.
+              </p>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                Not all patients require injections or surgery. Many patients achieve meaningful improvement with these approaches. However, response varies among individuals, and some patients eventually benefit from additional interventions when rehabilitation alone is insufficient.
+              </p>
+              <p className="text-[#666] text-base leading-relaxed max-w-2xl">
+                The role of rehabilitation and non-procedural care is determined by the specific diagnosis, clinical presentation, symptom severity, and individual response to treatment.
+              </p>
+            </div>
+          </div>
+
+          {/* 02 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>02</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Physical</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Physical Therapy.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                Physical therapy focuses on restoring function, improving mobility, and managing pain through targeted exercises, manual techniques, and functional training. A licensed physical therapist personalizes the approach based on your diagnosis, examination findings, and functional goals.
+              </p>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                Participation and technique matter, but there is no single duration that establishes an adequate therapy course for every condition. Review symptoms and function with your clinician and adjust the programme to your response.
+              </p>
+            </div>
+          </div>
+
+          {/* 03 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>03</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Aquatic</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Aquatic Physical Therapy.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                Aquatic therapy uses water's buoyancy, resistance, and warmth to facilitate exercise and mobility training. The reduced weight-bearing environment can make movement easier for some patients while still providing resistance for strengthening. Aquatic therapy is often combined with land-based physical therapy.
+              </p>
+            </div>
+          </div>
+
+          {/* 04 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>04</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Exercise</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Specific Exercise Programs.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                Targeted exercise programs address specific functional deficits and pain generators. Evidence supports specific exercise approaches for many pain conditions. Programs may target spinal stability, core strength, mobility, or functional movement patterns depending on the diagnosis.
+              </p>
+              <p className="text-[#666] text-base leading-relaxed max-w-2xl">
+                Learn more about evidence-informed exercise approaches: <Link href="/mcgill-big-3-exercises" className="text-[#c8a020] hover:underline">McGill Big 3 Exercises for Low Back Pain</Link> and <Link href="/thoracic-foam-rolling" className="text-[#c8a020] hover:underline">Thoracic Foam Rolling for Upper Back Mobility</Link>.
+              </p>
+            </div>
+          </div>
+
+          {/* 05 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>05</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Modalities</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Therapeutic Modalities & Techniques.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-6 max-w-2xl">
+                Additional therapies that may support rehabilitation and non-procedural care include:
+              </p>
+              <ul className="space-y-3 max-w-2xl mb-4">
+                {[
+                  "Tai Chi — balance, flexibility, and mind-body awareness",
+                  "Acupuncture — may help reduce pain perception for some patients",
+                  "Chiropractic care — spinal manipulation and manual therapies",
+                  "Meditation & Mindfulness — pain coping and stress management",
+                  "Cognitive Behavioral Therapy (CBT) — addresses pain-related thoughts and behaviors",
+                  "Biofeedback — trains body awareness and self-regulation",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
+                    <span className="text-[#555] text-base">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[#666] text-base leading-relaxed max-w-2xl">
+                The evidence base and effectiveness vary for different modalities. A physician can help determine which approaches align with your diagnosis and clinical needs.
+              </p>
+            </div>
+          </div>
+
+          {/* 06 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>06</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">Combining</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Combining These Approaches.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                The most effective approach often combines multiple non-procedural strategies. For example, a patient with low back pain might benefit from physical therapy, specific stabilization exercises, mindfulness practices, and activity modification working together.
+              </p>
+              <p className="text-[#666] text-base leading-relaxed max-w-2xl">
+                Coordination between treatment providers can help clarify goals, review progress, and adjust the overall plan; it does not guarantee effectiveness.
+              </p>
+            </div>
+          </div>
+
+          {/* 07 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="md:col-span-2">
+              <span className="text-7xl font-bold text-[#f0f0f0] leading-none block" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }} aria-hidden>07</span>
+              <p className="text-xs text-[#999] uppercase tracking-widest mt-2">When</p>
+            </div>
+            <div className="md:col-span-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                When Rehabilitation and Non-Procedural Care Alone May Not Be Enough.
+              </h2>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                While many patients benefit significantly from rehabilitation and non-procedural care, some conditions or clinical presentations may require additional evaluation or intervention. This might include diagnostic procedures, targeted injections, or, in selected cases, surgical intervention.
+              </p>
+              <p className="text-[#666] text-base leading-relaxed mb-4 max-w-2xl">
+                The need for additional interventions depends on the specific diagnosis, symptom severity, duration of symptoms, and individual response to treatment. A comprehensive clinical evaluation helps determine the appropriate treatment pathway.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-[#f9f7f4] py-20 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">FAQ</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-8" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              Frequently Asked Questions.
+            </h2>
+            <div className="space-y-6">
+              {faqSchema.mainEntity.map((item, i) => (
+                <div key={i}>
+                  <h3 className="font-bold text-[#0a0a0a] mb-2">{item.name}</h3>
+                  <p className="text-[#666] text-sm leading-relaxed">{item.acceptedAnswer.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* RELATED */}
+      <section className="bg-white py-14 px-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-2">
+            <p className="text-xs text-[#999] uppercase tracking-widest">Related</p>
+          </div>
+          <div className="md:col-span-10">
+            <h2 className="text-base font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              Related Resources.
+            </h2>
+            <ul className="space-y-3 text-sm">
+              <li><Link href="/mcgill-big-3-exercises" className="text-[#c8a020] hover:underline tracking-wide">McGill Big 3 Exercises for Low Back Pain →</Link></li>
+              <li><Link href="/thoracic-foam-rolling" className="text-[#c8a020] hover:underline tracking-wide">Thoracic Foam Rolling for Neck & Shoulder Pain →</Link></li>
+              <li><Link href="/aquatic-therapy-arthritis" className="text-[#c8a020] hover:underline tracking-wide">Aquatic Therapy for Pain Management →</Link></li>
+              <li><Link href="/pain-without-imaging" className="text-[#c8a020] hover:underline tracking-wide">Pain Without Imaging Findings →</Link></li>
+              <li><Link href="/treatment-options" className="text-[#c8a020] hover:underline tracking-wide">Treatment Decision Framework →</Link></li>
+              <li><Link href="/conditions/low-back-pain" className="text-[#c8a020] hover:underline tracking-wide">Low Back Pain Evaluation →</Link></li>
+              <li><Link href="/conditions/neck-pain" className="text-[#c8a020] hover:underline tracking-wide">Neck Pain Evaluation →</Link></li>
+              <li><Link href="/virtual-consultations" className="text-[#c8a020] hover:underline tracking-wide">Schedule Virtual Consultation →</Link></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <VirtualConsultationBanner />
+      <section className="max-w-5xl mx-auto px-6 py-12"><h2 className="text-2xl font-bold mb-4">Sources and scope</h2><ul className="list-disc pl-6 space-y-2"><li><a className="text-blue-600 underline" href="https://www.nice.org.uk/guidance/ng59/chapter/Recommendations">NICE NG59: Low back pain and sciatica in over 16s: assessment and management</a></li><li><a className="text-blue-600 underline" href="https://www.nhs.uk/conditions/back-pain/">NHS: Back pain</a></li><li><a className="text-blue-600 underline" href="https://pubmed.ncbi.nlm.nih.gov/28192789/">Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians</a></li></ul><p className="mt-4 text-gray-700">The cited NICE and ACP guidelines concern low back pain; recommendations depend on the condition and can differ. They are not universal rules for all pain or guarantees of response. This page is educational and cannot replace individual assessment.</p></section>
+    </>
+  );
+}
