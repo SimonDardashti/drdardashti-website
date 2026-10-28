@@ -70,43 +70,36 @@ const pageSchema = {
   },
 };
 
+const faqs = [
+  {
+    question: "Does an MRI expose me to radiation?",
+    answer: "No. MRI does not use ionizing radiation. It uses a magnetic field and radio waves to create images.",
+  },
+  {
+    question: "Will my whole body be inside?",
+    answer: "That depends on the body part being imaged, the scanner, and positioning. Ask whether feet-first positioning is possible for your exam.",
+  },
+  {
+    question: "Can I stop if I panic?",
+    answer: "Tell the technologist immediately. You can communicate during the scan, and the table can be moved out. Stopping may mean images need to be repeated or the exam rescheduled, so discussing anxiety beforehand is helpful.",
+  },
+  {
+    question: "Is an open MRI always better?",
+    answer: "No. It may feel more comfortable, but it is not the best or available option for every body part or clinical question. A standard wide-bore scanner may be another useful option.",
+  },
+];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Does an MRI use radiation?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. MRI uses a powerful magnet, radio waves, and a computer to make detailed images. It does not use x-rays or ionizing radiation.",
-      },
+  mainEntity: faqs.map(({ question, answer }) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: answer,
     },
-    {
-      "@type": "Question",
-      name: "Can I have an open MRI if I am claustrophobic?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "An open or wide-bore MRI may be more comfortable for some people, but it is not appropriate or available for every examination. Ask the ordering clinician and imaging center which scanner can provide the images your exam requires.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I take an anxiety pill before an MRI?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "In selected circumstances, a clinician may prescribe medication to help with MRI anxiety. Coordinate this in advance with the prescriber and imaging center, take it only as directed, and follow all instructions about transportation, driving, food, and other medicines.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can the MRI technologist hear me during the scan?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. The technologist can see, hear, and speak with you during the exam. Most centers also provide a call or squeeze device so you can ask for attention at any time.",
-      },
-    },
-  ],
+  })),
 };
 
 const comfortOptions = [
@@ -338,22 +331,12 @@ export default function MriAnxietyClaustrophobiaPage() {
             Common questions
           </h2>
           <div className="space-y-8">
-            <div>
-              <h3 className="font-bold text-[#0a0a0a] mb-2">Does an MRI expose me to radiation?</h3>
-              <p className="text-[#666] leading-relaxed">No. MRI does not use ionizing radiation. It uses a magnetic field and radio waves to create images.</p>
-            </div>
-            <div>
-              <h3 className="font-bold text-[#0a0a0a] mb-2">Will my whole body be inside?</h3>
-              <p className="text-[#666] leading-relaxed">That depends on the body part being imaged, the scanner, and positioning. Ask whether feet-first positioning is possible for your exam.</p>
-            </div>
-            <div>
-              <h3 className="font-bold text-[#0a0a0a] mb-2">Can I stop if I panic?</h3>
-              <p className="text-[#666] leading-relaxed">Tell the technologist immediately. You can communicate during the scan, and the table can be moved out. Stopping may mean images need to be repeated or the exam rescheduled, so discussing anxiety beforehand is helpful.</p>
-            </div>
-            <div>
-              <h3 className="font-bold text-[#0a0a0a] mb-2">Is an open MRI always better?</h3>
-              <p className="text-[#666] leading-relaxed">No. It may feel more comfortable, but it is not the best or available option for every body part or clinical question. A standard wide-bore scanner may be another useful option.</p>
-            </div>
+            {faqs.map(({ question, answer }) => (
+              <div key={question}>
+                <h3 className="font-bold text-[#0a0a0a] mb-2">{question}</h3>
+                <p className="text-[#666] leading-relaxed">{answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
