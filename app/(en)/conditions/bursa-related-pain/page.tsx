@@ -157,8 +157,8 @@ export default function BursaRelatedPainPage() {
           <MedicalFigure
             role="anatomy"
             src="/images/conditions/bursa-pain.png"
-            alt="Bursa anatomy showing synovial bursae around major joints, bursal inflammation and swelling, and anatomical locations of commonly affected bursae near shoulders, hips, elbows, and knees"
-            caption="Bursa Anatomy and Bursitis: Bursae are small fluid-filled sacs located around major joints that reduce friction between bones, tendons, and soft tissues during movement. When a bursa becomes inflamed (bursitis), it causes localized pain, swelling, and restricted motion. Bursitis can develop from repetitive mechanical stress, direct trauma, infection, or inflammatory conditions. Common sites include the subacromial bursa (shoulder), trochanteric bursa (hip), olecranon bursa (elbow), and infrapatellar bursa (knee). Understanding bursal anatomy is important for diagnosis and treatment, as targeted interventions can deliver medication directly to the inflamed bursa for pain relief."
+            alt="Simplified paired illustrations of bursae at the shoulder, outer hip, posterior elbow, and above the kneecap, with blue and red comparison examples"
+            caption="Bursae and Bursitis: Top row — shoulder and outer hip. Bottom row — posterior elbow and knee. Blue represents a non-inflamed comparison; red represents inflammation. Bursae are small fluid-filled sacs that help reduce friction between moving tissues. Their size is exaggerated here for visibility. The knee example highlights the region above the kneecap, rather than an infrapatellar bursa below it. This is a simplified educational illustration, not a map for locating an injection. Pain in these regions can also arise from tendons, joints, or other tissues; the illustration alone cannot identify the source."
             priority={true}
           />
         </div>

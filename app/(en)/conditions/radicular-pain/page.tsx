@@ -161,8 +161,8 @@ export default function RadicularPainPage() {
         <MedicalFigure
           role="mechanism"
           src="/images/conditions/radicular-pain.png"
-          alt="Radicular pain showing nerve root compression, irritation from disc herniation or bone spurs, and pain radiation along dermatome distribution into arm or leg"
-          caption="Radicular Pain: When a nerve root is compressed or irritated by a disc herniation, bone spur, stenosis, or other structural problem, it produces pain that radiates away from the spine into the arm (cervical radiculopathy) or leg (lumbar radiculopathy). Radicular pain follows the distribution of the affected nerve (dermatome), often accompanied by numbness, tingling, or weakness. Understanding the nerve root involved and the cause of irritation (mechanical compression, inflammation, or both) guides targeted treatment approaches including physical therapy, injections, or surgical intervention when conservative care is insufficient."
+          alt="Simplified cervical and lumbar nerve-root irritation examples with broad red symptom shading along an arm and a leg; no specific nerve level or dermatome is identified"
+          caption="Radicular Pain: Left — an illustrative neck-to-arm symptom pattern. Right — an illustrative lower-back-to-leg pattern. Irritation of a spinal nerve root, from inflammation, compression, or both, can cause pain into an arm or leg. The red shading is schematic: symptoms vary and may overlap, and this is not an exact dermatome map or a diagnosis of a particular nerve level. Radicular pain can occur without weakness or sensory loss; radiculopathy refers to impaired nerve-root function, which requires clinical assessment. The insets simplify possible disc-related irritation rather than showing an individual patient’s anatomy."
           priority={true}
         />
       </div>
