@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MedicalFigure } from "@/components/illustrations";
+import Image from "next/image";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -85,9 +85,9 @@ export default function GenitofemoralNeuralgiaPage() {
                 Nerve Involvement
               </p>
               <p className="text-[#555] text-base leading-relaxed">
-                The genitofemoral nerve originates from the lower thoracic and upper lumbar spine
-                and travels through the retroperitoneum to the groin and genital area. Injury or
-                compression causes neuropathic pain in the groin, genitals, and upper inner thigh.
+                The genitofemoral nerve forms from L1–L2 lumbar nerve fibers within the psoas
+                major muscle and descends on its front surface. Its branches supply the genital
+                region and a small area of the upper anterior thigh; sensory territories can overlap.
               </p>
             </div>
             <div>
@@ -129,17 +129,18 @@ export default function GenitofemoralNeuralgiaPage() {
             </h2>
             <p>
               Genitofemoral neuralgia is pain caused by irritation, compression, or injury to the
-              genitofemoral nerve, a sensory and motor nerve that originates from the thoracolumbar
-              spine (L1-L2 nerve roots) and travels through the retroperitoneum alongside the psoas
-              muscle before dividing into genital and femoral branches. When this nerve is irritated
+              genitofemoral nerve, a sensory and motor nerve formed from the L1–L2 lumbar nerve
+              roots within the psoas major muscle. It emerges on the muscle&apos;s anterior surface
+              and divides into genital and femoral branches. When this nerve is irritated
               or damaged, it generates neuropathic pain characterized by burning, sharp, or shooting
               sensations in the groin, genitals, lower abdomen, and upper inner thigh.
             </p>
             <p>
               The genitofemoral nerve has two divisions: the genital branch, which provides sensory
-              innervation to the scrotum (in men) or labia majora (in women) and the inguinal region;
-              and the femoral branch, which supplies sensation to the upper medial thigh and carries
-              motor fibers to the cremaster muscle in men. Because of this deep anatomic course through
+              innervation to the scrotum (in men) or labia majora (in women) and carries motor fibers
+              to the cremaster muscle in men; and the femoral branch, which passes beneath the
+              inguinal ligament and supplies sensation to a small area of the upper anterior thigh.
+              The genital branch travels through the inguinal canal. Because of this anatomic course through
               the retroperitoneum and groin, the nerve is vulnerable to injury during hernia repairs,
               pelvic surgeries, and other procedures in this region. The nerve can also be compressed
               by scar tissue, anatomic structures, or nerve entrapment.
@@ -152,16 +153,31 @@ export default function GenitofemoralNeuralgiaPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION: Genitofemoral Nerve Anatomy */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            role="anatomy"
-            src="/images/conditions/genitofemoral-neuralgia.png"
-            alt="Genitofemoral neuralgia showing nerve origin from L1-L2 nerve roots, retroperitoneal course along psoas muscle, division into genital and femoral branches, and sensory distribution to groin, genitals, and upper inner thigh"
-            caption="Genitofemoral Nerve Anatomy: The genitofemoral nerve originates from the L1 and L2 nerve roots in the lower thoracic and upper lumbar spine. It travels vertically through the retroperitoneum alongside the psoas muscle before dividing into two branches: the genital branch (supplies scrotum/labia and inguinal region) and the femoral branch (supplies upper medial thigh). This deep retroperitoneal course makes the nerve vulnerable to injury during hernia repair, pelvic surgeries, or compression from adjacent structures like tight clothing or psoas muscle tension. Understanding this anatomy explains both the pain distribution and why certain movements or positions can trigger symptoms."
-            priority={true}
+
+
+
+        <figure className="max-w-3xl mx-auto mt-12">
+          <Image
+            src="/images/conditions/genitofemoral-anterior-reference-v4.webp"
+            alt="Anterior anatomical illustration highlighting the genitofemoral nerve on psoas major, its genital branch toward the pubic region and its femoral branch beneath the inguinal ligament toward the upper anterior thigh."
+            width={1280}
+            height={1229}
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="w-full h-auto"
           />
-        </div>
+          <figcaption className="mt-4 text-sm text-[#666] leading-relaxed">
+            Anterior view of the posterior abdominal wall and groin. One genitofemoral nerve is
+            highlighted on the front of psoas major. Its genital branch travels toward the inguinal
+            canal and genital region; its femoral branch passes beneath the inguinal ligament toward
+            a small area of upper anterior thigh skin. Formation from L1–L2 within psoas and the
+            complete sensory territories are not shown. The branches and surrounding tissues are
+            simplified; anatomy and sensory overlap vary.
+          </figcaption>
+          <a href="/images/conditions/genitofemoral-anterior-reference-v4.png" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm text-[#8f6d00] underline underline-offset-4">
+            View full-size illustration<span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        </figure>
+
       </section>
 
       {/* 02 SYMPTOMS */}
@@ -276,10 +292,11 @@ export default function GenitofemoralNeuralgiaPage() {
             </p>
             <p>
               <strong>Diagnostic Procedures:</strong> Ultrasound-guided genitofemoral nerve blocks —
-              injection of local anesthetic around the affected nerve — serve both diagnostic and
-              therapeutic purposes. If pain is significantly relieved following a properly placed nerve
-              block, this confirms nerve involvement and supports the diagnosis of genitofemoral
-              neuralgia.
+              injection of local anesthetic around the nerve — may help with assessment and temporary
+              pain relief. A response may support involvement of the targeted nerve, but does not by
+              itself confirm the diagnosis. Nearby nerves have overlapping sensory territories, and
+              injection spread or other effects can influence the response. The clinician interprets
+              the location, amount, and duration of relief alongside the history and examination.
             </p>
             <p>
               <strong>Electrodiagnostic Testing:</strong> Electromyography (EMG) or nerve conduction
@@ -317,8 +334,13 @@ export default function GenitofemoralNeuralgiaPage() {
               pain and improve function.
             </p>
             <p>
-              <strong>Topical Treatments:</strong> Lidocaine patches or creams applied over the affected
-              area can provide localized pain relief without systemic side effects.
+              <strong>Topical Treatments:</strong> Topical lidocaine may be discussed for selected
+              patients, but benefit is not established for every groin-pain condition. The HerniaSurge
+              guidelines report no demonstrated benefit from lidocaine patches for chronic pain after
+              inguinal hernia repair. Lidocaine can cause skin irritation; systemic effects are uncommon
+              with correct patch use but may occur, especially with excessive absorption. Skin patches
+              are for intact skin, not genital mucosa or broken skin. Discuss the formulation and
+              application site with the clinician and follow the specific product instructions.
             </p>
             <p>
               <strong>Procedural Options:</strong> When conservative treatment provides insufficient
@@ -491,6 +513,28 @@ export default function GenitofemoralNeuralgiaPage() {
               Fernando Valley, Santa Clarita Valley, and surrounding Los Angeles communities.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section id="selected-sources" className="bg-white py-14 px-6 border-b border-[#e5e5e0]">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-xl font-bold text-[#0a0a0a] mb-5" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            Selected Sources
+          </h2>
+          <ul className="space-y-4 text-sm text-[#555] leading-relaxed">
+            <li>
+              <a href="https://doi.org/10.1093/bjsopen/zrad080" className="text-[#8f6d00] underline underline-offset-4" rel="noopener noreferrer">
+                Stabilini et al. Update of the international HerniaSurge guidelines for groin hernia management. BJS Open. 2023;7(5):zrad080.
+              </a>
+              {" "}The chronic-pain chapter addresses assessment and treatment after groin hernia repair.
+            </li>
+            <li>
+              <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d499efc5-8bc3-4dbc-9d85-fae57dd9263c" className="text-[#8f6d00] underline underline-offset-4" rel="noopener noreferrer">
+                DailyMed: LIDODERM (lidocaine patch 5%) prescribing information.
+              </a>
+              {" "}Product-specific safety and application instructions; its labeled indication is post-herpetic neuralgia.
+            </li>
+          </ul>
         </div>
       </section>
 
