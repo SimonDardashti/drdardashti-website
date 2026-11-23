@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/basivertebral-nerve-ablation";
 const SITE_URL = "https://www.drdardashti.com";
@@ -85,6 +86,7 @@ export default function BasivertebralNerveAblationPage() {
           <div className="border-l-2 border-[#c8a020] bg-white px-5 py-4 text-sm leading-relaxed text-[#444]"><strong className="text-[#111]">A different target than facet RFA.</strong> Medial branch RFA targets nerves carrying signals from facet joints. BVNA targets a nerve inside a vertebral body. They address different suspected pain sources.</div>
         </div>
       </div>
+      <PublishedAnatomyFigure illustration="bvna" />
     </section>
 
     <section id="who-may-be-considered" className="scroll-mt-8 border-b border-[#e5e5e0] bg-white px-5 py-14 sm:px-6 md:py-20">

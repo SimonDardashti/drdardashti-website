@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 import VirtualConsultationBanner from "@/components/VirtualConsultationBanner";
 
 const PAGE_URL = "https://www.drdardashti.com/conditions";
@@ -251,6 +252,7 @@ export default function ConditionsPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="conditions-hub" />
       </section>
 
       {/* LIMITATIONS */}

@@ -148,7 +148,43 @@ export default function RadiofrequencyAblationPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION: RFA Mechanism */}
+        <figure className="mx-auto mt-10 max-w-4xl rounded-lg border border-[#dfdfd7] bg-white p-5 text-[#444] sm:p-6">
+          <p className="text-lg font-semibold text-[#111]">How a facet joint connects to a spinal nerve</p>
+          <ol role="list" className="mt-4 grid gap-6 rounded-md bg-[#f9f7f4] p-4 sm:grid-cols-3">
+            <li className="relative rounded-md border border-[#dfdfd7] bg-white p-3">
+              <strong className="text-[#222]">Spinal nerve</strong>
+              <span aria-hidden="true" className="absolute -bottom-6 left-3 text-[#555] sm:-right-5 sm:left-auto sm:top-3">
+                <span className="sm:hidden">↓</span><span className="hidden sm:inline">→</span>
+              </span>
+            </li>
+            <li className="relative rounded-md border border-[#dfdfd7] bg-white p-3">
+              <strong className="text-[#222]">Dorsal ramus</strong>
+              <span className="block text-sm">A branch that supplies structures in the back</span>
+              <span aria-hidden="true" className="absolute -bottom-6 left-3 text-[#555] sm:-right-5 sm:left-auto sm:top-3">
+                <span className="sm:hidden">↓</span><span className="hidden sm:inline">→</span>
+              </span>
+            </li>
+            <li className="rounded-md border border-[#dfdfd7] bg-white p-3">
+              <strong className="text-[#222]">Medial branch</strong>
+              <span className="block text-sm">A smaller branch that carries sensation from facet joints</span>
+            </li>
+          </ol>
+          <figcaption className="mt-4 text-sm leading-relaxed">
+            <p>
+              The graphic shows how the nerves branch. Each lumbar facet joint typically receives input from two neighboring nerve levels.
+              In the lower back, radiofrequency ablation for facet joint pain targets selected small nerves that carry pain signals from those joints.
+            </p>
+            <details className="mt-3">
+              <summary className="w-fit cursor-pointer text-[#555] underline underline-offset-4 hover:text-[#111]">Diagram sources</summary>
+              <p className="mt-2">
+                Original diagram based on{" "}
+                <a href="https://pubmed.ncbi.nlm.nih.gov/26717379/#figures" className="underline underline-offset-4">Shuang et al., Figure 2</a>
+                {" "}and the{" "}
+                <a href="https://doi.org/10.1136/rapm-2019-101243" className="underline underline-offset-4">multispecialty lumbar facet joint guidelines</a>.
+              </p>
+            </details>
+          </figcaption>
+        </figure>
 
       </section>
 
