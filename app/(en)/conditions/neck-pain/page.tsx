@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -139,6 +140,7 @@ export default function NeckPainPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="cervical-segment" />
       </section>
 
       {/* REASONS FOR EVALUATION */}
@@ -202,6 +204,7 @@ export default function NeckPainPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="cervical-levels" />
       </section>
 
       <section id="neck-diagnoses" className="scroll-mt-28 bg-[#f9f7f4] py-16 px-6 border-b border-[#e5e5e0]" aria-labelledby="neck-diagnoses-heading">

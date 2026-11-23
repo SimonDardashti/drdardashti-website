@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -143,6 +144,7 @@ export default function LowBackPainPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="lumbar-levels" />
       </section>
 
       {/* REASONS FOR EVALUATION */}
@@ -208,6 +210,7 @@ export default function LowBackPainPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="disc-herniation" />
       </section>
 
       {/* TREATMENT OPTIONS */}
@@ -250,6 +253,7 @@ export default function LowBackPainPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="lumbar-vertebra" />
       </section>
 
       {/* IMPORTANT LIMITATIONS */}

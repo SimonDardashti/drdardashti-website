@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
@@ -152,6 +153,7 @@ export default function CervicalRadiculopathyPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="cervical-levels" />
       </section>
 
       {/* SYMPTOMS */}

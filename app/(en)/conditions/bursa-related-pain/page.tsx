@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -151,6 +152,7 @@ export default function BursaRelatedPainPage() {
           </div>
         </div>
 
+        <PublishedAnatomyFigure illustration="bursa" />
       </section>
 
       {/* SYMPTOMS */}

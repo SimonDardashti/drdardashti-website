@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PublishedAnatomyFigure from "@/components/illustrations/PublishedAnatomyFigure";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -180,6 +181,9 @@ export default function WhiplashAssociatedDisorderPage() {
           </p>
         </section>
 
+        <div className="mb-12">
+          <PublishedAnatomyFigure illustration="cervical-levels" />
+        </div>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
