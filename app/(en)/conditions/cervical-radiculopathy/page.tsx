@@ -152,15 +152,6 @@ export default function CervicalRadiculopathyPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION 1: Cervical Spine Anatomy */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            src="/images/anatomy/spine/cervical-spine-anatomy.png"
-            alt="Cervical spine anatomy showing seven cervical vertebrae (C1-C7), intervertebral discs, facet joints, and nerve roots emerging from spinal canal"
-            caption="Cervical Spine Anatomy: The cervical spine has seven vertebrae. Nerve roots exit between vertebrae at each level. When a nerve is compressed at its exit point, it causes arm and hand symptoms specific to that nerve's distribution."
-          />
-        </div>
       </section>
 
       {/* SYMPTOMS */}

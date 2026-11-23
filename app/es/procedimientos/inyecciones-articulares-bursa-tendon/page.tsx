@@ -56,7 +56,7 @@ const pageSchema = {
 const inBrief = [
   {
     heading: "Inyecciones guiadas",
-    body: "Inyecciones guiadas por imagen en articulaciones, bolsas serosas o tendones para evaluar y posiblemente aliviar el dolor localizado.",
+    body: "Inyecciones guiadas por imagen en articulaciones o bursas, o alrededor de un tendón para evaluar y posiblemente aliviar el dolor localizado.",
   },
   {
     heading: "Para condiciones seleccionadas",
@@ -128,10 +128,10 @@ export default function InyeccionesArticularesPage() {
           <div className="md:col-span-10 space-y-4 text-[#555] text-base leading-relaxed">
             <h2 className="text-2xl md:text-3xl font-bold text-[#0a0a0a] mb-4" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>¿Qué son estas inyecciones?</h2>
             <p>
-              Las inyecciones articulares, de bursa y tendón son procedimientos que administran medicamento directamente en una articulación específica, bolsa serosa (bursa) o estructura tendinosa. Estas estructuras pueden convertirse en fuentes de dolor debido a inflamación, irritación o degeneración.
+              El lugar de la inyección depende del diagnóstico y del medicamento. Puede ser dentro de una articulación o una bursa, o alrededor de un tendón o en su vaina cuando corresponda.
             </p>
             <p>
-              El objetivo del procedimiento es reducir la inflamación y posiblemente aliviar el dolor localizado. Los procedimientos se realizan típicamente bajo guía de imagen — como ultrasonido o fluoroscopia — para garantizar una colocación precisa del medicamento en el sitio objetivo.
+              El objetivo puede ser aliviar el dolor localizado. Si se considera un corticoesteroide cerca de un tendón, importa el sitio de la inyección: puede debilitar el tendón y aumentar el riesgo de rotura. Las inyecciones también conllevan riesgos como sangrado, infección o reacción al medicamento. Los procedimientos se realizan típicamente bajo guía de imagen — como ultrasonido o fluoroscopia — para ayudar a ubicar la aguja y el sitio de la inyección. La guía por imagen no elimina los riesgos.
             </p>
           </div>
         </div>

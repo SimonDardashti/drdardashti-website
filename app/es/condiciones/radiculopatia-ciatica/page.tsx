@@ -163,6 +163,9 @@ export default function RadiculopatiaPage() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 max-w-2xl border-l-2 border-[#806207] pl-4 text-[#444]">
+              <strong>Cuándo buscar atención de urgencia:</strong> Si tiene dolor lumbar o de pierna, acuda a urgencias de inmediato si aparece dificultad nueva para orinar, pérdida del control de la vejiga o del intestino, o entumecimiento alrededor de los genitales o el ano. La debilidad nueva o que empeora requiere valoración urgente. Si es intensa o progresa rápidamente, especialmente en ambas piernas, acuda a urgencias.
+            </p>
           </div>
         </div>
       </section>

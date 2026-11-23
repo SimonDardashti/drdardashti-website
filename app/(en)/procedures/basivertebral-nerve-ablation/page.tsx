@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 const PAGE_URL = "https://www.drdardashti.com/procedures/basivertebral-nerve-ablation";
@@ -13,13 +12,11 @@ export const metadata: Metadata = {
     type: "website", url: PAGE_URL,
     title: "Basivertebral Nerve Ablation (BVNA) | Simon Dardashti, MD",
     description: "A patient guide to basivertebral nerve ablation for selected chronic vertebrogenic low back pain, including evaluation, procedure steps, potential benefits, risks, and alternatives.",
-    images: [{ url: "/images/procedures/basivertebral-nerve-ablation-concept.webp", width: 1536, height: 1024, alt: "Educational illustration of basivertebral nerve ablation anatomy and conceptual instrument access" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Basivertebral Nerve Ablation (BVNA) | Simon Dardashti, MD",
     description: "A patient guide to basivertebral nerve ablation for selected chronic vertebrogenic low back pain, including evaluation, procedure steps, potential benefits, risks, and alternatives.",
-    images: ["/images/procedures/basivertebral-nerve-ablation-concept.webp"],
   },
 };
 
@@ -60,21 +57,14 @@ export default function BasivertebralNerveAblationPage() {
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
     <section className="border-b border-[#1a1a1a] bg-[#0a0a0a] px-5 py-14 text-white sm:px-6 md:py-20">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-12">
-        <div className="md:col-span-7">
+      <div className="mx-auto max-w-6xl">
+        <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#c8a020]">Patient Education · Spine Procedure</p>
           <h1 className="text-4xl font-bold leading-tight sm:text-5xl md:text-6xl" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>Basivertebral{" "}<br/><em className="not-italic text-[#c8a020]">Nerve Ablation.</em></h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#d1d1cd] sm:text-lg">Basivertebral nerve ablation (BVNA, sometimes called BVN ablation) is intended for a carefully selected group of people with chronic vertebrogenic low back pain. It targets a small sensory nerve inside the vertebral body. It is different from medial branch radiofrequency ablation for some facet-joint pain.</p>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#aaa]">This page is general education, not a diagnosis or a promise that a procedure is appropriate for you. Individual decisions require evaluation by a qualified clinician.</p>
           <a href="#who-may-be-considered" className="mt-7 inline-flex min-h-11 items-center border border-[#c8a020] px-5 py-2 text-sm font-semibold text-[#f1cf68] hover:bg-[#c8a020] hover:text-[#0a0a0a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f1cf68]">See who may be considered</a>
         </div>
-        <figure className="md:col-span-5">
-          <div className="overflow-hidden border border-[#393939] bg-white">
-            <Image src="/images/procedures/basivertebral-nerve-ablation-concept.webp" alt="Educational cutaway illustration of the vertebral endplate, basivertebral nerve, and RF treatment target, alongside a labeled conceptual instrument path." width={1536} height={1024} preload unoptimized sizes="(max-width: 767px) 100vw, 42vw" className="h-auto w-full" />
-          </div>
-          <figcaption className="mt-3 text-xs leading-relaxed text-[#aaa]">Educational illustration only. Anatomy and the instrument path are simplified and not to scale. This image is not procedural guidance and should not be used to infer an individual’s anatomy or approach.</figcaption>
-          <a href="/images/procedures/basivertebral-nerve-ablation-concept.webp" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm text-[#f1cf68] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f1cf68]">View full-size illustration<span className="sr-only"> (opens in a new tab)</span></a>
-        </figure>
       </div>
     </section>
 

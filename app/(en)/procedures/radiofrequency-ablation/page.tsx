@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
@@ -91,16 +90,6 @@ export default function RadiofrequencyAblationPage() {
               evaluation and diagnostic nerve blocks support a possible facet joint contribution
               to the patient's pain.
             </p>
-          </div>
-          <div className="hidden md:block w-[400px] aspect-[3/2] shrink-0 relative overflow-hidden">
-            <Image
-              src="/images/procedures/radiofrequency-ablation-hero.webp"
-              alt="Radiofrequency ablation of lumbar medial branch nerves medical illustration."
-              fill
-              sizes="400px"
-              className="object-cover object-center"
-              priority
-            />
           </div>
         </div>
       </section>
