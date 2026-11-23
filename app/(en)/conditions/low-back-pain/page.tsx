@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
-// This file demonstrates the MedicalFigure framework pattern for all condition pages
 
 const PAGE_URL = "https://www.drdardashti.com/conditions/low-back-pain";
 const SITE_URL = "https://www.drdardashti.com";
@@ -145,15 +143,6 @@ export default function LowBackPainPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION: Lumbar Anatomy */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            src="/images/anatomy/spine/lumbar-anatomy-overview.png"
-            alt="Lumbar spine anatomy showing vertebrae, intervertebral discs, spinal nerves, and supporting structures from lateral and cross-sectional views"
-            caption="Lumbar Spine Anatomy: The low back is composed of five lumbar vertebrae, intervertebral discs between each vertebra, facet joints on the back of the spine, and spinal nerve roots that branch from the spinal cord. Pain can originate from any of these structures."
-          />
-        </div>
       </section>
 
       {/* REASONS FOR EVALUATION */}
@@ -219,15 +208,6 @@ export default function LowBackPainPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION: Disc Herniation Comparison */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            src="/images/anatomy/spine/healthy-vs-herniated-disc.png"
-            alt="Side-by-side comparison showing healthy lumbar intervertebral disc on the left with normal nucleus pulposus and spinal nerve root, and herniated disc on the right with displaced nucleus pulposus compressing the nerve root"
-            caption="Disc Herniation: When an intervertebral disc herniates, the central nucleus pulposus can protrude outward and compress nearby spinal nerves, potentially causing pain, numbness, or weakness in the leg (radiculopathy). Not all disc herniations cause symptoms."
-          />
-        </div>
       </section>
 
       {/* TREATMENT OPTIONS */}
@@ -270,15 +250,6 @@ export default function LowBackPainPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION 3: Lumbar Vertebra Anatomy */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            variant="default"
-            src="/images/anatomy/spine/lumbar-vertebra-exploded.png"
-            alt="Exploded view of lumbar vertebra showing vertebral body, pedicles, laminae, spinous process, transverse processes, and facet joints"
-            caption="Lumbar Vertebra Structure: Each lumbar vertebra has a solid body that bears weight, with bony processes extending posteriorly. The facet joints guide spinal movement, while the vertebral body and disc form the load-bearing unit. Understanding this architecture helps explain different sources of back pain."
-          />
-        </div>
       </section>
 
       {/* IMPORTANT LIMITATIONS */}

@@ -160,6 +160,9 @@ export default function RadiculopatiaaCervicalPage() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 max-w-2xl border-l-2 border-[#806207] pl-4 text-[#444]">
+              <strong>Cuándo buscar atención de urgencia:</strong> Busque atención urgente si aparece debilidad nueva o si empeora. Acuda a urgencias de inmediato si la debilidad progresa rápidamente o si aparece dificultad nueva para caminar o pérdida nueva del control de la vejiga o del intestino.
+            </p>
           </div>
         </div>
       </section>
@@ -201,8 +204,6 @@ export default function RadiculopatiaaCervicalPage() {
                 "Manejo de medicamentos cuando sea clínicamente apropiado",
                 "Inyecciones epidurales cervicales de esteroides para pacientes seleccionados con síntomas radiculares",
                 "Bloqueos selectivos de raíces nerviosas cervicales para consideración diagnóstica o terapéutica",
-                "Inyecciones de articulaciones facetarias cervicales o bloqueos de rama medial",
-                "Ablación por radiofrecuencia para pacientes seleccionados que responden a bloqueos diagnósticos",
                 "Monitoreo continuo y reevaluación basada en la respuesta al tratamiento",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -211,6 +212,10 @@ export default function RadiculopatiaaCervicalPage() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 max-w-2xl text-[#555]">
+              Si también se sospecha dolor de las articulaciones facetarias, el médico puede evaluarlo por separado.
+              Los bloqueos de rama medial y la ablación por radiofrecuencia facetaria se dirigen a ese tipo de dolor.
+            </p>
             <p className="text-[#777] text-sm mt-6 max-w-2xl">
               No todos los pacientes con radiculopatía cervical requieren una inyección. Las recomendaciones de tratamiento se basan en la evaluación clínica individual.
             </p>

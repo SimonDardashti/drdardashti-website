@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MedicalFigure } from "@/components/illustrations";
 
 import MedicalReviewFooter from "@/components/MedicalReviewFooter";
 
@@ -152,16 +151,6 @@ export default function BursaRelatedPainPage() {
           </div>
         </div>
 
-        {/* ILLUSTRATION: Bursa Anatomy */}
-        <div className="max-w-5xl mx-auto mt-12 flex justify-center">
-          <MedicalFigure
-            role="anatomy"
-            src="/images/conditions/bursa-pain.png"
-            alt="Simplified paired illustrations of bursae at the shoulder, outer hip, posterior elbow, and above the kneecap, with blue and red comparison examples"
-            caption="Bursae and Bursitis: Top row — shoulder and outer hip. Bottom row — posterior elbow and knee. Blue represents a non-inflamed comparison; red represents inflammation. Bursae are small fluid-filled sacs that help reduce friction between moving tissues. Their size is exaggerated here for visibility. The knee example highlights the region above the kneecap, rather than an infrapatellar bursa below it. This is a simplified educational illustration, not a map for locating an injection. Pain in these regions can also arise from tendons, joints, or other tissues; the illustration alone cannot identify the source."
-            priority={true}
-          />
-        </div>
       </section>
 
       {/* SYMPTOMS */}

@@ -187,7 +187,6 @@ export default function RadicularPainPage() {
                 "Lumbar radicular pain — arising from the lower spine — typically radiates into the buttock, thigh, leg, or foot, and may follow the path of the sciatic or femoral nerve depending on the level",
                 "The character of radicular pain is often described as shooting, burning, or electric — and may be accompanied by numbness, tingling, or weakness",
                 "Pain that worsens with specific postures or movements — such as neck extension or prolonged sitting — may help identify the region and level involved",
-                "Bilateral or diffuse symptoms, or symptoms accompanied by bowel or bladder changes, warrant more urgent evaluation to exclude spinal cord or cauda equina involvement",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-1 h-1 rounded-full bg-[#c8a020] mt-2.5 shrink-0" />
@@ -195,6 +194,12 @@ export default function RadicularPainPage() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 max-w-2xl border-l-2 border-[#806207] pl-4 text-[#444]">
+              <strong>When to seek emergency care:</strong> With back or leg pain, go to an emergency department
+              right away for new difficulty passing urine, loss of bladder or bowel control, or numbness around
+              the genitals or anus. New or worsening weakness needs prompt assessment. Seek emergency care for
+              severe or rapidly worsening weakness, especially in both legs.
+            </p>
           </div>
         </div>
       </section>
