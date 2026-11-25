@@ -45,6 +45,24 @@ const pageSchema = {
   },
 };
 
+const patientQuestions = [
+  {
+    title: "I’m anxious about an MRI.",
+    description: "Learn what to expect and which comfort options to ask about before your scan.",
+    href: "/mri-anxiety-claustrophobia",
+  },
+  {
+    title: "My scan was normal, but I’m still in pain.",
+    description: "Learn what a scan can show and what else a clinician considers when evaluating pain.",
+    href: "/pain-without-imaging",
+  },
+  {
+    title: "I want a second opinion before spine surgery.",
+    description: "Find out what a second opinion can clarify and which records to bring.",
+    href: "/second-opinion-spine-surgery",
+  },
+];
+
 export default function PatientEducationPage() {
   return (
     <>
@@ -64,6 +82,39 @@ export default function PatientEducationPage() {
           <p className="mt-5 text-[#666] text-lg max-w-2xl leading-relaxed">
             Educational resources to help you better understand pain conditions, treatment options, conservative care, and procedures.
           </p>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="patient-questions-heading"
+        className="border-b border-[#272725] bg-[#0a0a0a] px-6 py-10 text-white sm:py-12"
+      >
+        <div className="mx-auto max-w-5xl">
+          <h2
+            id="patient-questions-heading"
+            className="text-2xl font-bold sm:text-3xl"
+            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+          >
+            Start with your question
+          </h2>
+          <ul className="mt-6 grid gap-3 md:grid-cols-3 md:gap-4">
+            {patientQuestions.map(({ title, description, href }) => (
+              <li key={href} className="min-w-0">
+                <Link
+                  href={href}
+                  className="group flex h-full items-start gap-3 rounded-sm border border-[#3c3a34] bg-[#151513] p-5 hover:border-[#c8a020] hover:bg-[#1e1c16] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e6c46a] motion-safe:transition-colors"
+                >
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold leading-snug text-white group-hover:underline group-hover:underline-offset-4">
+                      {title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-[#c4c2ba]">{description}</p>
+                  </div>
+                  <span aria-hidden="true" className="shrink-0 text-[#e6c46a]">→</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
