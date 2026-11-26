@@ -103,6 +103,7 @@ const conditionGroups = [
       { label: "Complex regional pain syndrome evaluation", href: "/conditions/crps-evaluation" },
       { label: "Chronic pain syndrome evaluation", href: "/conditions/chronic-pain-syndrome-evaluation" },
       { label: "Complex pain conditions", href: "/conditions/complex-pain-conditions" },
+      { label: "Cancer pain", href: "/conditions/cancer-pain" },
     ],
   },
 ];
