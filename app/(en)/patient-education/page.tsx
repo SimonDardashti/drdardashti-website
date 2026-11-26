@@ -61,6 +61,11 @@ const patientQuestions = [
     description: "Find out what a second opinion can clarify and which records to bring.",
     href: "/second-opinion-spine-surgery",
   },
+  {
+    title: "How can we manage pain caused by cancer?",
+    description: "Learn about pain relief options and how oncology, palliative care, and hospice can help.",
+    href: "/conditions/cancer-pain",
+  },
 ];
 
 export default function PatientEducationPage() {
@@ -97,7 +102,7 @@ export default function PatientEducationPage() {
           >
             Start with your question
           </h2>
-          <ul className="mt-6 grid gap-3 md:grid-cols-3 md:gap-4">
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-4">
             {patientQuestions.map(({ title, description, href }) => (
               <li key={href} className="min-w-0">
                 <Link
